@@ -1,5 +1,7 @@
 #!/bin/bash
-
+if [[ "$TRAVIS_PULL_REQUEST" != "false" || "$TRAVIS_BRANCH" != "master" ]]; then
+    exit 0
+fi
 set -e
 
 chmod 600 deploy/id_rsa_deploy
