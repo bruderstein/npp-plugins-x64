@@ -4,6 +4,7 @@ if [[ "$TRAVIS_PULL_REQUEST" != "false" || "$TRAVIS_BRANCH" != "master" ]]; then
 fi
 set -e
 
+openssl aes-256-cbc -K $encrypted_2a680a2fe767_key -iv $encrypted_2a680a2fe767_iv -in deploy/id_rsa_deploy.enc -out deploy/id_rsa_deploy -d
 chmod 600 deploy/id_rsa_deploy
 
 SSH_OPTIONS="-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -B -i deploy/id_rsa_deploy -P $SSHPORT"
