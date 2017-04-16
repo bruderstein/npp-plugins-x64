@@ -127,6 +127,21 @@ This runs an arbitrary path, optionally with the variables (`$PLUGINDIR$`, `$CON
    * `arguments` specify all arguments, and are passed directly to `ShellExecuteEx`
    * `outsideNpp` if `true`, the file is run after Notepad++ has closed (the user is prompted that a restart is necessary)
 
+### `<remove>`
+Contains the same structure as `<install>`, but is the steps required when removing the plugin (these are not performed on update, only removal).
+
+Note: You **do not** need to remove the main plugin DLL, that is done automatically. Only use the `<remove>` tag if your plugin installs extra files which can and should be removed if the plugin is uninstalled.
+
+e.g.
+```xml
+<remove>
+  <x64>
+    <delete file="$PLUGINDIR$\myplugin" isDirectory="true" />
+    <delete file="$CONFIGDIR$\myplugin.sampleconfig" />
+  </x64>
+</remove>
+```
+
 ### `<versions>`
 A collection of `<version>` elements that identify a version if the DLL does not report a version (or reports an incorrect version). Ideally this should not be used, and the DLL should have the `FileVersion` set correctly to the version of the plugin, but sometimes this is not possible depending on the language used to compile the plugin.
 
