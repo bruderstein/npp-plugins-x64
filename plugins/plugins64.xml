@@ -43,7 +43,7 @@
 			<x64>
 				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.bin.zip</download>
 				<copy from="bin64\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
+				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
 			</x64>
 		</install>
 	</plugin>
@@ -57,7 +57,7 @@
 			<x64>
 				<download>https://github.com/npp-plugins/converter/releases/download/v4.2/nppConvert.v4.2.zip</download>
 				<copy from="bin64\NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
-				<copy from="*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
+				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
 			</x64>
 		</install>
 	</plugin>
