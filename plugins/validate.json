@@ -2,5 +2,14 @@
     "Plugin Manager": {
         "820d36180ba4d8661b82d0015d7106cf": "PluginManager.dll",
         "7584bd70f007c658b1640c07aaad6a6c": "gpup.exe"
+    },
+    "NppFTP": {
+        "99d9e4f745d6c6e5f0910d26bdbd3d36": "NppFTP.dll"
+    },
+    "MIME Tools": {
+        "586a5399489a033118737809c7de9e0d": "mimeTools.dll"
+    },
+    "Converter": {
+        "0e56a61f5481bb13ae35be5ada06530b": "NppConverter.dll"
     }
 }
