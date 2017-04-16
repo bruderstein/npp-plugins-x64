@@ -2,8 +2,8 @@ language: python
 python:
 - '2.7'
 before_install:
-- openssl aes-256-cbc -K $encrypted_2a680a2fe767_key -iv $encrypted_2a680a2fe767_iv
-  -in deploy/id_rsa_deploy.enc -out deploy/id_rsa_deploy -d
+- 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then openssl aes-256-cbc -K $encrypted_2a680a2fe767_key -iv $encrypted_2a680a2fe767_iv
+  -in deploy/id_rsa_deploy.enc -out deploy/id_rsa_deploy -d; fi'
 env:
   global:
     secure: NU4bm3bFEEg4xs8c2qghV0B0hjy/R5HBM44DicmUL4TW27m01IvouEXXHwcO0O/BBZhb1Ua8pOhUf41pwCRGf3I4AEe11CwPWSGH/SJpD8pLUAghyMoIHc0UqFPPueQPfcyQ69t9F91nmtjjtp4dOoboQTHjyBvNC/wl2l+AOFt7C6kiR1Gb0h00BKSXLGN2Ri0rV1tnZYChs09bvHB+WjCzk/B49X8Hmy1mlLnEC5lJ/oWLunbJz2M+uRWl0MmRqqjk7SNCfAoiT8OOP9xT5QWdaXAipiMnbi9kydcXgAI+zL4l2H2EKBwGLAyhRf6W5Dq+z8CMJKWk6iQ3zCIqIdZ8cNpVhqNr8Coi9YZcr75T4XzhzR+GUZceUGWL/qiSxFD9KuRf7MHmjDOYtIuZvvSN49xCNebEjlIKHEz6OeZFcDYGELn1XEurUzJC2xez3/mW3izcovC/h1yfurEQLgIE8iDC/Wzph118FUHQ3+y7y8CazYa/nhptxDoLZWJETuPujOF90LR2bh6JMsbGYuKV6L/kUZV+Ibfiv6rcOkk+eh311LbzC6RceuBbzvQACrKaLkytZpKP+jQtV/UaBWlX7wXmpvKY13wBHclbBOIrZLDaHo5L/N7hQ0YCwUm9SC9MSzhvph4n/MSHHUVuh7IOiNHS1x1QD+ucKQ8D3dg=
