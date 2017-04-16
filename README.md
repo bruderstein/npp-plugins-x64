@@ -149,7 +149,7 @@ The format of the file is straightforward, and is best shown with an example:
    },
    "Other plugin": {
       "0123456789abcdef0123456789abcdef": "otherfile.dll",
-      "fedcba9876543210fedcba9876543210": "lib\secondfile.dll"
+      "fedcba9876543210fedcba9876543210": "lib\\secondfile.dll"
    }
 }
 ```
