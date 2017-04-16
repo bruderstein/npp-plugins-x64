@@ -15,4 +15,50 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="NppFTP">
+		<x64Version>0.26.9</x64Version>
+		<aliases>
+			<alias name="nppftp"/>
+		</aliases>
+		<description>NppFTP: a plugin that allows FTP, FTPS, FTPES and SFTP communications. Very useful for web development.</description>
+		<author>ashish_kulz</author>
+		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
+		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
+		<latestUpdate>- Fix for issue #122 about missing support for TLS V1.2 for FTPS and FTPES.\n- Build tooling preparation for cmake builds.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.26.9/NppFTP-x64.zip</download>
+				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="MIME Tools">
+		<x64Version>2.1</x64Version>
+		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
+		<author>Don HO</author>
+		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
+		<latestUpdate>Remove the dependance of other dll</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.bin.zip</download>
+				<copy from="bin64\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Converter">
+		<x64Version>4.2</x64Version>
+		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
+		<author>Don HO</author>
+		<sourceUrl>https://github.com/npp-plugins/converter</sourceUrl>
+		<latestUpdate>Remove the dependance of other dll</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/npp-plugins/converter/releases/download/v4.2/nppConvert.v4.2.zip</download>
+				<copy from="bin64\NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
+			</x64>
+		</install>
+	</plugin>
 </plugins>
