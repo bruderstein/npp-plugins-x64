@@ -28,6 +28,8 @@ The following is a template:
 </plugin>
 ```
 
+The `name` attribute _must_ be exactly the name returned by the plugin's `getName()` function and is case sensitive.
+
 The install steps are run in the order they are listed, so this install will:
 1. download the zip file (it *must* be a zip file) and extract it to a temporary directory. 
 2. Copy the the `myplugin.dll` extracted from the zip to the Notepad++ plugin directory, and validate it's md5 (see later)
@@ -39,7 +41,7 @@ Things to change:
 1. Remove the `<unicodeVersion>` and `<ansiVersion>`
 2. Add an `<x64Version>` tag with the version of your x64 plugin
 3. Change the download URL to your x64 download path if you don't bundle all variants in one zip file
-4. Add the `md5sum`s to [plugins/validate64.json](plugins/validate64.json) of each file that you're copying (with a `<copy>` tag) with `validate="true"`
+4. Add the `md5sum`s to [plugins/validate.json](plugins/validate.json) of each file that you're copying (with a `<copy>` tag) with `validate="true"`
 
 
 ## Tag documentation
@@ -132,3 +134,24 @@ Each `<version>` element contains
     * `number` attribute, which is the correct version number
     * `md5` attribute which is the md5sum of the file
     * `comment` attribute can optionally be included to name the version or the reason why the version is incorrect
+    
+    
+## File Validation
+
+Executable code (DLLs, EXEs etc) should be _validated_, i.e. when the file is copied with the `<copy>` tag, the `validate="true"` attribute should be set. These files must have their `md5sum` listed in the [plugins/validate.json](plugins/validate.json) file - include the changes to that file in your PR.
+
+The format of the file is straightforward, and is best shown with an example:
+
+```json
+{
+   "Plugin Name": {
+      "cafefacefeedface1234567812345678": "filename.dll"
+   },
+   "Other plugin": {
+      "0123456789abcdef0123456789abcdef": "otherfile.dll",
+      "fedcba9876543210fedcba9876543210": "lib\secondfile.dll"
+   }
+}
+```
+
+`md5sum` is a command line utility, and is can be run against a file locally to get the MD5 of the file. A version for windows is available here: http://unxutils.sourceforge.net/ , or if you have `Git Bash` installed, it is included. Simply run `md5sum myplugin.dll` to get the MD5 of the `myplugin.dll` file.
