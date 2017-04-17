@@ -84,6 +84,9 @@
 	</plugin>
 	<plugin name="AutoSave">
 		<x64Version>1.6.0</x64Version>
+		<aliases>
+			<alias name="Auto Save"/>
+		</aliases>
 		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
 		<author>Franco Stellari</author>
 		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
