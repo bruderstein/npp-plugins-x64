@@ -11,5 +11,10 @@
     },
     "Converter": {
         "0e56a61f5481bb13ae35be5ada06530b": "NppConverter.dll"
+    },
+    "Compare": {
+        "4f93227f2d0fc8332552296d159e8b63": "ComparePlugin.dll",
+        "4c3c723290a6bfce2b3bb70531373d86": "git2.dll",
+        "3e88e14d939cd2026f7c5556d21331b7": "sqlite3.dll"
     }
 }

@@ -61,4 +61,25 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Compare">
+		<x64Version>2.0.0</x64Version>
+		<description>A very useful compare plugin to show the differences between 2 files (side by side).</description>
+		<author>Ty Landercasper, Jean-Sebastien Leroy, Pavel Nedev</author>
+		<sourceUrl>https://github.com/jsleroy/compare-plugin</sourceUrl>
+		<latestUpdate>Remove the dependance of other dll</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_x64.zip</download>
+				<copy from="ComparePlugin.dll" to="$PLUGINDIR$\" validate="true" recursive="true"/>
+				<copy from="ComparePlugin\*.*" to="$PLUGINDIR$\ComparePlugin\" validate="true" recursive="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\ComparePlugin.dll"/>
+				<delete file="$PLUGINDIR$\ComparePlugin\*.*"/>
+				<delete file="$PLUGINDIR$\ComparePlugin"/>
+			</x64>
+		</remove>
+	</plugin>
 </plugins>
