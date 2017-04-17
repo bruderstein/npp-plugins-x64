@@ -66,7 +66,7 @@
 		<description>A very useful compare plugin to show the differences between 2 files (side by side).</description>
 		<author>Ty Landercasper, Jean-Sebastien Leroy, Pavel Nedev</author>
 		<sourceUrl>https://github.com/jsleroy/compare-plugin</sourceUrl>
-		<latestUpdate>Remove the dependance of other dll</latestUpdate>
+		<latestUpdate>README changes to redirect build info to my (pnedev) AppVeyor build</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_x64.zip</download>
@@ -81,5 +81,18 @@
 				<delete file="$PLUGINDIR$\ComparePlugin"/>
 			</x64>
 		</remove>
+	</plugin>
+	<plugin name="AutoSave">
+		<x64Version>1.6.0</x64Version>
+		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
+		<author>Franco Stellari</author>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<latestUpdate>Added the capability of creating a time stamped copy of current file content.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/AutoSave_dll_1v60.zip</download>
+				<copy from="64bit\AutoSave.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
 	</plugin>
 </plugins>
