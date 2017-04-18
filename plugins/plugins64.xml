@@ -71,12 +71,12 @@
 			<x64>
 				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_X64.zip</download>
 				<copy from="ComparePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="ComparePlugin" to="$PLUGINDIR$\" validate="true" recursive="true"/>
+				<copy from="ComparePlugin\*.*" to="$PLUGINDIR$\ComparePlugin\" validate="true" recursive="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\ComparePlugin" isDirectory="true"/>
+				<delete file="$PLUGINDIR$\ComparePlugin\" isDirectory="true"/>
 			</x64>
 		</remove>
 	</plugin>
