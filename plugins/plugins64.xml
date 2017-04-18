@@ -115,4 +115,27 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="AutoCodepage">
+		<x64Version>1.2.0</x64Version>
+		<author>Andreas Heim</author>
+		<stability>Good</stability>
+		<description>AutoCodepage: A plugin to automatically set a document's code page to your needs on loading or renaming a document, changing its language or activating its tab. Usefull especially when coding batch scripts.</description>
+		<homepage>https://sourceforge.net/projects/autocodepage/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/autocodepage/files/src/</sourceUrl>
+		<latestUpdate>The v1.2.0 release is mostly a bugfix release. If a newly created document was saved to disk and got a filename extension which matched the settings for a certain file class Notepad++ got hung. Because of that during file saving the plugin gets disabled now.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/autocodepage/files/plugin/x64/AutoCodepage.zip</download>
+				<copy from="Win64\AutoCodepage.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="AutoCodepage.txt" to="$PLUGINDIR$\doc\" validate="false"/>
+				<copy from="AutoCodepage.ini" to="$CONFIGDIR$\" validate="false"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\AutoCodepage.dll"/>
+				<delete file="$PLUGINDIR$\doc\AutoCodepage.txt"/>
+			</x64>
+		</remove>
+	</plugin>
 </plugins>
