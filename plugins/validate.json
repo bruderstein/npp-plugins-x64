@@ -23,11 +23,11 @@
     "NppGTags": {
         "76d7e72e7cabf72cb1626d93e9c4782c": "NppGTags.dll",
         "7c54e1e0bfe67c84d2915687e38975b1": "ctags.exe",
-        "3a34ffac8f7290c69b06d46525f8169f": "global.exe"
-        "5a511fe07c02daf1dff6bcdcb6d95c62": "gtags.conf"
-        "ba257c9f6d936d79a79c36aa824e3745": "gtags.exe"
-        "8a3bccf0468a339bc17d9d4ba8b532e2": "pygments-parser.dll"
-        "c837f0a3a00b855134b123fdfef98be0": "pygments_parser.py"
+        "3a34ffac8f7290c69b06d46525f8169f": "global.exe",
+        "5a511fe07c02daf1dff6bcdcb6d95c62": "gtags.conf",
+        "ba257c9f6d936d79a79c36aa824e3745": "gtags.exe",
+        "8a3bccf0468a339bc17d9d4ba8b532e2": "pygments-parser.dll",
+        "c837f0a3a00b855134b123fdfef98be0": "pygments_parser.py",
         "c22b5392b15bc125414c565bcd472768": "universal-ctags.dll"
     }
 }
