@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="plugins">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="plugin">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:choice maxOccurs="unbounded">
+                <xs:element name="x64Version" type="xs:string" />
+                <xs:element name="dependencies">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element maxOccurs="unbounded" name="plugin">
+                        <xs:complexType>
+                          <xs:attribute name="name" type="xs:string" use="required" />
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="aliases">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element maxOccurs="unbounded" name="alias">
+                        <xs:complexType>
+                          <xs:attribute name="name" type="xs:string" use="required" />
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="description" type="xs:string" />
+                <xs:element name="author" type="xs:string" />
+                <xs:element name="homepage" type="xs:string" />
+                <xs:element name="sourceUrl" type="xs:string" />
+                <xs:element name="latestUpdate" type="xs:string" />
+                <xs:element name="stability" type="xs:string" />
+                <xs:element name="minVersion" type="xs:string" />
+                <xs:element name="install">
+                  <xs:complexType mixed="true">
+                    <xs:sequence minOccurs="0">
+                      <xs:element minOccurs="0" name="unicode" />
+                      <xs:element minOccurs="0" name="x64">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:choice maxOccurs="unbounded">
+                              <xs:element name="download" type="xs:string" />
+                              <xs:element maxOccurs="unbounded" name="copy">
+                                <xs:complexType>
+                                  <xs:attribute name="from" type="xs:string" use="required" />
+                                  <xs:attribute name="to" type="xs:string" use="optional" />
+                                  <xs:attribute name="validate" type="xs:boolean" use="optional" />
+                                  <xs:attribute name="toFile" type="xs:string" use="optional" />
+                                  <xs:attribute name="backup" type="xs:boolean" use="optional" />
+                                  <xs:attribute name="recursive" type="xs:boolean" use="optional" />
+                                  <xs:attribute name="replace" type="xs:boolean" use="optional" />
+                                  <xs:attribute name="isGpup" type="xs:boolean" use="optional" />
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element name="delete">
+                                <xs:complexType>
+                                  <xs:attribute name="file" type="xs:string" use="required" />
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element name="run">
+                                <xs:complexType>
+                                  <xs:attribute name="file" type="xs:string" use="required" />
+                                  <xs:attribute name="arguments" type="xs:string" use="required" />
+                                  <xs:attribute name="outsideNpp" type="xs:unsignedByte" use="required" />
+                                </xs:complexType>
+                              </xs:element>
+                            </xs:choice>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="remove">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="x64">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element minOccurs="0" name="run">
+                              <xs:complexType>
+                                <xs:attribute name="file" type="xs:string" use="required" />
+                                <xs:attribute name="arguments" type="xs:string" use="required" />
+                                <xs:attribute name="outsideNpp" type="xs:unsignedByte" use="required" />
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" maxOccurs="unbounded" name="delete">
+                              <xs:complexType>
+                                <xs:attribute name="file" type="xs:string" use="required" />
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="isLibrary" type="xs:boolean" />
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

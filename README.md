@@ -35,7 +35,7 @@ The install steps are run in the order they are listed, so this install will:
 2. Copy the the `myplugin.dll` extracted from the zip to the Notepad++ plugin directory, and validate it's md5 (see later)
 3. Copy all of the files from the `lib` directory in the zip, recursively, to the `myplugin\lib` directory under the Notepad++ plugin directory. Directories that do not already exist will be created.
 
-It can be easier to copy the basic structure from the 32 bit entry and make the necessary modifications. To do that, just download the x86 plugin list: https://nppxml.bruderste.in/pm/xml/plugins.zip and find the entry in the `PluginManagerPlugins.xml` file.
+It can be easier to copy the basic structure from the 32 bit entry and make the necessary modifications. To do that, just download the x86 plugin list: https://nppxml.bruderste.in/pm/xml/plugins.zip and find the entry in the `PluginManagerPlugins.xml` file. For existing plugins in the x86 list from 2017/4/17 see as starting point [plugins/plugins_template.xml](plugins/plugins_template.xml), where 1. and 2. from below is already done.
 
 Things to change:
 1. Remove the `<unicodeVersion>` and `<ansiVersion>`
