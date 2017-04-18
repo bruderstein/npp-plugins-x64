@@ -133,7 +133,6 @@
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\AutoCodepage.dll"/>
 				<delete file="$PLUGINDIR$\doc\AutoCodepage.txt"/>
 			</x64>
 		</remove>
