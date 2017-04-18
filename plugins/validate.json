@@ -29,5 +29,9 @@
         "8a3bccf0468a339bc17d9d4ba8b532e2": "pygments-parser.dll",
         "c837f0a3a00b855134b123fdfef98be0": "pygments_parser.py",
         "c22b5392b15bc125414c565bcd472768": "universal-ctags.dll"
+    },
+    "AutoCodepage":
+    {
+        "9a55177c1b18afd82f1614e645cdfbea": "AutoCodepage.dll"
     }
 }
