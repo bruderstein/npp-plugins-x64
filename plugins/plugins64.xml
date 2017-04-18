@@ -96,4 +96,23 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="NppGTags">
+		<x64Version>4.3.1</x64Version>
+		<description>NppGTags plugin is a front-end to GTags (GNU Global source code tagging system). It allows easy code navigation by indexing the project sources. Supports finding symbol definitions and references, finding project paths, string literals, regular expressions (GREP functionality) and adds symbol auto-completion. Supports unlimited simultaneous searches. GTags built-in code parser supports C, C++, Yacc, Java, PHP4 and Assembly. Other languages are supported through Pygments + CTags parser.</description>
+		<author>Pavel Nedev</author>
+		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
+		<latestUpdate>Fix bug in Create Database dialog.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/nppgtags/files/v4.3.1/NppGTags_v4.3.1_x64.zip/download</download>
+				<copy from="NppGTags.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppGTags\*.*" to="$PLUGINDIR$\NppGTags\" validate="true" recursive="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NppGTags\" isDirectory="true"/>
+			</x64>
+		</remove>
+	</plugin>
 </plugins>
