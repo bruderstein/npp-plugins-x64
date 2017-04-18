@@ -108,12 +108,12 @@
 			<x64>
 				<download>https://sourceforge.net/projects/nppgtags/files/v4.3.1/NppGTags_v4.3.1_x64.zip/download</download>
 				<copy from="NppGTags.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppGTags" to="$PLUGINDIR$\" validate="true" recursive="true"/>
+				<copy from="NppGTags\*.*" to="$PLUGINDIR$\NppGTags\" validate="true" recursive="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\NppGTags" isDirectory="true"/>
+				<delete file="$PLUGINDIR$\NppGTags\" isDirectory="true"/>
 			</x64>
 		</remove>
 	</plugin>
