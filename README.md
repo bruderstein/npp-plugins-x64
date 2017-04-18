@@ -87,7 +87,7 @@ The steps that are available at the moment are:
 
 * `<download>`
 
-This downloads from the URL contained within the elment. This _must_ be a zip file, and is automatically unzipped to a temporary location.
+This downloads from the URL contained within the element. This _must_ be a zip file, and is automatically unzipped to a temporary location.
 
 e.g. `<download>https://github.com/me/myplugin/releases/download/v1.4.4/MyPlugin-x64.zip</download>`
 
@@ -103,20 +103,13 @@ respectively.  Directories that do not exist will automatically be created.  It 
       The `to` attribute specifies a directory to copy the files to. It _must_ start with a variable, which is one of `$PLUGINDIR$`, `$CONFIGDIR$` or `$NPPDIR$`, which refer to the plugins directory, plugin config directory and the Notepad++ directory respectively.
 
     * `validate`
-    If `validate="true" is included in the copy, then the file's MD5sum is checked against a known list of valid files at the server. That list is maintained in the [validate64.json](plugins/validate64.json) file. Add any files to be validated there.
-
-If the file MD5sum is not listed in the validate64.json file, the user will be warned that the file is unknown and should not be copied. They can however copy the file if they would like.
+      If `validate="true"` is included in the copy, then the file's MD5sum is checked against a known list of valid files at the server. That list is maintained in the [validate.json](plugins/validate.json) file. Add any files to be validated there. If the file MD5sum is not listed in the validate.json file, the user will be warned that the file is unknown and should not be copied. They can however copy the file if they would like.
 
     * `backup`
-		If `backup="true" is included in the copy element, then if the destination
-		file exists, it will be backed up to the same filename with `.backup` appended.  If
-		the backup file exists, it will be backed up to a `.backup2` file, and so on.  This is
-		normally used for config files, such that user's config is not lost, but a "good" / newer / up to date config
-		can be installed.
-
+      If `backup="true"` is included in the copy element, then if the destination file exists, it will be backed up to the same filename with `.backup` appended.  If the backup file exists, it will be backed up to a `.backup2` file, and so on.  This is normally used for config files, such that user's config is not lost, but a "good" / newer / up to date config can be installed.
 
     * `recursive`
-		If the `recursive="true"` attribute is specified, then all files in child directories are copied.
+      If the `recursive="true"` attribute is specified, then all files in child directories are copied.
 
 * `<delete>`
 This deletes the file or directory. The attribute `file` specifies the file or directory to remove. When `isDirectory="true"` is set, then the directory and all subdirectories are removed. This is most often used in the `remove` section rather than `install`.
