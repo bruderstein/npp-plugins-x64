@@ -66,19 +66,17 @@
 		<description>A very useful compare plugin to show the differences between 2 files (side by side).</description>
 		<author>Ty Landercasper, Jean-Sebastien Leroy, Pavel Nedev</author>
 		<sourceUrl>https://github.com/jsleroy/compare-plugin</sourceUrl>
-		<latestUpdate>README changes to redirect build info to my (pnedev) AppVeyor build</latestUpdate>
+		<latestUpdate>Total plugin re-work. Fixed stability issues. Several new features and many improvements.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_x64.zip</download>
-				<copy from="ComparePlugin.dll" to="$PLUGINDIR$\" validate="true" recursive="true"/>
-				<copy from="ComparePlugin\*.*" to="$PLUGINDIR$\ComparePlugin\" validate="true" recursive="true"/>
+				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_X64.zip</download>
+				<copy from="ComparePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="ComparePlugin" to="$PLUGINDIR$\" validate="true" recursive="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\ComparePlugin.dll"/>
-				<delete file="$PLUGINDIR$\ComparePlugin\*.*"/>
-				<delete file="$PLUGINDIR$\ComparePlugin"/>
+				<delete file="$PLUGINDIR$\ComparePlugin" isDirectory="true"/>
 			</x64>
 		</remove>
 	</plugin>
