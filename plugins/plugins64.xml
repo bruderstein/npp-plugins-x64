@@ -137,4 +137,18 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="DoxyIt">
+		<x64Version>0.4.1</x64Version>
+		<description>Inspired by DocIt. Generates Doxygen style comment blocks based on function/method definitions. Also provides functionality for modifying comment blocks. Configurable for each language. Current supported languages:\n* C/C++\n* Python\n* Java\n* PHP\n* JavaScript\n* C#\n* UDLs</description>
+		<author>Justin Dailey</author>
+		<sourceUrl>https://github.com/dail8859/doxyit</sourceUrl>
+		<latestUpdate>Added jump locations which can be jumped to by pressing the Tab key.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/dail8859/DoxyIt/releases/download/v0.4.1/DoxyIt_64.zip</download>
+				<copy from="DoxyIt_64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 </plugins>
