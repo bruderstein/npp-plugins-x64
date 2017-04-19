@@ -33,5 +33,9 @@
     "AutoCodepage":
     {
         "9a55177c1b18afd82f1614e645cdfbea": "AutoCodepage.dll"
+    },
+    "DoxyIt":
+    {
+        "456c5d5d402aab840c0f2692554d69a3": "DoxyIt_64.dll"
     }
 }
