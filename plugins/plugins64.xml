@@ -151,4 +151,17 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Elastic Tabstops">
+		<x64Version>1.2</x64Version>
+		<description>Implementation of Elastic Tabstops. Stretch tabs to align with adjacent lines. Can also be used for TSV files.\n\nFor more information about elastic tabstops see: \nhttp://nickgravgaard.com/elastic-tabstops/</description>
+		<author>Justin Dailey</author>
+		<sourceUrl>https://github.com/dail8859/ElasticTabstops</sourceUrl>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/dail8859/ElasticTabstops/releases/download/v1.2/ElasticTabstops_64.zip</download>
+				<copy from="ElasticTabstops_64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 </plugins>
