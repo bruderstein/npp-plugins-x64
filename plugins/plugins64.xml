@@ -162,4 +162,17 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="LuaScript">
+		<x64Version>0.7.0</x64Version>
+		<description>Plugin for Lua scripting capabilities. Provides control over all of Scintilla's features and options with a light-weight, fully-functional programming language.</description>
+		<author>Justin Dailey</author>
+		<sourceUrl>https://github.com/dail8859/LuaScript</sourceUrl>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/dail8859/LuaScript/releases/download/v0.7.0/LuaScript_64.zip</download>
+				<copy from="LuaScript_64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 </plugins>

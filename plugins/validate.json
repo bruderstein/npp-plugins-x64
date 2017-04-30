@@ -41,5 +41,9 @@
     "ElasticTabstops":
     {
         "d33e6b5cf31e8a73e03d519997d61fc8": "ElasticTabstops_64.dll"
+    },
+    "LuaScript":
+    {
+        "adb93bf6314a12c9ca1596d9ea4d0bc3": "LuaScript_64.dll"
     }
 }
