@@ -175,4 +175,17 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="CsvQuery">
+		<x64Version>1.0.1</x64Version>
+		<description>Enables SQL queries against CSV files</description>
+		<author>jokedst</author>
+		<sourceUrl>https://github.com/jokedst/CsvQuery</sourceUrl>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/jokedst/CsvQuery/releases/download/v1.0.1/CsvQuery64.zip</download>
+				<copy from="CsvQuery.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 </plugins>
