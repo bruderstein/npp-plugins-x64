@@ -45,5 +45,9 @@
     "LuaScript":
     {
         "adb93bf6314a12c9ca1596d9ea4d0bc3": "LuaScript_64.dll"
+    },
+    "CsvQuery":
+    {
+        "f5d2d72304330de39e7464642d3e8a89": "CsvQuery.dll"
     }
 }
