@@ -58,5 +58,29 @@
         "c2de1ee33c0162f61d9a495fe1af427f": "zlib1.dll",
         "2f8826a6cea2480fe2b4440d5c4273ef": "XMLTools.dll",
         "da191d9a7f26daaaa1ca1899566adb4c": "libcurl.dll"
+    },
+    "LanguageHelp":
+    {
+        "37b8754108f4aa529b35ce3c9dd8415a": "LanguageHelp.dll"
+    },
+    "Menu Icons":
+    {
+        "797982f2e97aefff09443fccd8ae714a": "MenuIcons.dll"
+    },
+    "Open Selection":
+    {
+        "10fb9247b7c9da8b499a9caa5d10766c": "OpenSelection.dll"
+    },
+    "RunMe":
+    {
+        "eca6b4611fc70a55de79ba2614e8bea4": "RunMe.dll"
+    },
+    "TakeNotes":
+    {
+        "a3ed038ba037e981b0fb92312292f2d3": "TakeNotes.dll"
+    },
+    "TopMost":
+    {
+        "098f90481db47681d26c66c5e87b6148": "TopMost.dll"
     }
 }

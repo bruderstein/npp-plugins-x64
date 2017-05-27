@@ -1,63 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
-	<plugin name="Plugin Manager">
-		<x64Version>1.4.9</x64Version>
-		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
-		<author>Dave Brotherstone</author>
-		<homepage>http://www.brotherstone.co.uk/npp/pm</homepage>
-		<sourceUrl>http://github.com/bruderstein/nppPluginManager</sourceUrl>
-		<latestUpdate>x64 support with a simple XML plugin list managed manually</latestUpdate>
+	<plugin name="AutoCodepage">
+		<x64Version>1.2.0</x64Version>
+		<description>AutoCodepage: A plugin to automatically set a document's code page to your needs on loading or renaming a document, changing its language or activating its tab. Usefull especially when coding batch scripts.</description>
+		<author>Andreas Heim</author>
+		<homepage>https://sourceforge.net/projects/autocodepage/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/autocodepage/files/src/</sourceUrl>
+		<latestUpdate>The v1.2.0 release is mostly a bugfix release. If a newly created document was saved to disk and got a filename extension which matched the settings for a certain file class Notepad++ got hung. Because of that during file saving the plugin gets disabled now.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.9/PluginManager_v1.4.9_x64.zip</download>
-				<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true" isGpup="true"/>
+				<download>https://sourceforge.net/projects/autocodepage/files/plugin/x64/AutoCodepage.zip</download>
+				<copy from="Win64\AutoCodepage.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="AutoCodepage.txt" to="$PLUGINDIR$\doc" validate="false"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\AutoCodepage.txt"/>
+			</x64>
+		</remove>
 	</plugin>
-	<plugin name="NppFTP">
-		<x64Version>0.27.0</x64Version>
+	<plugin name="AutoSave">
+		<x64Version>1.6.0</x64Version>
 		<aliases>
-			<alias name="nppftp"/>
+			<alias name="Auto Save"/>
 		</aliases>
-		<description>NppFTP: a plugin that allows FTP, FTPS, FTPES and SFTP communications. Very useful for web development.</description>
-		<author>ashish_kulz</author>
-		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
-		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>- update libssh to version 0.7.5 #155\n- bugfix for NppFTP Random crash #52\n- bugfix for [security] Buffer overflow in NppFTP v0.26.5 leading to Notepad++ v6.8.6 crash #75\n- bugfix for nppFTP - sFTP key issue #135\n- bugfix for Npp crashes on connection attempt when NppFTP private keyfile not found #91\n- bugfix for NppFTP is unable to save files to root directory #144\n- Refactor to support Elliptic Curve SSH keys (ECDSA and ED25519) #154</latestUpdate>
+		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
+		<author>Franco Stellari</author>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<latestUpdate>2017-02-08	Added the capability of creating a time stamped copy of current file content.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.0/NppFTP-x64.zip</download>
-				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
-			</x64>
-		</install>
-	</plugin>
-	<plugin name="MIME Tools">
-		<x64Version>2.1</x64Version>
-		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
-		<author>Don HO</author>
-		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
-		<latestUpdate>Remove the dependance of other dll</latestUpdate>
-		<install>
-			<x64>
-				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.bin.zip</download>
-				<copy from="bin64\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
-			</x64>
-		</install>
-	</plugin>
-	<plugin name="Converter">
-		<x64Version>4.2</x64Version>
-		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
-		<author>Don HO</author>
-		<sourceUrl>https://github.com/npp-plugins/converter</sourceUrl>
-		<latestUpdate>Remove the dependance of other dll</latestUpdate>
-		<install>
-			<x64>
-				<download>https://github.com/npp-plugins/converter/releases/download/v4.2/nppConvert.v4.2.zip</download>
-				<copy from="bin64\NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
-				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
+				<download>https://sites.google.com/site/fstellari/nppplugins/AutoSave_dll_1v60.zip</download>
+				<copy from="64bit\AutoSave.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -80,60 +55,32 @@
 			</x64>
 		</remove>
 	</plugin>
-	<plugin name="AutoSave">
-		<x64Version>1.6.0</x64Version>
-		<aliases>
-			<alias name="Auto Save"/>
-		</aliases>
-		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
-		<author>Franco Stellari</author>
-		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
-		<latestUpdate>Added the capability of creating a time stamped copy of current file content.</latestUpdate>
+	<plugin name="Converter">
+		<x64Version>4.2</x64Version>
+		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
+		<author>Don HO</author>
+		<sourceUrl>https://github.com/npp-plugins/converter</sourceUrl>
+		<latestUpdate>Remove the dependance of other dll</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sites.google.com/site/fstellari/nppplugins/AutoSave_dll_1v60.zip</download>
-				<copy from="64bit\AutoSave.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/npp-plugins/converter/releases/download/v4.2/nppConvert.v4.2.zip</download>
+				<copy from="bin64\NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
 			</x64>
 		</install>
 	</plugin>
-	<plugin name="NppGTags">
-		<x64Version>4.3.1</x64Version>
-		<description>NppGTags plugin is a front-end to GTags (GNU Global source code tagging system). It allows easy code navigation by indexing the project sources. Supports finding symbol definitions and references, finding project paths, string literals, regular expressions (GREP functionality) and adds symbol auto-completion. Supports unlimited simultaneous searches. GTags built-in code parser supports C, C++, Yacc, Java, PHP4 and Assembly. Other languages are supported through Pygments + CTags parser.</description>
-		<author>Pavel Nedev</author>
-		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
-		<latestUpdate>Fix bug in Create Database dialog.</latestUpdate>
+	<plugin name="CsvQuery">
+		<x64Version>1.0.1</x64Version>
+		<description>Enables SQL queries against CSV files</description>
+		<author>jokedst</author>
+		<sourceUrl>https://github.com/jokedst/CsvQuery</sourceUrl>
+		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/nppgtags/files/v4.3.1/NppGTags_v4.3.1_x64.zip/download</download>
-				<copy from="NppGTags.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppGTags\*.*" to="$PLUGINDIR$\NppGTags\" validate="true" recursive="true"/>
+				<download>https://github.com/jokedst/CsvQuery/releases/download/v1.0.1/CsvQuery64.zip</download>
+				<copy from="CsvQuery.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
-		<remove>
-			<x64>
-				<delete file="$PLUGINDIR$\NppGTags\" isDirectory="true"/>
-			</x64>
-		</remove>
-	</plugin>
-	<plugin name="AutoCodepage">
-		<x64Version>1.2.0</x64Version>
-		<author>Andreas Heim</author>
-		<description>AutoCodepage: A plugin to automatically set a document's code page to your needs on loading or renaming a document, changing its language or activating its tab. Usefull especially when coding batch scripts.</description>
-		<homepage>https://sourceforge.net/projects/autocodepage/</homepage>
-		<sourceUrl>https://sourceforge.net/projects/autocodepage/files/src/</sourceUrl>
-		<latestUpdate>The v1.2.0 release is mostly a bugfix release. If a newly created document was saved to disk and got a filename extension which matched the settings for a certain file class Notepad++ got hung. Because of that during file saving the plugin gets disabled now.</latestUpdate>
-		<install>
-			<x64>
-				<download>https://sourceforge.net/projects/autocodepage/files/plugin/x64/AutoCodepage.zip</download>
-				<copy from="Win64\AutoCodepage.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="AutoCodepage.txt" to="$PLUGINDIR$\doc" validate="false"/>
-			</x64>
-		</install>
-		<remove>
-			<x64>
-				<delete file="$PLUGINDIR$\doc\AutoCodepage.txt"/>
-			</x64>
-		</remove>
 	</plugin>
 	<plugin name="DoxyIt">
 		<x64Version>0.4.2</x64Version>
@@ -161,6 +108,28 @@
 				<copy from="ElasticTabstops_64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\ElasticTabstops_64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="LanguageHelp">
+		<x64Version>1.7.2</x64Version>
+		<aliases>
+			<alias name="Language Help"/>
+		</aliases>
+		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
+		<author>Franco Stellari</author>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<latestUpdate>2017-02-14	Improve detection of context menu.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/LanguageHelp_dll_1v72.zip</download>
+				<copy from="64bit\LanguageHelp.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
 	</plugin>
 	<plugin name="LuaScript">
 		<x64Version>0.7.0</x64Version>
@@ -174,17 +143,162 @@
 				<copy from="LuaScript_64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\LuaScript_64.dll"/>
+			</x64>
+		</remove>
 	</plugin>
-	<plugin name="CsvQuery">
-		<x64Version>1.0.1</x64Version>
-		<description>Enables SQL queries against CSV files</description>
-		<author>jokedst</author>
-		<sourceUrl>https://github.com/jokedst/CsvQuery</sourceUrl>
+	<plugin name="Menu Icons">
+		<x64Version>1.2.2</x64Version>
+		<aliases>
+			<alias name="MenuIcons"/>
+		</aliases>
+		<description>MenuIcons allows to add icons to both main and context menu. Several options are available to load the icons from a folder. More than provide a full set of icons, it's design to enable people to create their own set of icon themes.\nNote: the plugin does not work correctly on WinXP.\n\nAlternative icon sets: English by Yaron, Hebrew by Yaron.\nJust download them and replace the MenuIcon folder or save them somewhere else and set the new folder in the Menu Icons plugin options.</description>
+		<author>Franco Stellari</author>
+		<sourceUrl>https://sites.google.com/site/fstellari/nppplugins</sourceUrl>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/jokedst/CsvQuery/releases/download/v1.0.1/CsvQuery64.zip</download>
-				<copy from="CsvQuery.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://sites.google.com/site/fstellari/nppplugins/MenuIcons_dll_1v22.zip</download>
+				<copy from="64bit\MenuIcons.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="MenuIcons\*.*" to="$PLUGINDIR$\MenuIcons" recursive="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="MIME Tools">
+		<x64Version>2.1</x64Version>
+		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
+		<author>Don HO</author>
+		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
+		<latestUpdate>Remove the dependance of other dll</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.bin.zip</download>
+				<copy from="bin64\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="NppFTP">
+		<x64Version>0.27.0</x64Version>
+		<aliases>
+			<alias name="nppftp"/>
+		</aliases>
+		<description>NppFTP: a plugin that allows FTP, FTPS, FTPES and SFTP communications. Very useful for web development.</description>
+		<author>ashish_kulz</author>
+		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
+		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
+		<latestUpdate>- update libssh to version 0.7.5 #155\n- bugfix for NppFTP Random crash #52\n- bugfix for [security] Buffer overflow in NppFTP v0.26.5 leading to Notepad++ v6.8.6 crash #75\n- bugfix for nppFTP - sFTP key issue #135\n- bugfix for Npp crashes on connection attempt when NppFTP private keyfile not found #91\n- bugfix for NppFTP is unable to save files to root directory #144\n- Refactor to support Elliptic Curve SSH keys (ECDSA and ED25519) #154</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.0/NppFTP-x64.zip</download>
+				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="NppGTags">
+		<x64Version>4.3.1</x64Version>
+		<description>NppGTags plugin is a front-end to GTags (GNU Global source code tagging system). It allows easy code navigation by indexing the project sources. Supports finding symbol definitions and references, finding project paths, string literals, regular expressions (GREP functionality) and adds symbol auto-completion. Supports unlimited simultaneous searches. GTags built-in code parser supports C, C++, Yacc, Java, PHP4 and Assembly. Other languages are supported through Pygments + CTags parser.</description>
+		<author>Pavel Nedev</author>
+		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
+		<latestUpdate>Fix bug in Create Database dialog.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/nppgtags/files/v4.3.1/NppGTags_v4.3.1_x64.zip/download</download>
+				<copy from="NppGTags.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppGTags\*.*" to="$PLUGINDIR$\NppGTags\" validate="true" recursive="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NppGTags\" isDirectory="true"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="Open Selection">
+		<x64Version>1.1.2</x64Version>
+		<aliases>
+			<alias name="OpenSelection"/>
+		</aliases>
+		<description>OpenSelection is designed to help people to open files based on the selected text. A typical applications is "include" files of may types of programs. Another applications is to open Matlab functions. The plugin is can be customized for different languages based on the open file extension. Multiple search folders may be specified along with multiple extensions.</description>
+		<author>Franco Stellari</author>
+		<homepage>https://sites.google.com/site/fstellari/nppplugins</homepage>
+		<sourceUrl>https://sites.google.com/site/fstellari/nppplugins</sourceUrl>
+		<latestUpdate>2017-02-14	Improve detection of context menu.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/OpenSelection_dll_1v12.zip</download>
+				<copy from="64bit\OpenSelection.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Plugin Manager">
+		<x64Version>1.4.9</x64Version>
+		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
+		<author>Dave Brotherstone</author>
+		<homepage>http://www.brotherstone.co.uk/npp/pm</homepage>
+		<sourceUrl>https://github.com/bruderstein/nppPluginManager</sourceUrl>
+		<latestUpdate>x64 support with a simple XML plugin list managed manually</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.9/PluginManager_v1.4.9_x64.zip</download>
+				<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true" isGpup="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="RunMe">
+		<x64Version>1.4.0</x64Version>
+		<aliases>
+			<alias name="Run Me"/>
+		</aliases>
+		<description>RunMe allows to execute the currently open file, based on its shell association.\nThe plugin allows also to open an explorer or command shell at the file location.\nOptions are available to same the current file (or all the files) before execution.\nThe executed file can be run in foreground,background, or hidden mode.\nContext menu entries and tool bar icons are available.</description>
+		<author>Franco Stellari</author>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<latestUpdate>Added 64bit support\nAdded capability of running scripts with parameters</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/RunMe_dll_1v40.zip</download>
+				<copy from="64bit\RunMe.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="TakeNotes">
+		<x64Version>1.2.0</x64Version>
+		<aliases>
+			<alias name="Take Notes"/>
+		</aliases>
+		<description>TakeNotes is designed to help people who like to use Notepad++ for jotting quick notes. Instead of using unnamed "new ?" files, this plugins allows to quickly create new empty files in a folder of choice. The file names may be custom generated using a mask and may contain details such as the user name, date, and time of creation so that unique files may be generated. Additionally, the plugin allows to load exiting notes in the folder of choice, save existing files as a note, and open the last saved note quickly. Please refer to the Options dialog box for more details.\nIt is strongly recommended to use this plugin in combination with AutoSave to make sure that you never loose a note.</description>
+		<author>Franco Stellari</author>
+		<homepage>https://sites.google.com/site/fstellari/nppplugins</homepage>
+		<sourceUrl>https://sites.google.com/site/fstellari/nppplugins</sourceUrl>
+		<latestUpdate>Added 64bit version</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/TakeNotes_dll_1v20.zip</download>
+				<copy from="64bit\TakeNotes.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="TopMost">
+		<x64Version>1.4.0</x64Version>
+		<aliases>
+			<alias name="Top Most"/>
+		</aliases>
+		<description>TopMost allows to set the main Notepad++ window as a topmost window so it can stay on top of other windows even when it is not active.\nThis plugin sync with Notepad++ own stay on top functionality and allows to remember the setting between restarts as well as to show a toolbar button.</description>
+		<author>Franco Stellari</author>
+		<homepage>https://sites.google.com/site/fstellari/nppplugins</homepage>
+		<latestUpdate>Added 64bit version</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/TopMost_dll_1v40.zip</download>
+				<copy from="64bit\TopMost.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
