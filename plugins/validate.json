@@ -90,5 +90,9 @@
     "Select 'N' Launch":
     {
         "cb1b48dc877f526be9b7c617745c02ec": "SelectNLaunch.dll"
+    },
+    "Zoom Disabler":
+    {
+        "134fe33658c3a0c6aaf0f809f448b8fe": "zoomdisabler_x64.dll"
     }
 }

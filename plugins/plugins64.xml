@@ -358,4 +358,25 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="Zoom Disabler">
+		<x64Version>1.2.0</x64Version>
+		<description>Worried about zooming your document everytime you just want to scroll but accidentally still holding the [Ctrl] key? Then this plugin is what you want! It disables mouse zoom or keyboard zoom or both.</description>
+		<author>Stanislav Eckert</author>
+		<homepage>https://github.com/StanDog/npp-zoomdisabler</homepage>
+		<latestUpdate>28.09.2016 (v1.2.0)\n- Fixed incorrect variable types in plugin template\n- 64-bit ready\n\n21.06.2015 (v1.1.3)\n- Updated email in about dialog\n- Moved from SourceForge to GitHub\n\n19.02.2015 (v1.1.2)\n- Updated about dialog\n- Updated internal code to XE 7\n\n30.03.2014 (v1.1.1)\n- Internal code cleanup\n\n29.03.2014 (v1.1)\n- Added option to allow using zoom with keyboard while still disabled for mouse\n\n28.03.2014 (v1.0)\n- Initial release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/StanDog/npp-zoomdisabler/raw/master/RELEASES/zoomdisabler_1.2.0.zip</download>
+				<copy from="zoomdisabler_x64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\zoomdisabler.dll"/>
+				<delete file="$CONFIGDIR$\zoom_disabler.ini"/>
+				<delete file="$PLUGINDIR$\zoomdisabler_x64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 </plugins>
