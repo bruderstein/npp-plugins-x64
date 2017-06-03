@@ -347,22 +347,21 @@
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\ComparePlugin.dll"/>
-				<delete file="$PLUGINDIR$\ComparePlugin\*.*"/>
-				<delete file="$PLUGINDIR$\ComparePlugin"/>
+				<delete file="$PLUGINDIR$\ComparePlugin\"/>
 			</x64>
 		</remove>
 	</plugin>
 	<plugin name="Converter">
-		<x64Version>3.0</x64Version>
+		<x64Version>4.2.1</x64Version>
 		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
 		<author>Don Ho</author>
-		<latestUpdate>Bug fixed:Fix a crash bug by adding a correct casting conversion.\nNew feature:The plugin provides a conversion panel. It could be useful when you need convert a value into ASCII, decimal, hexadecimal, octadecimal and binary.</latestUpdate>
+		<sourceUrl>https://github.com/npp-plugins/converter</sourceUrl>
+		<latestUpdate>Make it compatible with old os (XP)</latestUpdate>
 		<install>
 			<x64>
-				<download>http://download.tuxfamily.org/nppplugins/Converter/NppConverter.v3.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
-				<copy from="*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
+				<download>https://github.com/npp-plugins/converter/releases/download/v4.2.1/nppConvert.v4.2.1.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="bin/NppConverter.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="bin/*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
 			</x64>
 		</install>
 	</plugin>
@@ -409,7 +408,7 @@
 		<description>This plugin allows the Notepad++ toolbar to be fully customised by the user, and includes twenty-nine additional buttons for frequently used menu commands.\n\nAll buttons on the toolbar can be customized, whether Notepad++ built-in buttons, the additional buttons, or buttons belonging to other plugins.\n                                   \nCustom buttons for Notepad++ or plugin menu commands can be defined using a configuration file.  It is possible to replace the icons of existing Notepad++ buttons.</description>
 		<author>dave-user</author>
 		<homepage>https://sourceforge.net/projects/npp-customize</homepage>
-		<latestUpdate>RELEASE NOTES\n\nNew features, changes and fixes in Version 4.1:\n\n	- Chg: Command code for Hide Line Number Margin menu item and toolbar button changed from 44012 to 44212.\n	 - Chg: Command code for Hide Bookmark Margin menu item and toolbar button changed from 44013 to 44213.\n  - Chg: Command code for Hide Folder Margin menu item and toolbar button changed from 44014 to 44214.\n\n	 - Fix: Changing Folder Margin Style in Notepad++ Settings &gt; Preferences &gt; Editing dialog did not change folder margin style. Fixed.</latestUpdate>
+		<latestUpdate>RELEASE NOTES\n\nNew features, changes and fixes in Version 4.1:\n\n  - Chg: Command code for Hide Line Number Margin menu item and toolbar button changed from 44012 to 44212.\n  - Chg: Command code for Hide Bookmark Margin menu item and toolbar button changed from 44013 to 44213.\n  - Chg: Command code for Hide Folder Margin menu item and toolbar button changed from 44014 to 44214.\n\n  - Fix: Changing Folder Margin Style in Notepad++ Settings &gt; Preferences &gt; Editing dialog did not change folder margin style. Fixed.</latestUpdate>
 		<install>
 			<x64>
 				<download>http://downloads.sourceforge.net/project/npp-customize/Customize%20Toolbar%20v4.1/CustomizeToolbar_4_1_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
@@ -484,7 +483,7 @@
 		<install>
 			<x64>
 				<download>https://github.com/dail8859/DoxyIt/releases/download/v0.4.2/DoxyIt.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="DoxyIt.dll" to="$PLUGINDIR$\"/>
+				<copy from="DoxyIt.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>
@@ -550,7 +549,7 @@
 		<install>
 			<x64>
 				<download>https://github.com/dail8859/ElasticTabstops/releases/download/v1.2/ElasticTabstops.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="ElasticTabstops.dll" to="$PLUGINDIR$\"/>
+				<copy from="ElasticTabstops.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>
@@ -931,7 +930,7 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>x64 only release build.\nAdd toolbar button for Json Viewer.\nAdd an option to control new version check.\nAdd an "Auto detect" end of line option.\nFix high DPI layout.\nFix bugs.\nOther tweak.</latestUpdate>
+		<latestUpdate>Unicode only release build.\nAdd toolbar button for Json Viewer.\nAdd an option to control new version check.\nAdd an "Auto detect" end of line option.\nFix high DPI layout.\nFix bugs.\nOther tweak.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -1045,7 +1044,7 @@
 		<install>
 			<x64>
 				<download>https://github.com/dail8859/LuaScript/releases/download/v0.7.0/LuaScript.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="LuaScript.dll" to="$PLUGINDIR$\"/>
+				<copy from="LuaScript.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>
@@ -1119,16 +1118,16 @@
 		</install>
 	</plugin>
 	<plugin name="MIME Tools">
-		<x64Version>1.9</x64Version>
+		<x64Version>2.1</x64Version>
 		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
 		<author>Don HO</author>
 		<homepage>http://npp-plugins.tuxfamily.org/plugins</homepage>
-		<sourceUrl>http://svn://svn.tuxfamily.org/svnroot/nppplugins/mimetools</sourceUrl>
-		<latestUpdate>02/12/2013</latestUpdate>
+		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
+		<latestUpdate>6 Sep 2016 Remove the dependance of other dll</latestUpdate>
 		<install>
 			<x64>
-				<download>http://download.tuxfamily.org/nppplugins/MimeTools/mimeTools.v1.9.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.bin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="bin/mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1194,7 +1193,7 @@
 		<author>Oleksii Maryshchenko</author>
 		<homepage>https://github.com/young-developer/nppNavigateTo</homepage>
 		<sourceUrl>https://github.com/young-developer/nppNavigateTo</sourceUrl>
-		<latestUpdate>**New features and enhancements:**\n- Right-click context menu for files like in NPP was added.\n- File preview functionality was added.\n- Minimum window size was set to 400x200\n- New column 'View' was added.\n- Number of matching results was moved to form title.\n- File status functionality was implemented:\nBlack - SAVED\nRed - UNSAVED\nGrey - READONLY  \n\n**Bugs:**  \n- x64 search, open and highlight bugs(filenames and paths with letters like é, à or else ) were fixed.\n- Filter editbox could not be unfocused now.  \n\n**Other:**\n- Filter is case insensitive and highlight only first sub-string match.  \n\n**Tips &amp; Tricks** \n- Hold &lt;kbd&gt;ALT&lt;/kbd&gt; and press  &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to open search history.\n- Open NavigateTo form and then hold &lt;kbd&gt;SHIFT&lt;/kbd&gt; and press &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to preview files.</latestUpdate>
+		<latestUpdate>**New features and enhancements:**\n- Right-click context menu for files like in NPP was added.\n- File preview functionality was added.\n- Minimum window size was set to 400x200\n- New column 'View' was added.\n- Number of matching results was moved to form title.\n- File status functionality was implemented:\nBlack - SAVED\nRed - UNSAVED\nGrey - READONLY  \n\n**Bugs:**  \n- Unicode search, open and highlight bugs(filenames and paths with letters like é, à or else ) were fixed.\n- Filter editbox could not be unfocused now.  \n\n**Other:**\n- Filter is case insensitive and highlight only first sub-string match.  \n\n**Tips &amp; Tricks** \n- Hold &lt;kbd&gt;ALT&lt;/kbd&gt; and press  &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to open search history.\n- Open NavigateTo form and then hold &lt;kbd&gt;SHIFT&lt;/kbd&gt; and press &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to preview files.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -1437,7 +1436,7 @@
 		<x64Version>1.0</x64Version>
 		<description>Npp Hash Maker is a plugin which computes the hash of selected text in Notepad++.\nMoreover, it provides hash result in base64 encoded (optional).\n\nThis plugin is coded in C# by using .NET Framework.\nLike Notepad++, it's under GPL.\n\nSupported hash methods:\n1. MD5\n2. SHA1\n3. SHA256\n4. SHA384\n5. SHA512</description>
 		<author>Don Ho</author>
-		<sourceUrl>http://svn://svn.tuxfamily.org/svnroot/nppplugins/npphasher</sourceUrl>
+		<sourceUrl>https://github.com/npp-plugins/hasher</sourceUrl>
 		<stability>Crashes with large text selections</stability>
 		<install>
 			<x64>
@@ -1619,7 +1618,7 @@
 		<author>Stanislav Eckert</author>
 		<homepage>https://github.com/StanDog/npp-phpautocompletion</homepage>
 		<sourceUrl>https://github.com/StanDog/npp-phpautocompletion</sourceUrl>
-		<latestUpdate>21.06.2015 (v1.4.1)\n- Updated email in about dialog\n- Moved from SourceForge to GitHub\n- Renamed internal plugin name in Notepad++ Plugin Manager from "ACCPC" to "PHP Autocompletion"\n\n20.02.2015 (v1.4)\n- Autocompletion popup didn't opened when cursor caret was at the very last position in document\n- Fixed "Unknown exception" when starting Notepad++ if PHP Class Inspector docking window wasn't opened at least once\n- Fixed "Unknown exception" when deactivating plugin through settings dialog if PHP Class Inspector docking window wasn't opened at least once\n- Added experimental support for "var" keyword for class attributes\n- Timeout for autocomletion search while typing can be set in the settings (from 0.5 sec up to 3 sec)\n- Updated email address and added third party code authors in about dialog\n- Updated internal code to XE 7\n- Small text corrections\n\n16.04.2014 (v1.3)\n- Class constants and static attributes / methods can now be accessed by the "::" operator and are not visible in the popup for "-&gt;" operator anymore\n- When parsing large directories takes too much time (&gt; 5 sec.), a popup will be shown with the message "Please wait..." and a progress bar to indicate the process status\n- New optional docking window which shows all available classes and their properties. Double click on attributes and methods opens the corresponsing file and jumps to the declaration. Also a search function included.\n- Toolbar Button for PHP class inspector added\n- Autocompletion popup can now be closed with the BACK and DELETE keys too\n- Entries in autocompletion popup are shown with colored icons at left side instead with #, +, -\n- Message handling in background optimized\n- Small optimization in GetCurrentPHPClass()\n- Bugfix: Comments, strings and non PHP data are removed prior calling GetCurrentPHPClass() now too\n- Bugfix: Crash in UTF8x64Pos() under some conditions\n- Bugfix: Autocompletion starts only if full operator entered (previously it was triggered by char '&gt;' but popup then didn't showed up)\n- Bugfix: Classes which are temporarily defined in Notepad++ but not saved in a file are not saved in the internal structure on shutdown anymore and are removed on each parsing too\n- Bugfix: Parsed files are loaded with correct encoding now\n- Some code cleanup\n\n08.03.2014 (v1.2.3)\n- Parameters with type casts in methods are not showed with "$" in popup anymore\n- Attributes and methods of following right-to-left languages are displayed as right-to-left: Arabic, Hebrew\n- Under certain conditions the autocompletion popup didn't showed up\n- Support for x64 characters insertion from popup\n- Files in PHP root directory will be re-scanned when it is changed (previously this happened only when clicking the "..." button)\n- Code improvements\n- Code cleanup\n\n28.02.2014 (v1.2.2)\n- Parsing performance dramatically increased\n- Fixed memory leak in ListFiles()\n- Checksum DB of parsed files is now saved and loaded (increases performance)\n- All windows can be closed with ESC key\n\n27.02.2014 (v1.2.1)\n- Opened ACCPC windows do not disappear anymore when user switches to another window\n- Added option to disable autocompletion\n- Fixed problem with shrinking autocompletion popup\n\n26.02.2014 (v1.2)\n- New setting: Type casts of method parameters can be shown/hidden in completion popup (see settings)\n- Non-PHP data is stripped now (fixes many errors and exceptions)\n- Fixed problem with brackets in class names (i.a. infinite loop)\n- Fixed display error caused by empty spaces in optional parameters\n- Interfaces (currently not supported) do not cause access violation errors anymore\n- Classes which implements (currently not supported) interfaces do not cause access violation errors anymore\n\n05.12.2013 (v1.1)\n- Ported to Delphi\n- Added selection dialog for root directory\n- Works now with Release-Build of NPP\n- Bugfixes\n\n01.04.2013 (v1.0.1)\n- Initial release</latestUpdate>
+		<latestUpdate>21.06.2015 (v1.4.1)\n- Updated email in about dialog\n- Moved from SourceForge to GitHub\n- Renamed internal plugin name in Notepad++ Plugin Manager from "ACCPC" to "PHP Autocompletion"\n\n20.02.2015 (v1.4)\n- Autocompletion popup didn't opened when cursor caret was at the very last position in document\n- Fixed "Unknown exception" when starting Notepad++ if PHP Class Inspector docking window wasn't opened at least once\n- Fixed "Unknown exception" when deactivating plugin through settings dialog if PHP Class Inspector docking window wasn't opened at least once\n- Added experimental support for "var" keyword for class attributes\n- Timeout for autocomletion search while typing can be set in the settings (from 0.5 sec up to 3 sec)\n- Updated email address and added third party code authors in about dialog\n- Updated internal code to XE 7\n- Small text corrections\n\n16.04.2014 (v1.3)\n- Class constants and static attributes / methods can now be accessed by the "::" operator and are not visible in the popup for "-&gt;" operator anymore\n- When parsing large directories takes too much time (&gt; 5 sec.), a popup will be shown with the message "Please wait..." and a progress bar to indicate the process status\n- New optional docking window which shows all available classes and their properties. Double click on attributes and methods opens the corresponsing file and jumps to the declaration. Also a search function included.\n- Toolbar Button for PHP class inspector added\n- Autocompletion popup can now be closed with the BACK and DELETE keys too\n- Entries in autocompletion popup are shown with colored icons at left side instead with #, +, -\n- Message handling in background optimized\n- Small optimization in GetCurrentPHPClass()\n- Bugfix: Comments, strings and non PHP data are removed prior calling GetCurrentPHPClass() now too\n- Bugfix: Crash in UTF8UnicodePos() under some conditions\n- Bugfix: Autocompletion starts only if full operator entered (previously it was triggered by char '&gt;' but popup then didn't showed up)\n- Bugfix: Classes which are temporarily defined in Notepad++ but not saved in a file are not saved in the internal structure on shutdown anymore and are removed on each parsing too\n- Bugfix: Parsed files are loaded with correct encoding now\n- Some code cleanup\n\n08.03.2014 (v1.2.3)\n- Parameters with type casts in methods are not showed with "$" in popup anymore\n- Attributes and methods of following right-to-left languages are displayed as right-to-left: Arabic, Hebrew\n- Under certain conditions the autocompletion popup didn't showed up\n- Support for unicode characters insertion from popup\n- Files in PHP root directory will be re-scanned when it is changed (previously this happened only when clicking the "..." button)\n- Code improvements\n- Code cleanup\n\n28.02.2014 (v1.2.2)\n- Parsing performance dramatically increased\n- Fixed memory leak in ListFiles()\n- Checksum DB of parsed files is now saved and loaded (increases performance)\n- All windows can be closed with ESC key\n\n27.02.2014 (v1.2.1)\n- Opened ACCPC windows do not disappear anymore when user switches to another window\n- Added option to disable autocompletion\n- Fixed problem with shrinking autocompletion popup\n\n26.02.2014 (v1.2)\n- New setting: Type casts of method parameters can be shown/hidden in completion popup (see settings)\n- Non-PHP data is stripped now (fixes many errors and exceptions)\n- Fixed problem with brackets in class names (i.a. infinite loop)\n- Fixed display error caused by empty spaces in optional parameters\n- Interfaces (currently not supported) do not cause access violation errors anymore\n- Classes which implements (currently not supported) interfaces do not cause access violation errors anymore\n\n05.12.2013 (v1.1)\n- Ported to Delphi\n- Added selection dialog for root directory\n- Works now with Release-Build of NPP\n- Bugfixes\n\n01.04.2013 (v1.0.1)\n- Initial release</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/StanDog/npp-phpautocompletion/raw/master/RELEASES/ccc_1.4.1.zip!!!ADAPT_LINK_FOR_X64!!!</download>
@@ -1707,15 +1706,17 @@
 		</remove>
 	</plugin>
 	<plugin name="Pork2Sausage">
-		<x64Version>1.0</x64Version>
+		<x64Version>2.1</x64Version>
 		<description>Transforms selected text to through a transformer (a console program which takes inputs then generates output).  Up to 20 transformers can be defined</description>
 		<author>Don Ho</author>
+		<sourceUrl>https://github.com/npp-plugins/pork2sausage</sourceUrl>
+		<latestUpdate>16 Sep 2016 Remove the dependecy issue</latestUpdate>
 		<install>
 			<x64>
-				<download>http://download.tuxfamily.org/nppplugins/Pork2Sausage/Pork2Sausage.bin.1.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="Config\Pork2Sausage.ini" to="$CONFIGDIR$"/>
-				<copy from="ReadMe.txt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
-				<copy from="Pork2Sausage.dll" to="$PLUGINDIR$" validate="true"/>
+				<download>https://github.com/npp-plugins/pork2sausage/releases/download/v2.1/pork2sausage.2.1.bin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="bin/Config/pork2Sausage.ini" to="$CONFIGDIR$\"/>
+				<copy from="bin/readmetxt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
+				<copy from="bin/pork2sausage.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1868,7 +1869,7 @@
 		<description>QuickText is a Notepad++ plugin for quick text substitution, including multi field inputs. It's similar to Tab Triggers in TextMate: type a short identifier, press the magic key (default is Tab) and the short text will be replaced with the full version.</description>
 		<author>Joao Moreno (latest Unicode amendments by Tony M)</author>
 		<homepage>http://sourceforge.net/tracker/?func=detail&amp;aid=3009773&amp;group_id=183263&amp;atid=904542</homepage>
-		<latestUpdate>Unofficial update from Tony M - Unicode version only - 0.0.2.2 \nAdded: \n	+ Config file: QuickText.conf.ini with following options: \n	+ allowedChars	-	characters which are valid for tags (snippets names). \n	+ lang_menu		-	Languages (separated by ",") occurring in plugin "Options..." dialog \n						  (GUI for editing snippets). \n	 \n	   + "Open Tags File" command in plugin menu \n	   + "Open Config File" command in plugin menu \n	 + Default shortcut combo (ctrl + shift + F5) for "Refresh Configuration" command \n	+ Sources package \n		 \nChanged: \n	  * Tags auto-completion appears even without any character inserted. Only need to push shortcut key combo \n	  (default ctrl + ENTER) \n	 \n	   * Sources cleanup + some descriptive comments \n	* GLOBAL group now has number "255" irrespective of number of supported (by notepad++) languages and \n		"lang_menu" (in QuickText.conf.ini) values. \n \nFixed: \n	  * Tags auto-completion with GLOBAL group, so on the list are now tags from current language group and GLOBAL GROUP. \n	* Newline translation in "Options..." dialog (was dependent on current file settings, which was incorrect). \n	   CRLF has to be used in QuickText.ini file now, to translate newline correctly in "Options..." dialog. \n	 \n0.0.2.1 - Unicode / Ansi \n * [M] Changed default key to Tab\n * [M] Moved QuickText.ini from \QuickText.ini to \plugins\Config\QuickText.ini\n * [M] Increased substitution text length (max is 8bytes number of chars)\n * [+] Valid tag keys (abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~!@#$%^&amp;*()_+{}|:?&gt;&lt;`-=[]\/.,)\n * [+] Global tag added. Current language tag takes priority over Global tag\n * [M] bigger and friendlier logic for inputting tag/subtitution\n * [M] fixed tab indenting of HTML UL tag under UNIX format\n * [+] Created Unicode version of the plugin</latestUpdate>
+		<latestUpdate>Unofficial update from Tony M - Unicode version only - 0.0.2.2 \nAdded: \n    + Config file: QuickText.conf.ini with following options: \n    + allowedChars	-   characters which are valid for tags (snippets names). \n    + lang_menu		-   Languages (separated by ",") occurring in plugin "Options..." dialog \n                       (GUI for editing snippets). \n     \n    + "Open Tags File" command in plugin menu \n    + "Open Config File" command in plugin menu \n    + Default shortcut combo (ctrl + shift + F5) for "Refresh Configuration" command \n    + Sources package \n		 \nChanged: \n    * Tags auto-completion appears even without any character inserted. Only need to push shortcut key combo \n     (default ctrl + ENTER) \n	 \n    * Sources cleanup + some descriptive comments \n	* GLOBAL group now has number "255" irrespective of number of supported (by notepad++) languages and \n     "lang_menu" (in QuickText.conf.ini) values. \n \nFixed: \n    * Tags auto-completion with GLOBAL group, so on the list are now tags from current language group and GLOBAL GROUP. \n    * Newline translation in "Options..." dialog (was dependent on current file settings, which was incorrect). \n     CRLF has to be used in QuickText.ini file now, to translate newline correctly in "Options..." dialog. \n	 \n0.0.2.1 - Unicode / Ansi \n * [M] Changed default key to Tab\n * [M] Moved QuickText.ini from \QuickText.ini to \plugins\Config\QuickText.ini\n * [M] Increased substitution text length (max is 8bytes number of chars)\n * [+] Valid tag keys (abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~!@#$%^&amp;*()_+{}|:?&gt;&lt;`-=[]\/.,)\n * [+] Global tag added. Current language tag takes priority over Global tag\n * [M] bigger and friendlier logic for inputting tag/subtitution\n * [M] fixed tab indenting of HTML UL tag under UNIX format\n * [+] Created Unicode version of the plugin</latestUpdate>
 		<stability>Unknown - unofficial Unicode release.  ANSI 0.21 has reported UI issues</stability>
 		<install>
 			<x64>
@@ -2001,14 +2002,16 @@
 		</install>
 	</plugin>
 	<plugin name="Select 'N' Launch">
-		<x64Version>1.0</x64Version>
+		<x64Version>2.1</x64Version>
 		<description>This plugin gets your selected text, saves it as file with the extension you customize in the system temporary directory, then call system to open it with the extension associated program.</description>
 		<author>Don Ho</author>
+		<sourceUrl>https://github.com/npp-plugins/selectnlaunch</sourceUrl>
+		<latestUpdate>16 Sep 2016 Remove dependency of other dll</latestUpdate>
 		<install>
 			<x64>
-				<download>http://download.tuxfamily.org/nppplugins/SelectNLaunch/SelectNLaunch.bin.v1.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="SelectNLaunch.dll" to="$PLUGINDIR$" validate="true"/>
-				<copy from="*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
+				<download>https://github.com/npp-plugins/selectnlaunch/releases/download/v2.1/selectNLaunch.v2.1.bin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="bin/SelectNLaunch.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="bin/*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
 			</x64>
 		</install>
 	</plugin>
@@ -2188,7 +2191,7 @@
 		<description>A plugin which uses Exuberant Ctags to parse either only the currently activated source file or multiple files of so-called sessions. The results are shown and can be browsed in a treeview inside of a dockable window. (.NET 2.0 is required)</description>
 		<author>UFO-Pu55y</author>
 		<homepage>http://sourceforge.net/projects/sourcecookifier/</homepage>
-		<latestUpdate>0.7.3\n		-fix: unicode functionality broken in N++\n0.7.2\n		 -fix: CTags: regex handling is broken for some languages (PHP,..)\n0.7.1\n		  -new: option "Go to definition by pressing ctrl + left mousebutton"\n		  -new: option "Max. number of symbols to show" (It's recommended to limitate the count of\n			  symbols which are shown as nodes in the treeview, in order to prevent a hanging N++\n				 when for instance source files with several thousand symbols are analyzed.\n			   When in cookie session mode, then such files are automatically loaded into the\n				 INCLUDES folder. In the other modes the symbols of such files aren't loaded at all.)\n		  -new: option "Show plus minus controls (for source nodes)"\n		 -fix: CTags: lots of fixes in the CParser (C, C++, C#, Java,..)\n		 -fix: allow loading of session files created by older versions\n		-fix: in N++ session mode: file nodes vanishing when moving a file from one N++ view to another\n0.7\n		 -IMPORTANT: the plugin will be C#-only from now on, thus no more use of C++ loader/wrapper DLLs.\n					  advantage: much faster startup time. disadvantage: no more warning message about\n				   missing .NET runtime (unknown plugin loading error instead).\n		-IMPORTANT: sorry, but again .c00k!e session files of previous versions are invalid for this new version!\n		  -new: CTags: update sources (fixes for C and OCaml + support for Objective-C)\n		-new: CTags: add support for CSS (ctags patch by Iago Rubio)\n		 -new: CTags: add support for INFORMIX 4GL (ctags extension by Tim Kim)\n		-new: add regex rules for Autohotkey (AHK) (thanks to vixay)\n		 -new: "Import" and "Export" settings of one or more languages (in language settings dialog)\n		 -new: treenode contextmenu items: "Collapse all", "Expand all"\n		-new: new option "Size limit of analyzed INCLUDES"\n	   -new: new option "Session file extension" (default = "c00k!e")\n		  -new: new option "Use relative paths in session file"\n		-new: new option "Handle CTags warnings as errors" (helpful when trying out new regex entries)\n	   -new: new option "Show plus minus controls" for treeview\n		-new: show tooltips in options dialog\n		  -new: buttons "Select All" and "Select None" in import dialog (after drag&amp;drop of multiple extension types)\n		  -new: provide auto restore of corrupted language settings file\n		 -new: support message+filepath from other plugins in order to add files to a session\n		  -fix: CTags: PythonParser: wrong parent nesting in PythonParser\n		  -fix: CTags: PythonParser: enable function arguments\n	   -fix: CTags: C#Parser: fully disable local variables tag to avoid false tags\n		-fix: context menu not shown when tag type node is selected (in grouped view)\n		  -fix: in Cookie session mode: unexpected N++ behavior when SourceCookifier panel titel is longer than 32 chars\n		 -fix: in N++ session mode: sourcelist doesn't get updated when treeview is invisible\n		  -fix: when plugin's startup mode is 'hide', then the plugin might show up only after 2nd try\n	   -fix: exceptions/deadlocks when switching view mode, sorting, etc. with multiple source nodes in treeview\n		 -fix: wrong node nesting in class view mode\n		 -fix: when searching (search textbox) in class view mode, then not all nodes are expanded\n	   -fix: characters ' ' (space) and '!' are not allowed in regex expressions\n		 -fix: exception on "Go To Definition" when using "Includes" files\n	   -fix: exception when opening contextmenu on 'unsupported source type' nodes</latestUpdate>
+		<latestUpdate>0.7.3\n       -fix: unicode functionality broken in N++\n0.7.2\n       -fix: CTags: regex handling is broken for some languages (PHP,..)\n0.7.1\n       -new: option "Go to definition by pressing ctrl + left mousebutton"\n       -new: option "Max. number of symbols to show" (It's recommended to limitate the count of\n              symbols which are shown as nodes in the treeview, in order to prevent a hanging N++\n              when for instance source files with several thousand symbols are analyzed.\n              When in cookie session mode, then such files are automatically loaded into the\n              INCLUDES folder. In the other modes the symbols of such files aren't loaded at all.)\n       -new: option "Show plus minus controls (for source nodes)"\n       -fix: CTags: lots of fixes in the CParser (C, C++, C#, Java,..)\n       -fix: allow loading of session files created by older versions\n       -fix: in N++ session mode: file nodes vanishing when moving a file from one N++ view to another\n0.7\n       -IMPORTANT: the plugin will be C#-only from now on, thus no more use of C++ loader/wrapper DLLs.\n                   advantage: much faster startup time. disadvantage: no more warning message about\n                   missing .NET runtime (unknown plugin loading error instead).\n       -IMPORTANT: sorry, but again .c00k!e session files of previous versions are invalid for this new version!\n       -new: CTags: update sources (fixes for C and OCaml + support for Objective-C)\n       -new: CTags: add support for CSS (ctags patch by Iago Rubio)\n       -new: CTags: add support for INFORMIX 4GL (ctags extension by Tim Kim)\n       -new: add regex rules for Autohotkey (AHK) (thanks to vixay)\n       -new: "Import" and "Export" settings of one or more languages (in language settings dialog)\n       -new: treenode contextmenu items: "Collapse all", "Expand all"\n       -new: new option "Size limit of analyzed INCLUDES"\n       -new: new option "Session file extension" (default = "c00k!e")\n       -new: new option "Use relative paths in session file"\n       -new: new option "Handle CTags warnings as errors" (helpful when trying out new regex entries)\n       -new: new option "Show plus minus controls" for treeview\n       -new: show tooltips in options dialog\n       -new: buttons "Select All" and "Select None" in import dialog (after drag&amp;drop of multiple extension types)\n       -new: provide auto restore of corrupted language settings file\n       -new: support message+filepath from other plugins in order to add files to a session\n       -fix: CTags: PythonParser: wrong parent nesting in PythonParser\n       -fix: CTags: PythonParser: enable function arguments\n       -fix: CTags: C#Parser: fully disable local variables tag to avoid false tags\n       -fix: context menu not shown when tag type node is selected (in grouped view)\n       -fix: in Cookie session mode: unexpected N++ behavior when SourceCookifier panel titel is longer than 32 chars\n       -fix: in N++ session mode: sourcelist doesn't get updated when treeview is invisible\n       -fix: when plugin's startup mode is 'hide', then the plugin might show up only after 2nd try\n       -fix: exceptions/deadlocks when switching view mode, sorting, etc. with multiple source nodes in treeview\n       -fix: wrong node nesting in class view mode\n       -fix: when searching (search textbox) in class view mode, then not all nodes are expanded\n       -fix: characters ' ' (space) and '!' are not allowed in regex expressions\n       -fix: exception on "Go To Definition" when using "Includes" files\n       -fix: exception when opening contextmenu on 'unsupported source type' nodes</latestUpdate>
 		<install>
 			<x64>
 				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.7.3/SourceCookifier.v0.7.3.bin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
@@ -2692,7 +2695,7 @@
 		<latestUpdate>Release 2.4.9.2 \n- Fix pretty print function infinite loop when data ends unexpected\n\nRelease 2.4.9.1\n- Patch pretty print function error which occurred when text contains "='" sequence \n\nRelease 2.4.9\n- Compilation of 64bit version of the plugin \n- Fix pretty print with attributes and/or text containing &gt; char\n\nRelease 2.4.8\n- Add "Pretty print (attributes)" function\n- Fix pretty print of comments and CDATA blocs containing &lt; or &gt; char\n\nRelease 2.4.7\n- Add proxy support\n- Fix the "Set XML type automatically" function to avoid having caret placed at position 0 while changing the active tab\n\nRelease 2.4.6\n- Fix PrettyPrint on handling of quote delimiters used in xml attribute value\n- Re-compilation of libcurl.dll for Windows XP compatibility\n\nRelease 2.4.5\n- Modification of XPath evaluation to better manage XML with default namespace\n- Rollback of XML file detection behaviour modification of preceding release (was not working well)\n- Add a basic online check for plugin updates (checks on startup every 14 days)\n\nRelease 2.4.4\n- Optimization of pretty print function\n- Fix XML file detection issue when opening several files at once\n\nRelease 2.4.3 (r1058)\n- Fix auto-close with end markers ("&amp;lt;/a&amp;gt;" and "--&amp;gt;")\n- Fix PrettyPrint on handling of '&gt;' char present in text content\n\nRelease 2.4.2 (r1057)\n- Fix XPath evaluation for text() [bug #232]\n- Modification of PrettyPrint behaviour to avoid changing "&amp;lt;foo&amp;gt; &amp;lt;foo&amp;gt;" to "&amp;lt;foo/&amp;gt;" [bug #220]\n- Fix PrettyPrint EOL char support [bug #219]\n- Fix XPath evaluation issue with string result [bug #209]\n- Add information on unprefixed namespace handling during XPath evaluation [bug #195]\n- Fix a wrong reference to %appdata%\Notepad++\n\nRelease 2.4.1 (r1054)\n- Allow external DLLs to be loaded from %appdata%\Notepad++ folder\n- Change dialogs behaviour: dialogs are not destroyed on close and are restored on re-opening\n- Fix some memory leaks\n\nRelease 2.4 (r1048)\n- Fix pretty print error while playing with attributes containing quotes and double-quotes\n- Fix encoding support for following functions:\n  * Check XML syntax now\n  * Validate now\n  * Tag auto-close\n  * Current XML Path\n  * Evaluate XPath Expression\n  * XSL Transformation\n- Add "Prevent XXE" mode\n- Fix wrong selection length after conversions "&amp;amp;lt;&amp;amp;gt;" to "&amp;lt;&amp;gt;" and reverse\n- Upgrade libXML version (libXML 2.9.2, libXSLT 1.1.28, xmlsec 1.2.20, zlib 1.2.6, iconv 1.14, openssl 1.0.1j)\n- Add libXML/libXSLT versions infos in about box</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/XML%20Tools/Xml%20Tools%202.4.9%20x64/Xml%20Tools%202.4.9.2%20x86%20x64.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/npp-plugins/files/XML%20Tools/Xml%20Tools%202.4.9%20Unicode/Xml%20Tools%202.4.9.2%20x86%20Unicode.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="dependencies\libiconv-2.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="dependencies\libwinpthread-1.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="dependencies\libxml2-2.dll" to="$NPPDIR$\" validate="true"/>

@@ -56,15 +56,15 @@
 		</remove>
 	</plugin>
 	<plugin name="Converter">
-		<x64Version>4.2</x64Version>
+		<x64Version>4.2.1</x64Version>
 		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
-		<author>Don HO</author>
+		<author>Don Ho</author>
 		<sourceUrl>https://github.com/npp-plugins/converter</sourceUrl>
-		<latestUpdate>Remove the dependance of other dll</latestUpdate>
+		<latestUpdate>Make it compatible with old os (XP)</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/npp-plugins/converter/releases/download/v4.2/nppConvert.v4.2.zip</download>
-				<copy from="bin64\NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
+				<download>https://github.com/npp-plugins/converter/releases/download/v4.2.1/nppConvert.v4.2.1.zip</download>
+				<copy from="bin64\NppConverter.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
 			</x64>
 		</install>
@@ -170,8 +170,9 @@
 		<x64Version>2.1</x64Version>
 		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
 		<author>Don HO</author>
+		<homepage>http://npp-plugins.tuxfamily.org/plugins</homepage>
 		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
-		<latestUpdate>Remove the dependance of other dll</latestUpdate>
+		<latestUpdate>6 Sep 2016 Remove the dependance of other dll</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.bin.zip</download>
@@ -250,6 +251,21 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Pork2Sausage">
+		<x64Version>2.1</x64Version>
+		<description>Transforms selected text to through a transformer (a console program which takes inputs then generates output).  Up to 20 transformers can be defined</description>
+		<author>Don Ho</author>
+		<sourceUrl>https://github.com/npp-plugins/pork2sausage</sourceUrl>
+		<latestUpdate>16 Sep 2016 Remove the dependecy issue</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/npp-plugins/pork2sausage/releases/download/v2.1/pork2sausage.2.1.bin.zip</download>
+				<copy from="bin64\Config/pork2Sausage.ini" to="$CONFIGDIR$\"/>
+				<copy from="bin64\readmetxt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
+				<copy from="bin64\pork2sausage.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="RunMe">
 		<x64Version>1.4.0</x64Version>
 		<aliases>
@@ -264,6 +280,20 @@
 			<x64>
 				<download>https://sites.google.com/site/fstellari/nppplugins/RunMe_dll_1v40.zip</download>
 				<copy from="64bit\RunMe.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Select 'N' Launch">
+		<x64Version>2.1</x64Version>
+		<description>This plugin gets your selected text, saves it as file with the extension you customize in the system temporary directory, then call system to open it with the extension associated program.</description>
+		<author>Don Ho</author>
+		<sourceUrl>https://github.com/npp-plugins/selectnlaunch</sourceUrl>
+		<latestUpdate>16 Sep 2016 Remove dependency of other dll</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/npp-plugins/selectnlaunch/releases/download/v2.1/selectNLaunch.v2.1.bin.zip</download>
+				<copy from="bin64\SelectNLaunch.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
 			</x64>
 		</install>
 	</plugin>
