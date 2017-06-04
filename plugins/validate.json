@@ -94,5 +94,9 @@
     "Zoom Disabler":
     {
         "134fe33658c3a0c6aaf0f809f448b8fe": "zoomdisabler_x64.dll"
+    },
+    "TagLEET":
+    {
+        "ed10ddb183d7fa804362f6f047cf22e6": "TagLEET.dll"
     }
 }
