@@ -98,5 +98,9 @@
     "TagLEET":
     {
         "ed10ddb183d7fa804362f6f047cf22e6": "TagLEET.dll"
+    },
+    "ToolBucket":
+    {
+        "ff35eb58bb647e880fd666b4f287c314": "NppToolBucket.dll"
     }
 }
