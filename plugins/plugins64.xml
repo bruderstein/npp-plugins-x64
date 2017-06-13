@@ -114,6 +114,24 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="JSTool">
+		<x64Version>1.21.0</x64Version>
+		<aliases>
+			<alias name="JSMin"/>
+		</aliases>
+		<description>A javascript plugin for Notepad++.\n * Douglas Crockford's JSMin algorithm to minimize javascript code.\n * My own algorithm to format javascript code.\n * A JSON data viewer. This JSON data viewer can handle &gt;10MB JSON file easily.\n * Support 64bit Notepad++ (from version 1.20.0).\nReally helpful to javascript coder on Notepad++ and really easy to use it.\nMade in China.</description>
+		<author>Sun Junwen</author>
+		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
+		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
+		<latestUpdate>Unicode only release build.\nAdd toolbar button for Json Viewer.\nAdd an option to control new version check.\nAdd an "Auto detect" end of line option.\nFix high DPI layout.\nFix bugs.\nOther tweak.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.0.uni.64.zip/download</download>
+				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="LanguageHelp">
 		<x64Version>1.7.2</x64Version>
 		<aliases>

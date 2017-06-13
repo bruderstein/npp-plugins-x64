@@ -102,5 +102,9 @@
     "ToolBucket":
     {
         "ff35eb58bb647e880fd666b4f287c314": "NppToolBucket.dll"
+    },
+    "JSTool":
+    {
+        "55883dce17f4e25397aa963bef758d98": "JSMinNPP.dll"
     }
 }
