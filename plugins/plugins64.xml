@@ -354,8 +354,8 @@
                 <stability>Good</stability>
                 <install>
                         <x64>
-                               <download>http://www.sqlinform.com/npp/SQLinFormNpp64.dll</download>
-                               <copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="true"/>
+                               <download>http://www.sqlinform.com/npp/SQLinFormNpp64.zip</download>
+                               <copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="false"/>
                          </x64>
                </install>
 		<remove>
