@@ -115,5 +115,9 @@
     "SQLinForm SQL Formatter":
     {
         "f85e3aef47a73685e02a01d0f8546885": "SQLinFormNpp64.dll"
+    },
+    "DSpellCheck":
+    {
+        "644eca1c33e489a3bfd2461173e514b5": "DSpellCheck.dll"
     }
 }
