@@ -306,6 +306,30 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="Npp Xml Treeview">
+		<x64Version>1.5.0.51</x64Version>
+		<aliases>
+			<alias name="Npp Xml Treview"/>
+		</aliases>
+		<description>A treeview visualization for xml files.</description>
+		<author>João Rosa</author>
+		<sourceUrl>https://github.com/joaoasrosa/nppxmltreeview</sourceUrl>
+		<latestUpdate>London Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- x64 version\n- BIG BUG in latest 1.4.0.45 release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/London-v1.5.0.51/NppXMLTreeviewPlugin_x64.zip</download>
+				<copy from="NppXmlTreeviewPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin.dll"/>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="Open Selection">
 		<x64Version>1.1.2</x64Version>
 		<aliases>

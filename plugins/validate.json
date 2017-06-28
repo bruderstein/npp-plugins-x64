@@ -123,5 +123,10 @@
     "MarkdownViewer++":
     {
         "8a74ff1eb38acaeec33cf919230cf81d": "MarkdownViewerPlusPlus.dll"
+    },
+    "Npp Xml Treeview":
+    {
+        "6afbdb83104e7ff6c2c53b6c9a845abf": "NppXmlTreeviewPlugin.dll",
+        "7010f7729457b52e6bf97ac92ea5e62d": "NppXmlTreeviewPlugin.Parsers.dll"
     }
 }
