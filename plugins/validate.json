@@ -119,5 +119,9 @@
     "DSpellCheck":
     {
         "644eca1c33e489a3bfd2461173e514b5": "DSpellCheck.dll"
+    },
+    "MarkdownViewer++":
+    {
+        "8a74ff1eb38acaeec33cf919230cf81d": "MarkdownViewerPlusPlus.dll"
     }
 }

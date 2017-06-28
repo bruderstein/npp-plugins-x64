@@ -208,6 +208,35 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="MarkdownViewer++">
+		<x64Version>0.7.1</x64Version>
+		<aliases>
+			<alias name="MarkdownViewerPlusPlus"/>
+			<alias name="MarkdownViewer++"/>
+		</aliases>
+		<description>View a Markdown/CommonMark compliant text file rendered on-the-fly directly in Notepad++ in a docked panel.\nExport the rendered result as HTML or PDF and configure the file extensions to be rendered.</description>
+		<author>nea</author>
+		<homepage>https://nea.github.io/MarkdownViewerPlusPlus/</homepage>
+		<sourceUrl>https://github.com/nea/MarkdownViewerPlusPlus</sourceUrl>
+		<latestUpdate>* Added handling of local image files</latestUpdate>
+		<stability>Good</stability>
+		<minVersion>7.2</minVersion>
+		<install>
+			<x64>
+				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.7.1/MarkdownViewerPlusPlus-0.7.1-x64.zip</download>
+				<copy from="MarkdownViewerPlusPlus.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="*.md" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
+				<copy from="license\*.txt" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
+				<copy from="license\*.md" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\MarkdownViewerPlusPlus.dll"/>
+				<delete file="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="Menu Icons">
 		<x64Version>1.2.2</x64Version>
 		<aliases>
