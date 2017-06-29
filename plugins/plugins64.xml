@@ -155,6 +155,28 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="JSON Viewer">
+		<x64Version>1.24</x64Version>
+		<aliases>
+			<alias name="JSONViewer"/>
+		</aliases>
+		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
+		<author>Kapil Ratnani</author>
+		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
+		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
+		<latestUpdate>9 Jan 2017, 1. 64 bit support. Thanks @chcg</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.24/NPPJSONViewer-x64.dll.zip</download>
+				<copy from="NPPJSONViewer-x64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NPPJSONViewer-x64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="JSTool">
 		<x64Version>1.21.0</x64Version>
 		<aliases>

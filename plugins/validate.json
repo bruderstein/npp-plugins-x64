@@ -132,5 +132,9 @@
     "NppExec":
     {
         "39565d0c48901b4ef4c1537dc6448128": "NppExec.dll"
+    },
+    "JSON Viewer":
+    {
+        "b4544ecf822ea0c0c9c373500c8e0356": "NPPJSONViewer-x64.dll"
     }
 }
