@@ -144,5 +144,9 @@
     "SelectQuotedText":
     {
         "0c3bdcb76c1a887f4f78253185d89b04": "SelectQuotedText.dll"
+    },
+    "Notepad++ bplist plugin":
+    {
+        "30452b06db6662b8f6e7419c70313a55": "NppBplistPlugin.dll"
     }
 }

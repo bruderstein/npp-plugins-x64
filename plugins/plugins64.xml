@@ -308,6 +308,21 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Notepad++ bplist plugin">
+		<x64Version>1.2.0.3</x64Version>
+		<description>This plugin supports viewing\editing binary plist files. As long as ordinary plist files comes in XML format, this plugin dont supports them. It loads only binary plist files ( bplist ).</description>
+		<author>azerg</author>
+		<homepage>http://blog.azerg.com/</homepage>
+		<sourceUrl>https://github.com/azerg/NppBplistPlugin</sourceUrl>
+		<latestUpdate>01.27.2017 (v1.2.0.3)\n- Thanks @chcg , added x64 build.\n01.25.2017 (v1.2.0.0)\n- + ability to distinguish between bplist files and ordinary xmls via plugin menu.\n02.05.2015 (v1.0.1.4)\n- Initial release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/azerg/NppBplistPlugin/releases/download/1.2.0.3/NppBplistPlugin_x64.zip</download>
+				<copy from="NppBplistPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="NppExec">
 		<x64Version>0.5.9.9</x64Version>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
