@@ -269,6 +269,21 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="NppExec">
+		<x64Version>0.5.9.9</x64Version>
+		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
+		<author>Vitaliy Dovgan</author>
+		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
+		<latestUpdate>Version  v0.5.9.9 dev  ------------  + NppExec can be build with Orwell Dev-C++ (NppExec_DevCpp.dev)  + project file for Visual Studio 2013 Express (NppExec_VC12.sln)  + fparser updated to 4.5.2  + Notepad++ and Scintilla header files updated to Notepad++ 6.8.6  + Warning Analyser: more accurate detection of %LINE% and %CHAR%  + new command: NPP_SAVEAS  + new command: PROC_SIGNAL  + set &lt;var&gt; ~ strfromhex &lt;hex string&gt;+ set &lt;var&gt; ~ strtohex &lt;string&gt;+ now commands can be executed from macro-vars (e.g. &quot;set a = npp_run calc&quot; and then &quot;$(a)&quot; to execute)  + now a child console process is tried to be killed first, and only then terminated  + added: &quot;@EXIT_CMD&quot; macro var to specify child process'es exit command  + added: &quot;nppexec:&quot; prefix to execute NppExec's commands from a child console process  + NppExec's Console: Tab-completion improved; also works after &quot;help &quot; and &quot;nppexec:&quot;  + NppExec's Console: &quot;Tab = \t&quot; allows to type Tab character in the Console  + NppExec's Console: &quot;set local&quot; creates Console's local vars (not shared with NppExec's script)  + now SEL_LOADFROM and CON_LOADFROM detect UTF-8 without BOM  + now SEL_SAVETO can save as UTF-8 without BOM  - fixed: font of NppExec's Console could be set incorrectly  - fixed: crash while calculating very big numbers (e.g. 10^72)  - fixed: the &quot;exit command&quot; dialog did not use the &quot;Key_Enter&quot; value  * internal improvements  * more internal improvements  * better error reporting  +? NppExec Manual updated !!!incomplete: to be updated!!!  +? new flow: IF...ELSE...ENDIF !!!incomplete: not documented!!! in case of errors the script is stopped  +? now each command returns either CMDRESULT_SUCCEEDED or CMDRESULT_FAILED !!!incomplete: just partially implemented, not documented!!!</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.5.9.9%20dev/NppExec20160628_dll_x64-2.zip/download</download>
+				<copy from="doc\*.*" to="$PLUGINDIR$\doc"/>
+				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
+				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="NppFTP">
 		<x64Version>0.27.0</x64Version>
 		<aliases>
