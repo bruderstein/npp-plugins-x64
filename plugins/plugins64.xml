@@ -165,7 +165,7 @@
 		<install>
 			<x64>
 				<download>https://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag%20plugin%20v1.0.0/HTMLTag_plugin_1.0.0_64.zip/download</download>
-				<copy from="HTMLTag_unicode.dll" to="$PLUGINDIR$\" validate="true" backup="true"/>
+				<copy from="HTMLTag.dll" to="$PLUGINDIR$\" validate="true" backup="true"/>
 				<copy from="HTMLTag-entities.ini" to="$PLUGINDIR$\" backup="true"/>
 				<copy from="Config/HTMLTag.ini" to="$CONFIGDIR$\" backup="true"/>
 				<copy from="Doc/HTMLTag-readme.txt" toFile="$CONFIGDIR$\Doc\HTMLTag-readme.txt"/>
