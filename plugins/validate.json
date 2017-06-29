@@ -136,5 +136,9 @@
     "JSON Viewer":
     {
         "b4544ecf822ea0c0c9c373500c8e0356": "NPPJSONViewer-x64.dll"
+    },
+    "HTML Tag":
+    {
+        "96e12f706761141b3129950c55fb5a24": "HTMLTag.dll"
     }
 }

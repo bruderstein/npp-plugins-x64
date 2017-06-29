@@ -155,6 +155,23 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="HTML Tag">
+		<x64Version>1.0.0.0</x64Version>
+		<description>This plug-in provides three core functions to Notepad++:\n- HTML and XML tag jumping, like the built-in brace matching (Ctrl+B / Shift+Ctrl+B), and selection\n  of tags and/or contents.\n- HTML entity encoding/decoding (example: é to &amp;eacute;)\n- JS character encoding/decoding (example: é to \u00E9)</description>
+		<author>Martijn Coppoolse</author>
+		<homepage>https://fossil.2of4.net/npp_htmltag/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag%20plugin%20v1.0.0/HTMLTag_plugin_v1.0.0_src.zip/download</sourceUrl>
+		<latestUpdate>[Version 1.0.0 - 2017-02-19 16:03]\n* Added: 64-bits version\n* Several tiny bugfixes</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag%20plugin%20v1.0.0/HTMLTag_plugin_1.0.0_64.zip/download</download>
+				<copy from="HTMLTag_unicode.dll" to="$PLUGINDIR$\" validate="true" backup="true"/>
+				<copy from="HTMLTag-entities.ini" to="$PLUGINDIR$\" backup="true"/>
+				<copy from="Config/HTMLTag.ini" to="$CONFIGDIR$\" backup="true"/>
+				<copy from="Doc/HTMLTag-readme.txt" toFile="$CONFIGDIR$\Doc\HTMLTag-readme.txt"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="JSON Viewer">
 		<x64Version>1.24</x64Version>
 		<aliases>
