@@ -463,6 +463,26 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="SelectQuotedText">
+		<x64Version>1.0.0</x64Version>
+		<description>Select the text in quotes (aka a string) based on the Scintilla lexers in Notepad++. Just press Alt+' and select the entire string under the cursor. If no string is found, it select the current word.</description>
+		<author>Frank Fesevur</author>
+		<homepage>https://www.fesevur.com/selectquotedtext</homepage>
+		<sourceUrl>https://github.com/ffes/selectquotedtext/</sourceUrl>
+		<latestUpdate>First release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/ffes/selectquotedtext/releases/download/v1.0.0/SelectQuotedText-100-x64.zip</download>
+				<copy from="SelectQuotedText.dll" to="$PLUGINDIR$\"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\SelectQuotedText.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="SQLinForm SQL Formatter">
 		<x64Version>1.0</x64Version>
 		<aliases>
