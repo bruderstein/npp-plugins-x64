@@ -323,6 +323,20 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="NppCrypt">
+		<x64Version>1.0.1.3</x64Version>
+		<description>encryption/decryption with various block ciphers, hash-algorithms, random-characters, encoding with base-16/32/64</description>
+		<author>Jean Paul Richter</author>
+		<homepage>http://www.cerberus-design.de/download</homepage>
+		<sourceUrl>https://github.com/jeanpaulrichter/nppcrypt</sourceUrl>
+		<latestUpdate>7 Sep 2016 changlog v1.0.1.3:\n several dialogs (random/covert/hash) are now non-modal and dockable\n added copy to clipboard buttons</latestUpdate>
+		<install>
+			<x64>
+				<download>http://www.cerberus-design.de/nppcrypt/nppcryptv1013.x64.zip</download>
+				<copy from="nppcrypt.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="NppExec">
 		<x64Version>0.5.9.9</x64Version>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>

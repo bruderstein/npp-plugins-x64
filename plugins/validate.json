@@ -148,5 +148,9 @@
     "Notepad++ bplist plugin":
     {
         "30452b06db6662b8f6e7419c70313a55": "NppBplistPlugin.dll"
+    },
+    "NppCrypt":
+    {
+        "9df0c7687b56a6e0ade08f345bda5bbc": "nppcrypt.dll"
     }
 }
