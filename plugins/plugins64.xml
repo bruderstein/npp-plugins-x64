@@ -66,6 +66,7 @@
 		<x64Version>2.0.0</x64Version>
 		<description>A very useful compare plugin to show the differences between 2 files (side by side).</description>
 		<author>Ty Landercasper, Jean-Sebastien Leroy, Pavel Nedev</author>
+		<homepage>https://github.com/jsleroy/compare-plugin</homepage>
 		<sourceUrl>https://github.com/jsleroy/compare-plugin</sourceUrl>
 		<latestUpdate>Total plugin re-work. Fixed stability issues. Several new features and many improvements.</latestUpdate>
 		<install>
@@ -109,18 +110,23 @@
 		</install>
 	</plugin>
 	<plugin name="DoxyIt">
-		<x64Version>0.4.2</x64Version>
+		<x64Version>0.4.3</x64Version>
 		<description>Inspired by DocIt. Generates Doxygen style comment blocks based on function/method definitions. Also provides functionality for modifying comment blocks. Configurable for each language. Current supported languages:\n* C/C++\n* Python\n* Java\n* PHP\n* JavaScript\n* C#\n* UDLs</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/doxyit</sourceUrl>
-		<latestUpdate>Added jump locations which can be jumped to by pressing the Tab key.</latestUpdate>
+		<latestUpdate>22 May 2017 Fix $FUNCTION keyword</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/DoxyIt/releases/download/v0.4.2/DoxyIt_64.zip</download>
+				<download>https://github.com/dail8859/DoxyIt/releases/download/v0.4.3/DoxyIt_64.zip</download>
 				<copy from="DoxyIt_64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\DoxyIt.dll"/>
+			</x64>
+		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
 		<x64Version>1.2.14.2</x64Version>
@@ -138,14 +144,15 @@
 		</install>
 	</plugin>
 	<plugin name="Elastic Tabstops">
-		<x64Version>1.2</x64Version>
+		<x64Version>1.3</x64Version>
 		<description>Implementation of Elastic Tabstops. Stretch tabs to align with adjacent lines. Can also be used for TSV files.\n\nFor more information about elastic tabstops see: \nhttp://nickgravgaard.com/elastic-tabstops/</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/ElasticTabstops</sourceUrl>
+		<latestUpdate>- Limit updates to only the current view region. This can lead to a significant performance increase for large files such as TSV, or when doing Search/Replace. Note: that this may case columns to change sizes while scrolling.\n- Fix issue with specifying extensions\n- Fix tab widths for proportional fonts\n- Allow elastic tabstops to be calculated for files using spaces as indentation</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/ElasticTabstops/releases/download/v1.2/ElasticTabstops_64.zip</download>
+				<download>https://github.com/dail8859/ElasticTabstops/releases/download/v1.3/ElasticTabstops_64.zip</download>
 				<copy from="ElasticTabstops_64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -323,13 +330,37 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Npp Xml Treeview">
+		<x64Version>1.5.0.51</x64Version>
+		<aliases>
+			<alias name="Npp Xml Treview"/>
+		</aliases>
+		<description>A treeview visualization for xml files.</description>
+		<author>João Rosa</author>
+		<sourceUrl>https://github.com/joaoasrosa/nppxmltreeview</sourceUrl>
+		<latestUpdate>London Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- x64 version\n- BIG BUG in latest 1.4.0.45 release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/London-v1.5.0.51/NppXMLTreeviewPlugin_x64.zip</download>
+				<copy from="NppXmlTreeviewPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin.dll"/>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="NppCrypt">
 		<x64Version>1.0.1.3</x64Version>
 		<description>encryption/decryption with various block ciphers, hash-algorithms, random-characters, encoding with base-16/32/64</description>
 		<author>Jean Paul Richter</author>
 		<homepage>http://www.cerberus-design.de/download</homepage>
 		<sourceUrl>https://github.com/jeanpaulrichter/nppcrypt</sourceUrl>
-		<latestUpdate>7 Sep 2016 changlog v1.0.1.3:\n several dialogs (random/covert/hash) are now non-modal and dockable\n added copy to clipboard buttons</latestUpdate>
+		<latestUpdate>7 Sep 2016 changlog v1.0.1.3:\n\n    several dialogs (random/covert/hash) are now non-modal and dockable\n    added copy to clipboard buttons</latestUpdate>
 		<install>
 			<x64>
 				<download>http://www.cerberus-design.de/nppcrypt/nppcryptv1013.x64.zip</download>
@@ -374,6 +405,7 @@
 		<x64Version>4.4.0</x64Version>
 		<description>NppGTags plugin is a front-end to GTags (GNU Global source code tagging system). It allows easy code navigation by indexing the project sources. Supports finding symbol definitions and references, finding project paths, string literals, regular expressions (GREP functionality) and adds symbol auto-completion. Supports unlimited simultaneous searches. GTags built-in code parser supports C, C++, Yacc, Java, PHP4 and Assembly. Other languages are supported through Pygments + CTags parser.</description>
 		<author>Pavel Nedev</author>
+		<homepage>https://github.com/pnedev/nppgtags</homepage>
 		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
 		<latestUpdate>Add results search functionality. Add per-database ignore sub-folders setting.</latestUpdate>
 		<install>
@@ -386,30 +418,6 @@
 		<remove>
 			<x64>
 				<delete file="$PLUGINDIR$\NppGTags\" isDirectory="true"/>
-			</x64>
-		</remove>
-	</plugin>
-	<plugin name="Npp Xml Treeview">
-		<x64Version>1.5.0.51</x64Version>
-		<aliases>
-			<alias name="Npp Xml Treview"/>
-		</aliases>
-		<description>A treeview visualization for xml files.</description>
-		<author>João Rosa</author>
-		<sourceUrl>https://github.com/joaoasrosa/nppxmltreeview</sourceUrl>
-		<latestUpdate>London Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- x64 version\n- BIG BUG in latest 1.4.0.45 release</latestUpdate>
-		<stability>Good</stability>
-		<install>
-			<x64>
-				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/London-v1.5.0.51/NppXMLTreeviewPlugin_x64.zip</download>
-				<copy from="NppXmlTreeviewPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
-			</x64>
-		</install>
-		<remove>
-			<x64>
-				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin.dll"/>
-				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -435,7 +443,7 @@
 		<x64Version>1.4.9</x64Version>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
 		<author>Dave Brotherstone</author>
-		<homepage>http://www.brotherstone.co.uk/npp/pm</homepage>
+		<homepage>https://bruderste.in/npp/pm/</homepage>
 		<sourceUrl>https://github.com/bruderstein/nppPluginManager</sourceUrl>
 		<latestUpdate>x64 support with a simple XML plugin list managed manually</latestUpdate>
 		<install>
@@ -511,6 +519,24 @@
 				<delete file="$PLUGINDIR$\SelectQuotedText.dll"/>
 			</x64>
 		</remove>
+	</plugin>
+	<plugin name="Snippets">
+		<x64Version>1.4.0</x64Version>
+		<description>Adds the possibility to add code snippets to the current document by selecting it from a simple list.</description>
+		<author>Frank Fesevur</author>
+		<homepage>http://www.fesevur.com/nppsnippets</homepage>
+		<sourceUrl>http://github.com/ffes/nppsnippets/</sourceUrl>
+		<latestUpdate>v1.4.0  ffes released this on 24 May 2017\n\n    Provide a 64-bit version of the plug-in.\n    Added the possibility to export a library for easier sharing.\n    The color of the plug-in match the current Notepad++ theme.\n    Converted the documentation from DocBook to reStructuredText. The documentation is now hosted at Read The Docs.\n    Fixed bug 6 at Google Code and its GitHub duplicate issue #8. When a snippet had an empty first line it could not be saved.\n    Removed all references to Google Code because that service has retired. All things that were still on Google Code have been moved to GitHub.\n    Internally use my SqliteDB-class to communicate with the database.\n    Added option ToolbarIcon to hide the icon from the toolbar.\n    Update icon on toolbar. It is now a puzzle piece.\n    Fixed issue that sometimes new libraries and/or new snippets could not be added.\n    Upgrade to SQLite version 3.19.0</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/ffes/nppsnippets/releases/download/v1.4.0/NppSnippets-140-x64.zip</download>
+				<copy from="NppSnippets.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppSnippets\SQL\*.sql" to="$PLUGINDIR$\NppSnippets\SQL"/>
+				<copy from="NppSnippets\*.html" to="$PLUGINDIR$\NppSnippets"/>
+				<copy from="NppSnippets\*.pdf" to="$PLUGINDIR$\NppSnippets"/>
+				<copy from="NppSnippets\*.sqlite" to="$PLUGINDIR$\NppSnippets"/>
+			</x64>
+		</install>
 	</plugin>
 	<plugin name="SQLinForm SQL Formatter">
 		<x64Version>1.0</x64Version>

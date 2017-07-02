@@ -152,5 +152,9 @@
     "NppCrypt":
     {
         "9df0c7687b56a6e0ade08f345bda5bbc": "nppcrypt.dll"
+    },
+    "Snippets":
+    {
+        "276497210d668a170ef70886c0c812dc": "NppSnippets.dll"
     }
 }
