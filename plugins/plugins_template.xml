@@ -253,14 +253,14 @@
 		</install>
 	</plugin>
 	<plugin name="Code alignment">
-		<x64Version>12.0</x64Version>
-		<description>Code alignment helps you present your code beautifully, enhancing clarity and readability.\n\nAlign your code by any character. Fast logical shortcuts to perform common alignments such as equals and period.\n\nRequires .NET Framework 3.5</description>
+		<x64Version>13.0</x64Version>
+		<description>Code alignment helps you present your code beautifully, enhancing clarity and readability.\n\nAlign your code by any character. Fast logical shortcuts to perform common alignments such as equals and period.\n\nRequires .NET Framework 4.0</description>
 		<author>Chris McGrath</author>
 		<homepage>http://codealignment.com</homepage>
-		<latestUpdate>Version 12: Align by string screen lets align from caret position if SHIFT is down when clicking OK\nVersion 11: Add ability to specify where to add spaces (ability to right align). \nVersion 10: Alignment Chaining - When using the Code alignment shortcut, simply keep pressing control and you can immediately perform another alignment starting from where the last alignment occurred.\nVersion 9: Fixed Grabber offset\nVersion 8: Ability to Export/Import settings\nVersion 7: Fixed bug: Add space before only works if first instance at max column needs space.</latestUpdate>
+		<latestUpdate>Version 13: 6 Nov 2016 Upgrade all Projects from .NET 3.5 to .NET 4 enhancement Notepad++ Visual Studio\nVersion 12: Align by string screen lets align from caret position if SHIFT is down when clicking OK\nVersion 11: Add ability to specify where to add spaces (ability to right align). \nVersion 10: Alignment Chaining - When using the Code alignment shortcut, simply keep pressing control and you can immediately perform another alignment starting from where the last alignment occurred.\nVersion 9: Fixed Grabber offset\nVersion 8: Ability to Export/Import settings\nVersion 7: Fixed bug: Add space before only works if first instance at max column needs space.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/cpmcgrath/codealignment/releases/download/v12/CodeAlignmentNpp_12_0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/cpmcgrath/codealignment/releases/download/v13/CodeAlignmentNpp_13_0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="CodeAlignmentNpp.dll" to="$PLUGINDIR$\"/>
 				<copy from="CodeAlignment\CodeAlignment.Common.dll" to="$PLUGINDIR$\CodeAlignment"/>
 				<copy from="CodeAlignment\CodeAlignment.Common.WinForms.dll" to="$PLUGINDIR$\CodeAlignment"/>
@@ -400,6 +400,7 @@
 		<install>
 			<x64>
 				<download>https://github.com/jokedst/CsvQuery/releases/download/v1.0.1/CsvQuery86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="CsvQuery.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -474,15 +475,15 @@
 		</install>
 	</plugin>
 	<plugin name="DoxyIt">
-		<x64Version>0.4.2</x64Version>
+		<x64Version>0.4.3</x64Version>
 		<description>Inspired by DocIt. Generates Doxygen style comment blocks based on function/method definitions. Also provides functionality for modifying comment blocks. Configurable for each language. Current supported languages:\n* C/C++\n* Python\n* Java\n* PHP\n* JavaScript\n* C#\n* UDLs</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/doxyit</sourceUrl>
-		<latestUpdate>Added jump locations which can be jumped to by pressing the Tab key.</latestUpdate>
+		<latestUpdate>22 May 2017 Fix $FUNCTION keyword</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/DoxyIt/releases/download/v0.4.2/DoxyIt.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/dail8859/DoxyIt/releases/download/v0.4.3/DoxyIt.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="DoxyIt.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -496,7 +497,7 @@
 		<x64Version>1.2.14.2</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
-		<homepage>http://ttps://github.com/Predelnik/DSpellCheck/releases</homepage>
+		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
 		<latestUpdate>* Fix plugin's sudden demise after user executes "Find in Files"</latestUpdate>
 		<stability>Good</stability>
@@ -541,14 +542,15 @@
 		</remove>
 	</plugin>
 	<plugin name="Elastic Tabstops">
-		<x64Version>1.2</x64Version>
+		<x64Version>1.3</x64Version>
 		<description>Implementation of Elastic Tabstops. Stretch tabs to align with adjacent lines. Can also be used for TSV files.\n\nFor more information about elastic tabstops see: \nhttp://nickgravgaard.com/elastic-tabstops/</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/ElasticTabstops</sourceUrl>
+		<latestUpdate>- Limit updates to only the current view region. This can lead to a significant performance increase for large files such as TSV, or when doing Search/Replace. Note: that this may case columns to change sizes while scrolling.\n- Fix issue with specifying extensions\n- Fix tab widths for proportional fonts\n- Allow elastic tabstops to be calculated for files using spaces as indentation</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/ElasticTabstops/releases/download/v1.2/ElasticTabstops.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/dail8859/ElasticTabstops/releases/download/v1.3/ElasticTabstops.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="ElasticTabstops.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -687,7 +689,7 @@
 		</install>
 	</plugin>
 	<plugin name="GEDCOM Lexer">
-		<x64Version>0.3.0.100</x64Version>
+		<x64Version>0.3.3.100</x64Version>
 		<aliases>
 			<alias name="GedcomLexer"/>
 		</aliases>
@@ -695,7 +697,7 @@
 		<author>Stan Mitchell</author>
 		<homepage>http://www.genapps.net</homepage>
 		<sourceUrl>http://sourceforge.net/projects/gedcomlexer/</sourceUrl>
-		<latestUpdate>- Fix lexer bug: underscore ('_') is now accepted as a valid character in identifiers and pointers.\n- Fix folding bugs: fold headers are now consistently placed throughout a GEDCOM file.\n- Fix lexer bug: multi-byte UTF-8 code points and other MBCS code points are no longer flagged as invalid in values.</latestUpdate>
+		<latestUpdate>2017-01-13 version 0.3.3.100\n- Fix lexer bug: underscore ('_') is now accepted as a valid character in identifiers and pointers.\n- Fix folding bugs: fold headers are now consistently placed throughout a GEDCOM file.\n- Fix lexer bug: multi-byte UTF-8 code points and other MBCS code points are no longer flagged as invalid in values.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://sourceforge.net/projects/gedcomlexer/files/GedcomLexer-0.3.3-r100/GedcomLexer-0.3.3-r100.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
@@ -874,6 +876,11 @@
 				<copy from="iTimeTrack.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\iTimeTrack.dll"/>
+			</x64>
+		</remove>
 	</plugin>
 	<plugin name="JSLint">
 		<x64Version>0.8.3</x64Version>
@@ -1245,16 +1252,16 @@
 		</remove>
 	</plugin>
 	<plugin name="Notepad++ bplist plugin">
-		<x64Version>1.2.0.0</x64Version>
+		<x64Version>1.2.0.3</x64Version>
 		<description>This plugin supports viewing\editing binary plist files. As long as ordinary plist files comes in XML format, this plugin dont supports them. It loads only binary plist files ( bplist ).</description>
 		<author>azerg</author>
 		<homepage>http://blog.azerg.com/</homepage>
 		<sourceUrl>https://github.com/azerg/NppBplistPlugin</sourceUrl>
-		<latestUpdate>01.25.2017 (v1.2.0.0)\n- + ability to distinguish between bplist files and ordinary xmls via plugin menu.\n02.05.2015 (v1.0.1.4)\n- Initial release</latestUpdate>
+		<latestUpdate>01.27.2017 (v1.2.0.3)\n- Thanks @chcg , added x64 build.\n01.25.2017 (v1.2.0.0)\n- + ability to distinguish between bplist files and ordinary xmls via plugin menu.\n02.05.2015 (v1.0.1.4)\n- Initial release</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/azerg/NppBplistPlugin/releases/download/1.2.0.0/NppBplistPlugin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/azerg/NppBplistPlugin/releases/download/1.2.0.3/NppBplistPlugin_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppBplistPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1351,15 +1358,15 @@
 		</remove>
 	</plugin>
 	<plugin name="NppCrypt">
-		<x64Version>1.0.1.2</x64Version>
+		<x64Version>1.0.1.3</x64Version>
 		<description>encryption/decryption with various block ciphers, hash-algorithms, random-characters, encoding with base-16/32/64</description>
 		<author>Jean Paul Richter</author>
 		<homepage>http://www.cerberus-design.de/download</homepage>
 		<sourceUrl>https://github.com/jeanpaulrichter/nppcrypt</sourceUrl>
-		<latestUpdate>a lot more ciphers, new dialogs, encoding-convertions, ...</latestUpdate>
+		<latestUpdate>7 Sep 2016 changlog v1.0.1.3:\n\n    several dialogs (random/covert/hash) are now non-modal and dockable\n    added copy to clipboard buttons</latestUpdate>
 		<install>
 			<x64>
-				<download>http://www.cerberus-design.de/nppcrypt/nppcryptv1012.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://www.cerberus-design.de/nppcrypt/nppcryptv1013.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="nppcrypt.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1414,14 +1421,14 @@
 		</install>
 	</plugin>
 	<plugin name="NppGTags">
-		<x64Version>4.3.1</x64Version>
+		<x64Version>4.4.0</x64Version>
 		<description>NppGTags plugin is a front-end to GTags (GNU Global source code tagging system). It allows easy code navigation by indexing the project sources. Supports finding symbol definitions and references, finding project paths, string literals, regular expressions (GREP functionality) and adds symbol auto-completion. Supports unlimited simultaneous searches. GTags built-in code parser supports C, C++, Yacc, Java, PHP4 and Assembly. Other languages are supported through Pygments + CTags parser.</description>
 		<author>Pavel Nedev</author>
-		<homepage>http://sourceforge.net/projects/nppgtags/</homepage>
+		<homepage>https://github.com/pnedev/nppgtags</homepage>
 		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/nppgtags/files/v4.3.1/NppGTags_v4.3.1_x86.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/pnedev/nppgtags/releases/download/v4.4.0/NppGTags_v4.4.0_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppGTags.dll" toFile="$PLUGINDIR$\" validate="true"/>
 				<copy from="NppGTags\*.*" to="$PLUGINDIR$\NppGTags\" validate="true" recursive="true"/>
 			</x64>
@@ -1898,12 +1905,19 @@
 		</install>
 	</plugin>
 	<plugin name="RegEx Helper">
+		<x64Version>0.2.3</x64Version>
 		<description>Highlights all matches of a regular expression within a document.  Clicking on an individual result shows the matching groups for that result.</description>
 		<author>lbarsanti</author>
 		<homepage>http://nppregexhelper.sourceforge.net/</homepage>
 		<sourceUrl>https://github.com/larryb82/npp-regexhelper</sourceUrl>
+		<latestUpdate>2015-05-19 v0.2.3</latestUpdate>
 		<stability>Good</stability>
-		<install/>
+		<install>
+			<x64>
+				<download>https://github.com/larryb82/npp-regexhelper/raw/master/bin/0.2.3/nppRegEx.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="nppRegEx.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
 	</plugin>
 	<plugin name="RegRexPlace">
 		<x64Version>1.0</x64Version>
@@ -1993,10 +2007,11 @@
 		</install>
 	</plugin>
 	<plugin name="SecurePad">
-		<x64Version>2.1</x64Version>
+		<x64Version>2.2</x64Version>
 		<description>With this you can encrypt/decrypt whole documents or selected text with your own key.  It is useful for storing sensitive information like logins and you don't want them lying around in a plaintext file.</description>
 		<author>Dominic Tobias</author>
 		<sourceUrl>https://github.com/DominicTobias/SecurePad</sourceUrl>
+		<latestUpdate>16 Nov 2013 v2.2: Recompiled with latest plugin files for compatibility with latest Notepad++ (6.5.1). Note that the compatibility break may have occurred before this, I have only tested that it works with this version though it is likely to work with lower versions of 6.5 too.\n\nManually download needed for x86 unicode from https://github.com/DominicTobias/SecurePad/blob/master/bin/SecurePad.dll as no zip provided</latestUpdate>
 		<install>
 			<unicode/>
 		</install>
@@ -2123,16 +2138,16 @@
 		</install>
 	</plugin>
 	<plugin name="Snippets">
-		<x64Version>1.3.0</x64Version>
+		<x64Version>1.4.0</x64Version>
 		<description>Adds the possibility to add code snippets to the current document by selecting it from a simple list.</description>
 		<author>Frank Fesevur</author>
 		<homepage>http://www.fesevur.com/nppsnippets</homepage>
 		<sourceUrl>http://github.com/ffes/nppsnippets/</sourceUrl>
-		<latestUpdate>Version 1.3.0, 2013-06-30\n\n* Fixed problem with inserting UTF snippets.\n* Fixed wrong title of Import Library dialog.\n* Fixed some potential bugs found when trying to fix GCC compilation.\n* Converted the documentation from ODT to DocBook. Because of that an on-line version of the documentation is available as well.\n* Upgrade to SQLite version 3.7.17</latestUpdate>
+		<latestUpdate>v1.4.0  ffes released this on 24 May 2017\n\n    Provide a 64-bit version of the plug-in.\n    Added the possibility to export a library for easier sharing.\n    The color of the plug-in match the current Notepad++ theme.\n    Converted the documentation from DocBook to reStructuredText. The documentation is now hosted at Read The Docs.\n    Fixed bug 6 at Google Code and its GitHub duplicate issue #8. When a snippet had an empty first line it could not be saved.\n    Removed all references to Google Code because that service has retired. All things that were still on Google Code have been moved to GitHub.\n    Internally use my SqliteDB-class to communicate with the database.\n    Added option ToolbarIcon to hide the icon from the toolbar.\n    Update icon on toolbar. It is now a puzzle piece.\n    Fixed issue that sometimes new libraries and/or new snippets could not be added.\n    Upgrade to SQLite version 3.19.0</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ffes/nppsnippets/releases/download/v1.3.0/NppSnippets-130.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="NppSnippets.dll" to="$PLUGINDIR$\"/>
+				<download>https://github.com/ffes/nppsnippets/releases/download/v1.4.0/NppSnippets-140-x32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="NppSnippets.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="NppSnippets\SQL\*.sql" to="$PLUGINDIR$\NppSnippets\SQL"/>
 				<copy from="NppSnippets\*.html" to="$PLUGINDIR$\NppSnippets"/>
 				<copy from="NppSnippets\*.pdf" to="$PLUGINDIR$\NppSnippets"/>
@@ -2315,7 +2330,7 @@
 		</install>
 	</plugin>
 	<plugin name="TagLEET">
-		<x64Version>1.3.0.1</x64Version>
+		<x64Version>1.3.1.1</x64Version>
 		<description>Ctags browser. Look up the definition of variables and functions in source code. Can also find include files if ctags file was generated correctly. Ultra fast with low memory usage. Allow working with a single ctags file for very large projects.</description>
 		<author>Gur Stavi</author>
 		<homepage>https://sourceforge.net/projects/tagleet/</homepage>
@@ -2323,7 +2338,7 @@
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/tagleet/files/v1.3.0/TagLEET_1.3.0.1.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/tagleet/files/v1.3.1/TagLEET_1.3.1.1.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="TagLEET.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -2439,14 +2454,15 @@
 		</install>
 	</plugin>
 	<plugin name="ToolBucket">
-		<x64Version>1.3</x64Version>
+		<x64Version>1.8</x64Version>
 		<description>Requires .NET 2.0\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>
 		<author>Paul Heasley</author>
 		<homepage>http://www.phdesign.com.au/programming/toolbucket-multi-line-search-plugin-for-notepad/</homepage>
 		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
+		<latestUpdate>7 Jun 2017 Update project template to support creation of x64 version</latestUpdate>
 		<install>
 			<x64>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/NppToolBucket/NppToolBucket-1.3.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.8.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppToolBucket.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
