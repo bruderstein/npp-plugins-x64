@@ -156,5 +156,9 @@
     "Snippets":
     {
         "276497210d668a170ef70886c0c812dc": "NppSnippets.dll"
+    },
+    "NppExport":
+    {
+        "e748f70f9eebf18a337ec9dba95699d5": "NppExport.dll"
     }
 }
