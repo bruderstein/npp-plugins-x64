@@ -4,13 +4,13 @@
         "7584bd70f007c658b1640c07aaad6a6c": "gpup.exe"
     },
     "NppFTP": {
-        "99d9e4f745d6c6e5f0910d26bdbd3d36": "NppFTP.dll"
+        "e9175eb9d18eba37c8cb3ad52ecfb131": "NppFTP.dll"
     },
     "MIME Tools": {
         "586a5399489a033118737809c7de9e0d": "mimeTools.dll"
     },
     "Converter": {
-        "0e56a61f5481bb13ae35be5ada06530b": "NppConverter.dll"
+        "fe9450c8a07231c0616f3d90a599f411": "NppConverter.dll"
     },
     "Compare": {
         "4f93227f2d0fc8332552296d159e8b63": "ComparePlugin.dll",
@@ -21,14 +21,14 @@
         "87072452e2ce8c13b5ebd551630705a6": "AutoSave.dll"
     },
     "NppGTags": {
-        "76d7e72e7cabf72cb1626d93e9c4782c": "NppGTags.dll",
+        "039cfa29a082c5726edd1db24dd3d472": "NppGTags.dll",
         "7c54e1e0bfe67c84d2915687e38975b1": "ctags.exe",
-        "3a34ffac8f7290c69b06d46525f8169f": "global.exe",
+        "e223f7c5e173f8961dd04b08bff71c2a": "global.exe",
         "5a511fe07c02daf1dff6bcdcb6d95c62": "gtags.conf",
-        "ba257c9f6d936d79a79c36aa824e3745": "gtags.exe",
+        "9c5ad8243c6a37fb4ba4ff9249cff620": "gtags.exe",
         "8a3bccf0468a339bc17d9d4ba8b532e2": "pygments-parser.dll",
         "c837f0a3a00b855134b123fdfef98be0": "pygments_parser.py",
-        "c22b5392b15bc125414c565bcd472768": "universal-ctags.dll"
+        "c70c9ffd2ab27f45465061f99c126ce0": "universal-ctags.dll"
     },
     "AutoCodepage":
     {
@@ -49,5 +49,116 @@
     "CsvQuery":
     {
         "f5d2d72304330de39e7464642d3e8a89": "CsvQuery.dll"
+    },
+    "XML Tools": {
+        "3e255f8351be4b39be4d082e5b2efe26": "libiconv-2.dll",
+        "eee0da34c1377ec2103cb04be9391ada": "libwinpthread-1.dll",
+        "f2afb03bcd04dce6ae370ba20a6042c6": "libxml2-2.dll",
+        "f9ff500438dcfe4847a8d250eec5ff82": "libxslt-1.dll",
+        "c2de1ee33c0162f61d9a495fe1af427f": "zlib1.dll",
+        "2f8826a6cea2480fe2b4440d5c4273ef": "XMLTools.dll",
+        "da191d9a7f26daaaa1ca1899566adb4c": "libcurl.dll"
+    },
+    "LanguageHelp":
+    {
+        "37b8754108f4aa529b35ce3c9dd8415a": "LanguageHelp.dll"
+    },
+    "Menu Icons":
+    {
+        "797982f2e97aefff09443fccd8ae714a": "MenuIcons.dll"
+    },
+    "Open Selection":
+    {
+        "10fb9247b7c9da8b499a9caa5d10766c": "OpenSelection.dll"
+    },
+    "RunMe":
+    {
+        "eca6b4611fc70a55de79ba2614e8bea4": "RunMe.dll"
+    },
+    "TakeNotes":
+    {
+        "a3ed038ba037e981b0fb92312292f2d3": "TakeNotes.dll"
+    },
+    "TopMost":
+    {
+        "098f90481db47681d26c66c5e87b6148": "TopMost.dll"
+    },
+    "Pork2Sausage":
+    {
+        "bf6414fb354a3c7d59df1f910e5227d8": "pork2sausage.dll"
+    },
+    "Select 'N' Launch":
+    {
+        "cb1b48dc877f526be9b7c617745c02ec": "SelectNLaunch.dll"
+    },
+    "Zoom Disabler":
+    {
+        "134fe33658c3a0c6aaf0f809f448b8fe": "zoomdisabler_x64.dll"
+    },
+    "TagLEET":
+    {
+        "ed10ddb183d7fa804362f6f047cf22e6": "TagLEET.dll"
+    },
+    "ToolBucket":
+    {
+        "ff35eb58bb647e880fd666b4f287c314": "NppToolBucket.dll"
+    },
+    "JSTool":
+    {
+        "55883dce17f4e25397aa963bef758d98": "JSMinNPP.dll"
+    },
+    "3P - Progress Programmers Pal":
+    {
+        "4eac568d661b34e62ec47a6bb3218591": "3P.dll",
+        "c5d95089e3cd2a131fe0c5ba0e381d83": "3P.pdb"
+    },
+    "SQLinForm SQL Formatter":
+    {
+        "b763c28a8dda15f2ca12cb72cb11f88b": "SQLinFormNpp64.dll"
+    },
+    "DSpellCheck":
+    {
+        "644eca1c33e489a3bfd2461173e514b5": "DSpellCheck.dll"
+    },
+    "MarkdownViewer++":
+    {
+        "8a74ff1eb38acaeec33cf919230cf81d": "MarkdownViewerPlusPlus.dll"
+    },
+    "Npp Xml Treeview":
+    {
+        "6afbdb83104e7ff6c2c53b6c9a845abf": "NppXmlTreeviewPlugin.dll",
+        "7010f7729457b52e6bf97ac92ea5e62d": "NppXmlTreeviewPlugin.Parsers.dll"
+    },
+    "NppExec":
+    {
+        "39565d0c48901b4ef4c1537dc6448128": "NppExec.dll"
+    },
+    "JSON Viewer":
+    {
+        "b4544ecf822ea0c0c9c373500c8e0356": "NPPJSONViewer-x64.dll"
+    },
+    "HTML Tag":
+    {
+        "96e12f706761141b3129950c55fb5a24": "HTMLTag.dll"
+    },
+    "SelectQuotedText":
+    {
+        "0c3bdcb76c1a887f4f78253185d89b04": "SelectQuotedText.dll"
+    },
+    "Notepad++ bplist plugin":
+    {
+        "30452b06db6662b8f6e7419c70313a55": "NppBplistPlugin.dll"
+    },
+    "NppCrypt":
+    {
+        "9df0c7687b56a6e0ade08f345bda5bbc": "nppcrypt.dll"
+    },
+    "Snippets":
+    {
+        "276497210d668a170ef70886c0c812dc": "NppSnippets.dll"
+    },
+    "NppExport":
+    {
+        "e748f70f9eebf18a337ec9dba95699d5": "NppExport.dll"
     }
 }

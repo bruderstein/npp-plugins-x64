@@ -1,124 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
-	<plugin name="Plugin Manager">
-		<x64Version>1.4.9</x64Version>
-		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
-		<author>Dave Brotherstone</author>
-		<homepage>http://www.brotherstone.co.uk/npp/pm</homepage>
-		<sourceUrl>http://github.com/bruderstein/nppPluginManager</sourceUrl>
-		<latestUpdate>x64 support with a simple XML plugin list managed manually</latestUpdate>
-		<install>
-			<x64>
-				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.9/PluginManager_v1.4.9_x64.zip</download>
-				<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true" isGpup="true"/>
-			</x64>
-		</install>
-	</plugin>
-	<plugin name="NppFTP">
-		<x64Version>0.26.9</x64Version>
+	<plugin name="3P - Progress Programmers Pal">
+		<x64Version>1.7.4</x64Version>
 		<aliases>
-			<alias name="nppftp"/>
+			<alias name="3P"/>
 		</aliases>
-		<description>NppFTP: a plugin that allows FTP, FTPS, FTPES and SFTP communications. Very useful for web development.</description>
-		<author>ashish_kulz</author>
-		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
-		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>- Fix for issue #122 about missing support for TLS V1.2 for FTPS and FTPES.\n- Build tooling preparation for cmake builds.</latestUpdate>
+		<description>3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- more than 50 options to better suit your needs\n- the ability to run/compile and even PROLINT your source file with an in-line \n- visualization of errors\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
+		<author>Julien Caillon</author>
+		<homepage>http://jcaillon.github.io/3P/</homepage>
+		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
+		<latestUpdate>More infos here :\n\nhttps://github.com/jcaillon/3P/releases</latestUpdate>
+		<stability>PreRelease</stability>
+		<minVersion>6.8.0</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.26.9/NppFTP-x64.zip</download>
-				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
-			</x64>
-		</install>
-	</plugin>
-	<plugin name="MIME Tools">
-		<x64Version>2.1</x64Version>
-		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
-		<author>Don HO</author>
-		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
-		<latestUpdate>Remove the dependance of other dll</latestUpdate>
-		<install>
-			<x64>
-				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.bin.zip</download>
-				<copy from="bin64\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
-			</x64>
-		</install>
-	</plugin>
-	<plugin name="Converter">
-		<x64Version>4.2</x64Version>
-		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
-		<author>Don HO</author>
-		<sourceUrl>https://github.com/npp-plugins/converter</sourceUrl>
-		<latestUpdate>Remove the dependance of other dll</latestUpdate>
-		<install>
-			<x64>
-				<download>https://github.com/npp-plugins/converter/releases/download/v4.2/nppConvert.v4.2.zip</download>
-				<copy from="bin64\NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
-				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
-			</x64>
-		</install>
-	</plugin>
-	<plugin name="Compare">
-		<x64Version>2.0.0</x64Version>
-		<description>A very useful compare plugin to show the differences between 2 files (side by side).</description>
-		<author>Ty Landercasper, Jean-Sebastien Leroy, Pavel Nedev</author>
-		<sourceUrl>https://github.com/jsleroy/compare-plugin</sourceUrl>
-		<latestUpdate>Total plugin re-work. Fixed stability issues. Several new features and many improvements.</latestUpdate>
-		<install>
-			<x64>
-				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_X64.zip</download>
-				<copy from="ComparePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="ComparePlugin\*.*" to="$PLUGINDIR$\ComparePlugin\" validate="true" recursive="true"/>
+				<download>https://github.com/jcaillon/3P/releases/download/v1.7.4/3P_x64.zip</download>
+				<copy from="3P.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="3P.pdb" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\ComparePlugin\" isDirectory="true"/>
-			</x64>
-		</remove>
-	</plugin>
-	<plugin name="AutoSave">
-		<x64Version>1.6.0</x64Version>
-		<aliases>
-			<alias name="Auto Save"/>
-		</aliases>
-		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
-		<author>Franco Stellari</author>
-		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
-		<latestUpdate>Added the capability of creating a time stamped copy of current file content.</latestUpdate>
-		<install>
-			<x64>
-				<download>https://sites.google.com/site/fstellari/nppplugins/AutoSave_dll_1v60.zip</download>
-				<copy from="64bit\AutoSave.dll" to="$PLUGINDIR$\" validate="true"/>
-			</x64>
-		</install>
-	</plugin>
-	<plugin name="NppGTags">
-		<x64Version>4.3.1</x64Version>
-		<description>NppGTags plugin is a front-end to GTags (GNU Global source code tagging system). It allows easy code navigation by indexing the project sources. Supports finding symbol definitions and references, finding project paths, string literals, regular expressions (GREP functionality) and adds symbol auto-completion. Supports unlimited simultaneous searches. GTags built-in code parser supports C, C++, Yacc, Java, PHP4 and Assembly. Other languages are supported through Pygments + CTags parser.</description>
-		<author>Pavel Nedev</author>
-		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
-		<latestUpdate>Fix bug in Create Database dialog.</latestUpdate>
-		<install>
-			<x64>
-				<download>https://sourceforge.net/projects/nppgtags/files/v4.3.1/NppGTags_v4.3.1_x64.zip/download</download>
-				<copy from="NppGTags.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppGTags\*.*" to="$PLUGINDIR$\NppGTags\" validate="true" recursive="true"/>
-			</x64>
-		</install>
-		<remove>
-			<x64>
-				<delete file="$PLUGINDIR$\NppGTags\" isDirectory="true"/>
+				<delete file="$PLUGINDIR$\3P.dll"/>
+				<delete file="$PLUGINDIR$\3P.pdb"/>
 			</x64>
 		</remove>
 	</plugin>
 	<plugin name="AutoCodepage">
 		<x64Version>1.2.0</x64Version>
-		<author>Andreas Heim</author>
 		<description>AutoCodepage: A plugin to automatically set a document's code page to your needs on loading or renaming a document, changing its language or activating its tab. Usefull especially when coding batch scripts.</description>
+		<author>Andreas Heim</author>
 		<homepage>https://sourceforge.net/projects/autocodepage/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/autocodepage/files/src/</sourceUrl>
 		<latestUpdate>The v1.2.0 release is mostly a bugfix release. If a newly created document was saved to disk and got a filename extension which matched the settings for a certain file class Notepad++ got hung. Because of that during file saving the plugin gets disabled now.</latestUpdate>
@@ -135,43 +46,53 @@
 			</x64>
 		</remove>
 	</plugin>
-	<plugin name="DoxyIt">
-		<x64Version>0.4.2</x64Version>
-		<description>Inspired by DocIt. Generates Doxygen style comment blocks based on function/method definitions. Also provides functionality for modifying comment blocks. Configurable for each language. Current supported languages:\n* C/C++\n* Python\n* Java\n* PHP\n* JavaScript\n* C#\n* UDLs</description>
-		<author>Justin Dailey</author>
-		<sourceUrl>https://github.com/dail8859/doxyit</sourceUrl>
-		<latestUpdate>Added jump locations which can be jumped to by pressing the Tab key.</latestUpdate>
-		<stability>Good</stability>
+	<plugin name="AutoSave">
+		<x64Version>1.6.0</x64Version>
+		<aliases>
+			<alias name="Auto Save"/>
+		</aliases>
+		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
+		<author>Franco Stellari</author>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<latestUpdate>2017-02-08	Added the capability of creating a time stamped copy of current file content.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/DoxyIt/releases/download/v0.4.2/DoxyIt_64.zip</download>
-				<copy from="DoxyIt_64.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://sites.google.com/site/fstellari/nppplugins/AutoSave_dll_1v60.zip</download>
+				<copy from="64bit\AutoSave.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
-	<plugin name="Elastic Tabstops">
-		<x64Version>1.2</x64Version>
-		<description>Implementation of Elastic Tabstops. Stretch tabs to align with adjacent lines. Can also be used for TSV files.\n\nFor more information about elastic tabstops see: \nhttp://nickgravgaard.com/elastic-tabstops/</description>
-		<author>Justin Dailey</author>
-		<sourceUrl>https://github.com/dail8859/ElasticTabstops</sourceUrl>
-		<stability>Good</stability>
+	<plugin name="Compare">
+		<x64Version>2.0.0</x64Version>
+		<description>A very useful compare plugin to show the differences between 2 files (side by side).</description>
+		<author>Ty Landercasper, Jean-Sebastien Leroy, Pavel Nedev</author>
+		<homepage>https://github.com/jsleroy/compare-plugin</homepage>
+		<sourceUrl>https://github.com/jsleroy/compare-plugin</sourceUrl>
+		<latestUpdate>Total plugin re-work. Fixed stability issues. Several new features and many improvements.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/ElasticTabstops/releases/download/v1.2/ElasticTabstops_64.zip</download>
-				<copy from="ElasticTabstops_64.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_X64.zip</download>
+				<copy from="ComparePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="ComparePlugin\*.*" to="$PLUGINDIR$\ComparePlugin\" validate="true" recursive="true"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\ComparePlugin\" isDirectory="true"/>
+			</x64>
+		</remove>
 	</plugin>
-	<plugin name="LuaScript">
-		<x64Version>0.7.0</x64Version>
-		<description>Plugin for Lua scripting capabilities. Provides control over all of Scintilla's features and options with a light-weight, fully-functional programming language.</description>
-		<author>Justin Dailey</author>
-		<sourceUrl>https://github.com/dail8859/LuaScript</sourceUrl>
-		<stability>Good</stability>
+	<plugin name="Converter">
+		<x64Version>4.2.1</x64Version>
+		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
+		<author>Don Ho</author>
+		<sourceUrl>https://github.com/npp-plugins/converter</sourceUrl>
+		<latestUpdate>Make it compatible with old os (XP)</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/LuaScript/releases/download/v0.7.0/LuaScript_64.zip</download>
-				<copy from="LuaScript_64.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/npp-plugins/converter/releases/download/v4.2.1/nppConvert.v4.2.1.zip</download>
+				<copy from="bin64\NppConverter.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
 			</x64>
 		</install>
 	</plugin>
@@ -187,5 +108,582 @@
 				<copy from="CsvQuery.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
+	</plugin>
+	<plugin name="DoxyIt">
+		<x64Version>0.4.3</x64Version>
+		<description>Inspired by DocIt. Generates Doxygen style comment blocks based on function/method definitions. Also provides functionality for modifying comment blocks. Configurable for each language. Current supported languages:\n* C/C++\n* Python\n* Java\n* PHP\n* JavaScript\n* C#\n* UDLs</description>
+		<author>Justin Dailey</author>
+		<sourceUrl>https://github.com/dail8859/doxyit</sourceUrl>
+		<latestUpdate>22 May 2017 Fix $FUNCTION keyword</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/dail8859/DoxyIt/releases/download/v0.4.3/DoxyIt_64.zip</download>
+				<copy from="DoxyIt_64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\DoxyIt.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="DSpellCheck">
+		<x64Version>1.2.14.2</x64Version>
+		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
+		<author>Sergey Semushin</author>
+		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
+		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
+		<latestUpdate>* Fix plugin's sudden demise after user executes "Find in Files"</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/1.2.14.2/DSpellCheck-x64.zip</download>
+				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Elastic Tabstops">
+		<x64Version>1.3</x64Version>
+		<description>Implementation of Elastic Tabstops. Stretch tabs to align with adjacent lines. Can also be used for TSV files.\n\nFor more information about elastic tabstops see: \nhttp://nickgravgaard.com/elastic-tabstops/</description>
+		<author>Justin Dailey</author>
+		<sourceUrl>https://github.com/dail8859/ElasticTabstops</sourceUrl>
+		<latestUpdate>- Limit updates to only the current view region. This can lead to a significant performance increase for large files such as TSV, or when doing Search/Replace. Note: that this may case columns to change sizes while scrolling.\n- Fix issue with specifying extensions\n- Fix tab widths for proportional fonts\n- Allow elastic tabstops to be calculated for files using spaces as indentation</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/dail8859/ElasticTabstops/releases/download/v1.3/ElasticTabstops_64.zip</download>
+				<copy from="ElasticTabstops_64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\ElasticTabstops_64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="HTML Tag">
+		<x64Version>1.0.0.0</x64Version>
+		<description>This plug-in provides three core functions to Notepad++:\n- HTML and XML tag jumping, like the built-in brace matching (Ctrl+B / Shift+Ctrl+B), and selection\n  of tags and/or contents.\n- HTML entity encoding/decoding (example: é to &amp;eacute;)\n- JS character encoding/decoding (example: é to \u00E9)</description>
+		<author>Martijn Coppoolse</author>
+		<homepage>https://fossil.2of4.net/npp_htmltag/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag%20plugin%20v1.0.0/HTMLTag_plugin_v1.0.0_src.zip/download</sourceUrl>
+		<latestUpdate>[Version 1.0.0 - 2017-02-19 16:03]\n* Added: 64-bits version\n* Several tiny bugfixes</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag%20plugin%20v1.0.0/HTMLTag_plugin_1.0.0_64.zip/download</download>
+				<copy from="HTMLTag.dll" to="$PLUGINDIR$\" validate="true" backup="true"/>
+				<copy from="HTMLTag-entities.ini" to="$PLUGINDIR$\" backup="true"/>
+				<copy from="Config/HTMLTag.ini" to="$CONFIGDIR$\" backup="true"/>
+				<copy from="Doc/HTMLTag-readme.txt" toFile="$CONFIGDIR$\Doc\HTMLTag-readme.txt"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="JSON Viewer">
+		<x64Version>1.24</x64Version>
+		<aliases>
+			<alias name="JSONViewer"/>
+		</aliases>
+		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
+		<author>Kapil Ratnani</author>
+		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
+		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
+		<latestUpdate>9 Jan 2017, 1. 64 bit support. Thanks @chcg</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.24/NPPJSONViewer-x64.dll.zip</download>
+				<copy from="NPPJSONViewer-x64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NPPJSONViewer-x64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="JSTool">
+		<x64Version>1.21.0</x64Version>
+		<aliases>
+			<alias name="JSMin"/>
+		</aliases>
+		<description>A javascript plugin for Notepad++.\n * Douglas Crockford's JSMin algorithm to minimize javascript code.\n * My own algorithm to format javascript code.\n * A JSON data viewer. This JSON data viewer can handle &gt;10MB JSON file easily.\n * Support 64bit Notepad++ (from version 1.20.0).\nReally helpful to javascript coder on Notepad++ and really easy to use it.\nMade in China.</description>
+		<author>Sun Junwen</author>
+		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
+		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
+		<latestUpdate>Unicode only release build.\nAdd toolbar button for Json Viewer.\nAdd an option to control new version check.\nAdd an "Auto detect" end of line option.\nFix high DPI layout.\nFix bugs.\nOther tweak.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.0.uni.64.zip/download</download>
+				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="LanguageHelp">
+		<x64Version>1.7.2</x64Version>
+		<aliases>
+			<alias name="Language Help"/>
+		</aliases>
+		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
+		<author>Franco Stellari</author>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<latestUpdate>2017-02-14	Improve detection of context menu.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/LanguageHelp_dll_1v72.zip</download>
+				<copy from="64bit\LanguageHelp.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="LuaScript">
+		<x64Version>0.7.0</x64Version>
+		<description>Plugin for Lua scripting capabilities. Provides control over all of Scintilla's features and options with a light-weight, fully-functional programming language.</description>
+		<author>Justin Dailey</author>
+		<sourceUrl>https://github.com/dail8859/LuaScript</sourceUrl>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/dail8859/LuaScript/releases/download/v0.7.0/LuaScript_64.zip</download>
+				<copy from="LuaScript_64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\LuaScript_64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="MarkdownViewer++">
+		<x64Version>0.7.1</x64Version>
+		<aliases>
+			<alias name="MarkdownViewerPlusPlus"/>
+			<alias name="MarkdownViewer++"/>
+		</aliases>
+		<description>View a Markdown/CommonMark compliant text file rendered on-the-fly directly in Notepad++ in a docked panel.\nExport the rendered result as HTML or PDF and configure the file extensions to be rendered.</description>
+		<author>nea</author>
+		<homepage>https://nea.github.io/MarkdownViewerPlusPlus/</homepage>
+		<sourceUrl>https://github.com/nea/MarkdownViewerPlusPlus</sourceUrl>
+		<latestUpdate>* Added handling of local image files</latestUpdate>
+		<stability>Good</stability>
+		<minVersion>7.2</minVersion>
+		<install>
+			<x64>
+				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.7.1/MarkdownViewerPlusPlus-0.7.1-x64.zip</download>
+				<copy from="MarkdownViewerPlusPlus.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="*.md" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
+				<copy from="license\*.txt" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
+				<copy from="license\*.md" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\MarkdownViewerPlusPlus.dll"/>
+				<delete file="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="Menu Icons">
+		<x64Version>1.2.2</x64Version>
+		<aliases>
+			<alias name="MenuIcons"/>
+		</aliases>
+		<description>MenuIcons allows to add icons to both main and context menu. Several options are available to load the icons from a folder. More than provide a full set of icons, it's design to enable people to create their own set of icon themes.\nNote: the plugin does not work correctly on WinXP.\n\nAlternative icon sets: English by Yaron, Hebrew by Yaron.\nJust download them and replace the MenuIcon folder or save them somewhere else and set the new folder in the Menu Icons plugin options.</description>
+		<author>Franco Stellari</author>
+		<sourceUrl>https://sites.google.com/site/fstellari/nppplugins</sourceUrl>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/MenuIcons_dll_1v22.zip</download>
+				<copy from="64bit\MenuIcons.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="MenuIcons\*.*" to="$PLUGINDIR$\MenuIcons" recursive="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="MIME Tools">
+		<x64Version>2.1</x64Version>
+		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
+		<author>Don HO</author>
+		<homepage>http://npp-plugins.tuxfamily.org/plugins</homepage>
+		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
+		<latestUpdate>6 Sep 2016 Remove the dependance of other dll</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.bin.zip</download>
+				<copy from="bin64\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Notepad++ bplist plugin">
+		<x64Version>1.2.0.3</x64Version>
+		<description>This plugin supports viewing\editing binary plist files. As long as ordinary plist files comes in XML format, this plugin dont supports them. It loads only binary plist files ( bplist ).</description>
+		<author>azerg</author>
+		<homepage>http://blog.azerg.com/</homepage>
+		<sourceUrl>https://github.com/azerg/NppBplistPlugin</sourceUrl>
+		<latestUpdate>01.27.2017 (v1.2.0.3)\n- Thanks @chcg , added x64 build.\n01.25.2017 (v1.2.0.0)\n- + ability to distinguish between bplist files and ordinary xmls via plugin menu.\n02.05.2015 (v1.0.1.4)\n- Initial release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/azerg/NppBplistPlugin/releases/download/1.2.0.3/NppBplistPlugin_x64.zip</download>
+				<copy from="NppBplistPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Npp Xml Treeview">
+		<x64Version>1.5.0.51</x64Version>
+		<aliases>
+			<alias name="Npp Xml Treview"/>
+		</aliases>
+		<description>A treeview visualization for xml files.</description>
+		<author>João Rosa</author>
+		<sourceUrl>https://github.com/joaoasrosa/nppxmltreeview</sourceUrl>
+		<latestUpdate>London Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- x64 version\n- BIG BUG in latest 1.4.0.45 release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/London-v1.5.0.51/NppXMLTreeviewPlugin_x64.zip</download>
+				<copy from="NppXmlTreeviewPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin.dll"/>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="NppCrypt">
+		<x64Version>1.0.1.3</x64Version>
+		<description>encryption/decryption with various block ciphers, hash-algorithms, random-characters, encoding with base-16/32/64</description>
+		<author>Jean Paul Richter</author>
+		<homepage>http://www.cerberus-design.de/download</homepage>
+		<sourceUrl>https://github.com/jeanpaulrichter/nppcrypt</sourceUrl>
+		<latestUpdate>7 Sep 2016 changlog v1.0.1.3:\n\n    several dialogs (random/covert/hash) are now non-modal and dockable\n    added copy to clipboard buttons</latestUpdate>
+		<install>
+			<x64>
+				<download>http://www.cerberus-design.de/nppcrypt/nppcryptv1013.x64.zip</download>
+				<copy from="nppcrypt.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="NppExec">
+		<x64Version>0.5.9.9</x64Version>
+		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
+		<author>Vitaliy Dovgan</author>
+		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
+		<latestUpdate>Version  v0.5.9.9 dev  ------------  + NppExec can be build with Orwell Dev-C++ (NppExec_DevCpp.dev)  + project file for Visual Studio 2013 Express (NppExec_VC12.sln)  + fparser updated to 4.5.2  + Notepad++ and Scintilla header files updated to Notepad++ 6.8.6  + Warning Analyser: more accurate detection of %LINE% and %CHAR%  + new command: NPP_SAVEAS  + new command: PROC_SIGNAL  + set &lt;var&gt; ~ strfromhex &lt;hex string&gt;+ set &lt;var&gt; ~ strtohex &lt;string&gt;+ now commands can be executed from macro-vars (e.g. &quot;set a = npp_run calc&quot; and then &quot;$(a)&quot; to execute)  + now a child console process is tried to be killed first, and only then terminated  + added: &quot;@EXIT_CMD&quot; macro var to specify child process'es exit command  + added: &quot;nppexec:&quot; prefix to execute NppExec's commands from a child console process  + NppExec's Console: Tab-completion improved; also works after &quot;help &quot; and &quot;nppexec:&quot;  + NppExec's Console: &quot;Tab = \t&quot; allows to type Tab character in the Console  + NppExec's Console: &quot;set local&quot; creates Console's local vars (not shared with NppExec's script)  + now SEL_LOADFROM and CON_LOADFROM detect UTF-8 without BOM  + now SEL_SAVETO can save as UTF-8 without BOM  - fixed: font of NppExec's Console could be set incorrectly  - fixed: crash while calculating very big numbers (e.g. 10^72)  - fixed: the &quot;exit command&quot; dialog did not use the &quot;Key_Enter&quot; value  * internal improvements  * more internal improvements  * better error reporting  +? NppExec Manual updated !!!incomplete: to be updated!!!  +? new flow: IF...ELSE...ENDIF !!!incomplete: not documented!!! in case of errors the script is stopped  +? now each command returns either CMDRESULT_SUCCEEDED or CMDRESULT_FAILED !!!incomplete: just partially implemented, not documented!!!</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.5.9.9%20dev/NppExec20160628_dll_x64-2.zip/download</download>
+				<copy from="doc\*.*" to="$PLUGINDIR$\doc"/>
+				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
+				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="NppExport">
+		<x64Version>0.2.8.0</x64Version>
+		<description>NppExport is a true WYSIWYG exporter. It allows you not only to save your source code as a html/rtf file, but also to copy your source code in the clipboard in RTF/HTML format, so you can paste it into your word processor (MS Word, Abiword, openoffice.org Writer) to get the same visual effect.</description>
+		<latestUpdate>27 Dec 2016 Unofficial port of https://sourceforge.net/projects/npp-plugins/files/NppExport/NppExport%20Plugin%20v0.2.8/NppExport_0_2_8_dll.zip/download for x64</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/chcg/NPP_ExportPlugin/releases/download/0.2.8.6/NppExport_0.2.8.6_x64.zip</download>
+				<copy from="vs7project\X64\Release\NppExport.dll" toFile="$PLUGINDIR$\$PLUGINFILENAME$" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="NppFTP">
+		<x64Version>0.27.0</x64Version>
+		<aliases>
+			<alias name="nppftp"/>
+		</aliases>
+		<description>NppFTP: a plugin that allows FTP, FTPS, FTPES and SFTP communications. Very useful for web development.</description>
+		<author>ashish_kulz</author>
+		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
+		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
+		<latestUpdate>- update libssh to version 0.7.5 #155\n- bugfix for NppFTP Random crash #52\n- bugfix for [security] Buffer overflow in NppFTP v0.26.5 leading to Notepad++ v6.8.6 crash #75\n- bugfix for nppFTP - sFTP key issue #135\n- bugfix for Npp crashes on connection attempt when NppFTP private keyfile not found #91\n- bugfix for NppFTP is unable to save files to root directory #144\n- Refactor to support Elliptic Curve SSH keys (ECDSA and ED25519) #154</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.0/NppFTP-x64.zip</download>
+				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="NppGTags">
+		<x64Version>4.4.0</x64Version>
+		<description>NppGTags plugin is a front-end to GTags (GNU Global source code tagging system). It allows easy code navigation by indexing the project sources. Supports finding symbol definitions and references, finding project paths, string literals, regular expressions (GREP functionality) and adds symbol auto-completion. Supports unlimited simultaneous searches. GTags built-in code parser supports C, C++, Yacc, Java, PHP4 and Assembly. Other languages are supported through Pygments + CTags parser.</description>
+		<author>Pavel Nedev</author>
+		<homepage>https://github.com/pnedev/nppgtags</homepage>
+		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
+		<latestUpdate>Add results search functionality. Add per-database ignore sub-folders setting.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/pnedev/nppgtags/releases/download/v4.4.0/NppGTags_v4.4.0_X64.zip</download>
+				<copy from="NppGTags.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppGTags\*.*" to="$PLUGINDIR$\NppGTags\" validate="true" recursive="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NppGTags\" isDirectory="true"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="Open Selection">
+		<x64Version>1.1.2</x64Version>
+		<aliases>
+			<alias name="OpenSelection"/>
+		</aliases>
+		<description>OpenSelection is designed to help people to open files based on the selected text. A typical applications is "include" files of may types of programs. Another applications is to open Matlab functions. The plugin is can be customized for different languages based on the open file extension. Multiple search folders may be specified along with multiple extensions.</description>
+		<author>Franco Stellari</author>
+		<homepage>https://sites.google.com/site/fstellari/nppplugins</homepage>
+		<sourceUrl>https://sites.google.com/site/fstellari/nppplugins</sourceUrl>
+		<latestUpdate>2017-02-14	Improve detection of context menu.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/OpenSelection_dll_1v12.zip</download>
+				<copy from="64bit\OpenSelection.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Plugin Manager">
+		<x64Version>1.4.9</x64Version>
+		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
+		<author>Dave Brotherstone</author>
+		<homepage>https://bruderste.in/npp/pm/</homepage>
+		<sourceUrl>https://github.com/bruderstein/nppPluginManager</sourceUrl>
+		<latestUpdate>x64 support with a simple XML plugin list managed manually</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.9/PluginManager_v1.4.9_x64.zip</download>
+				<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true" isGpup="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Pork2Sausage">
+		<x64Version>2.1</x64Version>
+		<description>Transforms selected text to through a transformer (a console program which takes inputs then generates output).  Up to 20 transformers can be defined</description>
+		<author>Don Ho</author>
+		<sourceUrl>https://github.com/npp-plugins/pork2sausage</sourceUrl>
+		<latestUpdate>16 Sep 2016 Remove the dependecy issue</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/npp-plugins/pork2sausage/releases/download/v2.1/pork2sausage.2.1.bin.zip</download>
+				<copy from="bin64\Config/pork2Sausage.ini" to="$CONFIGDIR$\"/>
+				<copy from="bin64\readmetxt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
+				<copy from="bin64\pork2sausage.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="RunMe">
+		<x64Version>1.4.0</x64Version>
+		<aliases>
+			<alias name="Run Me"/>
+		</aliases>
+		<description>RunMe allows to execute the currently open file, based on its shell association.\nThe plugin allows also to open an explorer or command shell at the file location.\nOptions are available to same the current file (or all the files) before execution.\nThe executed file can be run in foreground,background, or hidden mode.\nContext menu entries and tool bar icons are available.</description>
+		<author>Franco Stellari</author>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<latestUpdate>Added 64bit support\nAdded capability of running scripts with parameters</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/RunMe_dll_1v40.zip</download>
+				<copy from="64bit\RunMe.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Select 'N' Launch">
+		<x64Version>2.1</x64Version>
+		<description>This plugin gets your selected text, saves it as file with the extension you customize in the system temporary directory, then call system to open it with the extension associated program.</description>
+		<author>Don Ho</author>
+		<sourceUrl>https://github.com/npp-plugins/selectnlaunch</sourceUrl>
+		<latestUpdate>16 Sep 2016 Remove dependency of other dll</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/npp-plugins/selectnlaunch/releases/download/v2.1/selectNLaunch.v2.1.bin.zip</download>
+				<copy from="bin64\SelectNLaunch.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="SelectQuotedText">
+		<x64Version>1.0.0</x64Version>
+		<description>Select the text in quotes (aka a string) based on the Scintilla lexers in Notepad++. Just press Alt+' and select the entire string under the cursor. If no string is found, it select the current word.</description>
+		<author>Frank Fesevur</author>
+		<homepage>https://www.fesevur.com/selectquotedtext</homepage>
+		<sourceUrl>https://github.com/ffes/selectquotedtext/</sourceUrl>
+		<latestUpdate>First release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/ffes/selectquotedtext/releases/download/v1.0.0/SelectQuotedText-100-x64.zip</download>
+				<copy from="SelectQuotedText.dll" to="$PLUGINDIR$\"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\SelectQuotedText.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="Snippets">
+		<x64Version>1.4.0</x64Version>
+		<description>Adds the possibility to add code snippets to the current document by selecting it from a simple list.</description>
+		<author>Frank Fesevur</author>
+		<homepage>http://www.fesevur.com/nppsnippets</homepage>
+		<sourceUrl>http://github.com/ffes/nppsnippets/</sourceUrl>
+		<latestUpdate>v1.4.0  ffes released this on 24 May 2017\n\n    Provide a 64-bit version of the plug-in.\n    Added the possibility to export a library for easier sharing.\n    The color of the plug-in match the current Notepad++ theme.\n    Converted the documentation from DocBook to reStructuredText. The documentation is now hosted at Read The Docs.\n    Fixed bug 6 at Google Code and its GitHub duplicate issue #8. When a snippet had an empty first line it could not be saved.\n    Removed all references to Google Code because that service has retired. All things that were still on Google Code have been moved to GitHub.\n    Internally use my SqliteDB-class to communicate with the database.\n    Added option ToolbarIcon to hide the icon from the toolbar.\n    Update icon on toolbar. It is now a puzzle piece.\n    Fixed issue that sometimes new libraries and/or new snippets could not be added.\n    Upgrade to SQLite version 3.19.0</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/ffes/nppsnippets/releases/download/v1.4.0/NppSnippets-140-x64.zip</download>
+				<copy from="NppSnippets.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppSnippets\SQL\*.sql" to="$PLUGINDIR$\NppSnippets\SQL"/>
+				<copy from="NppSnippets\*.html" to="$PLUGINDIR$\NppSnippets"/>
+				<copy from="NppSnippets\*.pdf" to="$PLUGINDIR$\NppSnippets"/>
+				<copy from="NppSnippets\*.sqlite" to="$PLUGINDIR$\NppSnippets"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="SQLinForm SQL Formatter">
+		<x64Version>5.1.80</x64Version>
+		<aliases>
+			<alias name="SQLinForm64"/>
+		</aliases>
+		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
+		<author>Guido Thelen</author>
+		<homepage>http://www.sqlinform.com</homepage>
+		<latestUpdate>Added 64bit support (Version 5.1.80)</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.1.80.zip</download>
+				<copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\SQLinFormNpp64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="TagLEET">
+		<x64Version>1.3.1.0</x64Version>
+		<description>Ctags browser. Look up the definition of variables and functions in source code. Can also find include files if ctags file was generated correctly. Ultra fast with low memory usage. Allow working with a single ctags file for very large projects.</description>
+		<author>Gur Stavi</author>
+		<homepage>https://sourceforge.net/projects/tagleet/</homepage>
+		<latestUpdate>Support case insensitive (foldcase) sorting in tags file.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/tagleet/files/v1.3.1/TagLEET_1.3.1.0.x64.zip/download</download>
+				<copy from="TagLEET.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\TagLEET.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="TakeNotes">
+		<x64Version>1.2.0</x64Version>
+		<aliases>
+			<alias name="Take Notes"/>
+		</aliases>
+		<description>TakeNotes is designed to help people who like to use Notepad++ for jotting quick notes. Instead of using unnamed "new ?" files, this plugins allows to quickly create new empty files in a folder of choice. The file names may be custom generated using a mask and may contain details such as the user name, date, and time of creation so that unique files may be generated. Additionally, the plugin allows to load exiting notes in the folder of choice, save existing files as a note, and open the last saved note quickly. Please refer to the Options dialog box for more details.\nIt is strongly recommended to use this plugin in combination with AutoSave to make sure that you never loose a note.</description>
+		<author>Franco Stellari</author>
+		<homepage>https://sites.google.com/site/fstellari/nppplugins</homepage>
+		<sourceUrl>https://sites.google.com/site/fstellari/nppplugins</sourceUrl>
+		<latestUpdate>Added 64bit version</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/TakeNotes_dll_1v20.zip</download>
+				<copy from="64bit\TakeNotes.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="ToolBucket">
+		<x64Version>1.8</x64Version>
+		<description>Requires .NET 3.5\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>
+		<author>Paul Heasley</author>
+		<homepage>http://phdesign.com.au/npptoolbucket/</homepage>
+		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
+		<latestUpdate>7 Jun 2017 Update project template to support creation of x64 version</latestUpdate>
+		<install>
+			<x64>
+				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.8-x64.zip</download>
+				<copy from="NppToolBucket.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="TopMost">
+		<x64Version>1.4.0</x64Version>
+		<aliases>
+			<alias name="Top Most"/>
+		</aliases>
+		<description>TopMost allows to set the main Notepad++ window as a topmost window so it can stay on top of other windows even when it is not active.\nThis plugin sync with Notepad++ own stay on top functionality and allows to remember the setting between restarts as well as to show a toolbar button.</description>
+		<author>Franco Stellari</author>
+		<homepage>https://sites.google.com/site/fstellari/nppplugins</homepage>
+		<latestUpdate>Added 64bit version</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sites.google.com/site/fstellari/nppplugins/TopMost_dll_1v40.zip</download>
+				<copy from="64bit\TopMost.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="XML Tools">
+		<x64Version>2.4.9.2</x64Version>
+		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based. The plugin features are:\n- XML syntax Check\n- XML Schema (XSD) + DTD Validation\n- XML tag autoclose\n- Pretty print\n- Linarize XML\n- Current XML Path\n- Conversion XML &amp;lt;-&amp;gt; Text\n- Comment / Uncomment\n- XPath expression evaluation</description>
+		<author>Nicolas Crittin</author>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/XML%20Tools/Xml%20Tools%202.4.4%20Unicode/Source%20XML%20Tools%202.4.4%20Unicode.zip/download</sourceUrl>
+		<latestUpdate>Release 2.4.9.2 \n- Fix pretty print function infinite loop when data ends unexpected\n\nRelease 2.4.9.1\n- Patch pretty print function error which occurred when text contains "='" sequence \n\nRelease 2.4.9\n- Compilation of 64bit version of the plugin \n- Fix pretty print with attributes and/or text containing &gt; char\n\nRelease 2.4.8\n- Add "Pretty print (attributes)" function\n- Fix pretty print of comments and CDATA blocs containing &lt; or &gt; char\n\nRelease 2.4.7\n- Add proxy support\n- Fix the "Set XML type automatically" function to avoid having caret placed at position 0 while changing the active tab\n\nRelease 2.4.6\n- Fix PrettyPrint on handling of quote delimiters used in xml attribute value\n- Re-compilation of libcurl.dll for Windows XP compatibility\n\nRelease 2.4.5\n- Modification of XPath evaluation to better manage XML with default namespace\n- Rollback of XML file detection behaviour modification of preceding release (was not working well)\n- Add a basic online check for plugin updates (checks on startup every 14 days)\n\nRelease 2.4.4\n- Optimization of pretty print function\n- Fix XML file detection issue when opening several files at once\n\nRelease 2.4.3 (r1058)\n- Fix auto-close with end markers ("&amp;lt;/a&amp;gt;" and "--&amp;gt;")\n- Fix PrettyPrint on handling of '&gt;' char present in text content\n\nRelease 2.4.2 (r1057)\n- Fix XPath evaluation for text() [bug #232]\n- Modification of PrettyPrint behaviour to avoid changing "&amp;lt;foo&amp;gt; &amp;lt;foo&amp;gt;" to "&amp;lt;foo/&amp;gt;" [bug #220]\n- Fix PrettyPrint EOL char support [bug #219]\n- Fix XPath evaluation issue with string result [bug #209]\n- Add information on unprefixed namespace handling during XPath evaluation [bug #195]\n- Fix a wrong reference to %appdata%\Notepad++\n\nRelease 2.4.1 (r1054)\n- Allow external DLLs to be loaded from %appdata%\Notepad++ folder\n- Change dialogs behaviour: dialogs are not destroyed on close and are restored on re-opening\n- Fix some memory leaks\n\nRelease 2.4 (r1048)\n- Fix pretty print error while playing with attributes containing quotes and double-quotes\n- Fix encoding support for following functions:\n  * Check XML syntax now\n  * Validate now\n  * Tag auto-close\n  * Current XML Path\n  * Evaluate XPath Expression\n  * XSL Transformation\n- Add "Prevent XXE" mode\n- Fix wrong selection length after conversions "&amp;amp;lt;&amp;amp;gt;" to "&amp;lt;&amp;gt;" and reverse\n- Upgrade libXML version (libXML 2.9.2, libXSLT 1.1.28, xmlsec 1.2.20, zlib 1.2.6, iconv 1.14, openssl 1.0.1j)\n- Add libXML/libXSLT versions infos in about box</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-plugins/files/XML%20Tools/Xml%20Tools%202.4.9%20Unicode/Xml%20Tools%202.4.9.2%20x64%20Unicode.zip/download</download>
+				<copy from="dependencies\libiconv-2.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="dependencies\libwinpthread-1.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="dependencies\libxml2-2.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="dependencies\libxslt-1.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="dependencies\zlib1.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="install.txt" to="$PLUGINDIR$\doc\XmlTools"/>
+				<copy from="XMLTools.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="dependencies\libcurl.dll" to="$NPPDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\XMLTools.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="Zoom Disabler">
+		<x64Version>1.2.0</x64Version>
+		<description>Worried about zooming your document everytime you just want to scroll but accidentally still holding the [Ctrl] key? Then this plugin is what you want! It disables mouse zoom or keyboard zoom or both.</description>
+		<author>Stanislav Eckert</author>
+		<homepage>https://github.com/StanDog/npp-zoomdisabler</homepage>
+		<latestUpdate>28.09.2016 (v1.2.0)\n- Fixed incorrect variable types in plugin template\n- 64-bit ready\n\n21.06.2015 (v1.1.3)\n- Updated email in about dialog\n- Moved from SourceForge to GitHub\n\n19.02.2015 (v1.1.2)\n- Updated about dialog\n- Updated internal code to XE 7\n\n30.03.2014 (v1.1.1)\n- Internal code cleanup\n\n29.03.2014 (v1.1)\n- Added option to allow using zoom with keyboard while still disabled for mouse\n\n28.03.2014 (v1.0)\n- Initial release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/StanDog/npp-zoomdisabler/raw/master/RELEASES/zoomdisabler_1.2.0.zip</download>
+				<copy from="zoomdisabler_x64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\zoomdisabler.dll"/>
+				<delete file="$CONFIGDIR$\zoom_disabler.ini"/>
+				<delete file="$PLUGINDIR$\zoomdisabler_x64.dll"/>
+			</x64>
+		</remove>
 	</plugin>
 </plugins>
