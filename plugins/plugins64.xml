@@ -368,6 +368,25 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="NppEventExec">
+		<x64Version>0.9.0</x64Version>
+		<dependencies>
+			<plugin name="NppExec"/>
+		</dependencies>
+		<description>NppEventExec allows you to automatically execute NppExec scripts on Notepad++ events. You can use it for example to format and compile source code. Unleash the beast.</description>
+		<author>Mihail Ivanchev</author>
+		<homepage>https://github.com/MIvanchev/NppEventExec</homepage>
+		<sourceUrl>https://github.com/MIvanchev/NppEventExec</sourceUrl>
+		<latestUpdate>v0.9.0 (Aug 14, 2017)\n\n* Added a 64-bit version (thanks chcg).\n* Added a rule management dialog.\n* Added a rule edit dialog.\n* Rules can now be aborted before they're executed.\n* Restyled the about dialog.\n* Fixed numerous bugs throughout the plugin.\n* Added unit tests for the CSV parser.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/MIvanchev/NppEventExec/releases/download/v0.9.0/NppEventExec-plugin-x64-0.9.0.zip</download>
+				<copy from="NppEventExec.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="doc\NppEventExec_license.txt" to="$PLUGINDIR$\doc"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="NppExec">
 		<x64Version>0.5.9.9</x64Version>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
