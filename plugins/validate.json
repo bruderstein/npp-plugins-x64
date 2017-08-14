@@ -129,6 +129,10 @@
         "6afbdb83104e7ff6c2c53b6c9a845abf": "NppXmlTreeviewPlugin.dll",
         "7010f7729457b52e6bf97ac92ea5e62d": "NppXmlTreeviewPlugin.Parsers.dll"
     },
+    "NppEventExec":
+    {
+        "729ee5b15087b93185231a62ff83bdfc": "NppEventExec.dll"
+    }
     "NppExec":
     {
         "39565d0c48901b4ef4c1537dc6448128": "NppExec.dll"
