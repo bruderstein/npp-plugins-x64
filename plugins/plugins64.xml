@@ -315,6 +315,26 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="NavigateTo">
+		<x64Version>1.12.2</x64Version>
+		<description>Do you have more then 10 open tabs? than this plugin is for you.\n\nNavigate To is a new and efficient way to quickly navigate between tabs(files) in your Notepad++. It allows you to search for a symbol or filename, filepath by matching against a keyword you type in, and get a real time preview while going through the search results by Shift key.\nAnd YES indeed you can uncheck the Multi-line option, in the Preferences &gt; General &gt; Tab Bar zone because you don’t need the multi-lines tab feature anymore :)\n\nAuthor: Oleksii Maryshchenko\nEmail: young_developer@mail.ru</description>
+		<author>Oleksii Maryshchenko</author>
+		<homepage>https://github.com/young-developer/nppNavigateTo</homepage>
+		<sourceUrl>https://github.com/young-developer/nppNavigateTo</sourceUrl>
+		<latestUpdate>**New features and enhancements:**\n- Right-click context menu for files like in NPP was added.\n- File preview functionality was added.\n- Minimum window size was set to 400x200\n- New column 'View' was added.\n- Number of matching results was moved to form title.\n- File status functionality was implemented:\nBlack - SAVED\nRed - UNSAVED\nGrey - READONLY  \n\n**Bugs:**  \n- Unicode search, open and highlight bugs(filenames and paths with letters like é, à or else ) were fixed.\n- Filter editbox could not be unfocused now.  \n\n**Other:**\n- Filter is case insensitive and highlight only first sub-string match.  \n\n**Tips &amp; Tricks** \n- Hold &lt;kbd&gt;ALT&lt;/kbd&gt; and press  &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to open search history.\n- Open NavigateTo form and then hold &lt;kbd&gt;SHIFT&lt;/kbd&gt; and press &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to preview files.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/young-developer/nppNavigateTo/releases/download/1.12.2/NavigateTo_x64.zip</download>
+				<copy from="bin64\NavigateTo.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NavigateTo.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="Notepad++ bplist plugin">
 		<x64Version>1.2.0.4</x64Version>
 		<description>This plugin supports viewing\editing binary plist files. As long as ordinary plist files comes in XML format, this plugin dont supports them. It loads only binary plist files ( bplist ).</description>
@@ -414,7 +434,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.27.0</x64Version>
+		<x64Version>0.27.1</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -422,10 +442,10 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>- update libssh to version 0.7.5 #155\n- bugfix for NppFTP Random crash #52\n- bugfix for [security] Buffer overflow in NppFTP v0.26.5 leading to Notepad++ v6.8.6 crash #75\n- bugfix for nppFTP - sFTP key issue #135\n- bugfix for Npp crashes on connection attempt when NppFTP private keyfile not found #91\n- bugfix for NppFTP is unable to save files to root directory #144\n- Refactor to support Elliptic Curve SSH keys (ECDSA and ED25519) #154</latestUpdate>
+		<latestUpdate>2017-08-27\n- update to openssl-1.0.2l, no security fixes\n- Fix for LIST parameters don't work #160 and Files no longer sorted #180, correction for issue introduced with v0.27.0 48cf35d</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.0/NppFTP-x64.zip</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.1/NppFTP-x64.zip</download>
 				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>

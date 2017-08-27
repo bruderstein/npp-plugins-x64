@@ -4,7 +4,7 @@
         "7584bd70f007c658b1640c07aaad6a6c": "gpup.exe"
     },
     "NppFTP": {
-        "e9175eb9d18eba37c8cb3ad52ecfb131": "NppFTP.dll"
+        "4a1976c2f9977698e44d382ae24951e3": "NppFTP.dll"
     },
     "MIME Tools": {
         "586a5399489a033118737809c7de9e0d": "mimeTools.dll"
@@ -164,5 +164,9 @@
     "NppExport":
     {
         "e748f70f9eebf18a337ec9dba95699d5": "NppExport.dll"
+    },
+    "NavigateTo":
+    {
+        "f2d3784785459f76020813b51f4b1ab8": "NavigateTo.dll"
     }
 }
