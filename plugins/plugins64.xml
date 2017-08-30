@@ -648,15 +648,15 @@
 		</install>
 	</plugin>
 	<plugin name="ToolBucket">
-		<x64Version>1.8</x64Version>
+		<x64Version>1.9</x64Version>
 		<description>Requires .NET 3.5\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>
 		<author>Paul Heasley</author>
 		<homepage>http://phdesign.com.au/npptoolbucket/</homepage>
 		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
-		<latestUpdate>7 Jun 2017 Update project template to support creation of x64 version</latestUpdate>
+		<latestUpdate>29 Aug 2017 Add option to not prompt for GUID generation options each time</latestUpdate>
 		<install>
 			<x64>
-				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.8-x64.zip</download>
+				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.9-x64.zip</download>
 				<copy from="NppToolBucket.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
