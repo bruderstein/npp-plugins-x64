@@ -1,4 +1,10 @@
 language: python
+
+addons:
+  apt:
+    packages:
+    - libxml2-utils
+
 python:
 - '2.7'
 env:
