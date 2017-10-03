@@ -591,7 +591,7 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm SQL Formatter">
-		<x64Version>5.1.97</x64Version>
+		<x64Version>5.1.98</x64Version>
 		<aliases>
 			<alias name="SQLinForm64"/>
 		</aliases>
@@ -602,7 +602,7 @@
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.1.97.zip</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.1.98.zip</download>
 				<copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
