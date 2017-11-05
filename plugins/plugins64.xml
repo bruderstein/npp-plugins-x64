@@ -726,4 +726,37 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="Poor Man's T-Sql Formatter">
+		<x64Version>1.6.6</x64Version>
+		<description>A simple SQL formatter performing full multi-batch T-SQL formatting (individual statements, stored procedures, any DML, any DDL) with numerous formatting options.</description>
+		<author>Tao Klerks</author>
+		<homepage>http://www.architectshack.com/PoorMansTSqlFormatter.ashx</homepage>
+		<sourceUrl>https://github.com/TaoK/PoorMansTSqlFormatter</sourceUrl>
+		<latestUpdate>2016-11-05 (v1.6.6): 64-bit support, fixes to options display</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>http://www.architectshack.com/GetFile.aspx?File=SqlFormatterNppPlugin.1.6.6.zip&amp;Page=PoorMansTSqlFormatter</download>
+				<copy from="PoorMansTSqlFormatterNppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="PoorMansTSqlFormatterNppPlugin\LinqBridge.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\" validate="true"/>
+				<copy from="PoorMansTSqlFormatterNppPlugin\fr\PoorMansTSqlFormatterPluginShared.resources.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\fr\" validate="true"/>
+				<copy from="PoorMansTSqlFormatterNppPlugin\es\PoorMansTSqlFormatterPluginShared.resources.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\es\" validate="true"/>
+				<copy from="PoorMansTSqlFormatterNppPlugin\PoorMansTSqlFormatterLib.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\" validate="true"/>
+				<copy from="PoorMansTSqlFormatterNppPlugin\PoorMansTSqlFormatterPluginShared.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\es\PoorMansTSqlFormatterPluginShared.resources.dll"/>
+				<delete file="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\es"/>
+				<delete file="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\fr\PoorMansTSqlFormatterPluginShared.resources.dll"/>
+				<delete file="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\fr"/>
+				<delete file="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\LinqBridge.dll"/>
+				<delete file="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\PoorMansTSqlFormatterLib.dll"/>
+				<delete file="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\PoorMansTSqlFormatterPluginShared.dll"/>
+				<delete file="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin"/><delete file="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin.dll"/>
+				<delete file="$CONFIGDIR$\Poor Man's T-Sql Formatter.ini.xml"/>
+			</x64>
+		</remove>
+	</plugin>
 </plugins>
