@@ -376,15 +376,15 @@
 		</remove>
 	</plugin>
 	<plugin name="NppCrypt">
-		<x64Version>1.0.1.3</x64Version>
+		<x64Version>1.0.1.5</x64Version>
 		<description>encryption/decryption with various block ciphers, hash-algorithms, random-characters, encoding with base-16/32/64</description>
 		<author>Jean Paul Richter</author>
-		<homepage>http://www.cerberus-design.de/download</homepage>
+		<homepage>https://github.com/jeanpaulrichter/nppcrypt</homepage>
 		<sourceUrl>https://github.com/jeanpaulrichter/nppcrypt</sourceUrl>
-		<latestUpdate>7 Sep 2016 changlog v1.0.1.3:\n\n    several dialogs (random/covert/hash) are now non-modal and dockable\n    added copy to clipboard buttons</latestUpdate>
+		<latestUpdate>new cipher (ChaCha), hash (BLAKE2), minor interface improvements, bugfixes</latestUpdate>
 		<install>
 			<x64>
-				<download>http://www.cerberus-design.de/nppcrypt/nppcryptv1013.x64.zip</download>
+				<download>https://github.com/jeanpaulrichter/nppcrypt/releases/download/1.0.1.5/nppcrypt_1.0.1.5_x64.zip</download>
 				<copy from="nppcrypt.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
