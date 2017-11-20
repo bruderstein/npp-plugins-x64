@@ -435,7 +435,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.27.1</x64Version>
+		<x64Version>0.27.2</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -443,10 +443,10 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2017-08-27\n- update to openssl-1.0.2l, no security fixes\n- Fix for LIST parameters don't work #160 and Files no longer sorted #180, correction for issue introduced with v0.27.0 48cf35d</latestUpdate>
+		<latestUpdate>2017-11-20\n- update to openssl-1.0.2m, with security related fixes</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.1/NppFTP-x64.zip</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.2/NppFTP-x64.zip</download>
 				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>
