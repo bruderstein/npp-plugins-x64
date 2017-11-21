@@ -4,7 +4,7 @@
         "7584bd70f007c658b1640c07aaad6a6c": "gpup.exe"
     },
     "NppFTP": {
-        "4a1976c2f9977698e44d382ae24951e3": "NppFTP.dll"
+        "6e5628d0ca31410697d8b27347b5ac17": "NppFTP.dll"
     },
     "MIME Tools": {
         "586a5399489a033118737809c7de9e0d": "mimeTools.dll"
@@ -155,7 +155,7 @@
     },
     "NppCrypt":
     {
-        "9df0c7687b56a6e0ade08f345bda5bbc": "nppcrypt.dll"
+        "5a0d4b75dfd563f05247dc543433b611": "nppcrypt.dll"
     },
     "Snippets":
     {
@@ -168,5 +168,14 @@
     "NavigateTo":
     {
         "f2d3784785459f76020813b51f4b1ab8": "NavigateTo.dll"
+    },
+    "Poor Man's T-Sql Formatter":
+    {
+        "609287046206b7dfdd22e8810afd6b83": "PoorMansTSqlFormatterNppPlugin.dll",
+        "e5cc3997457cd365e43c19f0f9110148": "LinqBridge.dll",
+        "0cb9470836541b838a2d8783604b9dd0": "PoorMansTSqlFormatterLib.dll",
+        "5e9d378e58e8fdf7237fb20d5e8fcdd6": "PoorMansTSqlFormatterPluginShared.dll",
+        "9cbd8d24072854408912a37c0e9e6ccf": "PoorMansTSqlFormatterNppPlugin/es/PoorMansTSqlFormatterPluginShared.resources.dll",
+        "7c86d6902da6ef163f74096f16a9769f": "PoorMansTSqlFormatterNppPlugin/fr/PoorMansTSqlFormatterPluginShared.resources.dll"
     }
 }

@@ -182,12 +182,12 @@
 		</remove>
 	</plugin>
 	<plugin name="BracketsCheck">
-		<x64Version>1.0</x64Version>
+		<x64Version>1.2</x64Version>
 		<description>A plugin that helps you to check if brackets in your file are balanced.\nYou can check all text in a file or only the part you selected.</description>
 		<author>niccord</author>
 		<homepage>https://github.com/niccord/BracketsCheck/</homepage>
 		<sourceUrl>https://github.com/niccord/BracketsCheck/</sourceUrl>
-		<latestUpdate>1.0.0</latestUpdate>
+		<latestUpdate>1.2.0</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -494,16 +494,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.2.14.2</x64Version>
+		<x64Version>1.3.2</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>* Fix plugin's sudden demise after user executes "Find in Files"</latestUpdate>
+		<latestUpdate>* Restore correct work of "Ignore for Current Session" functionality (#104)\n* Restore downloading dictionaries on Windows XP (#107)</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/1.2.14.2/DSpellCheck.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.3.2/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -813,15 +813,15 @@
 		</install>
 	</plugin>
 	<plugin name="HTML Tag">
-		<x64Version>1.0.0.0</x64Version>
+		<x64Version>1.1.0.0</x64Version>
 		<description>This plug-in provides three core functions to Notepad++:\n- HTML and XML tag jumping, like the built-in brace matching (Ctrl+B / Shift+Ctrl+B), and selection\n  of tags and/or contents.\n- HTML entity encoding/decoding (example: é to &amp;eacute;)\n- JS character encoding/decoding (example: é to \u00E9)</description>
 		<author>Martijn Coppoolse</author>
 		<homepage>https://fossil.2of4.net/npp_htmltag/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag%20plugin%20v1.0.0/HTMLTag_plugin_v1.0.0_src.zip/download</sourceUrl>
-		<latestUpdate>[Version 1.0.0 - 2017-02-19 16:03]\n* Added: 64-bits version\n* Several tiny bugfixes</latestUpdate>
+		<latestUpdate>[Version 1.1.0 - 2017-09-04 20:15]\n  * Added: option to encode line break entities as well\n  * Fixed: decoding a JS escape reduced the selection by one each time</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag%20plugin%20v1.0.0/HTMLTag_plugin_v1.0.0_unicode.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://fossil.2of4.net/npp_htmltag/doc/v1.1.0/publish/HTMLTag_plugin_latest_unicode.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="HTMLTag_unicode.dll" to="$PLUGINDIR$\" validate="true" backup="true"/>
 				<copy from="HTMLTag-entities.ini" to="$PLUGINDIR$\" backup="true"/>
 				<copy from="Config/HTMLTag.ini" to="$CONFIGDIR$\" backup="true"/>
@@ -870,6 +870,7 @@
 		<author>iTimeTrack</author>
 		<homepage>https://itimetrack.com</homepage>
 		<sourceUrl>https://github.com/itimetrack/itimetrack-notepadpp</sourceUrl>
+		<stability>Good</stability>
 		<install>
 			<x64>
 				<download>https://github.com/itimetrack/itimetrack-notepadpp/releases/download/3.0.0/itimetrack-notepadpp-bin-3.0.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
@@ -929,7 +930,7 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.21.0</x64Version>
+		<x64Version>1.21.1</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -937,11 +938,11 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>Unicode only release build.\nAdd toolbar button for Json Viewer.\nAdd an option to control new version check.\nAdd an "Auto detect" end of line option.\nFix high DPI layout.\nFix bugs.\nOther tweak.</latestUpdate>
+		<latestUpdate>Fix JSMin crash.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.0.uni.32.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.1.uni.32.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1699,15 +1700,15 @@
 		</install>
 	</plugin>
 	<plugin name="Poor Man's T-Sql Formatter">
-		<x64Version>1.5.1</x64Version>
+		<x64Version>1.6.6</x64Version>
 		<description>A simple SQL formatter performing full multi-batch T-SQL formatting (individual statements, stored procedures, any DML, any DDL) with numerous formatting options.</description>
 		<author>Tao Klerks</author>
 		<homepage>http://www.architectshack.com/PoorMansTSqlFormatter.ashx</homepage>
 		<sourceUrl>https://github.com/TaoK/PoorMansTSqlFormatter</sourceUrl>
-		<latestUpdate>Numerous enhancements, a couple of minor bugfixes; most notable: remembers cursor position from before formatting.</latestUpdate>
+		<latestUpdate>A few bugfixes to option management</latestUpdate>
 		<install>
 			<x64>
-				<download>http://www.architectshack.com/GetFile.aspx?File=SqlFormatterNppPlugin.1.5.1.zip&amp;Page=PoorMansTSqlFormatter!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://www.architectshack.com/GetFile.aspx?File=SqlFormatterNppPlugin.1.6.6.zip&amp;Page=PoorMansTSqlFormatter!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="PoorMansTSqlFormatterNppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="PoorMansTSqlFormatterNppPlugin\LinqBridge.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\" validate="true"/>
 				<copy from="PoorMansTSqlFormatterNppPlugin\fr\PoorMansTSqlFormatterPluginShared.resources.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\fr\" validate="true"/>
@@ -2290,17 +2291,17 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm">
-		<x64Version>5.1.80.0</x64Version>
+		<x64Version>5.1.98.1</x64Version>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>Added support for Notepad++ SQL Lexer</latestUpdate>
+		<latestUpdate>Customisation of Colors\nSupport of wider set of characters\nAdded support for Notepad++ SQL Lexer</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.1.80.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="SQLinFormNpp.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.1.98.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 			</x64>
 		</install>
 	</plugin>
@@ -2488,15 +2489,15 @@
 		</install>
 	</plugin>
 	<plugin name="ToolBucket">
-		<x64Version>1.8</x64Version>
+		<x64Version>1.9</x64Version>
 		<description>Requires .NET 2.0\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>
 		<author>Paul Heasley</author>
 		<homepage>http://www.phdesign.com.au/programming/toolbucket-multi-line-search-plugin-for-notepad/</homepage>
 		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
-		<latestUpdate>7 Jun 2017 Update project template to support creation of x64 version</latestUpdate>
+		<latestUpdate>29 Aug 2017  - Don't insert newline after last GUID\n- Save GUID generation options to config file\n- Add option to not prompt for GUID generation options each time (just use config settings)</latestUpdate>
 		<install>
 			<x64>
-				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.8.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.9.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppToolBucket.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
