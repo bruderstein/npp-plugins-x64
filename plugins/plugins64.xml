@@ -727,16 +727,16 @@
 		</remove>
 	</plugin>
 	<plugin name="Poor Man's T-Sql Formatter">
-		<x64Version>1.6.6</x64Version>
+		<x64Version>1.6.10</x64Version>
 		<description>A simple SQL formatter performing full multi-batch T-SQL formatting (individual statements, stored procedures, any DML, any DDL) with numerous formatting options.</description>
 		<author>Tao Klerks</author>
 		<homepage>http://www.architectshack.com/PoorMansTSqlFormatter.ashx</homepage>
 		<sourceUrl>https://github.com/TaoK/PoorMansTSqlFormatter</sourceUrl>
-		<latestUpdate>2016-11-05 (v1.6.6): 64-bit support, fixes to options display</latestUpdate>
+		<latestUpdate>2016-11-21 (v1.6.10): Misc fixes, esp. noformat region fixes</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>http://www.architectshack.com/GetFile.aspx?File=SqlFormatterNppPlugin.x64.1.6.6.zip&amp;Page=PoorMansTSqlFormatter</download>
+				<download>http://www.architectshack.com/GetFile.aspx?File=SqlFormatterNppPlugin.x64.1.6.10.zip&amp;Page=PoorMansTSqlFormatter</download>
 				<copy from="PoorMansTSqlFormatterNppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="PoorMansTSqlFormatterNppPlugin\LinqBridge.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\" validate="true"/>
 				<copy from="PoorMansTSqlFormatterNppPlugin\fr\PoorMansTSqlFormatterPluginShared.resources.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\fr\" validate="true"/>
