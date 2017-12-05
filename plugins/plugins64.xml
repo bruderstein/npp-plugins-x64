@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
-	<pluginNames>
-	</pluginNames>
 	<plugin name="3P - Progress Programmers Pal">
 		<x64Version>1.7.6</x64Version>
 		<aliases>
