@@ -170,15 +170,15 @@ Using streams and events internally to improve speed and stability.</latestUpdat
 		</remove>
 	</plugin>
 	<plugin name="HTML Tag">
-		<x64Version>1.0.0.0</x64Version>
+		<x64Version>1.1.0.0</x64Version>
 		<description>This plug-in provides three core functions to Notepad++:\n- HTML and XML tag jumping, like the built-in brace matching (Ctrl+B / Shift+Ctrl+B), and selection\n  of tags and/or contents.\n- HTML entity encoding/decoding (example: é to &amp;eacute;)\n- JS character encoding/decoding (example: é to \u00E9)</description>
 		<author>Martijn Coppoolse</author>
 		<homepage>https://fossil.2of4.net/npp_htmltag/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag%20plugin%20v1.0.0/HTMLTag_plugin_v1.0.0_src.zip/download</sourceUrl>
-		<latestUpdate>[Version 1.0.0 - 2017-02-19 16:03]\n* Added: 64-bits version\n* Several tiny bugfixes</latestUpdate>
+		<latestUpdate>[Version 1.1.0 - 2017-09-04 20:15]\n  * Added: option to encode line break entities as well\n  * Fixed: decoding a JS escape reduced the selection by one each time</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag%20plugin%20v1.0.0/HTMLTag_plugin_1.0.0_64.zip/download</download>
+				<download>https://fossil.2of4.net/npp_htmltag/doc/v1.1.0/publish/HTMLTag_plugin_latest_64.zip</download>
 				<copy from="HTMLTag.dll" to="$PLUGINDIR$\" validate="true" backup="true"/>
 				<copy from="HTMLTag-entities.ini" to="$PLUGINDIR$\" backup="true"/>
 				<copy from="Config/HTMLTag.ini" to="$CONFIGDIR$\" backup="true"/>
@@ -209,7 +209,7 @@ Using streams and events internally to improve speed and stability.</latestUpdat
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.21.0</x64Version>
+		<x64Version>1.21.1</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -217,11 +217,11 @@ Using streams and events internally to improve speed and stability.</latestUpdat
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>Unicode only release build.\nAdd toolbar button for Json Viewer.\nAdd an option to control new version check.\nAdd an "Auto detect" end of line option.\nFix high DPI layout.\nFix bugs.\nOther tweak.</latestUpdate>
+		<latestUpdate>Fix JSMin crash.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.0.uni.64.zip/download</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.1.uni.64.zip/download</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -387,7 +387,7 @@ Using streams and events internally to improve speed and stability.</latestUpdat
 		<author>Jean Paul Richter</author>
 		<homepage>https://github.com/jeanpaulrichter/nppcrypt</homepage>
 		<sourceUrl>https://github.com/jeanpaulrichter/nppcrypt</sourceUrl>
-		<latestUpdate>new cipher (ChaCha), hash (BLAKE2), minor interface improvements, bugfixes</latestUpdate>
+		<latestUpdate>20 Nov 2017 changlog v1.0.1.5:\nnew cipher (ChaCha), hash (BLAKE2), minor interface improvements, bugfixes</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/jeanpaulrichter/nppcrypt/releases/download/1.0.1.5/nppcrypt_1.0.1.5_x64.zip</download>
@@ -603,7 +603,7 @@ Using streams and events internally to improve speed and stability.</latestUpdat
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>Added more free options & Profiles\nAdded Profile Templates & Profile Management Menu</latestUpdate>
+		<latestUpdate>Added Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters\nAdded support for Notepad++ SQL Lexer</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -660,7 +660,7 @@ Using streams and events internally to improve speed and stability.</latestUpdat
 		<author>Paul Heasley</author>
 		<homepage>http://phdesign.com.au/npptoolbucket/</homepage>
 		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
-		<latestUpdate>29 Aug 2017 Add option to not prompt for GUID generation options each time</latestUpdate>
+		<latestUpdate>29 Aug 2017  - Don't insert newline after last GUID\n- Save GUID generation options to config file\n- Add option to not prompt for GUID generation options each time (just use config settings)</latestUpdate>
 		<install>
 			<x64>
 				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.9-x64.zip</download>
