@@ -180,6 +180,23 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="jN Notepad++ Plugin">
+		<x64Version>2.2.185</x64Version>
+		<description>jN (JavaScript for Notepad++) allows you to extend Notepad++ by using JavaScript.\n- You can create new menu elements which execute JavaScript\n- You can use a lot of ActiveX components available on your PC\n- You can add shortcuts executing JavaScript\n- You can create Html based dialogs and docking windows\n- You can write JavaScript wrappers around Win32 API\n - Since version 2.0.116 you can debug your automating scripts\n - Selection highlighting and navigation bar\n - Integrated Zen Coding v0.7\n - You can catch context menu request and create your own</description>
+		<author>Eugen Kremer</author>
+		<homepage>https://github.com/sieukrem/jn-npp-plugin/wiki</homepage>
+		<sourceUrl>https://github.com/sieukrem/jn-npp-plugin</sourceUrl>
+		<latestUpdate>[2017-12-12]Added new Scintilla constans for controlling font rendering technology.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/sieukrem/jn-npp-plugin/releases/download/2.2.185/jN_2.2.185_x64.zip</download>
+				<copy from="[Notepad++ Directory]\plugins\jN.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="[Notepad++ Directory]\plugins\jN\*.*" to="$PLUGINDIR$\jN" recursive="true"/>
+				<copy from="readme.txt" to="$PLUGINDIR$\doc\jN"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="JSON Viewer">
 		<x64Version>1.24</x64Version>
 		<aliases>

@@ -177,5 +177,9 @@
         "3019243cea693938b9ddd022eb981fb5": "PoorMansTSqlFormatterPluginShared.dll",
         "45741442ba6b7d0f1482435381ba2a12": "PoorMansTSqlFormatterNppPlugin/es/PoorMansTSqlFormatterPluginShared.resources.dll",
         "6625e59da72bfdfd9aace87c302d3cb2": "PoorMansTSqlFormatterNppPlugin/fr/PoorMansTSqlFormatterPluginShared.resources.dll"
+    },
+    "jN Notepad++ Plugin":
+    {
+        "152866dfc82f2295cd1cddeddf19d89b": "jN.dll"
     }
 }
