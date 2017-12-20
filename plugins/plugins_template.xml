@@ -1321,18 +1321,18 @@
 		</remove>
 	</plugin>
 	<plugin name="Npp Xml Treeview">
-		<x64Version>1.5.0.51</x64Version>
+		<x64Version>1.6.0.54</x64Version>
 		<aliases>
 			<alias name="Npp Xml Treview"/>
 		</aliases>
 		<description>A treeview visualization for xml files.</description>
 		<author>João Rosa</author>
 		<sourceUrl>https://github.com/joaoasrosa/nppxmltreeview</sourceUrl>
-		<latestUpdate>London Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- x64 version\n- BIG BUG in latest 1.4.0.45 release</latestUpdate>
+		<latestUpdate>Berlin Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- UI improvements</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/London-v1.5.0.51/NppXMLTreeviewPlugin_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/Berlin-v1.6.0.54/NppXMLTreeviewPlugin_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppXmlTreeviewPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
 			</x64>
@@ -1448,7 +1448,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.27.2</x64Version>
+		<x64Version>0.27.3</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -1456,10 +1456,10 @@
 		<author>ashish_kulz</author>
 		<homepage>http://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>http://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2017-11-20\n- update to openssl-1.0.2m, with security related fixes</latestUpdate>
+		<latestUpdate>2017-12-15\n- update to openssl-1.0.2n, with security related fixes\n- fixed #71 Timeout gets reset after Notepad++ rest</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.2/NppFTP-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.3/NppFTP-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>
@@ -2316,7 +2316,7 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm">
-		<x64Version>5.2.04</x64Version>
+		<x64Version>5.2.22</x64Version>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
@@ -2325,7 +2325,7 @@
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.2.04.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.2.22.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="SQLinFormNpp.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
