@@ -55,6 +55,7 @@
 		<author>Franco Stellari</author>
 		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
 		<latestUpdate>2017-02-08	Added the capability of creating a time stamped copy of current file content.</latestUpdate>
+		<stability>Good</stability>
 		<install>
 			<x64>
 				<download>https://sites.google.com/site/fstellari/nppplugins/AutoSave_dll_1v60.zip</download>
@@ -220,7 +221,7 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.21.1</x64Version>
+		<x64Version>1.21.6</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -228,11 +229,11 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>Fix JSMin crash.</latestUpdate>
+		<latestUpdate>[2017-12-15] Fix format on reserved word as function name.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.1.uni.64.zip/download</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.6.uni.64.zip/download</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -350,6 +351,25 @@
 		<remove>
 			<x64>
 				<delete file="$PLUGINDIR$\NavigateTo.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="Notepad#">
+		<x64Version>1.5.0</x64Version>
+		<description>General plugin (proper new line handling, comments, indenting etc)\n\n Implemented so far:\n\n- Proper new line inside CommentDoc/DocBlock for C, C++, Javascript, PHP\n- Proper new line for # comment in Ruby\n- Indent after opening curly brace for C-like languages, CSS\n  and proper indenting for closing curly brace\n- Delete current line keeping the column\n- Undo closed tab\n- Switching tabs with ALT + LEFT/RIGHT\n- Wrap selection with Open/Close tag\n- Url encode/decode selection\n- Autoclose embeded script tags for ruby and php (&lt;% | &lt;?)\n- Column ruler\n- Indent after opened tag - XML, HTML and PHP\n- Close last open tag\n- Autonumbering inside CommentDoc/DocBlock and # comment\n- Indent after instruction for Ruby - module|class|def|do|if|else|elsif|private\n- Match "end" indentation for Ruby\n- Autocomplete CommentDoc/DocBlock keywords\n- Peek CSS hex colors\n- Scroll past end of file\n- Convert leading TABS to Spaces and reverse\n- Paste indented\n- Double click edit tag</description>
+		<author>jvdanilo</author>
+		<homepage>https://github.com/jvdanilo/NotepadSharp</homepage>
+		<sourceUrl>https://github.com/jvdanilo/NotepadSharp</sourceUrl>
+		<stability>No longer available</stability>
+		<install>
+			<x64>
+				<download>https://github.com/chcg/NotepadSharp/releases/download/1.5.0/NotepadSharp_1.5.0_x64.zip</download>
+				<copy from="bin64/NotepadSharp.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NotepadSharp.dll"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -513,7 +533,7 @@
 		<author>Dave Brotherstone</author>
 		<homepage>https://bruderste.in/npp/pm/</homepage>
 		<sourceUrl>https://github.com/bruderstein/nppPluginManager</sourceUrl>
-		<latestUpdate>x64 support with a simple XML plugin list managed manually</latestUpdate>
+		<latestUpdate>* Ignore warning about GPUP version on install *\nUpdate to use windows native internet API for downloads\nFix so that after a plugin is installed, Notepad++ will no longer be automatically promoted to run as admin - it will remain with the same privileges it had before plugin installation\nPlease report any issues to the Plugin Development forum https://notepad-plus-plus.org/community/category/5/plugin-development</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.9/PluginManager_v1.4.9_x64.zip</download>

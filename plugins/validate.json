@@ -105,7 +105,7 @@
     },
     "JSTool":
     {
-        "bc25b8bcd58018e07ba495999d727a19": "JSMinNPP.dll"
+        "3aabe33b962049530f99dfc45ce1d640": "JSMinNPP.dll"
     },
     "3P - Progress Programmers Pal":
     {
@@ -181,5 +181,9 @@
     "jN Notepad++ Plugin":
     {
         "152866dfc82f2295cd1cddeddf19d89b": "jN.dll"
+    },
+    "Notepad#":
+    {
+        "9c17bf4fa327f798d2ea58052567ae83": "NotepadSharp.dll"
     }
 }
