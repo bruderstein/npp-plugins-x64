@@ -185,5 +185,9 @@
     "Notepad#":
     {
         "9c17bf4fa327f798d2ea58052567ae83": "NotepadSharp.dll"
+    },
+    "AnalysePlugin":
+    {
+        "56a19878b902d25d0c1b12b33d3ba44a  ": "AnalysePlugin.dll"
     }
 }

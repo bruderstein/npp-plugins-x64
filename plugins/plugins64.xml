@@ -26,6 +26,21 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="AnalysePlugin">
+		<x64Version>1.11.34</x64Version>
+		<description>AnalysePlugin will help you to search for more than one search pattern at a time.  Great for analysing log files.</description>
+		<author>Matthias Hessling</author>
+		<homepage>http://analyseplugin.sourceforge.net/</homepage>
+		<sourceUrl>https://sourceforge.net/p/analyseplugin/code/</sourceUrl>
+		<latestUpdate>Changes since 1.10\n - adding feature of synced scrolling between result and search text\n - change context menu names to Prepend / Append \n - feature colourized find patterns in result window search function\n - adding feature save current pattern list and restore at startup \n - adding feature "add selection to patterns" \n - adding feature persistent last config files context menu \n - adding configuration to select count of entries in the pattern list context menu \n - adding rgx_multiline in the search type\n - adding dialog for clip board copy of context menu editing\n - updating to Visual Studio 2013\n - sync with NPP files to version 6.9.2\n - several bugfixes, see changes.txt</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.11-R34.zip/download</download>
+				<copy from="v01.11-R34\x64\AnalysePlugin\AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="v01.11-R34\x64\AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="AutoCodepage">
 		<x64Version>1.2.1</x64Version>
 		<description>AutoCodepage: A plugin to automatically set a document's code page to your needs on loading or renaming a document, changing its language or activating its tab. Usefull especially when coding batch scripts.</description>
