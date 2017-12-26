@@ -32,12 +32,15 @@
 		<author>Matthias Hessling</author>
 		<homepage>http://analyseplugin.sourceforge.net/</homepage>
 		<sourceUrl>https://sourceforge.net/p/analyseplugin/code/</sourceUrl>
+		<versions>
+			<version number="1.11.34" md5="56a19878b902d25d0c1b12b33d3ba44a"/>
+		</versions>
 		<latestUpdate>Changes since 1.10\n - adding feature of synced scrolling between result and search text\n - change context menu names to Prepend / Append \n - feature colourized find patterns in result window search function\n - adding feature save current pattern list and restore at startup \n - adding feature "add selection to patterns" \n - adding feature persistent last config files context menu \n - adding configuration to select count of entries in the pattern list context menu \n - adding rgx_multiline in the search type\n - adding dialog for clip board copy of context menu editing\n - updating to Visual Studio 2013\n - sync with NPP files to version 6.9.2\n - several bugfixes, see changes.txt</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.11-R34.zip/download</download>
-				<copy from="v01.11-R34\x64\AnalysePlugin\AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="v01.11-R34\x64\AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
+				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.11-R34.zip</download>
+				<copy from="x64\AnalysePlugin\AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="x64\AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
 			</x64>
 		</install>
 	</plugin>
