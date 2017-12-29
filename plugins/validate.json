@@ -193,5 +193,14 @@
     "JavaScript Map Parser":
     {
         "5f248d59e768a4702ab73f7cb6dc77e6": "JsMapParser.NppPlugin.dll"
+    },
+    "NppRegExTractor":
+    {
+        "141ced9a3d890f590dc2871e871cd4b2": "NppRegExTractorPlugin.dll",
+        "ce80365e2602b7cff0222e0db395428c": "Ninject.dll",
+        "0ce46168197eac11ae92471a4e8f7f22": "RegExTractor.dll",
+        "b6e8a970a0aaaee165d5920a1b5e4130": "RegExTractorModules.dll",
+        "19bf5e7538e8089e8cf83c335fc609f8": "RegExTractorShared.dll",
+        "c930006a54281c2a7366cf1c9a8d68f3": "RegExTractorWinForm.dll"
     }
 }
