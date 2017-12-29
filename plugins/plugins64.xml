@@ -154,7 +154,7 @@
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>* Fix disappearance of auto spell-checking icon.\n* Fix work of system-wide dictionaries.</latestUpdate>
+		<latestUpdate>2017-12-26\n* Fix disappearance of auto spell-checking icon.\n* Fix work of system-wide dictionaries.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -213,6 +213,22 @@
 				<copy from="[Notepad++ Directory]\plugins\jN.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="[Notepad++ Directory]\plugins\jN\*.*" to="$PLUGINDIR$\jN" recursive="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\jN"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="JavaScript Map Parser">
+		<x64Version>4.2</x64Version>
+		<description>This is an extension for for better JavaScript support. It provides a panel with hierarchy structure of functions in your js file.</description>
+		<author>Oleksandr Boiko</author>
+		<homepage>https://github.com/megaboich/js-map-parser/</homepage>
+		<sourceUrl>https://github.com/megaboich/js-map-parser/</sourceUrl>
+		<latestUpdate>2017-12-19 Version 4.2\n- updated dllexport data for x64 builds\n- updated used nuget packages\n- updated ilmerge tool\n- updated to dotnet framework 4\n- appveyor.yml CI for VS2015 and VS2017\n\nVersion information:\nhttps://github.com/megaboich/js-map-parser/wiki/Version-History</latestUpdate>
+		<stability>Good</stability>
+		<minVersion>6.5</minVersion>
+		<install>
+			<x64>
+				<download>https://github.com/megaboich/js-map-parser/releases/download/4.2/JsMapParser_NppPlugin_4_2_x64.zip</download>
+				<copy from="JsMapParser.NppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -414,7 +430,7 @@
 		<description>A treeview visualization for xml files.</description>
 		<author>João Rosa</author>
 		<sourceUrl>https://github.com/joaoasrosa/nppxmltreeview</sourceUrl>
-		<latestUpdate>Berlin Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- UI improvements</latestUpdate>
+		<latestUpdate>2017-12-17 Berlin Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- UI improvements</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -547,11 +563,12 @@
 	</plugin>
 	<plugin name="Plugin Manager">
 		<x64Version>1.4.9</x64Version>
-		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
+		<description>15 Apr 2017\n-   #61 always validate plugin list for faster update of the devlist\n-   #62 own url for x64 plugin list in preparation to solve feature request #7</description>
 		<author>Dave Brotherstone</author>
 		<homepage>https://bruderste.in/npp/pm/</homepage>
 		<sourceUrl>https://github.com/bruderstein/nppPluginManager</sourceUrl>
 		<latestUpdate>* Ignore warning about GPUP version on install *\nUpdate to use windows native internet API for downloads\nFix so that after a plugin is installed, Notepad++ will no longer be automatically promoted to run as admin - it will remain with the same privileges it had before plugin installation\nPlease report any issues to the Plugin Development forum https://notepad-plus-plus.org/community/category/5/plugin-development</latestUpdate>
+		<stability>Good</stability>
 		<install>
 			<x64>
 				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.9/PluginManager_v1.4.9_x64.zip</download>
@@ -686,7 +703,7 @@
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>Added Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters\nAdded support for Notepad++ SQL Lexer</latestUpdate>
+		<latestUpdate>2017-12-19\nAdded Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters\nAdded support for Notepad++ SQL Lexer</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
