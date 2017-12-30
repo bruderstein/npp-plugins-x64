@@ -81,6 +81,24 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Code::Stats">
+		<x64Version>1.0.1</x64Version>
+		<aliases>
+			<alias name="CodeStats"/>
+		</aliases>
+		<description>Code::Stats - Write code, level up, show off! A free stats tracking service for programmers. This plugin enables XP tracking in Notepad++.</description>
+		<author>p0358</author>
+		<homepage>https://github.com/p0358/notepadpp-CodeStats</homepage>
+		<sourceUrl>https://github.com/p0358/notepadpp-CodeStats</sourceUrl>
+		<latestUpdate>2017-02-30\n- Added the ability to change API URL in GUI\n- Added user-agent for API pulses\n- Some bug fixes</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/p0358/notepadpp-CodeStats/releases/download/v1.0.1/notepadpp-CodeStats_x64.zip</download>
+				<copy from="CodeStats.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="Compare">
 		<x64Version>2.0.0</x64Version>
 		<description>A very useful compare plugin to show the differences between 2 files (side by side).</description>
