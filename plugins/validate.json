@@ -202,5 +202,9 @@
         "b6e8a970a0aaaee165d5920a1b5e4130": "RegExTractorModules.dll",
         "19bf5e7538e8089e8cf83c335fc609f8": "RegExTractorShared.dll",
         "c930006a54281c2a7366cf1c9a8d68f3": "RegExTractorWinForm.dll"
+    },
+    "Code::Stats":
+    {
+        "e2408d02c2f953e19692bfef26f35c91": "CodeStats.dll"
     }
 }
