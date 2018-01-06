@@ -515,11 +515,11 @@
 	<plugin name="NppExport">
 		<x64Version>0.2.8.0</x64Version>
 		<description>NppExport is a true WYSIWYG exporter. It allows you not only to save your source code as a html/rtf file, but also to copy your source code in the clipboard in RTF/HTML format, so you can paste it into your word processor (MS Word, Abiword, openoffice.org Writer) to get the same visual effect.</description>
-		<latestUpdate>27 Dec 2016 Unofficial port of https://sourceforge.net/projects/npp-plugins/files/NppExport/NppExport%20Plugin%20v0.2.8/NppExport_0_2_8_dll.zip/download for x64</latestUpdate>
+		<latestUpdate>2018-01-06 Unofficial port of https://sourceforge.net/projects/npp-plugins/files/NppExport/NppExport%20Plugin%20v0.2.8/NppExport_0_2_8_dll.zip/download for x64</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/chcg/NPP_ExportPlugin/releases/download/0.2.8.6/NppExport_0.2.8.6_x64.zip</download>
-				<copy from="vs7project\X64\Release\NppExport.dll" toFile="$PLUGINDIR$\$PLUGINFILENAME$" validate="true"/>
+				<download>https://github.com/chcg/NPP_ExportPlugin/releases/download/0.2.8.16/NppExport_0.2.8.16_x64.zip</download>
+				<copy from="NppExport.dll" toFile="$PLUGINDIR$\$PLUGINFILENAME$" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
