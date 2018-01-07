@@ -67,16 +67,16 @@
 		</install>
 	</plugin>
 	<plugin name="AndroidLogger">
-		<x64Version>1.2.6.2</x64Version>
+		<x64Version>1.2.7</x64Version>
 		<description>Lexer for logcat, with it you can highlight the log lines and the colors customizable. In additional, it can capture logs &amp; screenshot from device online.</description>
 		<author>Simbaba</author>
 		<homepage>https://sourceforge.net/p/androidlogger/</homepage>
-		<latestUpdate>1) More function but not need install any  on your device!\n2) Filer support!\n3) Settings support!</latestUpdate>
+		<latestUpdate>V1.2.7 2015.5.17 \n1) Add interactive shell mode \n2) Open the source</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.5</minVersion>
 		<install>
 			<x64>
-				<download>http://sourceforge.net/projects/androidlogger/files/AndroidLoggerV1.2.6/AndroidLoggerV1.2.6.2.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://sourceforge.net/projects/androidlogger/files/AndroidLoggerV1.2.7/AndroidLogger_Src.V1.2.7.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="AndroidLogger.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="Config\AndroidLogger.xml" to="$CONFIGDIR$\"/>
 			</x64>
@@ -273,6 +273,23 @@
 				<delete file="$PLUGINDIR$\CodeAlignment\CodeAlignment.Common.WinForms.dll"/>
 			</x64>
 		</remove>
+	</plugin>
+	<plugin name="Code::Stats">
+		<x64Version>1.0.1</x64Version>
+		<aliases>
+			<alias name="CodeStats"/>
+		</aliases>
+		<description>Code::Stats - Write code, level up, show off! A free stats tracking service for programmers. This plugin enables XP tracking in Notepad++.</description>
+		<author>p0358</author>
+		<homepage>https://github.com/p0358/notepadpp-CodeStats</homepage>
+		<sourceUrl>https://github.com/p0358/notepadpp-CodeStats</sourceUrl>
+		<latestUpdate>2017-12-30\n- Added the ability to change API URL in GUI\n- Added user-agent for API pulses\n- Some bug fixes</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/p0358/notepadpp-CodeStats/releases/download/v1.0.1/notepadpp-CodeStats_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+			</x64>
+		</install>
 	</plugin>
 	<plugin name="ColdFusion Lexer">
 		<x64Version>0.8.1</x64Version>
@@ -838,15 +855,15 @@
 		</install>
 	</plugin>
 	<plugin name="ImgTag">
-		<x64Version>0.1</x64Version>
+		<x64Version>2.0.1</x64Version>
 		<description>ImgTag allows to insert img tags, in your html document, using the Open File Dialog Box to select image files.</description>
 		<author>salvom</author>
 		<homepage>http://sourceforge.net/projects/imgtag/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/imgtag/files/</sourceUrl>
+		<latestUpdate>2013-07-07\nversion 2.0.1 \n--Fixed a bug: now the images are shown entirely with the "Show Image" command. \n\nversion 2.0 \n---ImgTag was rewritten in C#. This version requires the .net framework 2.0 or above. Now it's possible: to resize the image, to update the image size to the actual size, to show the image, to rename the image.</latestUpdate>
 		<install>
 			<x64>
-				<download>http://downloads.sourceforge.net/project/imgtag/ImgTag%200.1.0-Binary-%20Unicode.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="FreeImage.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="FreeImagePlus.dll" to="$NPPDIR$\" validate="true"/>
+				<download>https://sourceforge.net/projects/imgtag/files/ImgTag_binary_unicode_2.0.1.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="ImgTag.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="*.txt" to="$PLUGINDIR$\doc\ImgTag"/>
 			</x64>
@@ -1075,14 +1092,15 @@
 		</install>
 	</plugin>
 	<plugin name="LuaScript">
-		<x64Version>0.7.0</x64Version>
+		<x64Version>0.7.1</x64Version>
 		<description>Plugin for Lua scripting capabilities. Provides control over all of Scintilla's features and options with a light-weight, fully-functional programming language.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/LuaScript</sourceUrl>
+		<latestUpdate>2018-01-04\n - Fixes editor.MarginLeft and editor.MarginRight\n - Add support for setting timers for scheduling custom events\n - Improve stability</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/LuaScript/releases/download/v0.7.0/LuaScript.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/dail8859/LuaScript/releases/download/v0.7.1/LuaScript_v0.7.1.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="LuaScript.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1946,12 +1964,12 @@
 		</install>
 	</plugin>
 	<plugin name="RainLexer">
-		<description>Rainmeter .ini configuration file syntax highlighting plugin.\n\nDOWNLOAD FROM: http://poiru.github.com/rainlexer</description>
+		<description>Rainmeter .ini configuration file syntax highlighting plugin.\n\nDOWNLOAD FROM: https://github.com/poiru/rainlexer/releases</description>
 		<isLibrary>true</isLibrary>
 		<author>Birunthan Mohanathas</author>
-		<homepage>http://poiru.github.com/rainlexer</homepage>
-		<sourceUrl>http://poiru.github.com/rainlexer</sourceUrl>
-		<latestUpdate>December 17, 2017 Added UseBits to Net measures.</latestUpdate>
+		<homepage>https://poiru.github.com/rainlexer</homepage>
+		<sourceUrl>https://poiru.github.com/rainlexer</sourceUrl>
+		<latestUpdate>2017-12-30 Added a few missing keys.</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>99.9</minVersion>
 		<install>
@@ -2325,16 +2343,16 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm">
-		<x64Version>5.2.22</x64Version>
+		<x64Version>5.2.32</x64Version>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>2017-12-19\nAdded Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters\nAdded support for Notepad++ SQL Lexer</latestUpdate>
+		<latestUpdate>2017-12-29\nAdded Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters\nAdded support for Notepad++ SQL Lexer</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.2.22.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.2.32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="SQLinFormNpp.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -2673,11 +2691,25 @@
 		<author>Simon HE</author>
 		<homepage>http://www.visimulator.com</homepage>
 		<latestUpdate>ViSimulator for notepad++ 0.4.0.1093 \nFIXED: 'G' may result in Notepad++ frozen when "Clickable Link" of Notepad++ enabled (enabled in default), to avoid this, there are three methods: \n1). update ViSimulator to version 0.4.0.1093 or above, in the new version, some work was done to get around the bug of "Clickable Link".\n2). disable "Clickable Link" option of Notepad++ -- recommended\nclick at menu [Settings-&gt;Preference] to open the settings dialog, then, click at the [Misc] at the bottom of the left list on the dialog just opened, at last, uncheck "Clickable Link" and save the settings. \n3). Wait for Notepad++ to release version 6.5.5 or above, it will fix this.\nFIXED: 'H' 'L' 'M' will go to right line in wrap mode.\nFIXED: 'zt' 'zb' 'z&lt;return&gt;' 'z-' will scroll to right position in wrap mode.\nFIXED: 'ctrl-u' 'ctrl-d' will scroll right count of lines and go to right position in wrap mode.\nViSimulator for notepad++ 0.4.0.1073 \nFIXED: In visual mode, when caret moved out of view window, the view does not scroll to make caret visible \nADDED: Support text object of [] {} &lt;&gt; "" '' . the following commands can be used in NORMAL mode: \nci] ci[ ci} ci{ ci&gt; ci&lt; ci" ci' ca] ca[ ca} ca{ ca&gt; ca&lt; ca" ca' \ndi] di[ di} di{ di&gt; di&lt; di" di' da] da[ da} da{ da&gt; da&lt; da" da'\nyi] yi[ yi} yi{ yi&gt; yi&lt; yi" yi' ya] ya[ ya} ya{ ya&gt; ya&lt; ya" ya' \nADDED:/ ? search forwards and backwards. you can use regular expression in search command. \nADDED: history for command line of ex command and search \nIMPROVED: command bar display \nViSimulator for notepad++ 0.3.6.868 \nADDED: Press ctrl-shift-alt-v shortcut to toggle ViSimulator enabled or disabled. \nADDED: A simple setting dialog, you can custom some options. \nViSimulator for Notepad++ 0.3.6.838 \nADDED: Press shortcut ctrl-[ will return to NORMAL mode. \nFIXED: When caret at the end line of document, 'dd' doesn't delete the current line. \nFIXED: 'f' may failed at some situation. \nFIXED: and many other bugs fixed.</latestUpdate>
-		<stability>Good</stability>
+		<stability>Broken Link</stability>
 		<install>
 			<x64>
 				<download>http://www.visimulator.com/public/p/pm/visimulator_0.4.0.1093.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="visimulator_0.4.0.1093.dll" toFile="$PLUGINDIR$\visimulator.dll" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="ViSimulator for Notepad++">
+		<x64Version>17.12.17</x64Version>
+		<description>It is a plugin for Notepad++ which provides a Vi-Style input scheme like moving around with hjkl and editing text on Notepad++.\n\nMost of the common commands in vi are supported via this plugin Fast tap the 'ESC' 3 times to enable/disable the plugin\n\nBelow are list of the supported commands:\n\n    h j k l - move the cursor\n    a i o - switch to edit mode\n    $ - move to the end of the line\n    0 - move to the beginning of the line\n    w e - move to next word\n    u - undo\n    x - delete character[s]\n    d[G] - cut line[s]\n    y[G] - yank line[s]\n    p - paste\n    n N - search next matched\n    :number - move to the cursor to line\n    :w - save\n    :q - quit\n    :help - show all the supported commands</description>
+		<author>bycn82</author>
+		<homepage>https://github.com/bycn82/visimulator</homepage>
+		<latestUpdate>2017-12-17</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/bycn82/visimulator/raw/master/x32/ViSimulator-x32-20171217.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="ViSimulator.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>

@@ -44,7 +44,7 @@
     },
     "LuaScript":
     {
-        "adb93bf6314a12c9ca1596d9ea4d0bc3": "LuaScript_64.dll"
+        "438af2ef5317d5eb1687e7739ebce853": "LuaScript_64.dll"
     },
     "CsvQuery":
     {
@@ -206,5 +206,9 @@
     "Code::Stats":
     {
         "e2408d02c2f953e19692bfef26f35c91": "CodeStats.dll"
+    },
+    "ViSimulator for Notepad++":
+    {
+        "80bfd1abb48327992e26e0d4346784f6": "ViSimulator.dll"
     }
 }

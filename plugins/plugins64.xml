@@ -90,7 +90,7 @@
 		<author>p0358</author>
 		<homepage>https://github.com/p0358/notepadpp-CodeStats</homepage>
 		<sourceUrl>https://github.com/p0358/notepadpp-CodeStats</sourceUrl>
-		<latestUpdate>2017-02-30\n- Added the ability to change API URL in GUI\n- Added user-agent for API pulses\n- Some bug fixes</latestUpdate>
+		<latestUpdate>2017-12-30\n- Added the ability to change API URL in GUI\n- Added user-agent for API pulses\n- Some bug fixes</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -308,14 +308,15 @@
 		</install>
 	</plugin>
 	<plugin name="LuaScript">
-		<x64Version>0.7.0</x64Version>
+		<x64Version>0.7.1</x64Version>
 		<description>Plugin for Lua scripting capabilities. Provides control over all of Scintilla's features and options with a light-weight, fully-functional programming language.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/LuaScript</sourceUrl>
+		<latestUpdate>2018-01-04\n - Fixes editor.MarginLeft and editor.MarginRight\n - Add support for setting timers for scheduling custom events\n - Improve stability</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/LuaScript/releases/download/v0.7.0/LuaScript_64.zip</download>
+				<download>https://github.com/dail8859/LuaScript/releases/download/v0.7.1/LuaScript_v0.7.1_x64.zip</download>
 				<copy from="LuaScript_64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -822,6 +823,23 @@
 			<x64>
 				<download>https://sites.google.com/site/fstellari/nppplugins/TopMost_dll_1v40.zip</download>
 				<copy from="64bit\TopMost.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="ViSimulator for Notepad++">
+		<x64Version>17.12.17</x64Version>
+		<description>It is a plugin for Notepad++ which provides a Vi-Style input scheme like moving around with hjkl and editing text on Notepad++.\n\nMost of the common commands in vi are supported via this plugin Fast tap the 'ESC' 3 times to enable/disable the plugin\n\nBelow are list of the supported commands:\n\n    h j k l - move the cursor\n    a i o - switch to edit mode\n    $ - move to the end of the line\n    0 - move to the beginning of the line\n    w e - move to next word\n    u - undo\n    x - delete character[s]\n    d[G] - cut line[s]\n    y[G] - yank line[s]\n    p - paste\n    n N - search next matched\n    :number - move to the cursor to line\n    :w - save\n    :q - quit\n    :help - show all the supported commands</description>
+		<author>bycn82</author>
+		<homepage>https://github.com/bycn82/visimulator</homepage>
+		<versions>
+			<version number="17.12.17" md5="80bfd1abb48327992e26e0d4346784f6"/>
+		</versions>
+		<latestUpdate>2017-12-17</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/bycn82/visimulator/raw/master/x64/ViSimulator-x64-20171217.zip</download>
+				<copy from="ViSimulator.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
