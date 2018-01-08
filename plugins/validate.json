@@ -17,6 +17,9 @@
         "4c3c723290a6bfce2b3bb70531373d86": "git2.dll",
         "3e88e14d939cd2026f7c5556d21331b7": "sqlite3.dll"
     },
+    "AnalysePlugin": {
+        "b8dfbf18248c53b9d7e368e013590b55": "AnalysePlugin.dll"
+    },
     "AutoSave": {
         "87072452e2ce8c13b5ebd551630705a6": "AutoSave.dll"
     },

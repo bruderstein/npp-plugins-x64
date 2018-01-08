@@ -27,22 +27,29 @@
 		</remove>
 	</plugin>
 	<plugin name="AnalysePlugin">
-		<x64Version>1.11.34</x64Version>
+		<x64Version>1.11.37</x64Version>
 		<description>AnalysePlugin will help you to search for more than one search pattern at a time.  Great for analysing log files.</description>
-		<author>Matthias Hessling</author>
+		<author>Mattes H.</author>
 		<homepage>http://analyseplugin.sourceforge.net/</homepage>
 		<sourceUrl>https://sourceforge.net/p/analyseplugin/code/</sourceUrl>
 		<versions>
 			<version number="1.11.34" md5="56a19878b902d25d0c1b12b33d3ba44a"/>
+			<version number="1.11.37" md5="b8dfbf18248c53b9d7e368e013590b55"/>
 		</versions>
-		<latestUpdate>Changes since 1.10\n - adding feature of synced scrolling between result and search text\n - change context menu names to Prepend / Append \n - feature colourized find patterns in result window search function\n - adding feature save current pattern list and restore at startup \n - adding feature "add selection to patterns" \n - adding feature persistent last config files context menu \n - adding configuration to select count of entries in the pattern list context menu \n - adding rgx_multiline in the search type\n - adding dialog for clip board copy of context menu editing\n - updating to Visual Studio 2013\n - sync with NPP files to version 6.9.2\n - several bugfixes, see changes.txt</latestUpdate>
+		<latestUpdate>Changes since 1.11\n - bugfix positioning ColorPopup on left side multi screen (negative coordinates)\n - bugfix scrambling with "Toggle this" context menu option\n - bugfix small correction in xsd to reflect current status\n - bugfix assertion when Options dialog is opened before findDlg docking window\n - added version information in Windows properties dialog\n - synced with source from Notepad++ v7.4.1\n - added package for both systems 32/64 in one \nChanges since 1.11-preview\n - added 64bit support and package for both systems 32/64 in one \nFurther change log see changes.txt</latestUpdate>
+		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.11-R34.zip</download>
-				<copy from="x64\AnalysePlugin\AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="x64\AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
+				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.11-R37.zip</download>
+				<copy from="AnalysePlugin\x64\AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\AnalysePlugin"  isDirectory="true"/>
+			</x64>
+		</remove>
 	</plugin>
 	<plugin name="AutoCodepage">
 		<x64Version>1.2.1</x64Version>
