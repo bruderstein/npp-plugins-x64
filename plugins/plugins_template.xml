@@ -52,17 +52,17 @@
 		</remove>
 	</plugin>
 	<plugin name="AnalysePlugin">
-		<x64Version>1.10.32</x64Version>
+		<x64Version>1.11.37</x64Version>
 		<description>AnalysePlugin will help you to search for more than one search pattern at a time.  Great for analysing log files.</description>
-		<author>Matthias Hessling</author>
+		<author>Mattes H.</author>
 		<homepage>http://analyseplugin.sourceforge.net/</homepage>
 		<sourceUrl>https://sourceforge.net/p/analyseplugin/code/</sourceUrl>
-		<latestUpdate>Changes since 1.10\n - adding feature of synced scrolling between result and search text\n - change context menu names to Prepend / Append \n - feature colourized find patterns in result window search function\n - adding feature save current pattern list and restore at startup \n - adding feature "add selection to patterns" \n - adding feature persistent last config files context menu \n - adding configuration to select count of entries in the pattern list context menu \n - adding rgx_multiline in the search type\n - adding dialog for clip board copy of context menu editing\n - updating to Visual Studio 2013\n - sync with NPP files to version 6.9.2\n - several bugfixes, see changes.txt</latestUpdate>
+		<latestUpdate>Changes since 1.11\n - bugfix positioning ColorPopup on left side multi screen (negative coordinates)\n - bugfix scrambling with "Toggle this" context menu option\n - bugfix small correction in xsd to reflect current status\n - bugfix assertion when Options dialog is opened before findDlg docking window\n - added version information in Windows properties dialog\n - synced with source from Notepad++ v7.4.1\n - added package for both systems 32/64 in one \nChanges since 1.11-preview\n - added 64bit support and package for both systems 32/64 in one \nFurther change log see changes.txt</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.10-R32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="v01.10-R32\AnalysePlugin\AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="v01.10-R32\AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
+				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.11-R37.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="AnalysePlugin\AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
 			</x64>
 		</install>
 	</plugin>
@@ -253,17 +253,18 @@
 		</install>
 	</plugin>
 	<plugin name="Code alignment">
-		<x64Version>13.0</x64Version>
+		<x64Version>14.0</x64Version>
 		<description>Code alignment helps you present your code beautifully, enhancing clarity and readability.\n\nAlign your code by any character. Fast logical shortcuts to perform common alignments such as equals and period.\n\nRequires .NET Framework 4.0</description>
 		<author>Chris McGrath</author>
 		<homepage>http://codealignment.com</homepage>
-		<latestUpdate>Version 13: 6 Nov 2016 Upgrade all Projects from .NET 3.5 to .NET 4 enhancement Notepad++ Visual Studio\nVersion 12: Align by string screen lets align from caret position if SHIFT is down when clicking OK\nVersion 11: Add ability to specify where to add spaces (ability to right align). \nVersion 10: Alignment Chaining - When using the Code alignment shortcut, simply keep pressing control and you can immediately perform another alignment starting from where the last alignment occurred.\nVersion 9: Fixed Grabber offset\nVersion 8: Ability to Export/Import settings\nVersion 7: Fixed bug: Add space before only works if first instance at max column needs space.</latestUpdate>
+		<sourceUrl>https://github.com/cpmcgrath/codealignment</sourceUrl>
+		<latestUpdate>Version 14: 2018-01-13 #64 Add Support for Notepad++ x64\n#65 Setup AppVeyor Continuous Integration Server\nVersion 13: 6 Nov 2016 Upgrade all Projects from .NET 3.5 to .NET 4 enhancement Notepad++ Visual Studio\nVersion 12: Align by string screen lets align from caret position if SHIFT is down when clicking OK\nVersion 11: Add ability to specify where to add spaces (ability to right align). \nVersion 10: Alignment Chaining - When using the Code alignment shortcut, simply keep pressing control and you can immediately perform another alignment starting from where the last alignment occurred.\nVersion 9: Fixed Grabber offset\nVersion 8: Ability to Export/Import settings\nVersion 7: Fixed bug: Add space before only works if first instance at max column needs space.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/cpmcgrath/codealignment/releases/download/v13/CodeAlignmentNpp_13_0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="CodeAlignmentNpp.dll" to="$PLUGINDIR$\"/>
-				<copy from="CodeAlignment\CodeAlignment.Common.dll" to="$PLUGINDIR$\CodeAlignment"/>
-				<copy from="CodeAlignment\CodeAlignment.Common.WinForms.dll" to="$PLUGINDIR$\CodeAlignment"/>
+				<download>https://github.com/cpmcgrath/codealignment/releases/download/v14/CodeAlignmentNpp_v14_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="CodeAlignmentNpp.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="CodeAlignment\CodeAlignment.Common.dll" to="$PLUGINDIR$\CodeAlignment" validate="true"/>
+				<copy from="CodeAlignment\CodeAlignment.Common.WinForms.dll" to="$PLUGINDIR$\CodeAlignment" validate="true"/>
 			</x64>
 		</install>
 		<remove>
@@ -288,6 +289,7 @@
 		<install>
 			<x64>
 				<download>https://github.com/p0358/notepadpp-CodeStats/releases/download/v1.0.1/notepadpp-CodeStats_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="CodeStats.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1245,17 +1247,17 @@
 		</install>
 	</plugin>
 	<plugin name="NavigateTo">
-		<x64Version>1.12.2</x64Version>
+		<x64Version>1.12.3</x64Version>
 		<description>Do you have more then 10 open tabs? than this plugin is for you.\n\nNavigate To is a new and efficient way to quickly navigate between tabs(files) in your Notepad++. It allows you to search for a symbol or filename, filepath by matching against a keyword you type in, and get a real time preview while going through the search results by Shift key.\nAnd YES indeed you can uncheck the Multi-line option, in the Preferences &gt; General &gt; Tab Bar zone because you don’t need the multi-lines tab feature anymore :)\n\nAuthor: Oleksii Maryshchenko\nEmail: young_developer@mail.ru</description>
 		<author>Oleksii Maryshchenko</author>
 		<homepage>https://github.com/young-developer/nppNavigateTo</homepage>
 		<sourceUrl>https://github.com/young-developer/nppNavigateTo</sourceUrl>
-		<latestUpdate>**New features and enhancements:**\n- Right-click context menu for files like in NPP was added.\n- File preview functionality was added.\n- Minimum window size was set to 400x200\n- New column 'View' was added.\n- Number of matching results was moved to form title.\n- File status functionality was implemented:\nBlack - SAVED\nRed - UNSAVED\nGrey - READONLY  \n\n**Bugs:**  \n- Unicode search, open and highlight bugs(filenames and paths with letters like é, à or else ) were fixed.\n- Filter editbox could not be unfocused now.  \n\n**Other:**\n- Filter is case insensitive and highlight only first sub-string match.  \n\n**Tips &amp; Tricks** \n- Hold &lt;kbd&gt;ALT&lt;/kbd&gt; and press  &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to open search history.\n- Open NavigateTo form and then hold &lt;kbd&gt;SHIFT&lt;/kbd&gt; and press &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to preview files.</latestUpdate>
+		<latestUpdate>Version 1.12.3\n-Crash in x32bit version was fixed.\n--\n**New features and enhancements:**\n- Right-click context menu for files like in NPP was added.\n- File preview functionality was added.\n- Minimum window size was set to 400x200\n- New column 'View' was added.\n- Number of matching results was moved to form title.\n- File status functionality was implemented:\nBlack - SAVED\nRed - UNSAVED\nGrey - READONLY  \n\n**Bugs:**  \n- Unicode search, open and highlight bugs(filenames and paths with letters like é, à or else ) were fixed.\n- Filter editbox could not be unfocused now.  \n\n**Other:**\n- Filter is case insensitive and highlight only first sub-string match.  \n\n**Tips &amp; Tricks** \n- Hold &lt;kbd&gt;ALT&lt;/kbd&gt; and press  &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to open search history.\n- Open NavigateTo form and then hold &lt;kbd&gt;SHIFT&lt;/kbd&gt; and press &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to preview files.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/young-developer/nppNavigateTo/releases/download/1.12.2/NavigateTo.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="bin\NavigateTo.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/young-developer/nppNavigateTo/releases/download/1.12.3/NavigateTo_x32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="NavigateTo.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>

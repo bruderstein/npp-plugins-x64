@@ -170,7 +170,7 @@
     },
     "NavigateTo":
     {
-        "f2d3784785459f76020813b51f4b1ab8": "NavigateTo.dll"
+        "228f3d86722339711a516f700d9ad465": "NavigateTo.dll"
     },
     "Poor Man's T-Sql Formatter":
     {
@@ -213,5 +213,15 @@
     "ViSimulator for Notepad++":
     {
         "80bfd1abb48327992e26e0d4346784f6": "ViSimulator.dll"
+    },
+    "CS-Script (C# intellisense)":
+    {
+        "9222b34963b214bbb0ece57c8429b1ed": "CSScriptNpp.x64.dll"
+    },
+    "Code alignment":
+    {
+        "24823facdf971ca0c06ffc9f2c3ced0a": "CodeAlignmentNpp.dll",
+        "23cfb36c023a0c19d9a53041b6b47319": "CodeAlignment.Common.dll",
+        "d9eea261bc03190f0f4fb85af60f40d4": "CodeAlignment.Common.WinForms.dll"
     }
 }
