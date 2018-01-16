@@ -10,7 +10,7 @@
 		<homepage>http://jcaillon.github.io/3P/</homepage>
 		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
 		<latestUpdate>More infos here :\n2018-01-11 https://github.com/jcaillon/3P/releases/tag/v1.7.7</latestUpdate>
-		<stability>PreRelease</stability>
+		<stability>Good</stability>
 		<minVersion>6.8.0</minVersion>
 		<install>
 			<x64>
