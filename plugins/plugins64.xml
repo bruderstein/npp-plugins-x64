@@ -191,15 +191,15 @@
 		</remove>
 	</plugin>
 	<plugin name="CsvQuery">
-		<x64Version>1.2.0</x64Version>
+		<x64Version>1.2.5</x64Version>
 		<description>Enables SQL queries against CSV files</description>
 		<author>jokedst</author>
 		<sourceUrl>https://github.com/jokedst/CsvQuery</sourceUrl>
-		<latestUpdate>A few issues fixed, and now tries to use the Notepad++ theme (if activated in settings).\n\nUsing streams and events internally to improve speed and stability.</latestUpdate>
+		<latestUpdate>Type system rewritten which should make header detection much better</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/jokedst/CsvQuery/releases/download/v1.2.0/CsvQuery64.zip</download>
+				<download>https://github.com/jokedst/CsvQuery/releases/download/v1.2.5/CsvQuery-v1.2.5-x64.zip</download>
 				<copy from="CsvQuery.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
