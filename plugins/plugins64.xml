@@ -619,6 +619,22 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="NppNetNote">
+		<x64Version>0.1.0.0</x64Version>
+		<aliases>
+			<alias name="NppDocShare"/>
+		</aliases>
+		<description>Allows the same document to be edited in real time on two different computers.  Only needs a network connection between the two.</description>
+		<author>Harrybharry</author>
+		<sourceUrl>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_src.zip</sourceUrl>
+		<latestUpdate>2018-01-20 Unofficial port of https://sourceforge.net/projects/npp-plugins/files/NppDocShare/NppDocShare%20plugin%20v0.1/ for x64</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/chcg/NppDocShare/releases/download/0.1.11/NppDocShare_0.1.11_x64.zip</download>
+				<copy from="NppDocShare.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="NppRegExTractor">
 		<x64Version>2.0.0</x64Version>
 		<description>Search one or more regular expression in one ore more different files and get and xml search result.</description>
