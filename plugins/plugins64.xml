@@ -219,7 +219,7 @@
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\DoxyIt.dll"/>
+				<delete file="$PLUGINDIR$\DoxyIt_64.dll"/>
 			</x64>
 		</remove>
 	</plugin>
