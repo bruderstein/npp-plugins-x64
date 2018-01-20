@@ -227,6 +227,9 @@
     "NppNetNote":
     {
         "f3c4abd61baaae5168514d99bf7b5587": "NppDocShare.dll"
+    },
+    "BetterMultiSelection":
+    {
+        "de1788a4599f9d99039b80205653fe6d": "BetterMultiSelection_64.dll"
     }
-    
 }

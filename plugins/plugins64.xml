@@ -88,6 +88,25 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="BetterMultiSelection">
+		<x64Version>1.1</x64Version>
+		<description>Provide better cursor movements when using multiple selections.</description>
+		<author>Justin Dailey</author>
+		<sourceUrl>https://github.com/dail8859/BetterMultiSelection</sourceUrl>
+		<latestUpdate>Add ability to press Enter to insert newlines.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/dail8859/BetterMultiSelection/releases/download/v1.1/BetterMultiSelection_64.zip</download>
+				<copy from="BetterMultiSelection_64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\BetterMultiSelection_64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="Code alignment">
 		<x64Version>14.0</x64Version>
 		<description>Code alignment helps you present your code beautifully, enhancing clarity and readability.\n\nAlign your code by any character. Fast logical shortcuts to perform common alignments such as equals and period.\n\nRequires .NET Framework 4.0</description>
