@@ -227,5 +227,9 @@
     "BetterMultiSelection":
     {
         "de1788a4599f9d99039b80205653fe6d": "BetterMultiSelection_64.dll"
+    },
+    "SurroundSelection":
+    {
+        "59339140626ff1a0c36f7e3ac5e84ad3": "SurroundSelection_64.dll"
     }
 }
