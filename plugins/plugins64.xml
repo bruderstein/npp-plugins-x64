@@ -850,6 +850,25 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="SurroundSelection">
+		<x64Version>1.1</x64Version>
+		<description>Surrounds the selection in quotes/brackets/parenthesis\nNOTE: This may not with non-US keyboard layouts.</description>
+		<author>Justin Dailey</author>
+		<sourceUrl>https://github.com/dail8859/SurroundSelection</sourceUrl>
+		<latestUpdate>Add menu option to enable/disable plugin\nAllow typing of closing symbols (e.g. ), ], or })</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/dail8859/SurroundSelection/releases/download/v1.1/SurroundSelection_64.zip</download>
+				<copy from="SurroundSelection_64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\SurroundSelection_64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="TagLEET">
 		<x64Version>1.3.1.0</x64Version>
 		<description>Ctags browser. Look up the definition of variables and functions in source code. Can also find include files if ctags file was generated correctly. Ultra fast with low memory usage. Allow working with a single ctags file for very large projects.</description>
