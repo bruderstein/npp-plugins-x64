@@ -293,6 +293,21 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="ImgTag">
+		<x64Version>2.0.1</x64Version>
+		<description>ImgTag allows to insert img tags, in your html document, using the Open File Dialog Box to select image files.</description>
+		<author>salvom</author>
+		<homepage>http://sourceforge.net/projects/imgtag/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/imgtag/files/</sourceUrl>
+		<latestUpdate>2018-01-22 Unofficial port for x64 version\n2013-07-07\n2.0.1 \n--Fixed a bug: now the images are shown entirely with the "Show Image" command. \n\nversion 2.0 \n---ImgTag was rewritten in C#. This version requires the .net framework 2.0 or above. Now it's possible: to resize the image, to update the image size to the actual size, to show the image, to rename the image.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/chcg/ImgTag/releases/download/2.0.1.8/ImgTag_2.0.1.8_x64.zip</download>
+				<copy from="ImgTag.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="*.txt" to="$PLUGINDIR$\doc\ImgTag"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="JavaScript Map Parser">
 		<x64Version>4.2</x64Version>
 		<description>This is an extension for for better JavaScript support. It provides a panel with hierarchy structure of functions in your js file.</description>

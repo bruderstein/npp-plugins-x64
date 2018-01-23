@@ -231,5 +231,9 @@
     "SurroundSelection":
     {
         "59339140626ff1a0c36f7e3ac5e84ad3": "SurroundSelection_64.dll"
+    },
+    "ImgTag":
+    {
+        "2c5ce5931ffb81d666734b216e6d0268": "ImgTag.dll"
     }
 }
