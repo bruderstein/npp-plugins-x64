@@ -653,6 +653,19 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="NppJumpList">
+		<x64Version>1.2.2</x64Version>
+		<description>Adds windows 7 jump list support.</description>
+		<author>ahvgeezer</author>
+		<homepage>http://sourceforge.net/projects/nppjumplist/</homepage>
+		<install>
+			<x64>
+				<download>https://github.com/chcg/JumpList/releases/download/1.2.2.7/NppJumpList_1.2.2.7_x64.zip</download>
+				<copy from="NppJumpList.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="readme.txt" to="$PLUGINDIR$\doc\NppJumpList"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="NppNetNote">
 		<x64Version>0.1.0.0</x64Version>
 		<aliases>
