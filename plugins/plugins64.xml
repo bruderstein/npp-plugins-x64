@@ -804,6 +804,20 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Save as admin">
+		<x64Version>1.0.0.3</x64Version>
+		<description>This plugin allows you to save any file as administrator.\nJust press "Save" in Notepad++ and if you are not allowed to change this file as user, Notepad++ will save it as administrator.\nWindows XP, Windows 7 and Windows Vista are supported.</description>
+		<author>Khnykin Evgeniy</author>
+		<homepage>https://sourceforge.net/projects/nppsaveasadmin/</homepage>
+		<sourceUrl>https://sourceforge.net/p/nppsaveasadmin/code/</sourceUrl>
+		<latestUpdate>2018-01-26 Unofficial port for x64 version\nWindows XP is supported.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/chcg/nppSaveAsAdmin/releases/download/1.0.0.3.9/NppSaveAsAdmin_1.0.0.3.9_x64.zip</download>
+				<copy from="NppSaveAsAdmin.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="Select 'N' Launch">
 		<x64Version>2.1</x64Version>
 		<description>This plugin gets your selected text, saves it as file with the extension you customize in the system temporary directory, then call system to open it with the extension associated program.</description>

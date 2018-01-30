@@ -268,5 +268,9 @@
     "NppJumpList":
     {
         "721aa61be104ab79e186d2ac532972cb": "NppJumpList.dll"
+    },
+    "Save as admin":
+    {
+        "7e338b1c6bba02b342ea109bd26bd1aa": "NppSaveAsAdmin.dll"
     }
 }
