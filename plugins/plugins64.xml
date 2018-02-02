@@ -93,7 +93,7 @@
 		<description>Provide better cursor movements when using multiple selections.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/BetterMultiSelection</sourceUrl>
-		<latestUpdate>Add ability to press Enter to insert newlines.</latestUpdate>
+		<latestUpdate>2017-07-03 Add ability to press Enter to insert newlines.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -154,7 +154,7 @@
 		<author>Ty Landercasper, Jean-Sebastien Leroy, Pavel Nedev</author>
 		<homepage>https://github.com/jsleroy/compare-plugin</homepage>
 		<sourceUrl>https://github.com/jsleroy/compare-plugin</sourceUrl>
-		<latestUpdate>Total plugin re-work. Fixed stability issues. Several new features and many improvements.</latestUpdate>
+		<latestUpdate>2016-12-19 Total plugin re-work. Fixed stability issues. Several new features and many improvements.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_X64.zip</download>
@@ -191,9 +191,9 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp/</sourceUrl>
-		<latestUpdate>The first truly portable release. The same plugin binaries are running on both x86 and x64 versions of Notepad++.\nChanges see https://github.com/oleg-shilo/cs-script.npp/releases/tag/v1.7.8.0</latestUpdate>
-		<minVersion>6.4.5</minVersion>
+		<latestUpdate>Release v1.7.8\n\nThe first truly portable release. The same plugin binaries are running on both x86 and x64 versions of Notepad++ \nSpecial thanks to @kbilsted for his excellent kbilsted/NotepadPlusPlusPluginPack.Net x64 compatible Notepad++ managed hosting solution.\n\n* x64 migration\n - Implemented NppPlugin.Host loosely coupled CPU specific launcher\n - CSScriptIntellisense+CSScriptNpp made AnyCPU\n - Changed updater.exe to meet new x64 requirements\n - All NPP API code migrated to CPU neutral interface.\n - Updated packaging process to support x64.\n - Fixed nasty problem with interop corrupting unamanged memory. `Npp.Editor.GetOpenFiles` replaced with more conservative but safer `Npp.Editor.GetOpenFilesSafe`\n - Merged CSScriptIntellisense.Npp and SScriptNpp.Npp classes \n\n* Plugin functionality changes and fixes\n - All plugin's references to the external resources are changed from CodePlex (R.I.P.) to GitHub.  \n - Autocompletion user experience made consistent (e.g. suggestion filtering) with Visual Studio Intellisense.\n - Added `Config.Instance.InterceptConsoleByCharacter` (false by default) to allow faster ConsoleOutput rendering\n - Added `Config.BlockLocalDebugOutputContaining` to block unwanted Debug output content.\n - Added `Config.StartDebugMonitorOnScriptExecution` to prevent auto-attaching DBMon as it can cause significant startup delay for any process being started from the common parent (Notepad++ exe).\n\n* Fixes\n - Fixed debugger current step marker rendering problem\n - Various loading optimization changes.\n - Added extra error handling in custom-draw CodeMap routine.</latestUpdate>
 		<stability>Good</stability>
+		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
 				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.8.0/CSScriptNpp.1.7.8.0.x64.zip</download>
@@ -350,7 +350,7 @@
 		<author>Kapil Ratnani</author>
 		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
 		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
-		<latestUpdate>9 Jan 2017, 1. 64 bit support. Thanks @chcg</latestUpdate>
+		<latestUpdate>2017-01-09, 1. 64 bit support. Thanks @chcg</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.24/NPPJSONViewer-x64.dll.zip</download>
@@ -894,10 +894,10 @@
 	</plugin>
 	<plugin name="SurroundSelection">
 		<x64Version>1.1</x64Version>
-		<description>Surrounds the selection in quotes/brackets/parenthesis\nNOTE: This may not with non-US keyboard layouts.</description>
+		<description>Surrounds the selection in quotes/brackets/parenthesis\nNOTE: This may not work with non-US keyboard layouts.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/SurroundSelection</sourceUrl>
-		<latestUpdate>Add menu option to enable/disable plugin\nAllow typing of closing symbols (e.g. ), ], or })</latestUpdate>
+		<latestUpdate>2017-04-13 Add menu option to enable/disable plugin\nAllow typing of closing symbols (e.g. ), ], or })</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
