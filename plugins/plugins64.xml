@@ -478,6 +478,21 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="MusicPlayer">
+		<x64Version>1.0.0.3</x64Version>
+		<description>It's a plug in to open and play music files.\nSupports:\n*.wav\n*.mp3\n*.aiff\n*.wma</description>
+		<author>Jon Galletero</author>
+		<homepage>https://sourceforge.net/projects/nppmusicplayer</homepage>
+		<sourceUrl>https://github.com/gallettube/MusicPlayer</sourceUrl>
+		<latestUpdate>01-06-2015 (v1.0.0.3)\n- Menu improved\n- Donate function\n- Replace library to test\n\n31-05-2015 (v1.0.0.2)\n- Open FileS\n\n31-05-2015 (v1.0.0.1)\n- Initial release\n- Open File\n- Song</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/gallettube/MusicPlayer/releases/download/1.0.11/MusicPlayer_1.0.11x64.dll.zip</download>
+				<copy from="MusicPlayer_1.0.11x64.dll" to="$PLUGINDIR$\"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="NavigateTo">
 		<x64Version>1.12.3</x64Version>
 		<description>Do you have more then 10 open tabs? than this plugin is for you.\n\nNavigate To is a new and efficient way to quickly navigate between tabs(files) in your Notepad++. It allows you to search for a symbol or filename, filepath by matching against a keyword you type in, and get a real time preview while going through the search results by Shift key.\nAnd YES indeed you can uncheck the Multi-line option, in the Preferences &gt; General &gt; Tab Bar zone because you don’t need the multi-lines tab feature anymore :)\n\nAuthor: Oleksii Maryshchenko\nEmail: young_developer@mail.ru</description>
