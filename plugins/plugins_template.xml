@@ -377,6 +377,7 @@
 		<author>Ty Landercasper, Jean-Sebastien Leroy, Pavel Nedev</author>
 		<homepage>https://github.com/jsleroy/compare-plugin</homepage>
 		<sourceUrl>https://github.com/jsleroy/compare-plugin</sourceUrl>
+		<latestUpdate>2016-12-19 Total plugin re-work. Fixed stability issues. Several new features and many improvements.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
@@ -534,16 +535,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.3.5</x64Version>
+		<x64Version>1.4.0</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2017-12-26\n* Fix disappearance of auto spell-checking icon.\n* Fix work of system-wide dictionaries.</latestUpdate>
+		<latestUpdate>2018-02-05\n* Major internal code refactoring to make further changes and maintenance easier.\n* Enable Spelling in Comments and Delimiters for UDL (#73)\n* Updated Hunspell to 1.6.2\n* Fix problems with dictionaries inheriting wrong permissions on download. (#83)\n* Support "Allow Run-Together" option for Aspell.\n* Exclude words having all capital letters from having non-first capital letter (#74)\n* Support String/Comment detection for previously unsupported languages. (#71)\n* Add option to split words by any non-alphabetic/numeric characters except specified exclusions. (New default)\n* Support splitting of CamelCase words (disabled by default) (#89)\n* Support native windows spell-checking as the third spell-checker on Windows 8+ (#65)\n* Correctly handle period at the end of words like etc. (#48)\n* Add possibility to check variable/function names (disabled by default) (#37)\n* Add hidden option Word_Minimum_Length to disable checking of words with length less or equal to its value\n* Supported using any custom Hunspell syntax in user dictionaries.\n* Simplify external localization of plugin.\n* Fix plugin icons and issues in high-dpi mode.\n* Change usage libiconv to winiconv which should lower executable size.\n* Enable more optimization options during compilation.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.3.5/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.0/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -979,7 +980,7 @@
 		<author>Kapil Ratnani</author>
 		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
 		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
-		<latestUpdate>1. 64 bit support. Thanks @chcg</latestUpdate>
+		<latestUpdate>2017-01-09, 1. 64 bit support. Thanks @chcg</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.24/NPPJSONViewer-win32.dll.zip!!!ADAPT_LINK_FOR_X64!!!</download>
@@ -1221,7 +1222,7 @@
 		<author>Jon Galletero</author>
 		<homepage>https://sourceforge.net/projects/nppmusicplayer</homepage>
 		<sourceUrl>https://github.com/gallettube/MusicPlayer</sourceUrl>
-		<latestUpdate>01-06-2015 (v1.0.0.3)\n- Menu improved\n- Donate function\n- Replace library to test\n\n31-05-2015 (v1.0.0.2)\n- Open FileS\n\n31-05-2015 (v1.0.0.1)\n- Initial release\n- Open File\n- Song</latestUpdate>
+		<latestUpdate>03-02-2018\n- Updated version for x86 and x64\n\n01-06-2015 (v1.0.0.3)\n- Menu improved\n- Donate function\n- Replace library to test\n\n31-05-2015 (v1.0.0.2)\n- Open FileS\n\n31-05-2015 (v1.0.0.1)\n- Initial release\n- Open File\n- Song</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -1493,8 +1494,8 @@
 		</aliases>
 		<description>NppFTP: a plugin that allows FTP, FTPS, FTPES and SFTP communications. Very useful for web development.</description>
 		<author>ashish_kulz</author>
-		<homepage>http://ashkulz.github.io/NppFTP/</homepage>
-		<sourceUrl>http://github.com/ashkulz/NppFTP/</sourceUrl>
+		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
+		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
 		<latestUpdate>2017-12-15\n- update to openssl-1.0.2n, with security related fixes\n- fixed #71 Timeout gets reset after Notepad++ rest</latestUpdate>
 		<install>
 			<x64>
@@ -1510,6 +1511,7 @@
 		<author>Pavel Nedev</author>
 		<homepage>https://github.com/pnedev/nppgtags</homepage>
 		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
+		<latestUpdate>2017-06-29 Add results search functionality. Add per-database ignore sub-folders setting.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/pnedev/nppgtags/releases/download/v4.4.0/NppGTags_v4.4.0_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
