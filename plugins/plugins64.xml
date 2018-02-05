@@ -248,7 +248,7 @@
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-02-05\n* Major internal code refactoring to make further changes and maintenance easier.\n* Enable Spelling in Comments and Delimiters for UDL (#73)\n* Updated Hunspell to 1.6.2\n* Fix problems with dictionaries inheriting wrong permissions on download. (#83)\n* Support "Allow Run-Together" option for Aspell.\n* Exclude words having all capital letters from having non-first capital letter (#74)\n* Support String/Comment detection for previously unsupported languages. (#71)\n* Add option to split words by any non-alphabetic/numeric characters except specified exclusions. (New default)\n* Support splitting of CamelCase words (disabled by default) (#89)\n* Support native windows spell-checking as the third spell-checker on Windows 8+ (#65)\n* Correctly handle period at the end of words like etc. (#48)\n* Add possibility to check variable/function names (disabled by default) (#37)\n* Add hidden option Word_Minimum_Length to disable checking of words with length less or equal to its value\n* Supported using any custom Hunspell syntax in user dictionaries.\n* Simplify external localization of plugin.\n* Fix plugin icons and issues in high-dpi mode.\n* Change usage libiconv to winiconv which should lower executable size.\n* Enable more optimization options during compilation.\n</latestUpdate>
+		<latestUpdate>2018-02-05\n* Major internal code refactoring to make further changes and maintenance easier.\n* Enable Spelling in Comments and Delimiters for UDL (#73)\n* Updated Hunspell to 1.6.2\n* Fix problems with dictionaries inheriting wrong permissions on download. (#83)\n* Support "Allow Run-Together" option for Aspell.\n* Exclude words having all capital letters from having non-first capital letter (#74)\n* Support String/Comment detection for previously unsupported languages. (#71)\n* Add option to split words by any non-alphabetic/numeric characters except specified exclusions. (New default)\n* Support splitting of CamelCase words (disabled by default) (#89)\n* Support native windows spell-checking as the third spell-checker on Windows 8+ (#65)\n* Correctly handle period at the end of words like etc. (#48)\n* Add possibility to check variable/function names (disabled by default) (#37)\n* Add hidden option Word_Minimum_Length to disable checking of words with length less or equal to its value\n* Supported using any custom Hunspell syntax in user dictionaries.\n* Simplify external localization of plugin.\n* Fix plugin icons and issues in high-dpi mode.\n* Change usage libiconv to winiconv which should lower executable size.\n* Enable more optimization options during compilation.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -299,7 +299,7 @@
 		<author>salvom</author>
 		<homepage>http://sourceforge.net/projects/imgtag/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/imgtag/files/</sourceUrl>
-		<latestUpdate>2018-01-22 Unofficial port for x64 version\n2013-07-07\n2.0.1 \n--Fixed a bug: now the images are shown entirely with the "Show Image" command. \n\nversion 2.0 \n---ImgTag was rewritten in C#. This version requires the .net framework 2.0 or above. Now it's possible: to resize the image, to update the image size to the actual size, to show the image, to rename the image.</latestUpdate>
+		<latestUpdate>2018-01-22 Unofficial port for x64 version\n2013-07-07\nversion 2.0.1 \n--Fixed a bug: now the images are shown entirely with the "Show Image" command. \n\nversion 2.0 \n---ImgTag was rewritten in C#. This version requires the .net framework 2.0 or above. Now it's possible: to resize the image, to update the image size to the actual size, to show the image, to rename the image.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/chcg/ImgTag/releases/download/2.0.1.8/ImgTag_2.0.1.8_x64.zip</download>
@@ -484,7 +484,7 @@
 		<author>Jon Galletero</author>
 		<homepage>https://sourceforge.net/projects/nppmusicplayer</homepage>
 		<sourceUrl>https://github.com/gallettube/MusicPlayer</sourceUrl>
-		<latestUpdate>01-06-2015 (v1.0.0.3)\n- Menu improved\n- Donate function\n- Replace library to test\n\n31-05-2015 (v1.0.0.2)\n- Open FileS\n\n31-05-2015 (v1.0.0.1)\n- Initial release\n- Open File\n- Song</latestUpdate>
+		<latestUpdate>03-02-2018\n- Updated version for x86 and x64\n\n01-06-2015 (v1.0.0.3)\n- Menu improved\n- Donate function\n- Replace library to test\n\n31-05-2015 (v1.0.0.2)\n- Open FileS\n\n31-05-2015 (v1.0.0.1)\n- Initial release\n- Open File\n- Song</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -605,16 +605,15 @@
 		</install>
 	</plugin>
 	<plugin name="NppExec">
-		<x64Version>0.5.9.9</x64Version>
+		<x64Version>0.6.0.0</x64Version>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
 		<author>Vitaliy Dovgan</author>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
-		<latestUpdate>Version  v0.5.9.9 dev  ------------  + NppExec can be build with Orwell Dev-C++ (NppExec_DevCpp.dev)  + project file for Visual Studio 2013 Express (NppExec_VC12.sln)  + fparser updated to 4.5.2  + Notepad++ and Scintilla header files updated to Notepad++ 6.8.6  + Warning Analyser: more accurate detection of %LINE% and %CHAR%  + new command: NPP_SAVEAS  + new command: PROC_SIGNAL  + set &lt;var&gt; ~ strfromhex &lt;hex string&gt;+ set &lt;var&gt; ~ strtohex &lt;string&gt;+ now commands can be executed from macro-vars (e.g. &quot;set a = npp_run calc&quot; and then &quot;$(a)&quot; to execute)  + now a child console process is tried to be killed first, and only then terminated  + added: &quot;@EXIT_CMD&quot; macro var to specify child process'es exit command  + added: &quot;nppexec:&quot; prefix to execute NppExec's commands from a child console process  + NppExec's Console: Tab-completion improved; also works after &quot;help &quot; and &quot;nppexec:&quot;  + NppExec's Console: &quot;Tab = \t&quot; allows to type Tab character in the Console  + NppExec's Console: &quot;set local&quot; creates Console's local vars (not shared with NppExec's script)  + now SEL_LOADFROM and CON_LOADFROM detect UTF-8 without BOM  + now SEL_SAVETO can save as UTF-8 without BOM  - fixed: font of NppExec's Console could be set incorrectly  - fixed: crash while calculating very big numbers (e.g. 10^72)  - fixed: the &quot;exit command&quot; dialog did not use the &quot;Key_Enter&quot; value  * internal improvements  * more internal improvements  * better error reporting  +? NppExec Manual updated !!!incomplete: to be updated!!!  +? new flow: IF...ELSE...ENDIF !!!incomplete: not documented!!! in case of errors the script is stopped  +? now each command returns either CMDRESULT_SUCCEEDED or CMDRESULT_FAILED !!!incomplete: just partially implemented, not documented!!!</latestUpdate>
+		<latestUpdate>Version  v0.6.0.0 alpha 1  ------------  + NppExec can be build with Orwell Dev-C++ (NppExec_DevCpp.dev)  + project file for Visual Studio 2013 Express (NppExec_VC12.sln)  + fparser updated to 4.5.2  + Notepad++ and Scintilla header files updated to Notepad++ 6.8.6  + Warning Analyser: more accurate detection of %LINE% and %CHAR%  + new command: NPP_SAVEAS  + new command: PROC_SIGNAL  + set &lt;var&gt; ~ strfromhex &lt;hex string&gt;+ set &lt;var&gt; ~ strtohex &lt;string&gt;+ now commands can be executed from macro-vars (e.g. &quot;set a = npp_run calc&quot; and then &quot;$(a)&quot; to execute)  + now a child console process is tried to be killed first, and only then terminated  + added: &quot;@EXIT_CMD&quot; macro var to specify child process'es exit command  + added: &quot;nppexec:&quot; prefix to execute NppExec's commands from a child console process  + NppExec's Console: Tab-completion improved; also works after &quot;help &quot; and &quot;nppexec:&quot;  + NppExec's Console: &quot;Tab = \t&quot; allows to type Tab character in the Console  + NppExec's Console: &quot;set local&quot; creates Console's local vars (not shared with NppExec's script)  + now SEL_LOADFROM and CON_LOADFROM detect UTF-8 without BOM  + now SEL_SAVETO can save as UTF-8 without BOM  - fixed: font of NppExec's Console could be set incorrectly  - fixed: crash while calculating very big numbers (e.g. 10^72)  - fixed: the &quot;exit command&quot; dialog did not use the &quot;Key_Enter&quot; value  * internal improvements  * more internal improvements  * better error reporting  +? NppExec Manual updated !!!incomplete: to be updated!!!  +? new flow: IF...ELSE...ENDIF !!!incomplete: not documented!!! in case of errors the script is stopped  +? now each command returns either CMDRESULT_SUCCEEDED or CMDRESULT_FAILED !!!incomplete: just partially implemented, not documented!!!</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.5.9.9%20dev/NppExec20160628_dll_x64-2.zip/download</download>
-				<copy from="doc\*.*" to="$PLUGINDIR$\doc"/>
-				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20alpha%201/NppExec_06alpha1_dll_x64-2.zip/download</download>
+				<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
 				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -654,7 +653,7 @@
 		<author>Pavel Nedev</author>
 		<homepage>https://github.com/pnedev/nppgtags</homepage>
 		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
-		<latestUpdate>Add results search functionality. Add per-database ignore sub-folders setting.</latestUpdate>
+		<latestUpdate>2017-06-29 Add results search functionality. Add per-database ignore sub-folders setting.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/pnedev/nppgtags/releases/download/v4.4.0/NppGTags_v4.4.0_X64.zip</download>
