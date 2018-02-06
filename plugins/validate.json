@@ -276,5 +276,9 @@
     "MusicPlayer":
     {
         "e264de50298fd1911352f90183a11347": "MusicPlayer_1.0.11x64.dll"
+    },
+    "XBrackets Lite":
+    {
+        "8e864261ab8830ec761e5c07a22afab0": "XBrackets.dll"
     }
 }

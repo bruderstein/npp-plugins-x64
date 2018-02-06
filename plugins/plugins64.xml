@@ -1010,6 +1010,19 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="XBrackets Lite">
+		<x64Version>1.3.0</x64Version>
+		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion: * next character is analysed for ([{ brackets; * next &amp; previous characters are analysed for " quote.</description>
+		<author>Dovgan Vitaliy</author>
+		<latestUpdate>v1.3.0 - Feb 2018\n* 64-bit version added\n\nv1.2.1 - Oct 2012\n- fixed: while saving the options (CXBracketsOptions::SaveOptions),\n  the value of m_szHtmlFileExts was not correctly updated.\n  Thanks to David M. Miller for reporting &amp; providing a fix.\n\nv1.2 - May 2011\n* header files in "src/core/npp_stuff" updated to version 5.9 of Notepad++\n* now brackets autocompletion is disabled during multiple selection mode</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/XBrackets%20Plugin%20v1.3.0/XBrackets_v130_dll_x64.zip</download>
+				<copy from="XBrackets.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="XBrackets.txt" to="$PLUGINDIR$\doc\XBrackets"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="XML Tools">
 		<x64Version>2.4.9.2</x64Version>
 		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based. The plugin features are:\n- XML syntax Check\n- XML Schema (XSD) + DTD Validation\n- XML tag autoclose\n- Pretty print\n- Linarize XML\n- Current XML Path\n- Conversion XML &amp;lt;-&amp;gt; Text\n- Comment / Uncomment\n- XPath expression evaluation</description>
