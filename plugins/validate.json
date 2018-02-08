@@ -280,5 +280,10 @@
     "XBrackets Lite":
     {
         "8e864261ab8830ec761e5c07a22afab0": "XBrackets.dll"
+    },
+    "NotepadStarterPlugin":
+    {
+        "b9d9baa85ef2d5e3068a98c00dd644ed": "NotepadStarterPlugin.dll",
+        "258b4629fe2eecf3051621a4a8548f3a": "NotepadStarter.exe"
     }
 }
