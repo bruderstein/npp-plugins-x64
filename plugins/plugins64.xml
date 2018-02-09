@@ -548,17 +548,17 @@
 		</install>
 	</plugin>
 	<plugin name="NotepadStarterPlugin">
-		<x64Version>2.3.1.0</x64Version>
+		<x64Version>2.3.2.0</x64Version>
 		<description>This tool designed as a Notepad++ plugin by [Yonggang Luo](luoyonggang(at)gmail.com), when\nit installed as a Notepad++ plugin or running NotepadStarter.exe in the Notepad++ app\ndirectory, it's will automatically replace the system default notepad.exe application with\nNotepad++ (Without need for removing anything from the windows system.).  It's tested\nunder Windows 7, but Windows XP should also works.</description>
 		<author>Yonggang Luo</author>
 		<homepage>https://github.com/lygstate/NotepadStarter/</homepage>
-		<sourceUrl>https://github.com/lygstate/NotepadStarter/archive/2.3.1.0.zip</sourceUrl>
-		<latestUpdate>2018-02-07\n2.3.1.0 Hide the installation window.</latestUpdate>
+		<sourceUrl>https://github.com/lygstate/NotepadStarter/archive/2.3.2.0.zip</sourceUrl>
+		<latestUpdate>2018-02-09\nRelease 2.3.2</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>5.0</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/lygstate/NotepadStarter/releases/download/2.3.1.0/NotepadStarter_2.3.1.0_x64.zip</download>
+				<download>https://github.com/lygstate/NotepadStarter/releases/download/2.3.2.0/NotepadStarter_2.3.2.0_x64.zip</download>
 				<copy from="NotepadStarterPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="NotepadStarter\NotepadStarter.exe" to="$PLUGINDIR$\NotepadStarter\" validate="true"/>
 				<copy from="NotepadStarter\NotepadStarterInstall.bat" to="$PLUGINDIR$\NotepadStarter\"/>
