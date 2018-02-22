@@ -535,16 +535,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.0</x64Version>
+		<x64Version>1.4.1</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-02-05\n* Major internal code refactoring to make further changes and maintenance easier.\n* Enable Spelling in Comments and Delimiters for UDL (#73)\n* Updated Hunspell to 1.6.2\n* Fix problems with dictionaries inheriting wrong permissions on download. (#83)\n* Support "Allow Run-Together" option for Aspell.\n* Exclude words having all capital letters from having non-first capital letter (#74)\n* Support String/Comment detection for previously unsupported languages. (#71)\n* Add option to split words by any non-alphabetic/numeric characters except specified exclusions. (New default)\n* Support splitting of CamelCase words (disabled by default) (#89)\n* Support native windows spell-checking as the third spell-checker on Windows 8+ (#65)\n* Correctly handle period at the end of words like etc. (#48)\n* Add possibility to check variable/function names (disabled by default) (#37)\n* Add hidden option Word_Minimum_Length to disable checking of words with length less or equal to its value\n* Supported using any custom Hunspell syntax in user dictionaries.\n* Simplify external localization of plugin.\n* Fix plugin icons and issues in high-dpi mode.\n* Change usage libiconv to winiconv which should lower executable size.\n* Enable more optimization options during compilation.</latestUpdate>
+		<latestUpdate>2018-02-18\n* Restore spell-checking of text inside HTML.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.0/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.1/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1127,7 +1127,7 @@
 		</remove>
 	</plugin>
 	<plugin name="MarkdownViewer++">
-		<x64Version>0.7.1</x64Version>
+		<x64Version>0.8.0</x64Version>
 		<aliases>
 			<alias name="MarkdownViewerPlusPlus"/>
 			<alias name="MarkdownViewer++"/>
@@ -1136,12 +1136,12 @@
 		<author>nea</author>
 		<homepage>https://nea.github.io/MarkdownViewerPlusPlus/</homepage>
 		<sourceUrl>https://github.com/nea/MarkdownViewerPlusPlus</sourceUrl>
-		<latestUpdate>* Added handling of local image files</latestUpdate>
+		<latestUpdate>* Changed CommonMark converter to Markdig\n* Updated PDFSharp and HTMLRenderer.PDFSharp accordingly\n* Updated the NPP.net Plugin Template</latestUpdate>
 		<stability>Good</stability>
-		<minVersion>7.2</minVersion>
+		<minVersion>7.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.7.1/MarkdownViewerPlusPlus-0.7.1-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.8.0/MarkdownViewerPlusPlus-0.8.0-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="MarkdownViewerPlusPlus.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="*.md" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
 				<copy from="license\*.txt" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
@@ -1333,17 +1333,17 @@
 		</install>
 	</plugin>
 	<plugin name="NotepadStarterPlugin">
-		<x64Version>2.3.1.0</x64Version>
+		<x64Version>2.3.2.0</x64Version>
 		<description>This tool designed as a Notepad++ plugin by [Yonggang Luo](luoyonggang(at)gmail.com), when\nit installed as a Notepad++ plugin or running NotepadStarter.exe in the Notepad++ app\ndirectory, it's will automatically replace the system default notepad.exe application with\nNotepad++ (Without need for removing anything from the windows system.).  It's tested\nunder Windows 7, but Windows XP should also works.</description>
 		<author>Yonggang Luo</author>
 		<homepage>https://github.com/lygstate/NotepadStarter/</homepage>
-		<sourceUrl>https://github.com/lygstate/NotepadStarter/archive/2.3.1.0.zip</sourceUrl>
-		<latestUpdate>2018-02-07\n2.3.1.0 Hide the installation window.</latestUpdate>
+		<sourceUrl>https://github.com/lygstate/NotepadStarter/archive/2.3.2.0.zip</sourceUrl>
+		<latestUpdate>2018-02-09\nRelease 2.3.2</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>5.0</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/lygstate/NotepadStarter/releases/download/2.3.1.0/NotepadStarter_2.3.1.0_Win32.zip</download>
+				<download>https://github.com/lygstate/NotepadStarter/releases/download/2.3.2.0/NotepadStarter_2.3.2.0_Win32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NotepadStarterPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="NotepadStarter\NotepadStarter.exe" to="$PLUGINDIR$\NotepadStarter\" validate="true"/>
 				<copy from="NotepadStarter\NotepadStarterInstall.bat" to="$PLUGINDIR$\NotepadStarter\"/>
@@ -1351,7 +1351,7 @@
 				<copy from="NotepadStarter\NotepadStarterUninstall.bat" to="$PLUGINDIR$\NotepadStarter\"/>
 				<copy from="NotepadStarter\readme.md" to="$PLUGINDIR$\NotepadStarter\"/>
 				<copy from="NotepadStarter\request-admin.bat" to="$PLUGINDIR$\NotepadStarter\"/>
-				<run file="NotepadStarter\NotepadStarter.exe" arguments=":install-registry" outsideNpp="0"/>
+				<run file="NotepadStarter\NotepadStarter.exe" arguments=":install-registry" outsideNpp="1"/>
 			</x64>
 		</install>
 		<remove>
@@ -1383,6 +1383,20 @@
 				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll"/>
 			</x64>
 		</remove>
+	</plugin>
+	<plugin name="npp.connection">
+		<x64Version>1.0.1</x64Version>
+		<description>This plugin allows Notepad++ to connect to MS SQL or Sybase servers. ODBC data sources are also supported. Npp.connections work with MS SQL data sources that must be placed as aliases by "SQL Server Configuration Manager" tool. Sybase servers must be placed as aliases in \Sybase\ini\sql.ini file (default configuration ini-file in Sybase Client).</description>
+		<author>vladk1973</author>
+		<homepage>https://github.com/vladk1973/npp.connections</homepage>
+		<sourceUrl>https://github.com/vladk1973/npp.connections</sourceUrl>
+		<latestUpdate>2018-02-19\n- x64 version available\n- Minor bug in check button Menu fixed</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/vladk1973/npp.connections/releases/download/v1.0.1/npp.connections-1.0.1-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="Win32\Release\npp.connections.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
 	</plugin>
 	<plugin name="NppAutoIndent">
 		<x64Version>1.2.0.0</x64Version>
@@ -1986,7 +2000,7 @@
 		<author>Birunthan Mohanathas</author>
 		<homepage>https://poiru.github.com/rainlexer</homepage>
 		<sourceUrl>https://poiru.github.com/rainlexer</sourceUrl>
-		<latestUpdate>2017-12-30 Added a few missing keys.</latestUpdate>
+		<latestUpdate>2018-02-07  Added support for MediaKey, NowPlaying, RecycleManager and WebParser as measures.</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>99.9</minVersion>
 		<install>
@@ -2360,16 +2374,16 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm">
-		<x64Version>5.2.32</x64Version>
+		<x64Version>5.2.56</x64Version>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>2017-12-29\nAdded Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters\nAdded support for Notepad++ SQL Lexer</latestUpdate>
+		<latestUpdate>2018-02-22\nAdded Translation for Spanish\nAdded Translation for German\nRemoved NullPointerException\nImproved Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.2.32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.2.56.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="SQLinFormNpp.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -2577,15 +2591,15 @@
 		</install>
 	</plugin>
 	<plugin name="ToolBucket">
-		<x64Version>1.9</x64Version>
+		<x64Version>1.10</x64Version>
 		<description>Requires .NET 2.0\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>
 		<author>Paul Heasley</author>
 		<homepage>http://www.phdesign.com.au/programming/toolbucket-multi-line-search-plugin-for-notepad/</homepage>
 		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
-		<latestUpdate>29 Aug 2017  - Don't insert newline after last GUID\n- Save GUID generation options to config file\n- Add option to not prompt for GUID generation options each time (just use config settings)</latestUpdate>
+		<latestUpdate>18 Feb 2018  \n- Add menu item 'Clear find all' to remove all bookmarks\n- Add support for Find All / Count to work with 'All Open Documents</latestUpdate>
 		<install>
 			<x64>
-				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.9.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.10.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppToolBucket.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>

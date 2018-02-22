@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
 	<plugin name="3P - Progress Programmers Pal">
-		<x64Version>1.7.7</x64Version>
+		<x64Version>1.7.7.0</x64Version>
 		<aliases>
 			<alias name="3P"/>
 		</aliases>
@@ -190,7 +190,7 @@
 		<description>Notepad++ plugin for CS-Script integration. \nIt implements a real C# intellisense (similar to MS IntelliSense®) solution based on CS-Script and ICSharpCode.NRefactory/Mono.Cecil. \nIt also allows loading, executing, modifying and debugging C# scripts in a way very similar to the Visual Studio C# projects support.\nThis includes referencing assemblies and other scripts, code formatting, adding missing namespaces and intercepting Debug and Console output. It also includes integrated managed debugger\nRequires .NET 4.0</description>
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
-		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp/</sourceUrl>
+		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
 		<latestUpdate>Release v1.7.8\n\nThe first truly portable release. The same plugin binaries are running on both x86 and x64 versions of Notepad++ \nSpecial thanks to @kbilsted for his excellent kbilsted/NotepadPlusPlusPluginPack.Net x64 compatible Notepad++ managed hosting solution.\n\n* x64 migration\n - Implemented NppPlugin.Host loosely coupled CPU specific launcher\n - CSScriptIntellisense+CSScriptNpp made AnyCPU\n - Changed updater.exe to meet new x64 requirements\n - All NPP API code migrated to CPU neutral interface.\n - Updated packaging process to support x64.\n - Fixed nasty problem with interop corrupting unamanged memory. `Npp.Editor.GetOpenFiles` replaced with more conservative but safer `Npp.Editor.GetOpenFilesSafe`\n - Merged CSScriptIntellisense.Npp and SScriptNpp.Npp classes \n\n* Plugin functionality changes and fixes\n - All plugin's references to the external resources are changed from CodePlex (R.I.P.) to GitHub.  \n - Autocompletion user experience made consistent (e.g. suggestion filtering) with Visual Studio Intellisense.\n - Added `Config.Instance.InterceptConsoleByCharacter` (false by default) to allow faster ConsoleOutput rendering\n - Added `Config.BlockLocalDebugOutputContaining` to block unwanted Debug output content.\n - Added `Config.StartDebugMonitorOnScriptExecution` to prevent auto-attaching DBMon as it can cause significant startup delay for any process being started from the common parent (Notepad++ exe).\n\n* Fixes\n - Fixed debugger current step marker rendering problem\n - Various loading optimization changes.\n - Added extra error handling in custom-draw CodeMap routine.</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
@@ -248,7 +248,7 @@
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-02-18\n* Restore spell-checking of text inside HTML.\n</latestUpdate>
+		<latestUpdate>2018-02-18\n* Restore spell-checking of text inside HTML.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -913,18 +913,19 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm SQL Formatter">
-		<x64Version>5.2.54</x64Version>
+		<x64Version>5.2.56</x64Version>
 		<aliases>
 			<alias name="SQLinForm64"/>
 		</aliases>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>2018-02-11\nAdded Translation for German\n Imporved Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters\nAdded support for Notepad++ SQL Lexer</latestUpdate>
+		<latestUpdate>2018-02-22\nAdded Translation for Spanish\nAdded Translation for German\nRemoved NullPointerException\nImproved Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters</latestUpdate>
 		<stability>Good</stability>
+		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.2.54.zip</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.2.56.zip</download>
 				<copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -996,7 +997,7 @@
 		<author>Paul Heasley</author>
 		<homepage>http://phdesign.com.au/npptoolbucket/</homepage>
 		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
-		<latestUpdate>18 Feb 2018  - Add menu item 'Clear find all' to remove all bookmarks\n- Add support for Find All / Count to work with 'All Open Documents'</latestUpdate>
+		<latestUpdate>18 Feb 2018  \n- Add menu item 'Clear find all' to remove all bookmarks\n- Add support for Find All / Count to work with 'All Open Documents</latestUpdate>
 		<install>
 			<x64>
 				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.10-x64.zip</download>
