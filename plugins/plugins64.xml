@@ -1099,4 +1099,23 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="npp.Connections">
+		<x64Version>1.0.1</x64Version>
+		<description>This plugin allows Notepad++ to connect to MS SQL or Sybase servers. ODBC data sources, like a MySql Driver, are also supported</description>
+		<author>Vladimir Korobenkov</author>
+		<homepage>https://github.com/vladk1973/npp.connections</homepage>
+		<latestUpdate>22.02.2018 (v1.0.1)\n- Minor bug in check button Menu fixed\n- 64-bit ready\n\n20.02.2018 (v1.0)\n- Initial release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/vladk1973/npp.connections/releases/download/v1.0.1/npp.connections-1.0.1-x64.zip</download>
+				<copy from="npp.connections.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\npp.connections.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 </plugins>
