@@ -289,5 +289,9 @@
     "Npp.connections":
     {
         "815a52fac8877c2d1d914f415439c20d": "npp.connections.dll"
+    },
+    "NppQrCode":
+    {
+        "8041f3659e3310ba942785e901501b30": "NppQrCode64.dll"
     }
 }
