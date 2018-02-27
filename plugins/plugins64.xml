@@ -427,7 +427,7 @@
 		<author>nea</author>
 		<homepage>https://nea.github.io/MarkdownViewerPlusPlus/</homepage>
 		<sourceUrl>https://github.com/nea/MarkdownViewerPlusPlus</sourceUrl>
-		<latestUpdate>* Fixed a bug cutting off text after 10000 characters\n* Changed parsing of custom CSS to recognize @import statements and have them lead</latestUpdate>
+		<latestUpdate>* Fixed a bug cutting off text after 10000 characters (#60)\n* Changed parsing of custom CSS to recognize @import statements and have them lead (#35)</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.5</minVersion>
 		<install>
@@ -599,25 +599,12 @@
 			</x64>
 		</remove>
 	</plugin>
-	<plugin name="NppCrypt">
-		<x64Version>1.0.1.5</x64Version>
-		<description>encryption/decryption with various block ciphers, hash-algorithms, random-characters, encoding with base-16/32/64</description>
-		<author>Jean Paul Richter</author>
-		<homepage>https://github.com/jeanpaulrichter/nppcrypt</homepage>
-		<sourceUrl>https://github.com/jeanpaulrichter/nppcrypt</sourceUrl>
-		<latestUpdate>20 Nov 2017 changlog v1.0.1.5:\nnew cipher (ChaCha), hash (BLAKE2), minor interface improvements, bugfixes</latestUpdate>
-		<install>
-			<x64>
-				<download>https://github.com/jeanpaulrichter/nppcrypt/releases/download/1.0.1.5/nppcrypt_1.0.1.5_x64.zip</download>
-				<copy from="nppcrypt.dll" to="$PLUGINDIR$\" validate="true"/>
-			</x64>
-		</install>
-	</plugin>
 	<plugin name="npp.Connections">
 		<x64Version>1.0.1</x64Version>
 		<description>This plugin allows Notepad++ to connect to MS SQL or Sybase servers. ODBC data sources, like a MySql Driver, are also supported</description>
 		<author>Vladimir Korobenkov</author>
 		<homepage>https://github.com/vladk1973/npp.connections</homepage>
+		<sourceUrl>https://github.com/vladk1973/npp.connections</sourceUrl>
 		<latestUpdate>22.02.2018 (v1.0.1)\n- Minor bug in check button Menu fixed\n- 64-bit ready\n\n20.02.2018 (v1.0)\n- Initial release</latestUpdate>
 		<stability>Good</stability>
 		<install>
@@ -631,6 +618,20 @@
 				<delete file="$PLUGINDIR$\npp.connections.dll"/>
 			</x64>
 		</remove>
+	</plugin>
+	<plugin name="NppCrypt">
+		<x64Version>1.0.1.5</x64Version>
+		<description>encryption/decryption with various block ciphers, hash-algorithms, random-characters, encoding with base-16/32/64</description>
+		<author>Jean Paul Richter</author>
+		<homepage>https://github.com/jeanpaulrichter/nppcrypt</homepage>
+		<sourceUrl>https://github.com/jeanpaulrichter/nppcrypt</sourceUrl>
+		<latestUpdate>20 Nov 2017 changlog v1.0.1.5:\nnew cipher (ChaCha), hash (BLAKE2), minor interface improvements, bugfixes</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/jeanpaulrichter/nppcrypt/releases/download/1.0.1.5/nppcrypt_1.0.1.5_x64.zip</download>
+				<copy from="nppcrypt.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
 	</plugin>
 	<plugin name="NppEventExec">
 		<x64Version>0.9.0</x64Version>
@@ -743,7 +744,7 @@
 			</x64>
 		</install>
 	</plugin>
-        <plugin name="NppQrCode">
+	<plugin name="NppQrCode">
  		<x64Version>0.0.0.1</x64Version>
  		<description>This plugin allows to create QR-Code from selected text. Just select the text and push plugin button</description>
  		<author>Vladimir Korobenkov</author>

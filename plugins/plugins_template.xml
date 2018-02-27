@@ -1127,7 +1127,7 @@
 		</remove>
 	</plugin>
 	<plugin name="MarkdownViewer++">
-		<x64Version>0.8.0</x64Version>
+		<x64Version>0.8.1</x64Version>
 		<aliases>
 			<alias name="MarkdownViewerPlusPlus"/>
 			<alias name="MarkdownViewer++"/>
@@ -1136,12 +1136,12 @@
 		<author>nea</author>
 		<homepage>https://nea.github.io/MarkdownViewerPlusPlus/</homepage>
 		<sourceUrl>https://github.com/nea/MarkdownViewerPlusPlus</sourceUrl>
-		<latestUpdate>* Changed CommonMark converter to Markdig\n* Updated PDFSharp and HTMLRenderer.PDFSharp accordingly\n* Updated the NPP.net Plugin Template</latestUpdate>
+		<latestUpdate>* Fixed a bug cutting off text after 10000 characters (#60)\n* Changed parsing of custom CSS to recognize @import statements and have them lead (#35)</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.8.0/MarkdownViewerPlusPlus-0.8.0-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.8.1/MarkdownViewerPlusPlus-0.8.1-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="MarkdownViewerPlusPlus.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="*.md" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
 				<copy from="license\*.txt" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
@@ -1384,19 +1384,25 @@
 			</x64>
 		</remove>
 	</plugin>
-	<plugin name="npp.connection">
+	<plugin name="npp.Connections">
 		<x64Version>1.0.1</x64Version>
-		<description>This plugin allows Notepad++ to connect to MS SQL or Sybase servers. ODBC data sources are also supported. Npp.connections work with MS SQL data sources that must be placed as aliases by "SQL Server Configuration Manager" tool. Sybase servers must be placed as aliases in \Sybase\ini\sql.ini file (default configuration ini-file in Sybase Client).</description>
-		<author>vladk1973</author>
+		<description>This plugin allows Notepad++ to connect to MS SQL or Sybase servers. ODBC data sources, like a MySql Driver, are also supported</description>
+		<author>Vladimir Korobenkov</author>
 		<homepage>https://github.com/vladk1973/npp.connections</homepage>
 		<sourceUrl>https://github.com/vladk1973/npp.connections</sourceUrl>
-		<latestUpdate>2018-02-19\n- x64 version available\n- Minor bug in check button Menu fixed</latestUpdate>
+		<latestUpdate>22.02.2018 (v1.0.1)\n- Minor bug in check button Menu fixed\n- 64-bit ready\n20.02.2018 (v1.0)\n- Initial release</latestUpdate>
+		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/vladk1973/npp.connections/releases/download/v1.0.1/npp.connections-1.0.1-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="Win32\Release\npp.connections.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/vladk1973/npp.connections/releases/download/v1.0.1/npp.connections-1.0.1-x32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="Release\npp.connections.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\npp.connections.dll"/>
+			</x64>
+		</remove>
 	</plugin>
 	<plugin name="NppAutoIndent">
 		<x64Version>1.2.0.0</x64Version>
@@ -1603,6 +1609,25 @@
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\NppPlates"/>
 			</x64>
 		</install>
+	</plugin>
+	<plugin name="NppQrCode">
+		<x64Version>0.0.0.1</x64Version>
+		<description>This plugin allows to create QR-Code from selected text. Just select the text and push plugin button.</description>
+		<author>Vladimir Korobenkov</author>
+		<homepage>https://github.com/vladk1973/NppQrCode</homepage>
+		<latestUpdate>27.02.2018 (v0.0.0.1)\n- Initial release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/vladk1973/NppQrCode/releases/download/v0.0.0.1/NppQrCode-0.0.0.1-x32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="NppQrCode32.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NppQrCode32.dll"/>
+			</x64>
+		</remove>
 	</plugin>
 	<plugin name="NppRegExTractor">
 		<x64Version>2.0.0</x64Version>
