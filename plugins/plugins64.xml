@@ -743,6 +743,25 @@
 			</x64>
 		</install>
 	</plugin>
+        <plugin name="NppQrCode">
+ 		<x64Version>0.0.0.1</x64Version>
+ 		<description>This plugin allows to create QR-Code from selected text. Just select the text and push plugin button</description>
+ 		<author>Vladimir Korobenkov</author>
+ 		<homepage>https://github.com/vladk1973/NppQrCode</homepage>
+ 		<latestUpdate>27.02.2018 (v0.0.0.1)\n- Initial release</latestUpdate>
+ 		<stability>Good</stability>
+ 		<install>
+ 			<x64>
+ 				<download>https://github.com/vladk1973/NppQrCode/releases/download/v0.0.0.1/NppQrCode-0.0.0.1-x64.zip</download>
+ 				<copy from="NppQrCode64.dll" to="$PLUGINDIR$\" validate="true"/>
+ 			</x64>
+ 		</install>
+ 		<remove>
+ 			<x64>
+ 				<delete file="$PLUGINDIR$\NppQrCode64.dll.dll"/>
+ 			</x64>
+ 		</remove>
+ 	</plugin>	
 	<plugin name="NppRegExTractor">
 		<x64Version>2.0.0</x64Version>
 		<description>Search one or more regular expression in one ore more different files and get and xml search result.</description>
