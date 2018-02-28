@@ -804,16 +804,16 @@
 		</install>
 	</plugin>
 	<plugin name="Plugin Manager">
-		<x64Version>1.4.9</x64Version>
-		<description>15 Apr 2017\n-   #61 always validate plugin list for faster update of the devlist\n-   #62 own url for x64 plugin list in preparation to solve feature request #7</description>
+		<x64Version>1.4.10</x64Version>
+		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins. It will notify you of updates to plugins that you have installed, and automatically install dependencies and required files into the correct places.</description>
 		<author>Dave Brotherstone</author>
 		<homepage>https://bruderste.in/npp/pm/</homepage>
 		<sourceUrl>https://github.com/bruderstein/nppPluginManager</sourceUrl>
-		<latestUpdate>* Ignore warning about GPUP version on install *\nUpdate to use windows native internet API for downloads\nFix so that after a plugin is installed, Notepad++ will no longer be automatically promoted to run as admin - it will remain with the same privileges it had before plugin installation\nPlease report any issues to the Plugin Development forum https://notepad-plus-plus.org/community/category/5/plugin-development</latestUpdate>
+		<latestUpdate>2018-02-21\n- PR #66 modified pluginmanager window (thanks @dcomtois)\n- Fixed issue #77 UTF characters not rendered correctly in plugin information\n- Fixed further issues/warnings found by cppcheck</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.9/PluginManager_v1.4.9_x64.zip</download>
+				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.10/PluginManager_v1.4.10_x64.zip</download>
 				<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true" isGpup="true"/>
 			</x64>
