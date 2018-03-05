@@ -3,28 +3,26 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="plugins_template.xsd">
 	<plugin name="3P - Progress Programmers Pal">
-		<x64Version>1.7.7.0</x64Version>
+		<x64Version>1.8.1</x64Version>
 		<aliases>
 			<alias name="3P"/>
 		</aliases>
-		<description>3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- more than 50 options to better suit your needs\n- the ability to run/compile and even PROLINT your source file with an in-line \n- visualization of errors\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
+		<description>[Requires .net framework 4.6.2]\n\n3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- the ability to run/compile and even PROLINT your source file with an in-line visualization of errors\n- more than 50 options to better suit your needs\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
 		<author>Julien Caillon</author>
 		<homepage>http://jcaillon.github.io/3P/</homepage>
 		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
-		<latestUpdate>More infos here :\n2018-01-11 https://github.com/jcaillon/3P/releases/tag/v1.7.7</latestUpdate>
+		<latestUpdate>More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.7.7</latestUpdate>
 		<stability>Good</stability>
-		<minVersion>6.8.0</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/jcaillon/3P/releases/download/v1.7.7/3P.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/jcaillon/3P/releases/download/v1.8.1/3P.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="3P.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="3P.pdb" to="$PLUGINDIR$\" validate="true"/>
+				<run file="NetFrameworkChecker.exe" arguments="-ShowOnlyIfNotInstalled" outsideNpp="1"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
 				<delete file="$PLUGINDIR$\3P.dll"/>
-				<delete file="$PLUGINDIR$\3P.pdb"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -66,6 +64,11 @@
 				<copy from="AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\AnalysePlugin"/>
+			</x64>
+		</remove>
 	</plugin>
 	<plugin name="AndroidLogger">
 		<x64Version>1.2.7</x64Version>
@@ -426,10 +429,17 @@
 		<install>
 			<x64>
 				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.8.0/CSScriptNpp.1.7.8.0.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="Plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" validate="true"/>
-				<copy from="Plugins\CSScriptNpp.x86.dll" toFile="$PLUGINDIR$\" validate="true"/>
+				<copy from="plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" validate="true" recursive="true"/>
+				<copy from="plugins\CSScriptNpp.x86.dll" toFile="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\CSScriptNpp.x86.dll"/>
+				<delete file="$PLUGINDIR$\CSScriptNpp\*.*"/>
+				<delete file="$PLUGINDIR$\CSScriptNpp"/>
+			</x64>
+		</remove>
 	</plugin>
 	<plugin name="CsvQuery">
 		<x64Version>1.2.5</x64Version>
@@ -535,16 +545,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.1</x64Version>
+		<x64Version>1.4.2</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-02-18\n* Restore spell-checking of text inside HTML.</latestUpdate>
+		<latestUpdate>2018-03-04\n* Prevent creating of plugin settings directory with wrong path. (#131)\n* Restore spell-checking of YAML default style. (#129)\n* Fix adding words to unified user dictionary for dictionaries with non-UTF8 encoding. (#130)</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.1/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.2/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1768,11 +1778,11 @@
 	</plugin>
 	<plugin name="Plugin Manager">
 		<x64Version>1.4.9</x64Version>
-		<description>15 Apr 2017\n-   #61 always validate plugin list for faster update of the devlist\n-   #62 own url for x64 plugin list in preparation to solve feature request #7</description>
+		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins. It will notify you of updates to plugins that you have installed, and automatically install dependencies and required files into the correct places.</description>
 		<author>Dave Brotherstone</author>
 		<homepage>https://bruderste.in/npp/pm/</homepage>
 		<sourceUrl>https://github.com/bruderstein/nppPluginManager</sourceUrl>
-		<latestUpdate>* Ignore warning about GPUP version on install *\nUpdate to use windows native internet API for downloads\nFix so that after a plugin is installed, Notepad++ will no longer be automatically promoted to run as admin - it will remain with the same privileges it had before plugin installation\nPlease report any issues to the Plugin Development forum https://notepad-plus-plus.org/community/category/5/plugin-development</latestUpdate>
+		<latestUpdate>15 Apr 2017\n-   #61 always validate plugin list for faster update of the devlist\n-   #62 own url for x64 plugin list in preparation to solve feature request #7</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
