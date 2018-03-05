@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
 	<plugin name="3P - Progress Programmers Pal">
-		<x64Version>1.7.7.0</x64Version>
+		<x64Version>1.8.1</x64Version>
 		<aliases>
 			<alias name="3P"/>
 		</aliases>
-		<description>3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- more than 50 options to better suit your needs\n- the ability to run/compile and even PROLINT your source file with an in-line \n- visualization of errors\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
+		<description>[Requires .net framework 4.6.2]\n\n3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- the ability to run/compile and even PROLINT your source file with an in-line visualization of errors\n- more than 50 options to better suit your needs\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
 		<author>Julien Caillon</author>
 		<homepage>http://jcaillon.github.io/3P/</homepage>
 		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
-		<latestUpdate>More infos here :\n2018-01-11 https://github.com/jcaillon/3P/releases/tag/v1.7.7</latestUpdate>
+		<latestUpdate>More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.8.1</latestUpdate>
 		<stability>Good</stability>
-		<minVersion>6.8.0</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/jcaillon/3P/releases/download/v1.7.7/3P_x64.zip</download>
-				<copy from="3P.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="3P.pdb" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/jcaillon/3P/releases/download/v1.8.1/3P_x64.zip</download>
+	            <copy from="3P.dll" to="$PLUGINDIR$\" validate="true" />
+				<run file="NetFrameworkChecker.exe" arguments="-ShowOnlyIfNotInstalled" outsideNpp="0" />
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\3P.dll"/>
-				<delete file="$PLUGINDIR$\3P.pdb"/>
+	            <delete file="$PLUGINDIR$\3P.dll" />
 			</x64>
 		</remove>
 	</plugin>
