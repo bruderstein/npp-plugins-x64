@@ -225,6 +225,7 @@
 		<x64Version>4.1</x64Version>
 		<description>This plugin allows the Notepad++ toolbar to be fully customised by the user, and includes twenty-nine additional buttons for frequently used menu commands.</description>
 		<author>dw-dev@gmx.com</author>
+		<homepage>https://sourceforge.net/projects/npp-customize</homepage>
 		<latestUpdate>Version 4.1. First 64-bit version of Customize Toolbar. Functionality is the same as the 32-bit version.</latestUpdate>
 		<stability>Good</stability>
 		<install>
