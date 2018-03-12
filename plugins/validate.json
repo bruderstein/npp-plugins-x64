@@ -37,6 +37,10 @@
     {
         "d8012c56a9f38dcc6f9bc19408a3797e": "AutoCodepage.dll"
     },
+    "Customize Toolbar":
+    {
+        "f14f75aaf2f56b53af95793a19ba1d8c": "CustomizeToolbar.dll"
+    },
     "DoxyIt":
     {
         "10166065de871ec433a5d90c6c5d15a8": "DoxyIt_64.dll"
