@@ -236,7 +236,7 @@
 		</install>
 		<remove>
 			<x64>
-				<delete file="CustomizeToolbar.dll"/>
+				<delete file="$PLUGINDIR$\CustomizeToolbar.dll"/>
 			</x64>
 		</remove>
 	</plugin>
