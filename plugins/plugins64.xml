@@ -221,6 +221,25 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Customize Toolbar">
+		<x64Version>4.1</x64Version>
+		<description>This plugin allows the Notepad++ toolbar to be fully customised by the user, and includes twenty-nine additional buttons for frequently used menu commands.</description>
+		<author>dw-dev@gmx.com</author>
+		<homepage>https://sourceforge.net/projects/npp-customize</homepage>
+		<latestUpdate>Version 4.1. First 64-bit version of Customize Toolbar. Functionality is the same as the 32-bit version.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-customize/files/Customize%20Toolbar%20v4.1/CustomizeToolbar_4_1_x64.zip/download</download>
+				<copy from="CustomizeToolbar.dll" to="$PLUGINDIR$" validate="true" />
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\CustomizeToolbar.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="DoxyIt">
 		<x64Version>0.4.3</x64Version>
 		<description>Inspired by DocIt. Generates Doxygen style comment blocks based on function/method definitions. Also provides functionality for modifying comment blocks. Configurable for each language. Current supported languages:\n* C/C++\n* Python\n* Java\n* PHP\n* JavaScript\n* C#\n* UDLs</description>
