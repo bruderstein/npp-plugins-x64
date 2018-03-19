@@ -1,7 +1,7 @@
 {
     "Plugin Manager": {
-        "820d36180ba4d8661b82d0015d7106cf": "PluginManager.dll",
-        "7584bd70f007c658b1640c07aaad6a6c": "gpup.exe"
+        "6ef270cedc36817fbf982639dc07cd88": "PluginManager.dll",
+        "53f5c338caabe7a166fb1c068b5a4f15": "gpup.exe"
     },
     "NppFTP": {
         "e156392302a483ac1b9179a88fd82af8": "NppFTP.dll"
@@ -36,6 +36,10 @@
     "AutoCodepage":
     {
         "d8012c56a9f38dcc6f9bc19408a3797e": "AutoCodepage.dll"
+    },
+    "Customize Toolbar":
+    {
+        "f14f75aaf2f56b53af95793a19ba1d8c": "CustomizeToolbar.dll"
     },
     "DoxyIt":
     {
@@ -104,7 +108,7 @@
     },
     "ToolBucket":
     {
-        "5cd42358b6695a7396125ca9f10540d6": "NppToolBucket.dll"
+        "b8b05082d32ff3eb121db529bb5e00b3": "NppToolBucket.dll"
     },
     "JSTool":
     {
@@ -112,20 +116,20 @@
     },
     "3P - Progress Programmers Pal":
     {
-        "6a450fcd3d413ded41a3aacd8f365d62": "3P.dll",
-        "3bdb43171d1bef8e955974eb85573532": "3P.pdb"
+        "94ffc9d97d2c1437a66a5e9312d22d3a": "3P.dll",
+        "fa4c424616a272feffeaf14791bea7a4": "NetFrameworkChecker.exe"
     },
     "SQLinForm SQL Formatter":
     {
-        "56a83a198ae5ecb4f95c34d2d32e78f9": "SQLinFormNpp64.dll"
+        "c18cf50fcbbde6e3374192ec4e71c20c": "SQLinFormNpp64.dll"
     },
     "DSpellCheck":
     {
-        "c115e26e697446ecb625c909d556602c": "DSpellCheck.dll"
+        "4d9905f1fd0a82b0c8abe3566e83d95e": "DSpellCheck.dll"
     },
     "MarkdownViewer++":
     {
-        "8a74ff1eb38acaeec33cf919230cf81d": "MarkdownViewerPlusPlus.dll"
+        "F94E81937B8A47B9EB300EC891CDD2E5": "MarkdownViewerPlusPlus.dll"
     },
     "Npp Xml Treeview":
     {
@@ -138,7 +142,7 @@
     },
     "NppExec":
     {
-        "39565d0c48901b4ef4c1537dc6448128": "NppExec.dll"
+        "5fb264e0dd828a94a0376746641f1c7a": "NppExec.dll"
     },
     "JSON Viewer":
     {
@@ -268,5 +272,30 @@
     "NppJumpList":
     {
         "721aa61be104ab79e186d2ac532972cb": "NppJumpList.dll"
+    },
+    "Save as admin":
+    {
+        "7e338b1c6bba02b342ea109bd26bd1aa": "NppSaveAsAdmin.dll"
+    },
+    "MusicPlayer":
+    {
+        "e264de50298fd1911352f90183a11347": "MusicPlayer_1.0.11x64.dll"
+    },
+    "XBrackets Lite":
+    {
+        "8e864261ab8830ec761e5c07a22afab0": "XBrackets.dll"
+    },
+    "NotepadStarterPlugin":
+    {
+        "2a9d81973eca645f901f4ef77f475297": "NotepadStarterPlugin.dll",
+        "eafa500fc35e52c06a5e91ab4f81c7ef": "NotepadStarter.exe"
+    },
+    "Npp.connections":
+    {
+        "815a52fac8877c2d1d914f415439c20d": "npp.connections.dll"
+    },
+    "NppQrCode":
+    {
+        "8041f3659e3310ba942785e901501b30": "NppQrCode64.dll"
     }
 }

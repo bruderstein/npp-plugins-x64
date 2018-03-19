@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
 	<plugin name="3P - Progress Programmers Pal">
-		<x64Version>1.7.7</x64Version>
+		<x64Version>1.8.1</x64Version>
 		<aliases>
 			<alias name="3P"/>
 		</aliases>
-		<description>3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- more than 50 options to better suit your needs\n- the ability to run/compile and even PROLINT your source file with an in-line \n- visualization of errors\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
+		<description>[Requires .net framework 4.6.2]\n\n3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- the ability to run/compile and even PROLINT your source file with an in-line visualization of errors\n- more than 50 options to better suit your needs\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
 		<author>Julien Caillon</author>
 		<homepage>http://jcaillon.github.io/3P/</homepage>
 		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
-		<latestUpdate>More infos here :\n2018-01-11 https://github.com/jcaillon/3P/releases/tag/v1.7.7</latestUpdate>
+		<latestUpdate>More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.8.1</latestUpdate>
 		<stability>Good</stability>
-		<minVersion>6.8.0</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/jcaillon/3P/releases/download/v1.7.7/3P_x64.zip</download>
-				<copy from="3P.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="3P.pdb" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/jcaillon/3P/releases/download/v1.8.1/3P_x64.zip</download>
+				<copy from="3P.dll" to="$PLUGINDIR$\" validate="true" />
+				<run file="NetFrameworkChecker.exe" arguments="-ShowOnlyIfNotInstalled" outsideNpp="0" />
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\3P.dll"/>
-				<delete file="$PLUGINDIR$\3P.pdb"/>
+				<delete file="$PLUGINDIR$\3P.dll" />
 			</x64>
 		</remove>
 	</plugin>
@@ -93,7 +91,7 @@
 		<description>Provide better cursor movements when using multiple selections.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/BetterMultiSelection</sourceUrl>
-		<latestUpdate>Add ability to press Enter to insert newlines.</latestUpdate>
+		<latestUpdate>2017-07-03 Add ability to press Enter to insert newlines.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -154,7 +152,7 @@
 		<author>Ty Landercasper, Jean-Sebastien Leroy, Pavel Nedev</author>
 		<homepage>https://github.com/jsleroy/compare-plugin</homepage>
 		<sourceUrl>https://github.com/jsleroy/compare-plugin</sourceUrl>
-		<latestUpdate>Total plugin re-work. Fixed stability issues. Several new features and many improvements.</latestUpdate>
+		<latestUpdate>2016-12-19 Total plugin re-work. Fixed stability issues. Several new features and many improvements.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/pnedev/compare-plugin/releases/download/v2.0.0/ComparePlugin_v2.0.0_X64.zip</download>
@@ -190,10 +188,10 @@
 		<description>Notepad++ plugin for CS-Script integration. \nIt implements a real C# intellisense (similar to MS IntelliSense®) solution based on CS-Script and ICSharpCode.NRefactory/Mono.Cecil. \nIt also allows loading, executing, modifying and debugging C# scripts in a way very similar to the Visual Studio C# projects support.\nThis includes referencing assemblies and other scripts, code formatting, adding missing namespaces and intercepting Debug and Console output. It also includes integrated managed debugger\nRequires .NET 4.0</description>
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
-		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp/</sourceUrl>
-		<latestUpdate>The first truly portable release. The same plugin binaries are running on both x86 and x64 versions of Notepad++.\nChanges see https://github.com/oleg-shilo/cs-script.npp/releases/tag/v1.7.9.0</latestUpdate>
-		<minVersion>6.4.5</minVersion>
+		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
+		<latestUpdate>Release v1.7.9\n\n- Updated CS-Script engine to v3.28.2\n- Issue #16: Impossible to hide CS-Script's main panel\n- Added option to (config value UseTogglingPanelVisibility) to allow toggling mode for "Show Project Panel" button. Toggling is the default mode.\n- Added killing Npp specific instances of VBCSCompiler.exe on editor shutdown.\n- Fixed problem with breakpoints correct location being lost upon document formatting.\n- Fixed packaging problem with css_dbg.pdb not being included in the distro.</latestUpdate>
 		<stability>Good</stability>
+		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
 				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.9.0/CSScriptNpp.1.7.9.0.x64.zip</download>
@@ -223,6 +221,25 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Customize Toolbar">
+		<x64Version>4.1</x64Version>
+		<description>This plugin allows the Notepad++ toolbar to be fully customised by the user, and includes twenty-nine additional buttons for frequently used menu commands.</description>
+		<author>dw-dev@gmx.com</author>
+		<homepage>https://sourceforge.net/projects/npp-customize</homepage>
+		<latestUpdate>Version 4.1. First 64-bit version of Customize Toolbar. Functionality is the same as the 32-bit version.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-customize/files/Customize%20Toolbar%20v4.1/CustomizeToolbar_4_1_x64.zip/download</download>
+				<copy from="CustomizeToolbar.dll" to="$PLUGINDIR$" validate="true" />
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\CustomizeToolbar.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="DoxyIt">
 		<x64Version>0.4.3</x64Version>
 		<description>Inspired by DocIt. Generates Doxygen style comment blocks based on function/method definitions. Also provides functionality for modifying comment blocks. Configurable for each language. Current supported languages:\n* C/C++\n* Python\n* Java\n* PHP\n* JavaScript\n* C#\n* UDLs</description>
@@ -243,16 +260,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.3.5</x64Version>
+		<x64Version>1.4.2</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2017-12-26\n* Fix disappearance of auto spell-checking icon.\n* Fix work of system-wide dictionaries.</latestUpdate>
+		<latestUpdate>2018-03-04\n* Prevent creating of plugin settings directory with wrong path. (#131)\n* Restore spell-checking of YAML default style. (#129)\n* Fix adding words to unified user dictionary for dictionaries with non-UTF8 encoding. (#130)</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.3.5/DSpellCheck_x64.zip</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.2/DSpellCheck_x64.zip</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -299,7 +316,7 @@
 		<author>salvom</author>
 		<homepage>http://sourceforge.net/projects/imgtag/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/imgtag/files/</sourceUrl>
-		<latestUpdate>2018-01-22 Unofficial port for x64 version\n2013-07-07\n2.0.1 \n--Fixed a bug: now the images are shown entirely with the "Show Image" command. \n\nversion 2.0 \n---ImgTag was rewritten in C#. This version requires the .net framework 2.0 or above. Now it's possible: to resize the image, to update the image size to the actual size, to show the image, to rename the image.</latestUpdate>
+		<latestUpdate>2018-01-22 Unofficial port for x64 version\n2013-07-07\nversion 2.0.1 \n--Fixed a bug: now the images are shown entirely with the "Show Image" command. \n\nversion 2.0 \n---ImgTag was rewritten in C#. This version requires the .net framework 2.0 or above. Now it's possible: to resize the image, to update the image size to the actual size, to show the image, to rename the image.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/chcg/ImgTag/releases/download/2.0.1.8/ImgTag_2.0.1.8_x64.zip</download>
@@ -350,7 +367,7 @@
 		<author>Kapil Ratnani</author>
 		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
 		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
-		<latestUpdate>9 Jan 2017, 1. 64 bit support. Thanks @chcg</latestUpdate>
+		<latestUpdate>2017-01-09, 1. 64 bit support. Thanks @chcg</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.24/NPPJSONViewer-x64.dll.zip</download>
@@ -418,7 +435,7 @@
 		</remove>
 	</plugin>
 	<plugin name="MarkdownViewer++">
-		<x64Version>0.7.1</x64Version>
+		<x64Version>0.8.1</x64Version>
 		<aliases>
 			<alias name="MarkdownViewerPlusPlus"/>
 			<alias name="MarkdownViewer++"/>
@@ -427,12 +444,12 @@
 		<author>nea</author>
 		<homepage>https://nea.github.io/MarkdownViewerPlusPlus/</homepage>
 		<sourceUrl>https://github.com/nea/MarkdownViewerPlusPlus</sourceUrl>
-		<latestUpdate>* Added handling of local image files</latestUpdate>
+		<latestUpdate>* Fixed a bug cutting off text after 10000 characters (#60)\n* Changed parsing of custom CSS to recognize @import statements and have them lead (#35)</latestUpdate>
 		<stability>Good</stability>
-		<minVersion>7.2</minVersion>
+		<minVersion>7.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.7.1/MarkdownViewerPlusPlus-0.7.1-x64.zip</download>
+				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.8.1/MarkdownViewerPlusPlus-0.8.1-x64.zip</download>
 				<copy from="MarkdownViewerPlusPlus.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="*.md" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
 				<copy from="license\*.txt" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
@@ -475,6 +492,21 @@
 				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.bin.zip</download>
 				<copy from="bin64\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="bin64\*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="MusicPlayer">
+		<x64Version>1.0.0.3</x64Version>
+		<description>It's a plug in to open and play music files.\nSupports:\n*.wav\n*.mp3\n*.aiff\n*.wma</description>
+		<author>Jon Galletero</author>
+		<homepage>https://sourceforge.net/projects/nppmusicplayer</homepage>
+		<sourceUrl>https://github.com/gallettube/MusicPlayer</sourceUrl>
+		<latestUpdate>03-02-2018\n- Updated version for x86 and x64\n\n01-06-2015 (v1.0.0.3)\n- Menu improved\n- Donate function\n- Replace library to test\n\n31-05-2015 (v1.0.0.2)\n- Open FileS\n\n31-05-2015 (v1.0.0.1)\n- Initial release\n- Open File\n- Song</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/gallettube/MusicPlayer/releases/download/1.0.11/MusicPlayer_1.0.11x64.dll.zip</download>
+				<copy from="MusicPlayer_1.0.11x64.dll" to="$PLUGINDIR$\"/>
 			</x64>
 		</install>
 	</plugin>
@@ -532,6 +564,34 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="NotepadStarterPlugin">
+		<x64Version>2.3.2.0</x64Version>
+		<description>This tool designed as a Notepad++ plugin by [Yonggang Luo](luoyonggang(at)gmail.com), when\nit installed as a Notepad++ plugin or running NotepadStarter.exe in the Notepad++ app\ndirectory, it's will automatically replace the system default notepad.exe application with\nNotepad++ (Without need for removing anything from the windows system.).  It's tested\nunder Windows 7, but Windows XP should also works.</description>
+		<author>Yonggang Luo</author>
+		<homepage>https://github.com/lygstate/NotepadStarter/</homepage>
+		<sourceUrl>https://github.com/lygstate/NotepadStarter/archive/2.3.2.0.zip</sourceUrl>
+		<latestUpdate>2018-02-09\nRelease 2.3.2</latestUpdate>
+		<stability>Good</stability>
+		<minVersion>5.0</minVersion>
+		<install>
+			<x64>
+				<download>https://github.com/lygstate/NotepadStarter/releases/download/2.3.2.0/NotepadStarter_2.3.2.0_x64.zip</download>
+				<copy from="NotepadStarterPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NotepadStarter\NotepadStarter.exe" to="$PLUGINDIR$\NotepadStarter\" validate="true"/>
+				<copy from="NotepadStarter\NotepadStarterInstall.bat" to="$PLUGINDIR$\NotepadStarter\"/>
+				<copy from="NotepadStarter\NotepadStarterReplacer.bat" to="$PLUGINDIR$\NotepadStarter\"/>
+				<copy from="NotepadStarter\NotepadStarterUninstall.bat" to="$PLUGINDIR$\NotepadStarter\"/>
+				<copy from="NotepadStarter\readme.md" to="$PLUGINDIR$\NotepadStarter\"/>
+				<copy from="NotepadStarter\request-admin.bat" to="$PLUGINDIR$\NotepadStarter\"/>
+				<run file="NotepadStarter\NotepadStarter.exe" arguments=":install-registry" outsideNpp="0"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<run file="$PLUGINDIR$\NotepadStarter\NotepadStarter.exe" arguments=":uninstall" outsideNpp="1"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="Npp Xml Treeview">
 		<x64Version>1.6.0.54</x64Version>
 		<aliases>
@@ -553,6 +613,26 @@
 			<x64>
 				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin.dll"/>
 				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="npp.Connections">
+		<x64Version>1.0.1</x64Version>
+		<description>This plugin allows Notepad++ to connect to MS SQL or Sybase servers. ODBC data sources, like a MySql Driver, are also supported</description>
+		<author>Vladimir Korobenkov</author>
+		<homepage>https://github.com/vladk1973/npp.connections</homepage>
+		<sourceUrl>https://github.com/vladk1973/npp.connections</sourceUrl>
+		<latestUpdate>22.02.2018 (v1.0.1)\n- Minor bug in check button Menu fixed\n- 64-bit ready\n20.02.2018 (v1.0)\n- Initial release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/vladk1973/npp.connections/releases/download/v1.0.1/npp.connections-1.0.1-x64.zip</download>
+				<copy from="npp.connections.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\npp.connections.dll"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -590,16 +670,15 @@
 		</install>
 	</plugin>
 	<plugin name="NppExec">
-		<x64Version>0.5.9.9</x64Version>
+		<x64Version>0.6.0.0</x64Version>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
 		<author>Vitaliy Dovgan</author>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
-		<latestUpdate>Version  v0.5.9.9 dev  ------------  + NppExec can be build with Orwell Dev-C++ (NppExec_DevCpp.dev)  + project file for Visual Studio 2013 Express (NppExec_VC12.sln)  + fparser updated to 4.5.2  + Notepad++ and Scintilla header files updated to Notepad++ 6.8.6  + Warning Analyser: more accurate detection of %LINE% and %CHAR%  + new command: NPP_SAVEAS  + new command: PROC_SIGNAL  + set &lt;var&gt; ~ strfromhex &lt;hex string&gt;+ set &lt;var&gt; ~ strtohex &lt;string&gt;+ now commands can be executed from macro-vars (e.g. &quot;set a = npp_run calc&quot; and then &quot;$(a)&quot; to execute)  + now a child console process is tried to be killed first, and only then terminated  + added: &quot;@EXIT_CMD&quot; macro var to specify child process'es exit command  + added: &quot;nppexec:&quot; prefix to execute NppExec's commands from a child console process  + NppExec's Console: Tab-completion improved; also works after &quot;help &quot; and &quot;nppexec:&quot;  + NppExec's Console: &quot;Tab = \t&quot; allows to type Tab character in the Console  + NppExec's Console: &quot;set local&quot; creates Console's local vars (not shared with NppExec's script)  + now SEL_LOADFROM and CON_LOADFROM detect UTF-8 without BOM  + now SEL_SAVETO can save as UTF-8 without BOM  - fixed: font of NppExec's Console could be set incorrectly  - fixed: crash while calculating very big numbers (e.g. 10^72)  - fixed: the &quot;exit command&quot; dialog did not use the &quot;Key_Enter&quot; value  * internal improvements  * more internal improvements  * better error reporting  +? NppExec Manual updated !!!incomplete: to be updated!!!  +? new flow: IF...ELSE...ENDIF !!!incomplete: not documented!!! in case of errors the script is stopped  +? now each command returns either CMDRESULT_SUCCEEDED or CMDRESULT_FAILED !!!incomplete: just partially implemented, not documented!!!</latestUpdate>
+		<latestUpdate>2018-02-20 Version  v0.6.0.0 beta 1  ------------ \n* changed: now the Execute dialog’s auto-completion pop-up uses the same upper/lower case as the first character of a word being typed (e.g. Npp -> NPP…; npp -> npp…); also: now the auto-completion pop-up’s height is limited by the number of its items \n+ new commands: SCI_FIND, SCI_REPLACE \n+ new commands: TEXT_SAVETO, TEXT_LOADFROM \n+ Function Parser has been updated to support the bitwise operators: (thanks to Juha Nieminen and Joel Yliluoma for their advice) \n+ $(LAST_CMD_RESULT) - result of the last NppExec’s command (1 - succeeded, 0 - failed, -1 - invalid arg)\n - fixed: parameters of sci_sendmsg/npp_sendmsg were truncated to 32-bit in 64-bit NppExec \n- fixed: now pasting to the Console via Shift+Insert is equal to Ctrl+V</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.5.9.9%20dev/NppExec20160628_dll_x64-2.zip/download</download>
-				<copy from="doc\*.*" to="$PLUGINDIR$\doc"/>
-				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20beta%201/NppExec_06beta1_dll_x64.zip/download</download>
+				<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
 				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -639,7 +718,7 @@
 		<author>Pavel Nedev</author>
 		<homepage>https://github.com/pnedev/nppgtags</homepage>
 		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
-		<latestUpdate>Add results search functionality. Add per-database ignore sub-folders setting.</latestUpdate>
+		<latestUpdate>2017-06-29 Add results search functionality. Add per-database ignore sub-folders setting.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/pnedev/nppgtags/releases/download/v4.4.0/NppGTags_v4.4.0_X64.zip</download>
@@ -682,6 +761,25 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="NppQrCode">
+		<x64Version>0.0.0.1</x64Version>
+		<description>This plugin allows to create QR-Code from selected text. Just select the text and push plugin button</description>
+		<author>Vladimir Korobenkov</author>
+		<homepage>https://github.com/vladk1973/NppQrCode</homepage>
+		<latestUpdate>27.02.2018 (v0.0.0.1)\n- Initial release</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/vladk1973/NppQrCode/releases/download/v0.0.0.1/NppQrCode-0.0.0.1-x64.zip</download>
+				<copy from="NppQrCode64.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\NppQrCode64.dll.dll"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="NppRegExTractor">
 		<x64Version>2.0.0</x64Version>
 		<description>Search one or more regular expression in one ore more different files and get and xml search result.</description>
@@ -723,16 +821,16 @@
 		</install>
 	</plugin>
 	<plugin name="Plugin Manager">
-		<x64Version>1.4.9</x64Version>
-		<description>15 Apr 2017\n-   #61 always validate plugin list for faster update of the devlist\n-   #62 own url for x64 plugin list in preparation to solve feature request #7</description>
+		<x64Version>1.4.11</x64Version>
+		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins. It will notify you of updates to plugins that you have installed, and automatically install dependencies and required files into the correct places.</description>
 		<author>Dave Brotherstone</author>
 		<homepage>https://bruderste.in/npp/pm/</homepage>
 		<sourceUrl>https://github.com/bruderstein/nppPluginManager</sourceUrl>
-		<latestUpdate>* Ignore warning about GPUP version on install *\nUpdate to use windows native internet API for downloads\nFix so that after a plugin is installed, Notepad++ will no longer be automatically promoted to run as admin - it will remain with the same privileges it had before plugin installation\nPlease report any issues to the Plugin Development forum https://notepad-plus-plus.org/community/category/5/plugin-development</latestUpdate>
+		<latestUpdate>2018-03-14\n- Fixed issue #99 issue on user drawing of settings button during dialog window resizing</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.9/PluginManager_v1.4.9_x64.zip</download>
+				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.11/PluginManager_v1.4.11_x64.zip</download>
 				<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true" isGpup="true"/>
 			</x64>
@@ -804,6 +902,20 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Save as admin">
+		<x64Version>1.0.0.3</x64Version>
+		<description>This plugin allows you to save any file as administrator.\nJust press "Save" in Notepad++ and if you are not allowed to change this file as user, Notepad++ will save it as administrator.\nWindows XP, Windows 7 and Windows Vista are supported.</description>
+		<author>Khnykin Evgeniy</author>
+		<homepage>https://sourceforge.net/projects/nppsaveasadmin/</homepage>
+		<sourceUrl>https://sourceforge.net/p/nppsaveasadmin/code/</sourceUrl>
+		<latestUpdate>2018-01-26 Unofficial port for x64 version\nWindows XP is supported.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/chcg/nppSaveAsAdmin/releases/download/1.0.0.3.9/NppSaveAsAdmin_1.0.0.3.9_x64.zip</download>
+				<copy from="NppSaveAsAdmin.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="Select 'N' Launch">
 		<x64Version>2.1</x64Version>
 		<description>This plugin gets your selected text, saves it as file with the extension you customize in the system temporary directory, then call system to open it with the extension associated program.</description>
@@ -857,18 +969,19 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm SQL Formatter">
-		<x64Version>5.2.32</x64Version>
+		<x64Version>5.2.56</x64Version>
 		<aliases>
 			<alias name="SQLinForm64"/>
 		</aliases>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>2017-12-29\nAdded Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters\nAdded support for Notepad++ SQL Lexer</latestUpdate>
+		<latestUpdate>2018-02-22\nAdded Translation for Spanish\nAdded Translation for German\nRemoved NullPointerException\nImproved Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters</latestUpdate>
 		<stability>Good</stability>
+		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.2.32.zip</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.2.56.zip</download>
 				<copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -880,10 +993,10 @@
 	</plugin>
 	<plugin name="SurroundSelection">
 		<x64Version>1.1</x64Version>
-		<description>Surrounds the selection in quotes/brackets/parenthesis\nNOTE: This may not with non-US keyboard layouts.</description>
+		<description>Surrounds the selection in quotes/brackets/parenthesis\nNOTE: This may not work with non-US keyboard layouts.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/SurroundSelection</sourceUrl>
-		<latestUpdate>Add menu option to enable/disable plugin\nAllow typing of closing symbols (e.g. ), ], or })</latestUpdate>
+		<latestUpdate>2017-04-13 Add menu option to enable/disable plugin\nAllow typing of closing symbols (e.g. ), ], or })</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -935,15 +1048,15 @@
 		</install>
 	</plugin>
 	<plugin name="ToolBucket">
-		<x64Version>1.9</x64Version>
+		<x64Version>1.10</x64Version>
 		<description>Requires .NET 3.5\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>
 		<author>Paul Heasley</author>
 		<homepage>http://phdesign.com.au/npptoolbucket/</homepage>
 		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
-		<latestUpdate>29 Aug 2017  - Don't insert newline after last GUID\n- Save GUID generation options to config file\n- Add option to not prompt for GUID generation options each time (just use config settings)</latestUpdate>
+		<latestUpdate>18 Feb 2018  \n- Add menu item 'Clear find all' to remove all bookmarks\n- Add support for Find All / Count to work with 'All Open Documents</latestUpdate>
 		<install>
 			<x64>
-				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.9-x64.zip</download>
+				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.10-x64.zip</download>
 				<copy from="NppToolBucket.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -979,6 +1092,19 @@
 			<x64>
 				<download>https://github.com/bycn82/visimulator/raw/master/x64/ViSimulator-x64-20171217.zip</download>
 				<copy from="ViSimulator.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="XBrackets Lite">
+		<x64Version>1.3.0</x64Version>
+		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion: * next character is analysed for ([{ brackets; * next &amp; previous characters are analysed for " quote.</description>
+		<author>Dovgan Vitaliy</author>
+		<latestUpdate>v1.3.0 - Feb 2018\n* 64-bit version added\n\nv1.2.1 - Oct 2012\n- fixed: while saving the options (CXBracketsOptions::SaveOptions),\n  the value of m_szHtmlFileExts was not correctly updated.\n  Thanks to David M. Miller for reporting &amp; providing a fix.\n\nv1.2 - May 2011\n* header files in "src/core/npp_stuff" updated to version 5.9 of Notepad++\n* now brackets autocompletion is disabled during multiple selection mode</latestUpdate>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/XBrackets%20Plugin%20v1.3.0/XBrackets_v130_dll_x64.zip</download>
+				<copy from="XBrackets.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="XBrackets.txt" to="$PLUGINDIR$\doc\XBrackets"/>
 			</x64>
 		</install>
 	</plugin>
