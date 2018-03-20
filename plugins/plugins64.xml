@@ -181,7 +181,7 @@
 		</install>
 	</plugin>
 	<plugin name="CS-Script (C# intellisense)">
-		<x64Version>1.7.8.0</x64Version>
+		<x64Version>1.7.9.0</x64Version>
 		<aliases>
 			<alias name="CS-Script"/>
 		</aliases>
@@ -189,12 +189,12 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>Release v1.7.8\n\nThe first truly portable release. The same plugin binaries are running on both x86 and x64 versions of Notepad++ \nSpecial thanks to @kbilsted for his excellent kbilsted/NotepadPlusPlusPluginPack.Net x64 compatible Notepad++ managed hosting solution.\n\n* x64 migration\n - Implemented NppPlugin.Host loosely coupled CPU specific launcher\n - CSScriptIntellisense+CSScriptNpp made AnyCPU\n - Changed updater.exe to meet new x64 requirements\n - All NPP API code migrated to CPU neutral interface.\n - Updated packaging process to support x64.\n - Fixed nasty problem with interop corrupting unamanged memory. `Npp.Editor.GetOpenFiles` replaced with more conservative but safer `Npp.Editor.GetOpenFilesSafe`\n - Merged CSScriptIntellisense.Npp and SScriptNpp.Npp classes \n\n* Plugin functionality changes and fixes\n - All plugin's references to the external resources are changed from CodePlex (R.I.P.) to GitHub.  \n - Autocompletion user experience made consistent (e.g. suggestion filtering) with Visual Studio Intellisense.\n - Added `Config.Instance.InterceptConsoleByCharacter` (false by default) to allow faster ConsoleOutput rendering\n - Added `Config.BlockLocalDebugOutputContaining` to block unwanted Debug output content.\n - Added `Config.StartDebugMonitorOnScriptExecution` to prevent auto-attaching DBMon as it can cause significant startup delay for any process being started from the common parent (Notepad++ exe).\n\n* Fixes\n - Fixed debugger current step marker rendering problem\n - Various loading optimization changes.\n - Added extra error handling in custom-draw CodeMap routine.</latestUpdate>
+		<latestUpdate>Release v1.7.9\n\n- Updated CS-Script engine to v3.28.2\n- Issue #16: Impossible to hide CS-Script's main panel\n- Added option to (config value UseTogglingPanelVisibility) to allow toggling mode for "Show Project Panel" button. Toggling is the default mode.\n- Added killing Npp specific instances of VBCSCompiler.exe on editor shutdown.\n- Fixed problem with breakpoints correct location being lost upon document formatting.\n- Fixed packaging problem with css_dbg.pdb not being included in the distro.</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.8.0/CSScriptNpp.1.7.8.0.x64.zip</download>
+				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.9.0/CSScriptNpp.1.7.9.0.x64.zip</download>
 				<copy from="plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" recursive="true"/>
 				<copy from="plugins\CSScriptNpp.x64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
