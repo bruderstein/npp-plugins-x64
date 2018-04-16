@@ -189,7 +189,7 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>Release v1.7.9\n\n- Updated CS-Script engine to v3.28.2\n- Issue #16: Impossible to hide CS-Script's main panel\n- Added option to (config value UseTogglingPanelVisibility) to allow toggling mode for "Show Project Panel" button. Toggling is the default mode.\n- Added killing Npp specific instances of VBCSCompiler.exe on editor shutdown.\n- Fixed problem with breakpoints correct location being lost upon document formatting.\n- Fixed packaging problem with css_dbg.pdb not being included in the distro.</latestUpdate>
+		<latestUpdate>Release v1.7.9.0\n\n* Updated CS-Script engine to v3.28.2  \n* Issue #16: Impossible to hide CS-Script's main panel\n* Added option to (config value `UseTogglingPanelVisibility`) to allow toggling mode for\n "Show Project Panel" button. Toggling is the default mode. \n* Added killing Npp specific instances of VBCSCompiler.exe on editor shutdown.\n* Fixed problem with breakpoints correct location being lost upon document formatting.\n* Fixed packaging problem with css_dbg.pdb not being included in the distro.</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
@@ -265,7 +265,7 @@
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-03-25\n* Update styles for rechecking .ini files (#54)\n* Make words with non-arabic numerics also ignored if corresponding option is on (#58)\n* Add check box for spell-checking/ignoring default style for UDL (turned on by default) (#132)\n* Add info about compiler which was used for building plugin to about menu.\n</latestUpdate>
+		<latestUpdate>2018-03-28\n* Update styles for rechecking .ini files (#54)\n* Make words with non-arabic numerics also ignored if corresponding option is on (#58)\n* Add check box for spell-checking/ignoring default style for UDL (turned on by default) (#132)\n* Add info about compiler which was used for building plugin to about menu.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -381,7 +381,7 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.21.6</x64Version>
+		<x64Version>1.22.0</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -389,11 +389,11 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>[2017-12-15] Fix format on reserved word as function name.</latestUpdate>
+		<latestUpdate>[2018-04-15]\nAdd JSON Sort function.\nFix blocking Notepad++ startup in some environment.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.6.uni.64.zip/download</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.22.0.uni.64.zip/download</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>

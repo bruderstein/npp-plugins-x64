@@ -11,7 +11,7 @@
 		<author>Julien Caillon</author>
 		<homepage>http://jcaillon.github.io/3P/</homepage>
 		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
-		<latestUpdate>More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.7.7</latestUpdate>
+		<latestUpdate>More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.8.1</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -415,7 +415,7 @@
 		</install>
 	</plugin>
 	<plugin name="CS-Script (C# intellisense)">
-		<x64Version>1.7.8.0</x64Version>
+		<x64Version>1.7.9.0</x64Version>
 		<aliases>
 			<alias name="CS-Script"/>
 		</aliases>
@@ -423,12 +423,12 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>Release v1.7.8\n\nThe first truly portable release. The same plugin binaries are running on both x86 and x64 versions of Notepad++ \nSpecial thanks to @kbilsted for his excellent kbilsted/NotepadPlusPlusPluginPack.Net x64 compatible Notepad++ managed hosting solution.\n\n* x64 migration\n - Implemented NppPlugin.Host loosely coupled CPU specific launcher\n - CSScriptIntellisense+CSScriptNpp made AnyCPU\n - Changed updater.exe to meet new x64 requirements\n - All NPP API code migrated to CPU neutral interface.\n - Updated packaging process to support x64.\n - Fixed nasty problem with interop corrupting unamanged memory. `Npp.Editor.GetOpenFiles` replaced with more conservative but safer `Npp.Editor.GetOpenFilesSafe`\n - Merged CSScriptIntellisense.Npp and SScriptNpp.Npp classes \n\n* Plugin functionality changes and fixes\n - All plugin's references to the external resources are changed from CodePlex (R.I.P.) to GitHub.  \n - Autocompletion user experience made consistent (e.g. suggestion filtering) with Visual Studio Intellisense.\n - Added `Config.Instance.InterceptConsoleByCharacter` (false by default) to allow faster ConsoleOutput rendering\n - Added `Config.BlockLocalDebugOutputContaining` to block unwanted Debug output content.\n - Added `Config.StartDebugMonitorOnScriptExecution` to prevent auto-attaching DBMon as it can cause significant startup delay for any process being started from the common parent (Notepad++ exe).\n\n* Fixes\n - Fixed debugger current step marker rendering problem\n - Various loading optimization changes.\n - Added extra error handling in custom-draw CodeMap routine.</latestUpdate>
+		<latestUpdate>Release v1.7.9.0\n\n* Updated CS-Script engine to v3.28.2  \n* Issue #16: Impossible to hide CS-Script's main panel\n* Added option to (config value `UseTogglingPanelVisibility`) to allow toggling mode for\n "Show Project Panel" button. Toggling is the default mode. \n* Added killing Npp specific instances of VBCSCompiler.exe on editor shutdown.\n* Fixed problem with breakpoints correct location being lost upon document formatting.\n* Fixed packaging problem with css_dbg.pdb not being included in the distro.</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.8.0/CSScriptNpp.1.7.8.0.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.9.0/CSScriptNpp.1.7.9.0.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" validate="true" recursive="true"/>
 				<copy from="plugins\CSScriptNpp.x86.dll" toFile="$PLUGINDIR$\" validate="true"/>
 			</x64>
@@ -545,16 +545,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.2</x64Version>
+		<x64Version>1.4.3</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-03-04\n* Prevent creating of plugin settings directory with wrong path. (#131)\n* Restore spell-checking of YAML default style. (#129)\n* Fix adding words to unified user dictionary for dictionaries with non-UTF8 encoding. (#130)</latestUpdate>
+		<latestUpdate>2018-03-28\n* Update styles for rechecking .ini files (#54)\n* Make words with non-arabic numerics also ignored if corresponding option is on (#58)\n* Add check box for spell-checking/ignoring default style for UDL (turned on by default) (#132)\n* Add info about compiler which was used for building plugin to about menu.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.2/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.3/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1004,7 +1004,7 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.21.6</x64Version>
+		<x64Version>1.22.0</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -1012,11 +1012,11 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>[2017-12-15] Fix format on reserved word as function name.</latestUpdate>
+		<latestUpdate>[2018-04-15]\nAdd JSON Sort function.\nFix blocking Notepad++ startup in some environment.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.6.uni.32.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.22.0.uni.32.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1493,14 +1493,14 @@
 		</install>
 	</plugin>
 	<plugin name="NppExec">
-		<x64Version>0.5.3</x64Version>
+		<x64Version>0.6</x64Version>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
 		<author>Vitaliy Dovgan</author>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
-		<latestUpdate>Version 0.5.3\n ----------------------\n + new menu items &amp;quot;Go to next error&amp;quot; and &amp;quot;Go to previous error&amp;quot; (based on\n   the HighLight masks), thanks to mrmixer\n + now %FILE% is treated as both %ABSFILE% and %FILE%, so there's no need\n   to duplicate the masks with %ABSFILE% and %FILE%\n + maximum number of user menu items increased to 100 (was 40)\n + when npes_saved.txt is saved, its previous version is kept as .bak\n + TAB navigation works in Filter/Replace/HighLight dialog\n + now the INPUTBOX command can accept 3 parameters\n + NppExec Manual updated\n + other small improvements</latestUpdate>
+		<latestUpdate>v0.6 beta 1\n ----------------------\n * changed: now the Execute dialog's auto-completion pop-up uses the same upper/lower case\n   as the first character of a word being typed (e.g. Npp -&gt; NPP...; npp -&gt; npp...);\n   also: now the auto-completion pop-up's height is limited by the number of its items\n + new commands: SCI_FIND, SCI_REPLACE\n + new commands: TEXT_SAVETO, TEXT_LOADFROM\n + Function Parser has been updated to support the bitwise operators: ~, |, &amp;, &lt;&lt; and &gt;&gt;\n   (thanks to Juha Nieminen and Joel Yliluoma for their advice)\n + $(LAST_CMD_RESULT) - result of the last NppExec's command (1 - succeeded, 0 - failed, -1 - invalid arg)\n - fixed: parameters of sci_sendmsg/npp_sendmsg were truncated to 32-bit in 64-bit NppExec\n - fixed: now pasting to the Console via Shift+Insert is equal to Ctrl+V</latestUpdate>
 		<install>
 			<x64>
-				<download>http://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.5.3/NppExec_053_dll_Unicode.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20beta%201/NppExec_06beta1_dll.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="doc\*.*" to="$PLUGINDIR$\doc"/>
 				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
 				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
@@ -1518,7 +1518,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.27.3</x64Version>
+		<x64Version>0.27.4</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -1526,10 +1526,10 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2017-12-15\n- update to openssl-1.0.2n, with security related fixes\n- fixed #71 Timeout gets reset after Notepad++ rest</latestUpdate>
+		<latestUpdate>2018-03-29\n- update to openssl-1.0.2o, with security related fixes\n- fixed #197 Profile Settings not changing\n- fixed part of #55 Non-ANSI characters in file name produce errors to display UTF-8 file\folder names</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.3/NppFTP-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.4/NppFTP-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>
@@ -1777,16 +1777,16 @@
 		</remove>
 	</plugin>
 	<plugin name="Plugin Manager">
-		<x64Version>1.4.9</x64Version>
+		<x64Version>1.4.11</x64Version>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins. It will notify you of updates to plugins that you have installed, and automatically install dependencies and required files into the correct places.</description>
 		<author>Dave Brotherstone</author>
 		<homepage>https://bruderste.in/npp/pm/</homepage>
 		<sourceUrl>https://github.com/bruderstein/nppPluginManager</sourceUrl>
-		<latestUpdate>15 Apr 2017\n-   #61 always validate plugin list for faster update of the devlist\n-   #62 own url for x64 plugin list in preparation to solve feature request #7</latestUpdate>
+		<latestUpdate>2018-03-14\n- Fixed issue #99 issue on user drawing of settings button during dialog window resizing</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.9/PluginManager_v1.4.9_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/bruderstein/nppPluginManager/releases/download/v1.4.11/PluginManager_v1.4.11_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true" isGpup="true"/>
 			</x64>
@@ -2409,16 +2409,16 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm">
-		<x64Version>5.2.56</x64Version>
+		<x64Version>5.3.07</x64Version>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>2018-02-22\nAdded Translation for Spanish\nAdded Translation for German\nRemoved NullPointerException\nImproved Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters</latestUpdate>
+		<latestUpdate>2018-04-15\nHighlight added White Spaces\nAdded new formatting Options\nRedesigned GUI\nAdded Translation for Spanish\nAdded Translation for German</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.2.56.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.3.07.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="SQLinFormNpp.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
