@@ -961,9 +961,7 @@
 			<x64>
 				<download>https://github.com/ffes/nppsnippets/releases/download/v1.4.0/NppSnippets-140-x64.zip</download>
 				<copy from="NppSnippets.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppSnippets\SQL\*.sql" to="$PLUGINDIR$\NppSnippets\SQL"/>
-				<copy from="NppSnippets\*.html" to="$PLUGINDIR$\NppSnippets"/>
-				<copy from="NppSnippets\*.pdf" to="$PLUGINDIR$\NppSnippets"/>
+				<copy from="NppSnippets\*.sql" to="$PLUGINDIR$\NppSnippets"/>
 				<copy from="NppSnippets\*.sqlite" to="$PLUGINDIR$\NppSnippets"/>
 			</x64>
 		</install>
