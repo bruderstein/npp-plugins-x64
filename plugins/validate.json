@@ -298,5 +298,10 @@
     "NppQrCode":
     {
         "8041f3659e3310ba942785e901501b30": "NppQrCode64.dll"
+    },
+    "Python Script":
+    {
+        "1ea0f2012b3e8ecb5c64119759be952b": "PythonScript.dll",
+        "9f7ff3aed603eb0882a9d2a2eb8307c2": "python27.dll"
     }
 }
