@@ -891,7 +891,7 @@
 		<author>Dave Brotherstone + Jocelyn Legault</author>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
-		<latestUpdate>2018-04-22 Beat version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
+		<latestUpdate>2018-04-22\n Beta version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.0.9/PythonScript_Full_1.0.9.0_x64.zip</download>
