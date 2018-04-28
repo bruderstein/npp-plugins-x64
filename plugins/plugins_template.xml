@@ -1271,16 +1271,16 @@
 		</install>
 	</plugin>
 	<plugin name="NavigateTo">
-		<x64Version>1.12.3</x64Version>
+		<x64Version>1.12.4</x64Version>
 		<description>Do you have more then 10 open tabs? than this plugin is for you.\n\nNavigate To is a new and efficient way to quickly navigate between tabs(files) in your Notepad++. It allows you to search for a symbol or filename, filepath by matching against a keyword you type in, and get a real time preview while going through the search results by Shift key.\nAnd YES indeed you can uncheck the Multi-line option, in the Preferences &gt; General &gt; Tab Bar zone because you don’t need the multi-lines tab feature anymore :)\n\nAuthor: Oleksii Maryshchenko\nEmail: young_developer@mail.ru</description>
 		<author>Oleksii Maryshchenko</author>
 		<homepage>https://github.com/young-developer/nppNavigateTo</homepage>
 		<sourceUrl>https://github.com/young-developer/nppNavigateTo</sourceUrl>
-		<latestUpdate>Version 1.12.3\n-Crash in x32bit version was fixed.\n--\n**New features and enhancements:**\n- Right-click context menu for files like in NPP was added.\n- File preview functionality was added.\n- Minimum window size was set to 400x200\n- New column 'View' was added.\n- Number of matching results was moved to form title.\n- File status functionality was implemented:\nBlack - SAVED\nRed - UNSAVED\nGrey - READONLY  \n\n**Bugs:**  \n- Unicode search, open and highlight bugs(filenames and paths with letters like é, à or else ) were fixed.\n- Filter editbox could not be unfocused now.  \n\n**Other:**\n- Filter is case insensitive and highlight only first sub-string match.  \n\n**Tips &amp; Tricks** \n- Hold &lt;kbd&gt;ALT&lt;/kbd&gt; and press  &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to open search history.\n- Open NavigateTo form and then hold &lt;kbd&gt;SHIFT&lt;/kbd&gt; and press &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to preview files.</latestUpdate>
+		<latestUpdate>13-03-2018 Version 1.12.4\n-Issues #8 , #9 were resolved.\n-Ctrl+A functionality was restored.\n\nVersion 1.12.3\n-Crash in x32bit version was fixed.\n--\n**New features and enhancements:**\n- Right-click context menu for files like in NPP was added.\n- File preview functionality was added.\n- Minimum window size was set to 400x200\n- New column 'View' was added.\n- Number of matching results was moved to form title.\n- File status functionality was implemented:\nBlack - SAVED\nRed - UNSAVED\nGrey - READONLY  \n\n**Bugs:**  \n- Unicode search, open and highlight bugs(filenames and paths with letters like é, à or else ) were fixed.\n- Filter editbox could not be unfocused now.  \n\n**Other:**\n- Filter is case insensitive and highlight only first sub-string match.  \n\n**Tips &amp; Tricks** \n- Hold &lt;kbd&gt;ALT&lt;/kbd&gt; and press  &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to open search history.\n- Open NavigateTo form and then hold &lt;kbd&gt;SHIFT&lt;/kbd&gt; and press &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to preview files.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/young-developer/nppNavigateTo/releases/download/1.12.3/NavigateTo_x32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/young-developer/nppNavigateTo/releases/download/1.12.4/NavigateTo_x32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NavigateTo.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1371,26 +1371,32 @@
 		</remove>
 	</plugin>
 	<plugin name="Npp Xml Treeview">
-		<x64Version>1.6.0.54</x64Version>
+		<x64Version>2.0.0</x64Version>
 		<aliases>
 			<alias name="Npp Xml Treview"/>
 		</aliases>
 		<description>A treeview visualization for xml files.</description>
 		<author>João Rosa</author>
 		<sourceUrl>https://github.com/joaoasrosa/nppxmltreeview</sourceUrl>
-		<latestUpdate>2017-12-17 Berlin Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- UI improvements</latestUpdate>
+		<latestUpdate>This release address the problems with version mismatches, reported by several users (#26, #27, #29, #30).\nWe also improve the plugin, removing some API contracts, adding behavioral tests and logging. Also, a consistent way of building the plugin was created, using Cake.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/Berlin-v1.6.0.54/NppXMLTreeviewPlugin_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/v2.0.0/NppXMLTreeViewPlugin_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppXmlTreeviewPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
+				<copy from="NppXmlTreeviewPlugin\Serilog.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
+				<copy from="NppXmlTreeviewPlugin\Serilog.Sinks.File.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
+				<copy from="NppXmlTreeviewPlugin\Serilog.Sinks.RollingFile.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
 				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin.dll"/>
 				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll"/>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\Serilog.dll"/>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\Serilog.Sinks.File.dll"/>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\Serilog.Sinks.RollingFile.dll"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -2286,9 +2292,7 @@
 			<x64>
 				<download>https://github.com/ffes/nppsnippets/releases/download/v1.4.0/NppSnippets-140-x32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppSnippets.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppSnippets\SQL\*.sql" to="$PLUGINDIR$\NppSnippets\SQL"/>
-				<copy from="NppSnippets\*.html" to="$PLUGINDIR$\NppSnippets"/>
-				<copy from="NppSnippets\*.pdf" to="$PLUGINDIR$\NppSnippets"/>
+				<copy from="NppSnippets\*.sql" to="$PLUGINDIR$\NppSnippets"/>
 				<copy from="NppSnippets\*.sqlite" to="$PLUGINDIR$\NppSnippets"/>
 			</x64>
 		</install>
@@ -2409,7 +2413,7 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm">
-		<x64Version>5.3.07</x64Version>
+		<x64Version>5.3.08</x64Version>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
@@ -2418,7 +2422,7 @@
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.3.07.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp_5.3.08.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="SQLinFormNpp.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>

@@ -133,9 +133,12 @@
     },
     "Npp Xml Treeview":
     {
-        "60f59f26eb0aea5018923da97e85bf20": "NppXmlTreeviewPlugin.dll",
-        "4363a21c4d71d65dc5f4fc020010a523": "NppXmlTreeviewPlugin.Parsers.dll"
-    },
+        "024db1ab70521072b502242d98621b59": "NppXmlTreeviewPlugin.dll",
+        "0e1d88241f973b3aedde8900fcd90281": "NppXmlTreeviewPlugin.Parsers.dll",
+        "9ead4cba3c333f97ebff907f0c2323c8": "Serilog.dll",
+        "66de138de2f0063bdba1511ec3f0c776": "Serilog.Sinks.File.dll",
+        "1956aa1e1eb74ca4b70c8a0c7268236f": "Serilog.Sinks.RollingFile.dll"
+        },
     "NppEventExec":
     {
         "729ee5b15087b93185231a62ff83bdfc": "NppEventExec.dll"
