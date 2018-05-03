@@ -1106,18 +1106,19 @@
 		</install>
 	</plugin>
 	<plugin name="ViSimulator for Notepad++">
-		<x64Version>17.12.17</x64Version>
+		<x64Version>18.03.08</x64Version>
 		<description>It is a plugin for Notepad++ which provides a Vi-Style input scheme like moving around with hjkl and editing text on Notepad++.\n\nMost of the common commands in vi are supported via this plugin Fast tap the 'ESC' 3 times to enable/disable the plugin\n\nBelow are list of the supported commands:\n\n    h j k l - move the cursor\n    a i o - switch to edit mode\n    $ - move to the end of the line\n    0 - move to the beginning of the line\n    w e - move to next word\n    u - undo\n    x - delete character[s]\n    d[G] - cut line[s]\n    y[G] - yank line[s]\n    p - paste\n    n N - search next matched\n    :number - move to the cursor to line\n    :w - save\n    :q - quit\n    :help - show all the supported commands</description>
 		<author>bycn82</author>
 		<homepage>https://github.com/bycn82/visimulator</homepage>
 		<versions>
 			<version number="17.12.17" md5="80bfd1abb48327992e26e0d4346784f6"/>
+			<version number="18.03.08" md5="6febce3201c5b050981568312dd8c86f"/>
 		</versions>
-		<latestUpdate>2017-12-17</latestUpdate>
+		<latestUpdate>2018-03-08 Few keys added as per requested:\nA - insert at the end of the line (requested by @Ncerzzk )\nb - back to preview word (requested by @keanegit )\nG - go to last line ( requested by @lorre851 )</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/bycn82/visimulator/raw/master/x64/ViSimulator-x64-20171217.zip</download>
+				<download>https://github.com/bycn82/visimulator/raw/master/x64/ViSimulator-x64-20180308.zip</download>
 				<copy from="ViSimulator.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
