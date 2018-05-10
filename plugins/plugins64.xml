@@ -260,16 +260,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.2</x64Version>
+		<x64Version>1.4.3</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-03-04\n* Prevent creating of plugin settings directory with wrong path. (#131)\n* Restore spell-checking of YAML default style. (#129)\n* Fix adding words to unified user dictionary for dictionaries with non-UTF8 encoding. (#130)</latestUpdate>
+		<latestUpdate>2018-03-28\n* Update styles for rechecking .ini files (#54)\n* Make words with non-arabic numerics also ignored if corresponding option is on (#58)\n* Add check box for spell-checking/ignoring default style for UDL (turned on by default) (#132)\n* Add info about compiler which was used for building plugin to about menu.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.2/DSpellCheck_x64.zip</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.3/DSpellCheck_x64.zip</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -381,7 +381,7 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.21.6</x64Version>
+		<x64Version>1.22.0</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -389,11 +389,11 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>[2017-12-15] Fix format on reserved word as function name.</latestUpdate>
+		<latestUpdate>[2018-04-15]\nAdd JSON Sort function.\nFix blocking Notepad++ startup in some environment.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.21.6.uni.64.zip/download</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.22.0.uni.64.zip/download</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -435,7 +435,7 @@
 		</remove>
 	</plugin>
 	<plugin name="MarkdownViewer++">
-		<x64Version>0.8.1</x64Version>
+		<x64Version>0.8.2</x64Version>
 		<aliases>
 			<alias name="MarkdownViewerPlusPlus"/>
 			<alias name="MarkdownViewer++"/>
@@ -444,12 +444,12 @@
 		<author>nea</author>
 		<homepage>https://nea.github.io/MarkdownViewerPlusPlus/</homepage>
 		<sourceUrl>https://github.com/nea/MarkdownViewerPlusPlus</sourceUrl>
-		<latestUpdate>* Fixed a bug cutting off text after 10000 characters (#60)\n* Changed parsing of custom CSS to recognize @import statements and have them lead (#35)</latestUpdate>
+		<latestUpdate>* Merged a lot of bugfixes and improvements, thanks to monoblaine\n* Updated Markdig to v0.15.0, PDFSharp to v1.50.4845-RC2a and HTMLRenderer accordingly\n* Added a shortcut to Options and About to MarkdownViewerPanel</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.8.1/MarkdownViewerPlusPlus-0.8.1-x64.zip</download>
+				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.8.2/MarkdownViewerPlusPlus-0.8.2-x64.zip</download>
 				<copy from="MarkdownViewerPlusPlus.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="*.md" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
 				<copy from="license\*.txt" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
@@ -511,16 +511,16 @@
 		</install>
 	</plugin>
 	<plugin name="NavigateTo">
-		<x64Version>1.12.3</x64Version>
+		<x64Version>1.12.4</x64Version>
 		<description>Do you have more then 10 open tabs? than this plugin is for you.\n\nNavigate To is a new and efficient way to quickly navigate between tabs(files) in your Notepad++. It allows you to search for a symbol or filename, filepath by matching against a keyword you type in, and get a real time preview while going through the search results by Shift key.\nAnd YES indeed you can uncheck the Multi-line option, in the Preferences &gt; General &gt; Tab Bar zone because you don’t need the multi-lines tab feature anymore :)\n\nAuthor: Oleksii Maryshchenko\nEmail: young_developer@mail.ru</description>
 		<author>Oleksii Maryshchenko</author>
 		<homepage>https://github.com/young-developer/nppNavigateTo</homepage>
 		<sourceUrl>https://github.com/young-developer/nppNavigateTo</sourceUrl>
-		<latestUpdate>Version 1.12.3\n-Crash in x32bit version was fixed.\n--\n**New features and enhancements:**\n- Right-click context menu for files like in NPP was added.\n- File preview functionality was added.\n- Minimum window size was set to 400x200\n- New column 'View' was added.\n- Number of matching results was moved to form title.\n- File status functionality was implemented:\nBlack - SAVED\nRed - UNSAVED\nGrey - READONLY  \n\n**Bugs:**  \n- Unicode search, open and highlight bugs(filenames and paths with letters like é, à or else ) were fixed.\n- Filter editbox could not be unfocused now.  \n\n**Other:**\n- Filter is case insensitive and highlight only first sub-string match.  \n\n**Tips &amp; Tricks** \n- Hold &lt;kbd&gt;ALT&lt;/kbd&gt; and press  &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to open search history.\n- Open NavigateTo form and then hold &lt;kbd&gt;SHIFT&lt;/kbd&gt; and press &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to preview files.</latestUpdate>
+		<latestUpdate>13-03-2018 Version 1.12.4\n-Issues #8 , #9 were resolved.\n-Ctrl+A functionality was restored.\n\nVersion 1.12.3\n-Crash in x32bit version was fixed.\n--\n**New features and enhancements:**\n- Right-click context menu for files like in NPP was added.\n- File preview functionality was added.\n- Minimum window size was set to 400x200\n- New column 'View' was added.\n- Number of matching results was moved to form title.\n- File status functionality was implemented:\nBlack - SAVED\nRed - UNSAVED\nGrey - READONLY  \n\n**Bugs:**  \n- Unicode search, open and highlight bugs(filenames and paths with letters like é, à or else ) were fixed.\n- Filter editbox could not be unfocused now.  \n\n**Other:**\n- Filter is case insensitive and highlight only first sub-string match.  \n\n**Tips &amp; Tricks** \n- Hold &lt;kbd&gt;ALT&lt;/kbd&gt; and press  &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to open search history.\n- Open NavigateTo form and then hold &lt;kbd&gt;SHIFT&lt;/kbd&gt; and press &lt;kbd&gt;↑&lt;/kbd&gt; or &lt;kbd&gt;↓&lt;/kbd&gt; to preview files.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/young-developer/nppNavigateTo/releases/download/1.12.3/NavigateTo_x64.zip</download>
+				<download>https://github.com/young-developer/nppNavigateTo/releases/download/1.12.4/NavigateTo_x64.zip</download>
 				<copy from="bin64\NavigateTo.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -593,26 +593,32 @@
 		</remove>
 	</plugin>
 	<plugin name="Npp Xml Treeview">
-		<x64Version>1.6.0.54</x64Version>
+		<x64Version>2.0.0</x64Version>
 		<aliases>
 			<alias name="Npp Xml Treview"/>
 		</aliases>
 		<description>A treeview visualization for xml files.</description>
 		<author>João Rosa</author>
 		<sourceUrl>https://github.com/joaoasrosa/nppxmltreeview</sourceUrl>
-		<latestUpdate>2017-12-17 Berlin Release for the Notepad++ XML TreeView plugin.\nThis release fixes the following issues:\n- UI improvements</latestUpdate>
+		<latestUpdate>This release address the problems with version mismatches, reported by several users (#26, #27, #29, #30).\nWe also improve the plugin, removing some API contracts, adding behavioral tests and logging. Also, a consistent way of building the plugin was created, using Cake.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/Berlin-v1.6.0.54/NppXMLTreeviewPlugin_x64.zip</download>
+				<download>https://github.com/joaoasrosa/nppxmltreeview/releases/download/v2.0.0/NppXMLTreeViewPlugin_x64.zip</download>
 				<copy from="NppXmlTreeviewPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
+				<copy from="NppXmlTreeviewPlugin\Serilog.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
+				<copy from="NppXmlTreeviewPlugin\Serilog.Sinks.File.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
+				<copy from="NppXmlTreeviewPlugin\Serilog.Sinks.RollingFile.dll" to="$PLUGINDIR$\NppXmlTreeviewPlugin" validate="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
 				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin.dll"/>
 				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\NppXmlTreeviewPlugin.Parsers.dll"/>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\Serilog.dll"/>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\Serilog.Sinks.File.dll"/>
+				<delete file="$PLUGINDIR$\NppXmlTreeviewPlugin\Serilog.Sinks.RollingFile.dll"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -695,7 +701,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.27.3</x64Version>
+		<x64Version>0.27.4</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -703,10 +709,10 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2017-12-15\n- update to openssl-1.0.2n, with security related fixes\n- fixed #71 Timeout gets reset after Notepad++ rest</latestUpdate>
+		<latestUpdate>2018-03-29\n- update to openssl-1.0.2o, with security related fixes\n- fixed #197 Profile Settings not changing\n- fixed part of #55 Non-ANSI characters in file name produce errors to display UTF-8 file\folder names</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.3/NppFTP-x64.zip</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.4/NppFTP-x64.zip</download>
 				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>
@@ -722,13 +728,13 @@
 		<install>
 			<x64>
 				<download>https://github.com/pnedev/nppgtags/releases/download/v4.4.0/NppGTags_v4.4.0_X64.zip</download>
-				<copy from="NppGTags.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppGTags.dll" toFile="$PLUGINDIR$\" validate="true"/>
 				<copy from="NppGTags\*.*" to="$PLUGINDIR$\NppGTags\" validate="true" recursive="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\NppGTags\" isDirectory="true"/>
+				<delete file="$PLUGINDIR$\NppGTags\"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -763,7 +769,7 @@
 	</plugin>
 	<plugin name="NppQrCode">
 		<x64Version>0.0.0.1</x64Version>
-		<description>This plugin allows to create QR-Code from selected text. Just select the text and push plugin button</description>
+		<description>This plugin allows to create QR-Code from selected text. Just select the text and push plugin button.</description>
 		<author>Vladimir Korobenkov</author>
 		<homepage>https://github.com/vladk1973/NppQrCode</homepage>
 		<latestUpdate>27.02.2018 (v0.0.0.1)\n- Initial release</latestUpdate>
@@ -885,6 +891,29 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Python Script">
+		<x64Version>1.0.9</x64Version>
+		<description>Scripting plugin for Notepad++, documentation included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
+		<author>Dave Brotherstone + Jocelyn Legault</author>
+		<homepage>http://npppythonscript.sourceforge.net</homepage>
+		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
+		<latestUpdate>2018-04-22\n Beta version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.0.9/PythonScript_Full_1.0.9.0_x64.zip</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.0.9/PythonScript_ExtraLibs_1.0.9.0_x64.zip</download>
+				<copy from="python27.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="plugins\PythonScript.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="plugins\PythonScript\*.*" to="$PLUGINDIR$\PythonScript" recursive="true"/>
+				<copy from="plugins\doc\PythonScript\*.*" to="$PLUGINDIR$\doc\PythonScript"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\PythonScript"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="RunMe">
 		<x64Version>1.4.0</x64Version>
 		<aliases>
@@ -961,27 +990,25 @@
 			<x64>
 				<download>https://github.com/ffes/nppsnippets/releases/download/v1.4.0/NppSnippets-140-x64.zip</download>
 				<copy from="NppSnippets.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppSnippets\SQL\*.sql" to="$PLUGINDIR$\NppSnippets\SQL"/>
-				<copy from="NppSnippets\*.html" to="$PLUGINDIR$\NppSnippets"/>
-				<copy from="NppSnippets\*.pdf" to="$PLUGINDIR$\NppSnippets"/>
+				<copy from="NppSnippets\*.sql" to="$PLUGINDIR$\NppSnippets"/>
 				<copy from="NppSnippets\*.sqlite" to="$PLUGINDIR$\NppSnippets"/>
 			</x64>
 		</install>
 	</plugin>
 	<plugin name="SQLinForm SQL Formatter">
-		<x64Version>5.2.56</x64Version>
+		<x64Version>5.3.07</x64Version>
 		<aliases>
 			<alias name="SQLinForm64"/>
 		</aliases>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>2018-02-22\nAdded Translation for Spanish\nAdded Translation for German\nRemoved NullPointerException\nImproved Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters</latestUpdate>
+		<latestUpdate>2018-04-15\nAdded new Options\nHighlight Changes\nDefine your own keywords\n\nImproved Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.2.56.zip</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.3.07.zip</download>
 				<copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1079,18 +1106,19 @@
 		</install>
 	</plugin>
 	<plugin name="ViSimulator for Notepad++">
-		<x64Version>17.12.17</x64Version>
+		<x64Version>18.03.08</x64Version>
 		<description>It is a plugin for Notepad++ which provides a Vi-Style input scheme like moving around with hjkl and editing text on Notepad++.\n\nMost of the common commands in vi are supported via this plugin Fast tap the 'ESC' 3 times to enable/disable the plugin\n\nBelow are list of the supported commands:\n\n    h j k l - move the cursor\n    a i o - switch to edit mode\n    $ - move to the end of the line\n    0 - move to the beginning of the line\n    w e - move to next word\n    u - undo\n    x - delete character[s]\n    d[G] - cut line[s]\n    y[G] - yank line[s]\n    p - paste\n    n N - search next matched\n    :number - move to the cursor to line\n    :w - save\n    :q - quit\n    :help - show all the supported commands</description>
 		<author>bycn82</author>
 		<homepage>https://github.com/bycn82/visimulator</homepage>
 		<versions>
 			<version number="17.12.17" md5="80bfd1abb48327992e26e0d4346784f6"/>
+			<version number="18.03.08" md5="6febce3201c5b050981568312dd8c86f"/>
 		</versions>
-		<latestUpdate>2017-12-17</latestUpdate>
+		<latestUpdate>2018-03-08 Few keys added as per requested:\nA - insert at the end of the line (requested by @Ncerzzk )\nb - back to preview word (requested by @keanegit )\nG - go to last line ( requested by @lorre851 )</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/bycn82/visimulator/raw/master/x64/ViSimulator-x64-20171217.zip</download>
+				<download>https://github.com/bycn82/visimulator/raw/master/x64/ViSimulator-x64-20180308.zip</download>
 				<copy from="ViSimulator.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>

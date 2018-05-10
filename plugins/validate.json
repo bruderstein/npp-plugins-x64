@@ -4,7 +4,7 @@
         "53f5c338caabe7a166fb1c068b5a4f15": "gpup.exe"
     },
     "NppFTP": {
-        "e156392302a483ac1b9179a88fd82af8": "NppFTP.dll"
+        "99213df8640ba4ac3d82938af05d43dc": "NppFTP.dll"
     },
     "MIME Tools": {
         "586a5399489a033118737809c7de9e0d": "mimeTools.dll"
@@ -112,7 +112,7 @@
     },
     "JSTool":
     {
-        "3aabe33b962049530f99dfc45ce1d640": "JSMinNPP.dll"
+        "ec06c69556671ebfaabc81ba7994b14c": "JSMinNPP.dll"
     },
     "3P - Progress Programmers Pal":
     {
@@ -121,21 +121,24 @@
     },
     "SQLinForm SQL Formatter":
     {
-        "c18cf50fcbbde6e3374192ec4e71c20c": "SQLinFormNpp64.dll"
+        "588ef4c7d506774732005ab2e0661555": "SQLinFormNpp64.dll"
     },
     "DSpellCheck":
     {
-        "4d9905f1fd0a82b0c8abe3566e83d95e": "DSpellCheck.dll"
+        "eb72307b4e0cc84bc517d5f589af5b2b": "DSpellCheck.dll"
     },
     "MarkdownViewer++":
     {
-        "F94E81937B8A47B9EB300EC891CDD2E5": "MarkdownViewerPlusPlus.dll"
+        "86AD1BC5DB7B25264B240B5F2B924169": "MarkdownViewerPlusPlus.dll"
     },
     "Npp Xml Treeview":
     {
-        "60f59f26eb0aea5018923da97e85bf20": "NppXmlTreeviewPlugin.dll",
-        "4363a21c4d71d65dc5f4fc020010a523": "NppXmlTreeviewPlugin.Parsers.dll"
-    },
+        "024db1ab70521072b502242d98621b59": "NppXmlTreeviewPlugin.dll",
+        "0e1d88241f973b3aedde8900fcd90281": "NppXmlTreeviewPlugin.Parsers.dll",
+        "9ead4cba3c333f97ebff907f0c2323c8": "Serilog.dll",
+        "66de138de2f0063bdba1511ec3f0c776": "Serilog.Sinks.File.dll",
+        "1956aa1e1eb74ca4b70c8a0c7268236f": "Serilog.Sinks.RollingFile.dll"
+        },
     "NppEventExec":
     {
         "729ee5b15087b93185231a62ff83bdfc": "NppEventExec.dll"
@@ -174,7 +177,7 @@
     },
     "NavigateTo":
     {
-        "228f3d86722339711a516f700d9ad465": "NavigateTo.dll"
+        "c605f8b596d053bc659d588d9e5623f1": "NavigateTo.dll"
     },
     "Poor Man's T-Sql Formatter":
     {
@@ -212,7 +215,7 @@
     },
     "ViSimulator for Notepad++":
     {
-        "80bfd1abb48327992e26e0d4346784f6": "ViSimulator.dll"
+        "6febce3201c5b050981568312dd8c86f": "ViSimulator.dll"
     },
     "CS-Script (C# intellisense)":  
     {
@@ -298,5 +301,10 @@
     "NppQrCode":
     {
         "8041f3659e3310ba942785e901501b30": "NppQrCode64.dll"
+    },
+    "Python Script":
+    {
+        "1ea0f2012b3e8ecb5c64119759be952b": "PythonScript.dll",
+        "9f7ff3aed603eb0882a9d2a2eb8307c2": "python27.dll"
     }
 }
