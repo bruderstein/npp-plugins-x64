@@ -87,15 +87,15 @@
 		</install>
 	</plugin>
 	<plugin name="BetterMultiSelection">
-		<x64Version>1.1</x64Version>
+		<x64Version>1.2</x64Version>
 		<description>Provide better cursor movements when using multiple selections.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/BetterMultiSelection</sourceUrl>
-		<latestUpdate>2017-07-03 Add ability to press Enter to insert newlines.</latestUpdate>
+		<latestUpdate>2018-05-15 \n- Implement SCI_DELWORDLEFT and SCI_DELWORDRIGHT\n- Pressing Esc cancels multiple selections\n- Simplify detection of word characters</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/BetterMultiSelection/releases/download/v1.1/BetterMultiSelection_64.zip</download>
+				<download>https://github.com/dail8859/BetterMultiSelection/releases/download/v1.2/BetterMultiSelection_v1.2_x64.zip</download>
 				<copy from="BetterMultiSelection_64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -189,7 +189,7 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>Release v1.7.10\n\n- Target runtime is updated to .NET v4.6.1\n - Issue #18: corrupted the code while saving</latestUpdate>
+		<latestUpdate>Release v1.7.10.0\n\n* Target runtime is updated to .NET v4.6.1\n* Issue #18: corrupted the code while saving</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
