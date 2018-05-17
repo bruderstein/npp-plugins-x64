@@ -680,11 +680,11 @@
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
 		<author>Vitaliy Dovgan</author>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
-		<latestUpdate>2018-02-20 Version  v0.6.0.0 beta 1  ------------ \n* changed: now the Execute dialog’s auto-completion pop-up uses the same upper/lower case as the first character of a word being typed (e.g. Npp -> NPP…; npp -> npp…); also: now the auto-completion pop-up’s height is limited by the number of its items \n+ new commands: SCI_FIND, SCI_REPLACE \n+ new commands: TEXT_SAVETO, TEXT_LOADFROM \n+ Function Parser has been updated to support the bitwise operators: (thanks to Juha Nieminen and Joel Yliluoma for their advice) \n+ $(LAST_CMD_RESULT) - result of the last NppExec’s command (1 - succeeded, 0 - failed, -1 - invalid arg)\n - fixed: parameters of sci_sendmsg/npp_sendmsg were truncated to 32-bit in 64-bit NppExec \n- fixed: now pasting to the Console via Shift+Insert is equal to Ctrl+V</latestUpdate>
+		<latestUpdate>2018-05-17 Version  v0.6.0.0 RC 1  -NppExec’s help files were moved from “doc\*.*” to “doc\NppExec\*.*”\n new command: npp_setfocus\n Plugin Interface: new messages NPEM_GETSCRIPTNAMES, NPEM_GETSCRIPTBYNAME\n now the actual name of NppExec.dll affects the “NppExec” submenu and its “Show Console” item name\n various small improvements</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20beta%201/NppExec_06beta1_dll_x64.zip/download</download>
-				<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20RC1/NppExec_06RC1_dll_x64.zip/download</download>
+				<copy from="doc\NppExec\*.*" to="$PLUGINDIR$\doc\NppExec"/>
 				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
