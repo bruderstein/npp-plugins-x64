@@ -105,6 +105,27 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="BinHex">
+		<x64Version>2.0.0.0</x64Version>
+		<description>Binhex plugin is a plugin for Notepad++ that can be use for bin/hex string manipulations such as bin hex conversion, bit shifting, grouping etc., can support very long string manipulation\n\n- FORMAT : MSB --&gt; LSB\n- accepts prefix 0x/0b\n- select/highlight the target text then call the function through plugin menu/shortcut key assigned\n- target text will get manipulated in place</description>
+		<author>skycc86</author>
+		<homepage>https://github.com/skycc86/npp_binhex_plugin</homepage>
+		<sourceUrl>https://github.com/skycc86/npp_binhex_plugin</sourceUrl>
+		<latestUpdate>{2018-06-02] Version 2.0.0\n\n    compile for win32 and x64\n    added default shortcut key\n    added incremental search and move to other view toolbar icon\n    maintain 0x / 0b prefix</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/skycc86/npp_binhex_plugin/releases/download/v2.0.0.0/binhex_v2.0.0.0_x64.zip</download>
+				<copy from="binhex_v2.0.0.0_x64\binhex.dll" toFile="$PLUGINDIR$\" validate="true"/>
+				<copy from="binhex_v2.0.0.0_x64\license.txt" toFile="$PLUGINDIR$\doc\BinHex"/>
+				<copy from="binhex_v2.0.0.0_x64\readme.FIRST" toFile="$PLUGINDIR$\doc\BinHex"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\BinHex"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="Code alignment">
 		<x64Version>14.0</x64Version>
 		<description>Code alignment helps you present your code beautifully, enhancing clarity and readability.\n\nAlign your code by any character. Fast logical shortcuts to perform common alignments such as equals and period.\n\nRequires .NET Framework 4.0</description>
@@ -676,7 +697,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppExec">
-		<x64Version>0.6.0.0</x64Version>
+		<x64Version>0.6</x64Version>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
 		<author>Vitaliy Dovgan</author>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
@@ -685,6 +706,7 @@
 			<x64>
 				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20RC1/NppExec_06RC1_dll_x64.zip/download</download>
 				<copy from="doc\NppExec\*.*" to="$PLUGINDIR$\doc\NppExec"/>
+				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
 				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -897,7 +919,7 @@
 		<author>Dave Brotherstone + Jocelyn Legault</author>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
-		<latestUpdate>2018-05-27\n 1.1 version with:\n- further adaptations for x64 build \n - add editor.flash() #52\n - console GIL fixes #51\n - Npp754 #50\n - unicode script filenames, see #20 #60\n - provides feature request 56 functionality #62\n - provides feature request 57 functionality #65\n - Documentation: replace "Notepad" and "Editor" with "notepad" and "editor" #59\n - used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll\n 1.0.9 Beta version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
+		<latestUpdate>2018-05-27\n1.1 version with:\n- further adaptations for x64 build\n- add editor.flash() #52\n- console GIL fixes #51\n- Npp754 #50\n- unicode script filenames, see #20 #60\n- provides feature request 56 functionality #62\n- provides feature request 57 functionality #65\n- Documentation: replace "Notepad" and "Editor" with "notepad" and "editor" #59\n- used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll\n\n1.0.9 Beta version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.1.0/PythonScript_Full_1.1.0.0_x64.zip</download>

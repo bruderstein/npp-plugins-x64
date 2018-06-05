@@ -252,5 +252,8 @@
     "Python Script": {
         "8ed32916e30db8a394aaaaada24d7e8b": "PythonScript.dll",
         "1f137d7a73ef6c60bf80b12717309250": "python27.dll"
+    },
+    "BinHex": {
+        "f030feb1c5e1c0e71b1b167c3244df56": "binhex.dll"
     }
 }
