@@ -1096,6 +1096,21 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Task List">
+		<x64Version>2.1</x64Version>
+		<description>This plugin automatically scans the open document in Notepad++ and adds all "TODO:*" items to your task list, a window pane docked on the right. Double-clicking an item in the list will take you to that line in the code.</description>
+		<author>blitowitz</author>
+		<homepage>http://code.google.com/p/npp-task-list/</homepage>
+		<sourceUrl>https://github.com/Megabyteceer/npp-task-list</sourceUrl>
+		<latestUpdate>2018-06-06 Version 2.1\n- use github followup source repo\n- added version info to dll\n\nVERSION 2: \nConfig files are now supported. See the default config file for syntax.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/Megabyteceer/npp-task-list/releases/download/v2.1.0/NppTaskList_v2.1.0_x64.zip</download>
+				<copy from="NppTaskList.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="Config\npp_task_list.cfg" to="$CONFIGDIR$\"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="ToolBucket">
 		<x64Version>1.10</x64Version>
 		<description>Requires .NET 3.5\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>

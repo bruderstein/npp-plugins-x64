@@ -255,5 +255,8 @@
     },
     "BinHex": {
         "f030feb1c5e1c0e71b1b167c3244df56": "binhex.dll"
+    },
+    "Task List": {
+        "8d646247876ddd466c050e7c95ce72c1": "NppTaskList.dll"
     }
 }
