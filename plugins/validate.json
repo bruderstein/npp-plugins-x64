@@ -33,28 +33,22 @@
         "c837f0a3a00b855134b123fdfef98be0": "pygments_parser.py",
         "c70c9ffd2ab27f45465061f99c126ce0": "universal-ctags.dll"
     },
-    "AutoCodepage":
-    {
+    "AutoCodepage": {
         "d8012c56a9f38dcc6f9bc19408a3797e": "AutoCodepage.dll"
     },
-    "Customize Toolbar":
-    {
+    "Customize Toolbar": {
         "f14f75aaf2f56b53af95793a19ba1d8c": "CustomizeToolbar.dll"
     },
-    "DoxyIt":
-    {
+    "DoxyIt": {
         "10166065de871ec433a5d90c6c5d15a8": "DoxyIt_64.dll"
     },
-    "ElasticTabstops":
-    {
+    "ElasticTabstops": {
         "d33e6b5cf31e8a73e03d519997d61fc8": "ElasticTabstops_64.dll"
     },
-    "LuaScript":
-    {
+    "LuaScript": {
         "438af2ef5317d5eb1687e7739ebce853": "LuaScript_64.dll"
     },
-    "CsvQuery":
-    {
+    "CsvQuery": {
         "124793CAD1919212006847360105400B": "CsvQuery.dll"
     },
     "XML Tools": {
@@ -66,121 +60,93 @@
         "2f8826a6cea2480fe2b4440d5c4273ef": "XMLTools.dll",
         "da191d9a7f26daaaa1ca1899566adb4c": "libcurl.dll"
     },
-    "LanguageHelp":
-    {
+    "LanguageHelp": {
         "37b8754108f4aa529b35ce3c9dd8415a": "LanguageHelp.dll"
     },
-    "Menu Icons":
-    {
+    "Menu Icons": {
         "797982f2e97aefff09443fccd8ae714a": "MenuIcons.dll"
     },
-    "Open Selection":
-    {
+    "Open Selection": {
         "10fb9247b7c9da8b499a9caa5d10766c": "OpenSelection.dll"
     },
-    "RunMe":
-    {
+    "RunMe": {
         "eca6b4611fc70a55de79ba2614e8bea4": "RunMe.dll"
     },
-    "TakeNotes":
-    {
+    "TakeNotes": {
         "a3ed038ba037e981b0fb92312292f2d3": "TakeNotes.dll"
     },
-    "TopMost":
-    {
+    "TopMost": {
         "098f90481db47681d26c66c5e87b6148": "TopMost.dll"
     },
-    "Pork2Sausage":
-    {
+    "Pork2Sausage": {
         "bf6414fb354a3c7d59df1f910e5227d8": "pork2sausage.dll"
     },
-    "Select 'N' Launch":
-    {
+    "Select 'N' Launch": {
         "cb1b48dc877f526be9b7c617745c02ec": "SelectNLaunch.dll"
     },
-    "Zoom Disabler":
-    {
+    "Zoom Disabler": {
         "134fe33658c3a0c6aaf0f809f448b8fe": "zoomdisabler_x64.dll"
     },
-    "TagLEET":
-    {
+    "TagLEET": {
         "ed10ddb183d7fa804362f6f047cf22e6": "TagLEET.dll"
     },
-    "ToolBucket":
-    {
+    "ToolBucket": {
         "b8b05082d32ff3eb121db529bb5e00b3": "NppToolBucket.dll"
     },
-    "JSTool":
-    {
+    "JSTool": {
         "ec06c69556671ebfaabc81ba7994b14c": "JSMinNPP.dll"
     },
-    "3P - Progress Programmers Pal":
-    {
+    "3P - Progress Programmers Pal": {
         "94ffc9d97d2c1437a66a5e9312d22d3a": "3P.dll",
         "fa4c424616a272feffeaf14791bea7a4": "NetFrameworkChecker.exe"
     },
-    "SQLinForm SQL Formatter":
-    {
-        "588ef4c7d506774732005ab2e0661555": "SQLinFormNpp64.dll"
+    "SQLinForm SQL Formatter": {
+        "84381ababe4b493e803faec09a88eb8c": "SQLinFormNpp64.dll"
     },
-    "DSpellCheck":
-    {
-        "eb72307b4e0cc84bc517d5f589af5b2b": "DSpellCheck.dll"
+    "DSpellCheck": {
+        "052a8a681107fddb4a527563ba89941d": "DSpellCheck.dll"
     },
-    "MarkdownViewer++":
-    {
-        "86AD1BC5DB7B25264B240B5F2B924169": "MarkdownViewerPlusPlus.dll"
+    "MarkdownViewer++": {
+        "86ad1bc5db7b25264b240b5f2b924169": "MarkdownViewerPlusPlus.dll"
     },
-    "Npp Xml Treeview":
-    {
+    "Npp Xml Treeview": {
         "024db1ab70521072b502242d98621b59": "NppXmlTreeviewPlugin.dll",
         "0e1d88241f973b3aedde8900fcd90281": "NppXmlTreeviewPlugin.Parsers.dll",
         "9ead4cba3c333f97ebff907f0c2323c8": "Serilog.dll",
         "66de138de2f0063bdba1511ec3f0c776": "Serilog.Sinks.File.dll",
         "1956aa1e1eb74ca4b70c8a0c7268236f": "Serilog.Sinks.RollingFile.dll"
-        },
-    "NppEventExec":
-    {
+    },
+    "NppEventExec": {
         "729ee5b15087b93185231a62ff83bdfc": "NppEventExec.dll"
     },
-    "NppExec":
-    {
-        "5fb264e0dd828a94a0376746641f1c7a": "NppExec.dll"
+    "NppExec": {
+        "9dc08fc537561175d1d0b7d07bc8042b": "NppExec.dll"
     },
-    "JSON Viewer":
-    {
+    "JSON Viewer": {
         "b4544ecf822ea0c0c9c373500c8e0356": "NPPJSONViewer-x64.dll"
     },
-    "HTML Tag":
-    {
+    "HTML Tag": {
         "c085ca0047396c6f852c862d8c95fe13": "HTMLTag.dll"
     },
-    "SelectQuotedText":
-    {
+    "SelectQuotedText": {
         "0c3bdcb76c1a887f4f78253185d89b04": "SelectQuotedText.dll"
     },
-    "Notepad++ bplist plugin":
-    {
+    "Notepad++ bplist plugin": {
         "8bdd49c6669155a80cdd2bfac37cbcd2": "NppBplistPlugin.dll"
     },
-    "NppCrypt":
-    {
+    "NppCrypt": {
         "5a0d4b75dfd563f05247dc543433b611": "nppcrypt.dll"
     },
-    "Snippets":
-    {
+    "Snippets": {
         "276497210d668a170ef70886c0c812dc": "NppSnippets.dll"
     },
-    "NppExport":
-    {
+    "NppExport": {
         "ebacf8ad6d3f38ec36cc27337afa51fb": "NppExport.dll"
     },
-    "NavigateTo":
-    {
+    "NavigateTo": {
         "c605f8b596d053bc659d588d9e5623f1": "NavigateTo.dll"
     },
-    "Poor Man's T-Sql Formatter":
-    {
+    "Poor Man's T-Sql Formatter": {
         "588bc7cb0671b938504788075bcae0dc": "PoorMansTSqlFormatterNppPlugin.dll",
         "e5cc3997457cd365e43c19f0f9110148": "LinqBridge.dll",
         "46911a8920e0dd9f0420540640fade3c": "PoorMansTSqlFormatterLib.dll",
@@ -188,20 +154,16 @@
         "45741442ba6b7d0f1482435381ba2a12": "PoorMansTSqlFormatterNppPlugin/es/PoorMansTSqlFormatterPluginShared.resources.dll",
         "6625e59da72bfdfd9aace87c302d3cb2": "PoorMansTSqlFormatterNppPlugin/fr/PoorMansTSqlFormatterPluginShared.resources.dll"
     },
-    "jN Notepad++ Plugin":
-    {
+    "jN Notepad++ Plugin": {
         "152866dfc82f2295cd1cddeddf19d89b": "jN.dll"
     },
-    "Notepad#":
-    {
+    "Notepad#": {
         "9c17bf4fa327f798d2ea58052567ae83": "NotepadSharp.dll"
     },
-    "JavaScript Map Parser":
-    {
+    "JavaScript Map Parser": {
         "5f248d59e768a4702ab73f7cb6dc77e6": "JsMapParser.NppPlugin.dll"
     },
-    "NppRegExTractor":
-    {
+    "NppRegExTractor": {
         "141ced9a3d890f590dc2871e871cd4b2": "NppRegExTractorPlugin.dll",
         "ce80365e2602b7cff0222e0db395428c": "Ninject.dll",
         "0ce46168197eac11ae92471a4e8f7f22": "RegExTractor.dll",
@@ -209,16 +171,13 @@
         "19bf5e7538e8089e8cf83c335fc609f8": "RegExTractorShared.dll",
         "c930006a54281c2a7366cf1c9a8d68f3": "RegExTractorWinForm.dll"
     },
-    "Code::Stats":
-    {
+    "Code::Stats": {
         "e2408d02c2f953e19692bfef26f35c91": "CodeStats.dll"
     },
-    "ViSimulator for Notepad++":
-    {
+    "ViSimulator for Notepad++": {
         "6febce3201c5b050981568312dd8c86f": "ViSimulator.dll"
     },
-    "CS-Script (C# intellisense)":
-    {
+    "CS-Script (C# intellisense)": {
        "5c8cf05d06bd063d34c23328706f3908": "CSScriptNpp.x64.dll",
        "b3f3b7a762d361b5b2a542722896030c": "CSScriptNpp\\CSScriptIntellisense.dll",
        "ab0dd2d5c2267a5e3323a3f17f0c9265": "CSScriptNpp\\CSScriptLibrary.dll",
@@ -251,60 +210,53 @@
        "0494cb8eaad64ca6e1aea9fd00b08420": "CSScriptNpp\\Mdbg\\npp.dll",
        "c81bb8bcb0c4f53ff7b178cadf9e22e2": "CSScriptNpp\\Mdbg\\raw.dll"
     },
-    "Code alignment":
-    {
+    "Code alignment": {
         "24823facdf971ca0c06ffc9f2c3ced0a": "CodeAlignmentNpp.dll",
         "23cfb36c023a0c19d9a53041b6b47319": "CodeAlignment.Common.dll",
         "d9eea261bc03190f0f4fb85af60f40d4": "CodeAlignment.Common.WinForms.dll"
     },
-    "NppNetNote":
-    {
+    "NppNetNote": {
         "f3c4abd61baaae5168514d99bf7b5587": "NppDocShare.dll"
     },
-    "BetterMultiSelection":
-    {
-        "de1788a4599f9d99039b80205653fe6d": "BetterMultiSelection_64.dll"
+    "BetterMultiSelection": {
+        "1695c432af66c8469ca394b9beb4c17a": "BetterMultiSelection_64.dll"
     },
-    "SurroundSelection":
-    {
+    "SurroundSelection": {
         "59339140626ff1a0c36f7e3ac5e84ad3": "SurroundSelection_64.dll"
     },
-    "ImgTag":
-    {
+    "ImgTag": {
         "2c5ce5931ffb81d666734b216e6d0268": "ImgTag.dll"
     },
-    "NppJumpList":
-    {
+    "NppJumpList": {
         "721aa61be104ab79e186d2ac532972cb": "NppJumpList.dll"
     },
-    "Save as admin":
-    {
+    "Save as admin": {
         "7e338b1c6bba02b342ea109bd26bd1aa": "NppSaveAsAdmin.dll"
     },
-    "MusicPlayer":
-    {
+    "MusicPlayer": {
         "e264de50298fd1911352f90183a11347": "MusicPlayer_1.0.11x64.dll"
     },
-    "XBrackets Lite":
-    {
+    "XBrackets Lite": {
         "8e864261ab8830ec761e5c07a22afab0": "XBrackets.dll"
     },
-    "NotepadStarterPlugin":
-    {
+    "NotepadStarterPlugin": {
         "2a9d81973eca645f901f4ef77f475297": "NotepadStarterPlugin.dll",
         "eafa500fc35e52c06a5e91ab4f81c7ef": "NotepadStarter.exe"
     },
-    "Npp.connections":
-    {
+    "Npp.connections": {
         "815a52fac8877c2d1d914f415439c20d": "npp.connections.dll"
     },
-    "NppQrCode":
-    {
+    "NppQrCode": {
         "8041f3659e3310ba942785e901501b30": "NppQrCode64.dll"
     },
-    "Python Script":
-    {
-        "1ea0f2012b3e8ecb5c64119759be952b": "PythonScript.dll",
-        "9f7ff3aed603eb0882a9d2a2eb8307c2": "python27.dll"
+    "Python Script": {
+        "8ed32916e30db8a394aaaaada24d7e8b": "PythonScript.dll",
+        "1f137d7a73ef6c60bf80b12717309250": "python27.dll"
+    },
+    "BinHex": {
+        "f030feb1c5e1c0e71b1b167c3244df56": "binhex.dll"
+    },
+    "Task List": {
+        "8d646247876ddd466c050e7c95ce72c1": "NppTaskList.dll"
     }
 }

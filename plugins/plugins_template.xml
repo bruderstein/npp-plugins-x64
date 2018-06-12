@@ -159,21 +159,42 @@
 		</install>
 	</plugin>
 	<plugin name="BetterMultiSelection">
-		<x64Version>1.1</x64Version>
+		<x64Version>1.2</x64Version>
 		<description>Provide better cursor movements when using multiple selections.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/BetterMultiSelection</sourceUrl>
-		<latestUpdate>2017-07-03 Add ability to press Enter to insert newlines.</latestUpdate>
+		<latestUpdate>2018-05-15 \n- Implement SCI_DELWORDLEFT and SCI_DELWORDRIGHT\n- Pressing Esc cancels multiple selections\n- Simplify detection of word characters</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/BetterMultiSelection/releases/download/v1.1/BetterMultiSelection.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/dail8859/BetterMultiSelection/releases/download/v1.2/BetterMultiSelection_v1.2.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="BetterMultiSelection.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
 				<delete file="$PLUGINDIR$\BetterMultiSelection.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="BinHex">
+		<x64Version>2.0.0.0</x64Version>
+		<description>Binhex plugin is a plugin for Notepad++ that can be use for bin/hex string manipulations such as bin hex conversion, bit shifting, grouping etc., can support very long string manipulation\n\n- FORMAT : MSB --&gt; LSB\n- accepts prefix 0x/0b\n- select/highlight the target text then call the function through plugin menu/shortcut key assigned\n- target text will get manipulated in place</description>
+		<author>skycc86</author>
+		<homepage>https://github.com/skycc86/npp_binhex_plugin</homepage>
+		<sourceUrl>https://github.com/skycc86/npp_binhex_plugin</sourceUrl>
+		<latestUpdate>{2018-06-02] Version 2.0.0\n\n    compile for win32 and x64\n    added default shortcut key\n    added incremental search and move to other view toolbar icon\n    maintain 0x / 0b prefix</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/skycc86/npp_binhex_plugin/releases/download/v2.0.0.0/binhex_v2.0.0.0_win32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="binhex_v2.0.0.0_win32\binhex.dll" toFile="$PLUGINDIR$\" validate="true"/>
+				<copy from="binhex_v2.0.0.0_win32\license.txt" toFile="$PLUGINDIR$\doc\BinHex"/>
+				<copy from="binhex_v2.0.0.0_win32\readme.FIRST" toFile="$PLUGINDIR$\doc\BinHex"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\BinHex"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -415,7 +436,7 @@
 		</install>
 	</plugin>
 	<plugin name="CS-Script (C# intellisense)">
-		<x64Version>1.7.9.0</x64Version>
+		<x64Version>1.7.10.0</x64Version>
 		<aliases>
 			<alias name="CS-Script"/>
 		</aliases>
@@ -423,12 +444,12 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>Release v1.7.9.0\n\n* Updated CS-Script engine to v3.28.2  \n* Issue #16: Impossible to hide CS-Script's main panel\n* Added option to (config value `UseTogglingPanelVisibility`) to allow toggling mode for\n "Show Project Panel" button. Toggling is the default mode. \n* Added killing Npp specific instances of VBCSCompiler.exe on editor shutdown.\n* Fixed problem with breakpoints correct location being lost upon document formatting.\n* Fixed packaging problem with css_dbg.pdb not being included in the distro.</latestUpdate>
+		<latestUpdate>Release v1.7.10.0\n\n* Target runtime is updated to .NET v4.6.1\n* Issue #18: corrupted the code while saving</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.9.0/CSScriptNpp.1.7.9.0.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.10.0/CSScriptNpp.1.7.10.0.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" validate="true" recursive="true"/>
 				<copy from="plugins\CSScriptNpp.x86.dll" toFile="$PLUGINDIR$\" validate="true"/>
 			</x64>
@@ -545,16 +566,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.3</x64Version>
+		<x64Version>1.4.4</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-03-28\n* Update styles for rechecking .ini files (#54)\n* Make words with non-arabic numerics also ignored if corresponding option is on (#58)\n* Add check box for spell-checking/ignoring default style for UDL (turned on by default) (#132)\n* Add info about compiler which was used for building plugin to about menu.</latestUpdate>
+		<latestUpdate>2018-05-26\n* Fix hang on exit if plugin NppMenuSearch is installed (#135)\n* Limit spell-checking to visible area in case if extremely long lines are present in file (#136)\n* Remove FTP server which stopped hosting dictionaries from default selection (#137)</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.3/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.4/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1137,7 +1158,7 @@
 		</remove>
 	</plugin>
 	<plugin name="MarkdownViewer++">
-		<x64Version>0.8.1</x64Version>
+		<x64Version>0.8.2</x64Version>
 		<aliases>
 			<alias name="MarkdownViewerPlusPlus"/>
 			<alias name="MarkdownViewer++"/>
@@ -1146,12 +1167,12 @@
 		<author>nea</author>
 		<homepage>https://nea.github.io/MarkdownViewerPlusPlus/</homepage>
 		<sourceUrl>https://github.com/nea/MarkdownViewerPlusPlus</sourceUrl>
-		<latestUpdate>* Fixed a bug cutting off text after 10000 characters (#60)\n* Changed parsing of custom CSS to recognize @import statements and have them lead (#35)</latestUpdate>
+		<latestUpdate>* Merged a lot of bugfixes and improvements, thanks to monoblaine\n* Updated Markdig to v0.15.0, PDFSharp to v1.50.4845-RC2a and HTMLRenderer accordingly\n* Added a shortcut to Options and About to MarkdownViewerPanel</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.8.1/MarkdownViewerPlusPlus-0.8.1-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/nea/MarkdownViewerPlusPlus/releases/download/0.8.2/MarkdownViewerPlusPlus-0.8.2-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="MarkdownViewerPlusPlus.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="*.md" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
 				<copy from="license\*.txt" to="$PLUGINDIR$\MarkdownViewerPlusPlus"/>
@@ -1503,11 +1524,11 @@
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
 		<author>Vitaliy Dovgan</author>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
-		<latestUpdate>v0.6 beta 1\n ----------------------\n * changed: now the Execute dialog's auto-completion pop-up uses the same upper/lower case\n   as the first character of a word being typed (e.g. Npp -&gt; NPP...; npp -&gt; npp...);\n   also: now the auto-completion pop-up's height is limited by the number of its items\n + new commands: SCI_FIND, SCI_REPLACE\n + new commands: TEXT_SAVETO, TEXT_LOADFROM\n + Function Parser has been updated to support the bitwise operators: ~, |, &amp;, &lt;&lt; and &gt;&gt;\n   (thanks to Juha Nieminen and Joel Yliluoma for their advice)\n + $(LAST_CMD_RESULT) - result of the last NppExec's command (1 - succeeded, 0 - failed, -1 - invalid arg)\n - fixed: parameters of sci_sendmsg/npp_sendmsg were truncated to 32-bit in 64-bit NppExec\n - fixed: now pasting to the Console via Shift+Insert is equal to Ctrl+V</latestUpdate>
+		<latestUpdate>v0.6 RC 1\n ----------------------\n* NppExec’s help files were moved from “doc\*.*” to “doc\NppExec\*.*”\n* new command: npp_setfocus\n* Plugin Interface: new messages NPEM_GETSCRIPTNAMES, NPEM_GETSCRIPTBYNAME\n* now the actual name of NppExec.dll affects the “NppExec” submenu and its “Show Console” item name\n* various small improvements</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20beta%201/NppExec_06beta1_dll.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="doc\*.*" to="$PLUGINDIR$\doc"/>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20RC1/NppExec_06RC1_dll.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="doc\NppExec\*.*" to="$PLUGINDIR$\doc\NppExec"/>
 				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
 				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
@@ -1953,16 +1974,16 @@
 		</install>
 	</plugin>
 	<plugin name="Python Script">
-		<x64Version>1.0.8</x64Version>
+		<x64Version>1.1.0</x64Version>
 		<description>Scripting plugin for Notepad++, documentation included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
 		<author>Dave Brotherstone + Jocelyn Legault</author>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
-		<latestUpdate>Important bug fix for editor.pymlreplace()\nAdded editor.getCharacterPointer() that returns a string\nAdded notepad.getPluginVersion() to get version of Python Script</latestUpdate>
+		<latestUpdate>2018-05-27\n1.1 version with:\n- further adaptations for x64 build\n- add editor.flash() #52\n- console GIL fixes #51\n- Npp754 #50\n- unicode script filenames, see #20 #60\n- provides feature request 56 functionality #62\n- provides feature request 57 functionality #65\n- Documentation: replace "Notepad" and "Editor" with "notepad" and "editor" #59\n- used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll\n\n1.0.9 Beta version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
 		<install>
 			<x64>
-				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%201.0.8.0/PythonScript_Full_1.0.8.0.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fnpppythonscript%2Ffiles%2FPython%2520Script%25201.0.8.0%2F!!!ADAPT_LINK_FOR_X64!!!</download>
-				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%201.0.8.0/PythonScript_ExtraLibs_1.0.8.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.1.0/PythonScript_Full_1.1.0.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.1.0/PythonScript_ExtraLibs_1.1.0.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="python27.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript\*.*" to="$PLUGINDIR$\PythonScript" recursive="true"/>
@@ -2789,15 +2810,15 @@
 		</install>
 	</plugin>
 	<plugin name="ViSimulator for Notepad++">
-		<x64Version>17.12.17</x64Version>
+		<x64Version>18.03.08</x64Version>
 		<description>It is a plugin for Notepad++ which provides a Vi-Style input scheme like moving around with hjkl and editing text on Notepad++.\n\nMost of the common commands in vi are supported via this plugin Fast tap the 'ESC' 3 times to enable/disable the plugin\n\nBelow are list of the supported commands:\n\n    h j k l - move the cursor\n    a i o - switch to edit mode\n    $ - move to the end of the line\n    0 - move to the beginning of the line\n    w e - move to next word\n    u - undo\n    x - delete character[s]\n    d[G] - cut line[s]\n    y[G] - yank line[s]\n    p - paste\n    n N - search next matched\n    :number - move to the cursor to line\n    :w - save\n    :q - quit\n    :help - show all the supported commands</description>
 		<author>bycn82</author>
 		<homepage>https://github.com/bycn82/visimulator</homepage>
-		<latestUpdate>2017-12-17</latestUpdate>
+		<latestUpdate>2018-03-08 Few keys added as per requested:\nA - insert at the end of the line (requested by @Ncerzzk )\nb - back to preview word (requested by @keanegit )\nG - go to last line ( requested by @lorre851 )</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/bycn82/visimulator/raw/master/x32/ViSimulator-x32-20171217.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/bycn82/visimulator/raw/master/x32/ViSimulator-x32-20180308.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="ViSimulator.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>

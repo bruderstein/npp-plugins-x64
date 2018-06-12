@@ -87,21 +87,42 @@
 		</install>
 	</plugin>
 	<plugin name="BetterMultiSelection">
-		<x64Version>1.1</x64Version>
+		<x64Version>1.2</x64Version>
 		<description>Provide better cursor movements when using multiple selections.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/BetterMultiSelection</sourceUrl>
-		<latestUpdate>2017-07-03 Add ability to press Enter to insert newlines.</latestUpdate>
+		<latestUpdate>2018-05-15 \n- Implement SCI_DELWORDLEFT and SCI_DELWORDRIGHT\n- Pressing Esc cancels multiple selections\n- Simplify detection of word characters</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/BetterMultiSelection/releases/download/v1.1/BetterMultiSelection_64.zip</download>
+				<download>https://github.com/dail8859/BetterMultiSelection/releases/download/v1.2/BetterMultiSelection_v1.2_x64.zip</download>
 				<copy from="BetterMultiSelection_64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
 				<delete file="$PLUGINDIR$\BetterMultiSelection_64.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="BinHex">
+		<x64Version>2.0.0.0</x64Version>
+		<description>Binhex plugin is a plugin for Notepad++ that can be use for bin/hex string manipulations such as bin hex conversion, bit shifting, grouping etc., can support very long string manipulation\n\n- FORMAT : MSB --&gt; LSB\n- accepts prefix 0x/0b\n- select/highlight the target text then call the function through plugin menu/shortcut key assigned\n- target text will get manipulated in place</description>
+		<author>skycc86</author>
+		<homepage>https://github.com/skycc86/npp_binhex_plugin</homepage>
+		<sourceUrl>https://github.com/skycc86/npp_binhex_plugin</sourceUrl>
+		<latestUpdate>{2018-06-02] Version 2.0.0\n\n    compile for win32 and x64\n    added default shortcut key\n    added incremental search and move to other view toolbar icon\n    maintain 0x / 0b prefix</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/skycc86/npp_binhex_plugin/releases/download/v2.0.0.0/binhex_v2.0.0.0_x64.zip</download>
+				<copy from="binhex_v2.0.0.0_x64\binhex.dll" toFile="$PLUGINDIR$\" validate="true"/>
+				<copy from="binhex_v2.0.0.0_x64\license.txt" toFile="$PLUGINDIR$\doc\BinHex"/>
+				<copy from="binhex_v2.0.0.0_x64\readme.FIRST" toFile="$PLUGINDIR$\doc\BinHex"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\BinHex"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -189,7 +210,7 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>Release v1.7.10\n\n- Target runtime is updated to .NET v4.6.1\n - Issue #18: corrupted the code while saving</latestUpdate>
+		<latestUpdate>Release v1.7.10.0\n\n* Target runtime is updated to .NET v4.6.1\n* Issue #18: corrupted the code while saving</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
@@ -260,16 +281,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.3</x64Version>
+		<x64Version>1.4.4</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-03-28\n* Update styles for rechecking .ini files (#54)\n* Make words with non-arabic numerics also ignored if corresponding option is on (#58)\n* Add check box for spell-checking/ignoring default style for UDL (turned on by default) (#132)\n* Add info about compiler which was used for building plugin to about menu.</latestUpdate>
+		<latestUpdate>2018-05-26\n* Fix hang on exit if plugin NppMenuSearch is installed (#135)\n* Limit spell-checking to visible area in case if extremely long lines are present in file (#136)\n* Remove FTP server which stopped hosting dictionaries from default selection (#137)</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.3/DSpellCheck_x64.zip</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.4/DSpellCheck_x64.zip</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -676,15 +697,16 @@
 		</install>
 	</plugin>
 	<plugin name="NppExec">
-		<x64Version>0.6.0.0</x64Version>
+		<x64Version>0.6</x64Version>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
 		<author>Vitaliy Dovgan</author>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
-		<latestUpdate>2018-02-20 Version  v0.6.0.0 beta 1  ------------ \n* changed: now the Execute dialog’s auto-completion pop-up uses the same upper/lower case as the first character of a word being typed (e.g. Npp -> NPP…; npp -> npp…); also: now the auto-completion pop-up’s height is limited by the number of its items \n+ new commands: SCI_FIND, SCI_REPLACE \n+ new commands: TEXT_SAVETO, TEXT_LOADFROM \n+ Function Parser has been updated to support the bitwise operators: (thanks to Juha Nieminen and Joel Yliluoma for their advice) \n+ $(LAST_CMD_RESULT) - result of the last NppExec’s command (1 - succeeded, 0 - failed, -1 - invalid arg)\n - fixed: parameters of sci_sendmsg/npp_sendmsg were truncated to 32-bit in 64-bit NppExec \n- fixed: now pasting to the Console via Shift+Insert is equal to Ctrl+V</latestUpdate>
+		<latestUpdate>2018-05-17 Version  v0.6.0.0 RC 1  -NppExec’s help files were moved from “doc\*.*” to “doc\NppExec\*.*”\n new command: npp_setfocus\n Plugin Interface: new messages NPEM_GETSCRIPTNAMES, NPEM_GETSCRIPTBYNAME\n now the actual name of NppExec.dll affects the “NppExec” submenu and its “Show Console” item name\n various small improvements</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20beta%201/NppExec_06beta1_dll_x64.zip/download</download>
-				<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20RC1/NppExec_06RC1_dll_x64.zip/download</download>
+				<copy from="doc\NppExec\*.*" to="$PLUGINDIR$\doc\NppExec"/>
+				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
 				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -892,16 +914,16 @@
 		</install>
 	</plugin>
 	<plugin name="Python Script">
-		<x64Version>1.0.9</x64Version>
+		<x64Version>1.1.0</x64Version>
 		<description>Scripting plugin for Notepad++, documentation included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
 		<author>Dave Brotherstone + Jocelyn Legault</author>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
-		<latestUpdate>2018-04-22\n Beta version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
+		<latestUpdate>2018-05-27\n1.1 version with:\n- further adaptations for x64 build\n- add editor.flash() #52\n- console GIL fixes #51\n- Npp754 #50\n- unicode script filenames, see #20 #60\n- provides feature request 56 functionality #62\n- provides feature request 57 functionality #65\n- Documentation: replace "Notepad" and "Editor" with "notepad" and "editor" #59\n- used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll\n\n1.0.9 Beta version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.0.9/PythonScript_Full_1.0.9.0_x64.zip</download>
-				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.0.9/PythonScript_ExtraLibs_1.0.9.0_x64.zip</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.1.0/PythonScript_Full_1.1.0.0_x64.zip</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.1.0/PythonScript_ExtraLibs_1.1.0.0_x64.zip</download>
 				<copy from="python27.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript\*.*" to="$PLUGINDIR$\PythonScript" recursive="true"/>
@@ -996,19 +1018,19 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm SQL Formatter">
-		<x64Version>5.3.07</x64Version>
+		<x64Version>5.3.16</x64Version>
 		<aliases>
 			<alias name="SQLinForm64"/>
 		</aliases>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>http://www.sqlinform.com</homepage>
-		<latestUpdate>2018-04-15\nAdded new Options\nHighlight Changes\nDefine your own keywords\n\nImproved Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters</latestUpdate>
+		<latestUpdate>2018-06-01\nCompact Design\nIndention using tabs\nAdded new Options\nHighlight Changes\nDefine your own keywords\n\nImproved Profile Management Menu\nRedesign of the GUI\nFree Formatting Templates \nCustomisation of Colors\nSupport of wider set of characters</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.3.07.zip</download>
+				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.3.16.zip</download>
 				<copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1071,6 +1093,21 @@
 			<x64>
 				<download>https://sites.google.com/site/fstellari/nppplugins/TakeNotes_dll_1v20.zip</download>
 				<copy from="64bit\TakeNotes.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Task List">
+		<x64Version>2.1</x64Version>
+		<description>This plugin automatically scans the open document in Notepad++ and adds all "TODO:*" items to your task list, a window pane docked on the right. Double-clicking an item in the list will take you to that line in the code.</description>
+		<author>blitowitz</author>
+		<homepage>http://code.google.com/p/npp-task-list/</homepage>
+		<sourceUrl>https://github.com/Megabyteceer/npp-task-list</sourceUrl>
+		<latestUpdate>2018-06-06 Version 2.1\n- use github followup source repo\n- added version info to dll\n\nVERSION 2: \nConfig files are now supported. See the default config file for syntax.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/Megabyteceer/npp-task-list/releases/download/v2.1.0/NppTaskList_v2.1.0_x64.zip</download>
+				<copy from="NppTaskList.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="Config\npp_task_list.cfg" to="$CONFIGDIR$\"/>
 			</x64>
 		</install>
 	</plugin>
