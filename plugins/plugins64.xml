@@ -202,7 +202,7 @@
 		</install>
 	</plugin>
 	<plugin name="CS-Script (C# intellisense)">
-		<x64Version>1.7.11.0</x64Version>
+		<x64Version>1.7.11.1</x64Version>
 		<aliases>
 			<alias name="CS-Script"/>
 		</aliases>
