@@ -281,16 +281,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.4</x64Version>
+		<x64Version>1.4.5</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-05-26\n* Fix hang on exit if plugin NppMenuSearch is installed (#135)\n* Limit spell-checking to visible area in case if extremely long lines are present in file (#136)\n* Remove FTP server which stopped hosting dictionaries from default selection (#137)</latestUpdate>
+		<latestUpdate>2018-06-23\n* Exceptions on single line file which does not fit to the window (#139)\n* Erroneous underline positioning with ANSI-encoded files (#140)\n</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.4/DSpellCheck_x64.zip</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.5/DSpellCheck_x64.zip</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
