@@ -202,7 +202,7 @@
 		</install>
 	</plugin>
 	<plugin name="CS-Script (C# intellisense)">
-		<x64Version>1.7.11.0</x64Version>
+		<x64Version>1.7.11.1</x64Version>
 		<aliases>
 			<alias name="CS-Script"/>
 		</aliases>
@@ -215,7 +215,7 @@
 		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.10.0/CSScriptNpp.1.7.11.0.x64.zip</download>
+				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.11.0/CSScriptNpp.1.7.11.0.x64.zip</download>
 				<copy from="plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" recursive="true"/>
 				<copy from="plugins\CSScriptNpp.x64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
