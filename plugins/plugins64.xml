@@ -914,16 +914,16 @@
 		</install>
 	</plugin>
 	<plugin name="Python Script">
-		<x64Version>1.1.0</x64Version>
+		<x64Version>1.2.0</x64Version>
 		<description>Scripting plugin for Notepad++, documentation included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
 		<author>Dave Brotherstone + Jocelyn Legault</author>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
-		<latestUpdate>2018-05-27\n1.1 version with:\n- further adaptations for x64 build\n- add editor.flash() #52\n- console GIL fixes #51\n- Npp754 #50\n- unicode script filenames, see #20 #60\n- provides feature request 56 functionality #62\n- provides feature request 57 functionality #65\n- Documentation: replace "Notepad" and "Editor" with "notepad" and "editor" #59\n- used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll\n\n1.0.9 Beta version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
+		<latestUpdate>2018-06-27\n1.2 version with:\n- make menu command Show Console toggling #66\n- tcl\tk from python 2.7.15 #73\n- [Enhancement] "Run Previous Script" menu item -&gt; hold Ctrl to EDIT script source file #77\n- [Question] Is "To Input" command useful? #80\n- Adding scripts/Samples/CTags Based Autocompletion.py #82 (thanks @Lucas-C)\n- [Suggestion] Display Console on Error #76\n- notepad.prompt() input control won't accept input #81\n- [Enhancement] Separate outputs with an empty line #68\n- Extend help with editor.flash #83\n- used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.1.0/PythonScript_Full_1.1.0.0_x64.zip</download>
-				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.1.0/PythonScript_ExtraLibs_1.1.0.0_x64.zip</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.2.0/PythonScript_Full_1.2.0.0_x64.zip</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.2.0/PythonScript_ExtraLibs_1.2.0.0_x64.zip</download>
 				<copy from="python27.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript\*.*" to="$PLUGINDIR$\PythonScript" recursive="true"/>
