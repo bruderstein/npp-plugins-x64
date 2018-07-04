@@ -104,7 +104,7 @@
         "84381ababe4b493e803faec09a88eb8c": "SQLinFormNpp64.dll"
     },
     "DSpellCheck": {
-        "052a8a681107fddb4a527563ba89941d": "DSpellCheck.dll"
+        "410ca4a9fd0b4fe81d35eae5549233d0": "DSpellCheck.dll"
     },
     "MarkdownViewer++": {
         "86ad1bc5db7b25264b240b5f2b924169": "MarkdownViewerPlusPlus.dll"
@@ -120,7 +120,7 @@
         "729ee5b15087b93185231a62ff83bdfc": "NppEventExec.dll"
     },
     "NppExec": {
-        "9dc08fc537561175d1d0b7d07bc8042b": "NppExec.dll"
+        "f9f54560b72c0fa1846442caf9715909": "NppExec.dll"
     },
     "JSON Viewer": {
         "b4544ecf822ea0c0c9c373500c8e0356": "NPPJSONViewer-x64.dll"
@@ -155,7 +155,7 @@
         "6625e59da72bfdfd9aace87c302d3cb2": "PoorMansTSqlFormatterNppPlugin/fr/PoorMansTSqlFormatterPluginShared.resources.dll"
     },
     "jN Notepad++ Plugin": {
-        "152866dfc82f2295cd1cddeddf19d89b": "jN.dll"
+        "c0dc8780a2f68955ad5c59972a36af8c": "jN.dll"
     },
     "Notepad#": {
         "9c17bf4fa327f798d2ea58052567ae83": "NotepadSharp.dll"
@@ -250,7 +250,7 @@
         "8041f3659e3310ba942785e901501b30": "NppQrCode64.dll"
     },
     "Python Script": {
-        "8ed32916e30db8a394aaaaada24d7e8b": "PythonScript.dll",
+        "3e3e27eaa0cd6490d68ae3c25aef0504": "PythonScript.dll",
         "1f137d7a73ef6c60bf80b12717309250": "python27.dll"
     },
     "BinHex": {

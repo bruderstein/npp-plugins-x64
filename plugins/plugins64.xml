@@ -210,12 +210,12 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>Release v1.7.11.0\n\n* Added handling/processing unsaved changes in the source files without creating a &lt;file&gt;.$temp$.cs file in the script directory.\n* Added option to prepare script for deployment as dll (project panel toolbar)</latestUpdate>
+		<latestUpdate>2018-06-11 Release v1.7.11.0\n\n* Added handling/processing unsaved changes in the source files without creating a &lt;file&gt;.$temp$.cs file in the script directory.\n* Added option to prepare script for deployment as dll (project panel toolbar)</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.10.0/CSScriptNpp.1.7.11.0.x64.zip</download>
+				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.11.0/CSScriptNpp.1.7.11.0.x64.zip</download>
 				<copy from="plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" recursive="true"/>
 				<copy from="plugins\CSScriptNpp.x64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
@@ -281,16 +281,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.4</x64Version>
+		<x64Version>1.4.5</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-05-26\n* Fix hang on exit if plugin NppMenuSearch is installed (#135)\n* Limit spell-checking to visible area in case if extremely long lines are present in file (#136)\n* Remove FTP server which stopped hosting dictionaries from default selection (#137)</latestUpdate>
+		<latestUpdate>2018-06-23\n* Exceptions on single line file which does not fit to the window (#139)\n* Erroneous underline positioning with ANSI-encoded files (#140)</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.4/DSpellCheck_x64.zip</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.5/DSpellCheck_x64.zip</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -363,16 +363,16 @@
 		</install>
 	</plugin>
 	<plugin name="jN Notepad++ Plugin">
-		<x64Version>2.2.185</x64Version>
+		<x64Version>2.2.185.0</x64Version>
 		<description>jN (JavaScript for Notepad++) allows you to extend Notepad++ by using JavaScript.\n- You can create new menu elements which execute JavaScript\n- You can use a lot of ActiveX components available on your PC\n- You can add shortcuts executing JavaScript\n- You can create Html based dialogs and docking windows\n- You can write JavaScript wrappers around Win32 API\n - Since version 2.0.116 you can debug your automating scripts\n - Selection highlighting and navigation bar\n - Integrated Zen Coding v0.7\n - You can catch context menu request and create your own</description>
 		<author>Eugen Kremer</author>
 		<homepage>https://github.com/sieukrem/jn-npp-plugin/wiki</homepage>
 		<sourceUrl>https://github.com/sieukrem/jn-npp-plugin</sourceUrl>
-		<latestUpdate>[2017-12-12]Added new Scintilla constans for controlling font rendering technology.</latestUpdate>
+		<latestUpdate>[2018-06-11] Fix #69 Zen Coding interferes with Redo functionality\n2.2.185.3, also file version is 2.2.185.0</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/sieukrem/jn-npp-plugin/releases/download/2.2.185/jN_2.2.185_x64.zip</download>
+				<download>https://github.com/sieukrem/jn-npp-plugin/releases/download/2.2.185.3/jN_2.2.185.3_x64.zip</download>
 				<copy from="[Notepad++ Directory]\plugins\jN.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="[Notepad++ Directory]\plugins\jN\*.*" to="$PLUGINDIR$\jN" recursive="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\jN"/>
@@ -701,10 +701,10 @@
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
 		<author>Vitaliy Dovgan</author>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
-		<latestUpdate>2018-05-17 Version  v0.6.0.0 RC 1  -NppExec’s help files were moved from “doc\*.*” to “doc\NppExec\*.*”\n new command: npp_setfocus\n Plugin Interface: new messages NPEM_GETSCRIPTNAMES, NPEM_GETSCRIPTBYNAME\n now the actual name of NppExec.dll affects the “NppExec” submenu and its “Show Console” item name\n various small improvements</latestUpdate>
+		<latestUpdate>2018-06-20 v0.6 RC 2\n ----------------------\n* new environment variables: $(CLIPBOARD_TEXT), $(NPP_HWND), $(SCI_HWND)\n* new commands: clip_settext, messagebox, exit, npe_sendmsgbuflen\n* set &lt;var&gt; ~ strlensci &lt;string&gt;\n* internal improvements\n* the NppExec Manual has been updated</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20RC1/NppExec_06RC1_dll_x64.zip/download</download>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20RC2/NppExec_06RC2_dll_x64.zip/download</download>
 				<copy from="doc\NppExec\*.*" to="$PLUGINDIR$\doc\NppExec"/>
 				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
 				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
@@ -914,16 +914,16 @@
 		</install>
 	</plugin>
 	<plugin name="Python Script">
-		<x64Version>1.1.0</x64Version>
+		<x64Version>1.2.0</x64Version>
 		<description>Scripting plugin for Notepad++, documentation included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
 		<author>Dave Brotherstone + Jocelyn Legault</author>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
-		<latestUpdate>2018-05-27\n1.1 version with:\n- further adaptations for x64 build\n- add editor.flash() #52\n- console GIL fixes #51\n- Npp754 #50\n- unicode script filenames, see #20 #60\n- provides feature request 56 functionality #62\n- provides feature request 57 functionality #65\n- Documentation: replace "Notepad" and "Editor" with "notepad" and "editor" #59\n- used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll\n\n1.0.9 Beta version with:\n- adaptations for x64 build\n- sync with N++ interface files 7.5.4\n- updated scintilla interface to the one used for 7.5.4 which is version 3.5.6 + small fixes + wrapper generation corrections, updates (thanks to @ClaudiaFrank)\n- reduced compiler warnings\n- used plain python 2.7.14, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
+		<latestUpdate>2018-06-27\n1.2 version with:\n- make menu command Show Console toggling #66\n- tcl\tk from python 2.7.15 #73\n- [Enhancement] "Run Previous Script" menu item -&gt; hold Ctrl to EDIT script source file #77\n- [Question] Is "To Input" command useful? #80\n- Adding scripts/Samples/CTags Based Autocompletion.py #82 (thanks @Lucas-C)\n- [Suggestion] Display Console on Error #76\n- notepad.prompt() input control won't accept input #81\n- [Enhancement] Separate outputs with an empty line #68\n- Extend help with editor.flash #83\n- used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.1.0/PythonScript_Full_1.1.0.0_x64.zip</download>
-				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.1.0/PythonScript_ExtraLibs_1.1.0.0_x64.zip</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.2.0/PythonScript_Full_1.2.0.0_x64.zip</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.2.0/PythonScript_ExtraLibs_1.2.0.0_x64.zip</download>
 				<copy from="python27.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript\*.*" to="$PLUGINDIR$\PythonScript" recursive="true"/>
