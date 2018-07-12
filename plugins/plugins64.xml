@@ -222,9 +222,7 @@
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\CSScriptNpp.dll"/>
-				<delete file="$PLUGINDIR$\CSScriptNpp\*.*"/>
-				<delete file="$PLUGINDIR$\CSScriptNpp"/>
+				<delete file="$PLUGINDIR$\CSScriptNpp" isDirectory="true" />
 			</x64>
 		</remove>
 	</plugin>
