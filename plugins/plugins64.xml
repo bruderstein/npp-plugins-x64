@@ -222,6 +222,7 @@
 		</install>
 		<remove>
 			<x64>
+				<delete file="$PLUGINDIR$\CSScriptNpp\CSScriptNpp.dll" />
 				<delete file="$PLUGINDIR$\CSScriptNpp" isDirectory="true" />
 			</x64>
 		</remove>
