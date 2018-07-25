@@ -202,7 +202,7 @@
 		</install>
 	</plugin>
 	<plugin name="CS-Script (C# intellisense)">
-		<x64Version>1.7.14.0</x64Version>
+		<x64Version>1.7.15.1</x64Version>
 		<aliases>
 			<alias name="CS-Script"/>
 		</aliases>
@@ -210,7 +210,7 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>2018-07-15 Release v1.7.14.0\n\n* Added script auto-loading on Run.\n* Added option ReloadActiveScriptOnRun = true. This realigns loading strategy among all CS-Script plugins:\n        Notepad++\n        Sublime Text 3\n        Visual Studio Code\n * Issue #23: Automatically select "First" occurrence of suggestion(s)\n    Added option AutoSelectFirstSuggestion = false\n * Issue #22: Please add support for class Auto-completion\n    Added option AutoSuggestOnOpenEndLine = false</latestUpdate>
+		<latestUpdate>2018-07-25 Release v1.7.15.1\n\n* Disabled FormatOnSave (by default)\n* Debugger: fixed problem with re-evaluating watch values on dbg step advance\n* Fixed native `CallTip` background color disrupted by new N++ version 7.5.7\n* Changed updater.exe to restore plugin directory on update failure.</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
