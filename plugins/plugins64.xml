@@ -20,7 +20,7 @@
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\3P.dll" />
+				<delete file="$PLUGINDIR$\3P.dll"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -56,6 +56,7 @@
 		<homepage>https://sourceforge.net/projects/autocodepage/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/autocodepage/files/v1.2.2/src/</sourceUrl>
 		<latestUpdate>Fixed: Entry of JavaScript in language combobox uses deprecated language id. This fix is mandatory after upgrading to Notepad++ v7.5.7 or higher.</latestUpdate>
+		<minVersion>7.5.7</minVersion>
 		<install>
 			<x64>
 				<download>https://sourceforge.net/projects/autocodepage/files/v1.2.2/plugin/x64/AutoCodepage_v1.2.2_x64.zip</download>
@@ -210,7 +211,7 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>2018-07-25 Release v1.7.15.1\n\n* Disabled FormatOnSave (by default)\n* Debugger: fixed problem with re-evaluating watch values on dbg step advance\n* Fixed native `CallTip` background color disrupted by new N++ version 7.5.7\n* Changed updater.exe to restore plugin directory on update failure.</latestUpdate>
+		<latestUpdate>2018-07-25 Release v1.7.15.1\n\n* Changed updater.exe to restore plugin directory on update failure v1.7.15.0\n* Disabled FormatOnSave (by default)\n* Debugger: fixed problem with re-evaluating watch values on dbg step advance\n* Fixed native CallTip background color being disrupted by new N++ version 7.5.7</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>

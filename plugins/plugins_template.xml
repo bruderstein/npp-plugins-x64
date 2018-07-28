@@ -87,15 +87,16 @@
 		</install>
 	</plugin>
 	<plugin name="AutoCodepage">
-		<x64Version>1.2.1</x64Version>
+		<x64Version>1.2.2</x64Version>
 		<description>AutoCodepage: A plugin to automatically set a document's code page to your needs on loading or renaming a document, changing its language or activating its tab. Usefull especially when coding batch scripts.</description>
 		<author>Andreas Heim</author>
 		<homepage>https://sourceforge.net/projects/autocodepage/</homepage>
-		<sourceUrl>https://sourceforge.net/projects/autocodepage/files/v1.2.1/src/</sourceUrl>
-		<latestUpdate>Enhanced: Language names get retrieved fully dynamically now, no plugin update required after additional languages have been added to Notepad++.</latestUpdate>
+		<sourceUrl>https://sourceforge.net/projects/autocodepage/files/v1.2.2/src/</sourceUrl>
+		<latestUpdate>Fixed: Entry of JavaScript in language combobox uses deprecated language id. This fix is mandatory after upgrading to Notepad++ v7.5.7 or higher.</latestUpdate>
+		<minVersion>7.5.7</minVersion>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/autocodepage/files/v1.2.1/plugin/x86/AutoCodepage.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/autocodepage/files/v1.2.2/plugin/x86/AutoCodepage_v1.2.2_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="Win32\AutoCodepage.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="AutoCodepage.txt" to="$PLUGINDIR$\doc"/>
 			</x64>
@@ -436,7 +437,7 @@
 		</install>
 	</plugin>
 	<plugin name="CS-Script (C# intellisense)">
-		<x64Version>1.7.14.0</x64Version>
+		<x64Version>1.7.15.1</x64Version>
 		<aliases>
 			<alias name="CS-Script"/>
 		</aliases>
@@ -444,12 +445,12 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>2018-07-15 Release v1.7.14.0\n\n* Added script auto-loading on Run.\n* Added option ReloadActiveScriptOnRun = true. This realigns loading strategy among all CS-Script plugins:\n        Notepad++\n        Sublime Text 3\n        Visual Studio Code\n * Issue #23: Automatically select "First" occurrence of suggestion(s)\n    Added option AutoSelectFirstSuggestion = false\n * Issue #22: Please add support for class Auto-completion\n    Added option AutoSuggestOnOpenEndLine = false</latestUpdate>
+		<latestUpdate>2018-07-25 Release v1.7.15.1\n\n* Changed updater.exe to restore plugin directory on update failure v1.7.15.0\n* Disabled FormatOnSave (by default)\n* Debugger: fixed problem with re-evaluating watch values on dbg step advance\n* Fixed native CallTip background color being disrupted by new N++ version 7.5.7</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.14.0/CSScriptNpp.1.7.14.0.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.15.1/CSScriptNpp.1.7.15.1.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" validate="true" recursive="true"/>
 				<copy from="plugins\CSScriptNpp.dll" toFile="$PLUGINDIR$\" validate="true"/>
 			</x64>
