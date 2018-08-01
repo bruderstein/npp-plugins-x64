@@ -363,16 +363,16 @@
 		</install>
 	</plugin>
 	<plugin name="jN Notepad++ Plugin">
-		<x64Version>2.2.185.0</x64Version>
+		<x64Version>2.2.185.4</x64Version>
 		<description>jN (JavaScript for Notepad++) allows you to extend Notepad++ by using JavaScript.\n- You can create new menu elements which execute JavaScript\n- You can use a lot of ActiveX components available on your PC\n- You can add shortcuts executing JavaScript\n- You can create Html based dialogs and docking windows\n- You can write JavaScript wrappers around Win32 API\n - Since version 2.0.116 you can debug your automating scripts\n - Selection highlighting and navigation bar\n - Integrated Zen Coding v0.7\n - You can catch context menu request and create your own</description>
 		<author>Eugen Kremer</author>
 		<homepage>https://github.com/sieukrem/jn-npp-plugin/wiki</homepage>
 		<sourceUrl>https://github.com/sieukrem/jn-npp-plugin</sourceUrl>
-		<latestUpdate>[2018-06-11] Fix #69 Zen Coding interferes with Redo functionality\n2.2.185.3, also file version is 2.2.185.0</latestUpdate>
+		<latestUpdate>[2018-06-24] \nUpdate dll file properties.\nFix #68 About dialog displays no longer available domain\nFix #32 x64</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/sieukrem/jn-npp-plugin/releases/download/2.2.185.3/jN_2.2.185.3_x64.zip</download>
+				<download>https://github.com/sieukrem/jn-npp-plugin/releases/download/2.2.185.4/jN_2.2.185.4_x64.zip</download>
 				<copy from="[Notepad++ Directory]\plugins\jN.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="[Notepad++ Directory]\plugins\jN\*.*" to="$PLUGINDIR$\jN" recursive="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\jN"/>
