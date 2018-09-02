@@ -234,12 +234,12 @@
 		<description>Enables SQL queries against CSV files</description>
 		<author>jokedst</author>
 		<sourceUrl>https://github.com/jokedst/CsvQuery</sourceUrl>
-		<latestUpdate>Better handling of quoted strings during parsing and analysis</latestUpdate>
+		<latestUpdate>2018-01-26\nBetter handling of quoted strings during parsing and analysis</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
 				<download>https://github.com/jokedst/CsvQuery/releases/download/v1.2.6/CsvQuery-v1.2.6-x64.zip</download>
-				<copy from="CsvQuery.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="CsvQuery.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -381,7 +381,7 @@
 		</install>
 	</plugin>
 	<plugin name="JSON Viewer">
-		<x64Version>1.24</x64Version>
+		<x64Version>1.25</x64Version>
 		<aliases>
 			<alias name="JSONViewer"/>
 		</aliases>
@@ -389,10 +389,10 @@
 		<author>Kapil Ratnani</author>
 		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
 		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
-		<latestUpdate>2017-01-09, 1. 64 bit support. Thanks @chcg</latestUpdate>
+		<latestUpdate>2017-06-24\nMerge pull request #23 from Gitoffthelawn/patch-1\nFix URL, improve string consistency</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.24/NPPJSONViewer-x64.dll.zip</download>
+				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.25/NPPJSONViewer-x64.dll.zip</download>
 				<copy from="NPPJSONViewer-x64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
