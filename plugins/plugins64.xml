@@ -203,7 +203,7 @@
 		</install>
 	</plugin>
 	<plugin name="CS-Script (C# intellisense)">
-		<x64Version>1.7.17.0</x64Version>
+		<x64Version>1.7.19.0</x64Version>
 		<aliases>
 			<alias name="CS-Script"/>
 		</aliases>
@@ -211,13 +211,12 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>2018-08-20 Release v1.7.17.0\n\n* Updated CS-Script engine (v3.28.6.0)\n - added auto loading of the `app.config` if found\n - switch `-sconfig` can now be passed from the code with `//css_args`.\n - parsing `//css_args` is updated to match OS process arguments handling.
-		</latestUpdate>
+		<latestUpdate> 2018-09-16 Release v1.7.18-19\n\nv1.7.19\n - Added support for custom script (F5) launcher. The launcher path is to be set from the settings dialog.\n\n v1.7.18\n - Fixed problem with settings file truncating long values - Removed context menu from the 'References' node in the project tree. - Added aborting requested formatting operation if it is already in progress - Updated CS-Script engine (v3.28.8.0) - Implemented seamless debugging of all auto-classes. There is no longer need to open decorated auto-classes code during debugging. - added support for freestyle auto-classes: \n //css_ac freestyle\n using System;\n using System.Diagnostics;\n \n Console.WriteLine("Hello World!");\n Debug.WriteLine("Hello World!"); </latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.17.0/CSScriptNpp.1.7.17.0.x64.zip</download>
+				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.19.0/CSScriptNpp.1.7.19.0.x64.zip</download>
 				<copy from="plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" validate="true" recursive="true"/>
 				<copy from="plugins\CSScriptNpp.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
