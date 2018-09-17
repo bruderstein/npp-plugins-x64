@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugins>
-	<pluginNames>
-		<pluginName md5="ad32f0f59e70823de864387f65debcea" name="NppExport" comment="unicode 0.2.8"/>
-		<pluginName md5="48ae59abb0224ecc252d35e953ce0496" name="NppExport" comment="ansi 0.2.8"/>
-	</pluginNames>
+<plugins
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="plugins_template.xsd">
 	<plugin name="3P - Progress Programmers Pal">
 		<x64Version>1.8.1</x64Version>
 		<aliases>
@@ -439,7 +437,7 @@
 		</install>
 	</plugin>
 	<plugin name="CS-Script (C# intellisense)">
-		<x64Version>1.7.17.0</x64Version>
+		<x64Version>1.7.19.0</x64Version>
 		<aliases>
 			<alias name="CS-Script"/>
 		</aliases>
@@ -447,12 +445,12 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>2018-08-19 Release v1.7.17.\n* Updated CS-Script engine (v3.28.6.0)\n  - added auto loading of the `app.config` if found\n  - switch `-sconfig` can now be passed from the code with `//css_args`.\n  - parsing `//css_args` is updated to match OS process arguments handling.</latestUpdate>
+		<latestUpdate>2018-09-16 Release v1.7.19\n- Added support for custom script (F5) launcher. The launcher path is to be set from the settings dialog\n\n2018-09-10 Release v1.7.18\n- Fixed problem with settings file truncating long values\n- Removed context menu from the 'References' node in the project tree.\n- Added aborting requested formatting operation if it is already in progress\n- Updated CS-Script engine (v3.28.8.0)\n  - Implemented seamless debugging of all auto-classes. There is no longer need to open decorated auto-classes code during debugging.\n  - added support for freestyle auto-classes:\n\n//css_ac freestyle\nusing System;\nusing System.Diagnostics;\n\nConsole.WriteLine("Hello World!");\nDebug.WriteLine("Hello World!");</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.17.0/CSScriptNpp.1.7.17.0.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.19.0/CSScriptNpp.1.7.19.0.x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="plugins\CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" validate="true" recursive="true"/>
 				<copy from="plugins\CSScriptNpp.dll" toFile="$PLUGINDIR$\" validate="true"/>
 			</x64>
@@ -1006,7 +1004,7 @@
 		</install>
 	</plugin>
 	<plugin name="JSON Viewer">
-		<x64Version>1.25</x64Version>
+		<x64Version>1.31</x64Version>
 		<aliases>
 			<alias name="JSONViewer"/>
 		</aliases>
@@ -1014,16 +1012,16 @@
 		<author>Kapil Ratnani</author>
 		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
 		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
-		<latestUpdate>2017-06-24\nMerge pull request #23 from Gitoffthelawn/patch-1\nFix URL, improve string consistency</latestUpdate>
+		<latestUpdate>1. Using Rapidjson as JSON parser. Should improve performance for large JSON\n2. Read tab settings from notepad++ settings</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.25/NPPJSONViewer-win32.dll.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="NPPJSONViewer-win32.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.31/NPPJSONViewerWin32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="NPPJSONViewer.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\NPPJSONViewer-win32.dll"/>
+				<delete file="$PLUGINDIR$\NPPJSONViewer.dll"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -1204,6 +1202,22 @@
 				<copy from="plugins\mathpad\*.*" to="$PLUGINDIR$\mathpad"/>
 				<download>http://semelinanno.com/downloads/mathpad/ver0055/MathPad_v0055.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="mathpad.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="MaxScriptExplorer">
+		<x64Version>1.5.2</x64Version>
+		<description>New plugin for navigation on maxscript project.\n\nFeatures:\n- Display the list of functions and structures from maxscript file(s).\n- Multiply project modes: Single file, Project folder, Opened files\n- Go to definition from working area or tree.\n- Ability to insert function with parameters into working area.\n- Navigation back/forward\n- Filter functions by text\n- Ability to hide private members of structs\n- Display tooltips with related comments and parameters for selected function.</description>
+		<author>Alexander Kramer</author>
+		<homepage>https://3d-kstudio.com/forum/trackscripts-news/maxscript-explorer-notepad-plugin-developers/</homepage>
+		<latestUpdate>[2018-09-13] Version 1.5.2\n- Adds an ability to copy the full path of function or struct from menu.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://3d-kstudio.com/download-manager.php?id=112!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="Kstudio.MaxscriptExplorer.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="APIs\MaxScript.xml" to="$PLUGINDIR$\APIs"/>
+				<copy from="Script example.ms" to="$PLUGINDIR$\MaxscriptExplorer"/>
+				<copy from="userDefineLang.xml" to="$PLUGINDIR$\MaxscriptExplorer"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1548,7 +1562,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.27.4</x64Version>
+		<x64Version>0.27.5</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -1556,10 +1570,10 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2018-03-29\n- update to openssl-1.0.2o, with security related fixes\n- fixed #197 Profile Settings not changing\n- fixed part of #55 Non-ANSI characters in file name produce errors to display UTF-8 file\folder names</latestUpdate>
+		<latestUpdate>2018-09-16\n- update to openssl-1.0.2p, with security related fixes</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.4/NppFTP-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.5/NppFTP-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>

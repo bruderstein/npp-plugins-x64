@@ -211,7 +211,7 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate> 2018-09-16 Release v1.7.18-19\n\nv1.7.19\n - Added support for custom script (F5) launcher. The launcher path is to be set from the settings dialog.\n\n v1.7.18\n - Fixed problem with settings file truncating long values - Removed context menu from the 'References' node in the project tree. - Added aborting requested formatting operation if it is already in progress - Updated CS-Script engine (v3.28.8.0) - Implemented seamless debugging of all auto-classes. There is no longer need to open decorated auto-classes code during debugging. - added support for freestyle auto-classes: \n //css_ac freestyle\n using System;\n using System.Diagnostics;\n \n Console.WriteLine("Hello World!");\n Debug.WriteLine("Hello World!"); </latestUpdate>
+		<latestUpdate>2018-09-16 Release v1.7.19\n- Added support for custom script (F5) launcher. The launcher path is to be set from the settings dialog\n\n2018-09-10 Release v1.7.18\n- Fixed problem with settings file truncating long values\n- Removed context menu from the 'References' node in the project tree.\n- Added aborting requested formatting operation if it is already in progress\n- Updated CS-Script engine (v3.28.8.0)\n  - Implemented seamless debugging of all auto-classes. There is no longer need to open decorated auto-classes code during debugging.\n  - added support for freestyle auto-classes:\n\n//css_ac freestyle\nusing System;\nusing System.Diagnostics;\n\nConsole.WriteLine("Hello World!");\nDebug.WriteLine("Hello World!");</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
@@ -723,7 +723,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.27.4</x64Version>
+		<x64Version>0.27.5</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -731,10 +731,10 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2018-03-29\n- update to openssl-1.0.2o, with security related fixes\n- fixed #197 Profile Settings not changing\n- fixed part of #55 Non-ANSI characters in file name produce errors to display UTF-8 file\folder names</latestUpdate>
+		<latestUpdate>2018-09-16\n- update to openssl-1.0.2p, with security related fixes</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.4/NppFTP-x64.zip</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.5/NppFTP-x64.zip</download>
 				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>
