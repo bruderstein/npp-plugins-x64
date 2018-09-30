@@ -437,15 +437,15 @@
 		</install>
 	</plugin>
 	<plugin name="LuaScript">
-		<x64Version>0.7.1</x64Version>
+		<x64Version>0.8</x64Version>
 		<description>Plugin for Lua scripting capabilities. Provides control over all of Scintilla's features and options with a light-weight, fully-functional programming language.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/LuaScript</sourceUrl>
-		<latestUpdate>2018-01-04\n - Fixes editor.MarginLeft and editor.MarginRight\n - Add support for setting timers for scheduling custom events\n - Improve stability</latestUpdate>
+		<latestUpdate>2018-09-29\n - Added luawinfile module which supports file-system interactions. This can be accessed in LuaScript by using winfile\n- Overhauled the auto-completion to dynamically handle tables and their associated meta-tables.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/LuaScript/releases/download/v0.7.1/LuaScript_v0.7.1_x64.zip</download>
+				<download>https://github.com/dail8859/LuaScript/releases/download/v0.8/LuaScript_v0.8_x64.zip</download>
 				<copy from="LuaScript_64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
