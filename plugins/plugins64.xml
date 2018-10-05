@@ -197,8 +197,8 @@
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/converter/releases/download/v4.2.1/nppConvert.v4.2.1.x64.zip</download>
-				<copy from="NppConverter/NppConverter.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppConverter/*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
+				<copy from="NppConverter\NppConverter.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppConverter\*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
 			</x64>
 		</install>
 	</plugin>
@@ -511,8 +511,8 @@
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.x64.zip</download>
-				<copy from="mimeTools/mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="mimeTools/*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
+				<copy from="mimeTools\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="mimeTools\*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
 			</x64>
 		</install>
 	</plugin>
@@ -907,9 +907,9 @@
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/pork2sausage/releases/download/v2.1/pork2sausage.2.1.x64.zip</download>
-				<copy from="pork2sausage/Config/pork2Sausage.ini" to="$CONFIGDIR$\"/>
-				<copy from="pork2sausage/readmetxt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
-				<copy from="pork2sausage/pork2sausage.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="pork2sausage\Config/pork2Sausage.ini" to="$CONFIGDIR$\"/>
+				<copy from="pork2sausage\readmetxt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
+				<copy from="pork2sausage\pork2sausage.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -976,8 +976,8 @@
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/selectnlaunch/releases/download/v2.1/selectNLaunch.v2.1.x64.zip</download>
-				<copy from="SelectNLaunch/SelectNLaunch.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="SelectNLaunch/*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
+				<copy from="SelectNLaunch\SelectNLaunch.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="SelectNLaunch\*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
 			</x64>
 		</install>
 	</plugin>
