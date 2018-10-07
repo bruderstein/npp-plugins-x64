@@ -107,18 +107,18 @@
 		</remove>
 	</plugin>
 	<plugin name="BinHex">
-		<x64Version>2.0.0.0</x64Version>
+		<x64Version>2.0.0.1</x64Version>
 		<description>Binhex plugin is a plugin for Notepad++ that can be use for bin/hex string manipulations such as bin hex conversion, bit shifting, grouping etc., can support very long string manipulation\n\n- FORMAT : MSB --&gt; LSB\n- accepts prefix 0x/0b\n- select/highlight the target text then call the function through plugin menu/shortcut key assigned\n- target text will get manipulated in place</description>
 		<author>skycc86</author>
 		<homepage>https://github.com/skycc86/npp_binhex_plugin</homepage>
 		<sourceUrl>https://github.com/skycc86/npp_binhex_plugin</sourceUrl>
-		<latestUpdate>{2018-06-02] Version 2.0.0\n\n    compile for win32 and x64\n    added default shortcut key\n    added incremental search and move to other view toolbar icon\n    maintain 0x / 0b prefix</latestUpdate>
+		<latestUpdate>{2018-10-05] Version 2.0.0.1\n- remove default shortcut mapping that clash with npp default shortcut\n{2018-06-02] Version 2.0.0.0\n- compile for win32 and x64\n- added default shortcut key\n- added incremental search and move to other view toolbar icon\n- maintain 0x / 0b prefix</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/skycc86/npp_binhex_plugin/releases/download/v2.0.0.0/binhex_v2.0.0.0_x64.zip</download>
-				<copy from="binhex_v2.0.0.0_x64\binhex.dll" toFile="$PLUGINDIR$\" validate="true"/>
-				<copy from="binhex_v2.0.0.0_x64\license.txt" toFile="$PLUGINDIR$\doc\BinHex"/>
-				<copy from="binhex_v2.0.0.0_x64\readme.FIRST" toFile="$PLUGINDIR$\doc\BinHex"/>
+				<download>https://github.com/skycc86/npp_binhex_plugin/releases/download/v2.0.0.1/binhex_v2.0.0.1_x64.zip</download>
+				<copy from="binhex_v2.0.0.1_x64\binhex.dll" toFile="$PLUGINDIR$\" validate="true"/>
+				<copy from="binhex_v2.0.0.1_x64\license.txt" toFile="$PLUGINDIR$\doc\BinHex"/>
+				<copy from="binhex_v2.0.0.1_x64\readme.FIRST" toFile="$PLUGINDIR$\doc\BinHex"/>
 			</x64>
 		</install>
 		<remove>
