@@ -70,6 +70,25 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="AutoEolFormat">
+		<x64Version>1.0</x64Version>
+		<description>A plugin to automatically set a document's EOL (End of Line) format to your needs on loading, saving or renaming a document or activating its tab.</description>
+		<author>Andreas Heim</author>
+		<sourceUrl>https://github.com/dinkumoil/AutoEolFormat</sourceUrl>
+		<latestUpdate>[2018-10-09] Initial release.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/dinkumoil/AutoEolFormat/releases/download/v1.0/AutoEolFormat_v1.0_x64.zip</download>
+				<copy from="Win64\AutoEolFormat.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="AutoEolFormat.txt" to="$PLUGINDIR$\doc"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\AutoEolFormat.txt"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="AutoSave">
 		<x64Version>1.6.0</x64Version>
 		<aliases>
@@ -258,6 +277,25 @@
 		<remove>
 			<x64>
 				<delete file="$PLUGINDIR$\CustomizeToolbar.dll"/>
+			</x64>
+		</remove>
+	</plugin>
+	<plugin name="CustomLineNumbers">
+		<x64Version>1.1.5</x64Version>
+		<description>CustomLineNumbers: A plugin to display line numbers in a custom format.</description>
+		<author>Andreas Heim</author>
+		<sourceUrl>https://github.com/dinkumoil/CustomLineNumbers</sourceUrl>
+		<latestUpdate>[2018-10-04] Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/dinkumoil/CustomLineNumbers/releases/download/v1.1.5/CustomLineNumbers_v1.1.5_x64.zip</download>
+				<copy from="Win64\CustomLineNumbers.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="CustomLineNumbers.txt" to="$PLUGINDIR$\doc"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\CustomLineNumbers.txt"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -504,7 +542,7 @@
 	<plugin name="MIME Tools">
 		<x64Version>2.1</x64Version>
 		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
-		<author>Don HO</author>
+		<author>Don Ho</author>
 		<homepage>http://npp-plugins.tuxfamily.org/plugins</homepage>
 		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
 		<latestUpdate>6 Sep 2016 Remove the dependance of other dll</latestUpdate>

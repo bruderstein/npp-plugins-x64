@@ -107,6 +107,25 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="AutoEolFormat">
+		<x64Version>1.0</x64Version>
+		<description>A plugin to automatically set a document's EOL (End of Line) format to your needs on loading, saving or renaming a document or activating its tab.</description>
+		<author>Andreas Heim</author>
+		<sourceUrl>https://github.com/dinkumoil/AutoEolFormat</sourceUrl>
+		<latestUpdate>[2018-10-09] Initial release.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/dinkumoil/AutoEolFormat/releases/download/v1.0/AutoEolFormat_v1.0_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="Win32\AutoEolFormat.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="AutoEolFormat.txt" to="$PLUGINDIR$\doc"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\AutoEolFormat.txt"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="Automation Scripts">
 		<x64Version>1.0.4.0</x64Version>
 		<aliases>
@@ -425,8 +444,8 @@
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/converter/releases/download/v4.2.1/nppConvert.v4.2.1.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="NppConverter/NppConverter.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppConverter/*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
+				<copy from="NppConverter\NppConverter.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="NppConverter\*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
 			</x64>
 		</install>
 	</plugin>
@@ -489,6 +508,25 @@
 				<copy from="CustomizeToolbar.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
+	</plugin>
+	<plugin name="CustomLineNumbers">
+		<x64Version>1.1.5</x64Version>
+		<description>CustomLineNumbers: A plugin to display line numbers in a custom format.</description>
+		<author>Andreas Heim</author>
+		<sourceUrl>https://github.com/dinkumoil/CustomLineNumbers</sourceUrl>
+		<latestUpdate>[2018-10-04] Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/dinkumoil/CustomLineNumbers/releases/download/v1.1.5/CustomLineNumbers_v1.1.5_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="Win32\CustomLineNumbers.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="CustomLineNumbers.txt" to="$PLUGINDIR$\doc"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\doc\CustomLineNumbers.txt"/>
+			</x64>
+		</remove>
 	</plugin>
 	<plugin name="DBGp">
 		<description>This is a php debugger (XDebug) which talks DBGP protocol. Use this plugin to transform your Notepad++ to a php IDE.</description>
@@ -1241,14 +1279,14 @@
 	<plugin name="MIME Tools">
 		<x64Version>2.1</x64Version>
 		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
-		<author>Don HO</author>
+		<author>Don Ho</author>
 		<homepage>http://npp-plugins.tuxfamily.org/plugins</homepage>
 		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
 		<latestUpdate>6 Sep 2016 Remove the dependance of other dll</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="mimeTools/mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="mimeTools\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1902,9 +1940,9 @@
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/pork2sausage/releases/download/v2.1/pork2sausage.2.1.bin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="pork2sausage/Config/pork2Sausage.ini" to="$CONFIGDIR$\"/>
-				<copy from="pork2sausage/readmetxt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
-				<copy from="pork2sausage/pork2sausage.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="pork2sausage\Config/pork2Sausage.ini" to="$CONFIGDIR$\"/>
+				<copy from="pork2sausage\readmetxt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
+				<copy from="pork2sausage\pork2sausage.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -2207,8 +2245,8 @@
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/selectnlaunch/releases/download/v2.1/selectNLaunch.v2.1.bin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="SelectNLaunch/SelectNLaunch.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="SelectNLaunch/*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
+				<copy from="SelectNLaunch\SelectNLaunch.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="SelectNLaunch\*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
 			</x64>
 		</install>
 	</plugin>

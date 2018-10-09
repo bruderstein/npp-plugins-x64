@@ -258,5 +258,11 @@
     },
     "Task List": {
         "8d646247876ddd466c050e7c95ce72c1": "NppTaskList.dll"
+    },
+    "AutoEolFormat": {
+        "a6d827e6b07f88928188e8d728ad425e": "AutoEolFormat.dll"
+    },
+    "CustomLineNumbers": {
+        "3483aee6ef7c85d710e4ab8e39929634": "CustomLineNumbers.dll"
     }
 }
