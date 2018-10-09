@@ -2029,20 +2029,20 @@
 		</install>
 	</plugin>
 	<plugin name="Python Script">
-		<x64Version>1.2.0</x64Version>
+		<x64Version>1.3.0</x64Version>
 		<description>Scripting plugin for Notepad++, documentation included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
 		<author>Dave Brotherstone + Jocelyn Legault</author>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
-		<latestUpdate>2018-06-27\n1.2 version with:\n- make menu command Show Console toggling #66\n- tcl\tk from python 2.7.15 #73\n- [Enhancement] "Run Previous Script" menu item -&gt; hold Ctrl to EDIT script source file #77\n- [Question] Is "To Input" command useful? #80\n- Adding scripts/Samples/CTags Based Autocompletion.py #82 (thanks @Lucas-C)\n- [Suggestion] Display Console on Error #76\n- notepad.prompt() input control won't accept input #81\n- [Enhancement] Separate outputs with an empty line #68\n- Extend help with editor.flash #83\n- used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
+		<latestUpdate>[2018-10-09]\n1.3 version with:\n- Context-Help does not include LANGTYPE enum #107\n- "See Scintilla documentation for ..." broken in the documentation #96\n- Default "print" to output to console #78 \n- notepad.getFiles() should only return REAL tab file data #98\n- Buttons with relative paths #15\n- [Enhancement] Add "Input History" navigation buttons to Console #69\n- several documentation updates #94\n- Coloring in console output window does not work reliably #95\n- Update MENUCOMMAND list #91\n- Set console layout to LTR even if NPP layout is RTL #58\n- &gt;&gt;&gt; in Console changes to - - - #88\n- store/read user scripts relative to plugins config directory #99\n- used plain python 2.7.15, without the modifications from fork https://github.com/bruderstein/python, reintroducing dependency to MSVCR90.dll</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.2.0/PythonScript_Full_1.2.0.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.2.0/PythonScript_ExtraLibs_1.2.0.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.3.0/PythonScript_Full_1.3.0.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/bruderstein/PythonScript/releases/download/v1.3.0/PythonScript_ExtraLibs_1.3.0.0.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="python27.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="plugins\PythonScript\*.*" to="$PLUGINDIR$\PythonScript" recursive="true"/>
-				<copy from="plugins\doc\PythonScript\*.*" to="$PLUGINDIR$\doc\PythonScript"/>
+				<copy from="plugins\doc\PythonScript\*.*" to="$PLUGINDIR$\doc\PythonScript" recursive="true"/>
 			</x64>
 		</install>
 		<remove>
