@@ -760,6 +760,19 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="NppFavorites">
+		<x64Version>1.0.0.1</x64Version>
+		<description>Favorites plugin for Notepad++\n\nNotepad++ is a GREAT text editor for programmers, but it does not come with favorites...\nThis project is a simple solution to that problem.</description>
+		<author>Helder Sepulveda</author>
+		<sourceUrl>https://github.com/heldersepu/nppfavorites</sourceUrl>
+		<latestUpdate>[2018-10-16]\n- initial release</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/heldersepu/nppfavorites/releases/download/1.0.0.1.21/NppFavorites_1.0.0.1.21_x64.zip</download>
+				<copy from="NppFavorites.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="NppFTP">
 		<x64Version>0.27.5</x64Version>
 		<aliases>
