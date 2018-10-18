@@ -511,7 +511,7 @@
 	</plugin>
 	<plugin name="CustomLineNumbers">
 		<x64Version>1.1.5</x64Version>
-		<description>CustomLineNumbers: A plugin to display line numbers in a custom format.</description>
+		<description>CustomLineNumbers: A plugin to display line numbers as hex numbers. You can also configure the starting line number.</description>
 		<author>Andreas Heim</author>
 		<sourceUrl>https://github.com/dinkumoil/CustomLineNumbers</sourceUrl>
 		<latestUpdate>[2018-10-04] Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
@@ -1042,7 +1042,7 @@
 		</install>
 	</plugin>
 	<plugin name="JSON Viewer">
-		<x64Version>1.31</x64Version>
+		<x64Version>1.32</x64Version>
 		<aliases>
 			<alias name="JSONViewer"/>
 		</aliases>
@@ -1050,10 +1050,10 @@
 		<author>Kapil Ratnani</author>
 		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
 		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
-		<latestUpdate>1. Using Rapidjson as JSON parser. Should improve performance for large JSON\n2. Read tab settings from notepad++ settings</latestUpdate>
+		<latestUpdate>[2018-10-14] Fixes #39 Format JSON changes numeric values</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.31/NPPJSONViewerWin32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.32/NPPJSONViewerWin32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NPPJSONViewer.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -2722,9 +2722,9 @@
 	</plugin>
 	<plugin name="ToolBucket">
 		<x64Version>1.10</x64Version>
-		<description>Requires .NET 2.0\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>
+		<description>Requires .NET 3.5\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>
 		<author>Paul Heasley</author>
-		<homepage>http://www.phdesign.com.au/programming/toolbucket-multi-line-search-plugin-for-notepad/</homepage>
+		<homepage>http://phdesign.com.au/npptoolbucket/</homepage>
 		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
 		<latestUpdate>18 Feb 2018  \n- Add menu item 'Clear find all' to remove all bookmarks\n- Add support for Find All / Count to work with 'All Open Documents</latestUpdate>
 		<install>
