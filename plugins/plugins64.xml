@@ -1075,13 +1075,13 @@
 		</aliases>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
-		<homepage>http://www.sqlinform.com</homepage>
+		<homepage>https://www.sqlinform.com</homepage>
 		<latestUpdate>2018-10-19\nImproved Screen Resolutions\nHighlight added White Spaces\nAdded new formatting Options\nRedesigned GUI\nAdded Translation for Spanish\nAdded Translation for German</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>http://www.sqlinform.com/npp/SQLinFormNpp64_5.3.19.zip</download>
+				<download>https://www.sqlinform.com/npp/SQLinFormNpp64_5.3.19.zip</download>
 				<copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1166,12 +1166,12 @@
 		<x64Version>1.10</x64Version>
 		<description>Requires .NET 3.5\nMulti-line search and replace dialog.\nChange indentation dialog.\nGenerate GUID\nGenerate Lorem Ipsum\nCompute MD5 Hash\nCompute SHA1 Hash\nBase 64 encode\nBase 64 decode</description>
 		<author>Paul Heasley</author>
-		<homepage>http://phdesign.com.au/npptoolbucket/</homepage>
+		<homepage>https://phdesign.com.au/npptoolbucket/</homepage>
 		<sourceUrl>https://github.com/phdesign/NppToolBucket/</sourceUrl>
 		<latestUpdate>18 Feb 2018  \n- Add menu item 'Clear find all' to remove all bookmarks\n- Add support for Find All / Count to work with 'All Open Documents</latestUpdate>
 		<install>
 			<x64>
-				<download>http://phdesign.com.au/assets/files/NppToolBucket-1.10-x64.zip</download>
+				<download>https://phdesign.com.au/assets/files/NppToolBucket-1.10-x64.zip</download>
 				<copy from="NppToolBucket.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
