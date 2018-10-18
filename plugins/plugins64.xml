@@ -282,7 +282,7 @@
 	</plugin>
 	<plugin name="CustomLineNumbers">
 		<x64Version>1.1.5</x64Version>
-		<description>CustomLineNumbers: A plugin to display line numbers in a custom format.</description>
+		<description>CustomLineNumbers: A plugin to display line numbers as hex numbers. You can also configure the starting line number.</description>
 		<author>Andreas Heim</author>
 		<sourceUrl>https://github.com/dinkumoil/CustomLineNumbers</sourceUrl>
 		<latestUpdate>[2018-10-04] Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
