@@ -3,19 +3,19 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="plugins_template.xsd">
 	<plugin name="3P - Progress Programmers Pal">
-		<x64Version>1.8.1</x64Version>
+		<x64Version>1.8.2</x64Version>
 		<aliases>
 			<alias name="3P"/>
 		</aliases>
-		<description>[Requires .net framework 4.6.2]\n\n3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- the ability to run/compile and even PROLINT your source file with an in-line visualization of errors\n- more than 50 options to better suit your needs\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
+		<description>[Requires .net framework 4.6.1]\n\n3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- the ability to run/compile and even PROLINT your source file with an in-line visualization of errors\n- more than 50 options to better suit your needs\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
 		<author>Julien Caillon</author>
-		<homepage>http://jcaillon.github.io/3P/</homepage>
+		<homepage>https://jcaillon.github.io/3P/</homepage>
 		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
-		<latestUpdate>More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.8.1</latestUpdate>
+		<latestUpdate>[2018-07-01]More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.8.2\n\nImprovements :\n- Syntax highlighting!\n- New menu option to read the current as a progress (will apply syntax highlighting and trigger progress autocompletion)\n\nFixed issues :\n- #178 : Creation of NppBackup folder near the file saved\n- Now try to show the version log to the user until it has actually been seen\n- #144 : Syntax definition error on Function Foward sentences</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/jcaillon/3P/releases/download/v1.8.1/3P.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/jcaillon/3P/releases/download/v1.8.2/3P.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="3P.dll" to="$PLUGINDIR$\" validate="true"/>
 				<run file="NetFrameworkChecker.exe" arguments="-ShowOnlyIfNotInstalled" outsideNpp="1"/>
 			</x64>
@@ -30,8 +30,8 @@
 		<x64Version>1.1.7.3</x64Version>
 		<description>This plugin allows you to control Notepad++ via ActiveX.\nYou can use ActiveX with many scripting languages (VBScript, JScript, PHP, ...) and other languages (C++, C+, VB.NET, Delphi, ...).\nSo you are not bound to a single language.</description>
 		<author>Bananen-Joe</author>
-		<homepage>http://sourceforge.net/projects/nppactivexplugin/</homepage>
-		<sourceUrl>http://sourceforge.net/projects/nppactivexplugin/</sourceUrl>
+		<homepage>https://sourceforge.net/projects/nppactivexplugin/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/nppactivexplugin/</sourceUrl>
 		<latestUpdate>Second version released on plugin manager.</latestUpdate>
 		<minVersion>6.6.8</minVersion>
 		<install>
@@ -53,7 +53,7 @@
 		<x64Version>1.11.37</x64Version>
 		<description>AnalysePlugin will help you to search for more than one search pattern at a time.  Great for analysing log files.</description>
 		<author>Mattes H.</author>
-		<homepage>http://analyseplugin.sourceforge.net/</homepage>
+		<homepage>https://analyseplugin.sourceforge.net/</homepage>
 		<sourceUrl>https://sourceforge.net/p/analyseplugin/code/</sourceUrl>
 		<latestUpdate>Changes since 1.11\n - bugfix positioning ColorPopup on left side multi screen (negative coordinates)\n - bugfix scrambling with "Toggle this" context menu option\n - bugfix small correction in xsd to reflect current status\n - bugfix assertion when Options dialog is opened before findDlg docking window\n - added version information in Windows properties dialog\n - synced with source from Notepad++ v7.4.1\n - added package for both systems 32/64 in one \nChanges since 1.11-preview\n - added 64bit support and package for both systems 32/64 in one \nFurther change log see changes.txt</latestUpdate>
 		<stability>Good</stability>
@@ -155,7 +155,7 @@
 		</aliases>
 		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
 		<author>Franco Stellari</author>
-		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<homepage>https://sites.google.com/site/fstellari/nppplugins</homepage>
 		<latestUpdate>2017-02-08	Added the capability of creating a time stamped copy of current file content.</latestUpdate>
 		<stability>Good</stability>
 		<install>
