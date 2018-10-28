@@ -1,10 +1,10 @@
 {
     "Plugin Manager": {
-        "6ef270cedc36817fbf982639dc07cd88": "PluginManager.dll",
-        "53f5c338caabe7a166fb1c068b5a4f15": "gpup.exe"
+        "a5c204b0555b86da380d0d36c81d5a87": "PluginManager.dll",
+        "8500ddd5a33d9450a5fe907352064b8b": "gpup.exe"
     },
     "NppFTP": {
-        "99213df8640ba4ac3d82938af05d43dc": "NppFTP.dll"
+        "75bbe9f9867493d7b042539028111aef": "NppFTP.dll"
     },
     "MIME Tools": {
         "586a5399489a033118737809c7de9e0d": "mimeTools.dll"
@@ -46,7 +46,7 @@
         "d33e6b5cf31e8a73e03d519997d61fc8": "ElasticTabstops_64.dll"
     },
     "LuaScript": {
-        "438af2ef5317d5eb1687e7739ebce853": "LuaScript_64.dll"
+        "c9c5d032d3d27159f103cdd60e804fa4": "LuaScript_64.dll"
     },
     "CsvQuery": {
         "632c155503220e8f850fc2c5008d09bb": "CsvQuery.dll"
@@ -97,11 +97,11 @@
         "ec06c69556671ebfaabc81ba7994b14c": "JSMinNPP.dll"
     },
     "3P - Progress Programmers Pal": {
-        "94ffc9d97d2c1437a66a5e9312d22d3a": "3P.dll",
-        "fa4c424616a272feffeaf14791bea7a4": "NetFrameworkChecker.exe"
+        "12f57033bdf27784ae1c52fc1bfc1ff3": "3P.dll",
+        "e3005948ecaa36e7bca8488117516e74": "NetFrameworkChecker.exe"
     },
     "SQLinForm SQL Formatter": {
-        "84381ababe4b493e803faec09a88eb8c": "SQLinFormNpp64.dll"
+        "c3a572a29400e4033b43caf7a22e40f8": "SQLinFormNpp64.dll"
     },
     "DSpellCheck": {
         "309a603eda3c38060a82e58f578656a6": "DSpellCheck.dll"
@@ -123,7 +123,7 @@
         "f9f54560b72c0fa1846442caf9715909": "NppExec.dll"
     },
     "JSON Viewer": {
-        "ff13949ee76c28522a15007a2c9d46b1": "NPPJSONViewer.dll"
+        "e6ea30a2e52173a41d69fd0942a1a089": "NPPJSONViewer.dll"
     },
     "HTML Tag": {
         "c085ca0047396c6f852c862d8c95fe13": "HTMLTag.dll"
@@ -219,7 +219,7 @@
         "f3c4abd61baaae5168514d99bf7b5587": "NppDocShare.dll"
     },
     "BetterMultiSelection": {
-        "1695c432af66c8469ca394b9beb4c17a": "BetterMultiSelection_64.dll"
+        "2648f5a8c043cb2f76a8aab908a09538": "BetterMultiSelection_64.dll"
     },
     "SurroundSelection": {
         "59339140626ff1a0c36f7e3ac5e84ad3": "SurroundSelection_64.dll"
@@ -250,13 +250,22 @@
         "8041f3659e3310ba942785e901501b30": "NppQrCode64.dll"
     },
     "Python Script": {
-        "3e3e27eaa0cd6490d68ae3c25aef0504": "PythonScript.dll",
+        "3745479289ea99adde1d5974a6f8036d": "PythonScript.dll",
         "1f137d7a73ef6c60bf80b12717309250": "python27.dll"
     },
     "BinHex": {
-        "f030feb1c5e1c0e71b1b167c3244df56": "binhex.dll"
+        "392b7521d1ef9e3d23760a81ae9a65e1": "binhex.dll"
     },
     "Task List": {
         "8d646247876ddd466c050e7c95ce72c1": "NppTaskList.dll"
+    },
+    "AutoEolFormat": {
+        "a6d827e6b07f88928188e8d728ad425e": "AutoEolFormat.dll"
+    },
+    "CustomLineNumbers": {
+        "3483aee6ef7c85d710e4ab8e39929634": "CustomLineNumbers.dll"
+    },
+    "NppFavorites": {
+        "99dc71aadd9bd06d82df32c80d63f15f": "NppFavorites.dll"
     }
 }
