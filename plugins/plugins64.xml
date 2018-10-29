@@ -230,7 +230,7 @@
 		<author>Oleg Shilo</author>
 		<homepage>https://github.com/oleg-shilo/cs-script.npp/blob/master/README.md</homepage>
 		<sourceUrl>https://github.com/oleg-shilo/cs-script.npp</sourceUrl>
-		<latestUpdate>2018-10-25 Release v1.7.20\n-Updated deployment algorithm to handle breaking changes in Notepad++ v7.5.9 hosting model.</latestUpdate>
+		<latestUpdate>2018-10-25 Release v1.7.20\n- Updated deployment algorithm to handle breaking changes in Notepad++ v7.5.9 hosting model.\n\n2018-09-16 Release v1.7.19\n- Added support for custom script (F5) launcher. The launcher path is to be set from the settings dialog\n\n2018-09-10 Release v1.7.18\n- Fixed problem with settings file truncating long values\n- Removed context menu from the 'References' node in the project tree.\n- Added aborting requested formatting operation if it is already in progress\n- Updated CS-Script engine (v3.28.8.0)\n  - Implemented seamless debugging of all auto-classes. There is no longer need to open decorated auto-classes code during debugging.\n  - added support for freestyle auto-classes:\n\n//css_ac freestyle\nusing System;\nusing System.Diagnostics;\n\nConsole.WriteLine("Hello World!");\nDebug.WriteLine("Hello World!");</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>6.4.5</minVersion>
 		<install>
@@ -543,7 +543,7 @@
 		<x64Version>2.1</x64Version>
 		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
 		<author>Don Ho</author>
-		<homepage>http://npp-plugins.tuxfamily.org/plugins</homepage>
+		<homepage>https://github.com/npp-plugins/mimetools</homepage>
 		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
 		<latestUpdate>6 Sep 2016 Remove the dependance of other dll</latestUpdate>
 		<install>
