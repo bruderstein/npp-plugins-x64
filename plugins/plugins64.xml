@@ -74,11 +74,12 @@
 		<x64Version>1.0</x64Version>
 		<description>A plugin to automatically set a document's EOL (End of Line) format to your needs on loading, saving or renaming a document or activating its tab.</description>
 		<author>Andreas Heim</author>
-		<sourceUrl>https://github.com/dinkumoil/AutoEolFormat</sourceUrl>
-		<latestUpdate>[2018-10-09] Initial release.</latestUpdate>
+		<homepage>https://sourceforge.net/projects/autoeolformat/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/autoeolformat/files/v1.0/src/</sourceUrl>
+		<latestUpdate>Initial release</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/dinkumoil/AutoEolFormat/releases/download/v1.0/AutoEolFormat_v1.0_x64.zip</download>
+				<download>https://sourceforge.net/projects/autoeolformat/files/v1.0/plugin/x64/AutoEolFormat_v1.0_x64.zip</download>
 				<copy from="Win64\AutoEolFormat.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="AutoEolFormat.txt" to="$PLUGINDIR$\doc"/>
 			</x64>
@@ -284,11 +285,12 @@
 		<x64Version>1.1.5</x64Version>
 		<description>CustomLineNumbers: A plugin to display line numbers as hex numbers. You can also configure the starting line number.</description>
 		<author>Andreas Heim</author>
-		<sourceUrl>https://github.com/dinkumoil/CustomLineNumbers</sourceUrl>
-		<latestUpdate>[2018-10-04] Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
+		<homepage>https://sourceforge.net/projects/customlinenumbers/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/customlinenumbers/files/v1.1.5/src/</sourceUrl>
+		<latestUpdate>Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/dinkumoil/CustomLineNumbers/releases/download/v1.1.5/CustomLineNumbers_v1.1.5_x64.zip</download>
+				<download>https://sourceforge.net/projects/customlinenumbers/files/v1.1.5/plugin/x64/CustomLineNumbers_v1.1.5_x64.zip</download>
 				<copy from="Win64\CustomLineNumbers.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="CustomLineNumbers.txt" to="$PLUGINDIR$\doc"/>
 			</x64>
