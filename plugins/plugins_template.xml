@@ -111,11 +111,12 @@
 		<x64Version>1.0</x64Version>
 		<description>A plugin to automatically set a document's EOL (End of Line) format to your needs on loading, saving or renaming a document or activating its tab.</description>
 		<author>Andreas Heim</author>
-		<sourceUrl>https://github.com/dinkumoil/AutoEolFormat</sourceUrl>
-		<latestUpdate>[2018-10-09] Initial release.</latestUpdate>
+		<homepage>https://sourceforge.net/projects/autoeolformat/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/autoeolformat/files/v1.0/src/</sourceUrl>
+		<latestUpdate>Initial release</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/dinkumoil/AutoEolFormat/releases/download/v1.0/AutoEolFormat_v1.0_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/autoeolformat/files/v1.0/plugin/x86/AutoEolFormat_v1.0_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="Win32\AutoEolFormat.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="AutoEolFormat.txt" to="$PLUGINDIR$\doc"/>
 			</x64>
@@ -513,11 +514,12 @@
 		<x64Version>1.1.5</x64Version>
 		<description>CustomLineNumbers: A plugin to display line numbers as hex numbers. You can also configure the starting line number.</description>
 		<author>Andreas Heim</author>
-		<sourceUrl>https://github.com/dinkumoil/CustomLineNumbers</sourceUrl>
-		<latestUpdate>[2018-10-04] Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
+		<homepage>https://sourceforge.net/projects/customlinenumbers/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/customlinenumbers/files/v1.1.5/src/</sourceUrl>
+		<latestUpdate>Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/dinkumoil/CustomLineNumbers/releases/download/v1.1.5/CustomLineNumbers_v1.1.5_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/customlinenumbers/files/v1.1.5/plugin/x86/CustomLineNumbers_v1.1.5_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="Win32\CustomLineNumbers.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="CustomLineNumbers.txt" to="$PLUGINDIR$\doc"/>
 			</x64>
@@ -1064,19 +1066,19 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.22.0</x64Version>
+		<x64Version>1.18.10.3</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
-		<description>A javascript plugin for Notepad++.\n * Douglas Crockford's JSMin algorithm to minimize javascript code.\n * My own algorithm to format javascript code.\n * A JSON data viewer. This JSON data viewer can handle &gt;10MB JSON file easily.\n * Support 64bit Notepad++ (from version 1.20.0).\nReally helpful to javascript coder on Notepad++ and really easy to use it.\nMade in China.</description>
+		<description>A javascript plugin for Notepad++.\n * Douglas Crockford's JSMin algorithm to minimize javascript code.\n * My own algorithm to format javascript code.\n * A JSON data viewer. This JSON data viewer can handle &gt;10MB JSON file easily.\n * Support 64bit Notepad++ (from version 1.20.0, ".64.zip" package).\nReally helpful to javascript coder on Notepad++ and really easy to use it.\nMade in China.</description>
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>[2018-04-15]\nAdd JSON Sort function.\nFix blocking Notepad++ startup in some environment.</latestUpdate>
+		<latestUpdate>[2018-10-30]\n[Common] Fix "export default" format.\n[Common] Fix '/' in [] within regular expression format.\n[Common] Not to format Unix Shebang at begining of a script.\n[Common] Change version naming to MAJOR.YEAR-MONTH.BUILD.\n[NPP] Fix json parser remove escaped ' or " at the end of string.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.22.0.uni.32.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.1810.3.uni.32.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
