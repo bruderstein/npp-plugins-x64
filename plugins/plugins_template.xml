@@ -113,7 +113,7 @@
 		<author>Andreas Heim</author>
 		<homepage>https://sourceforge.net/projects/autoeolformat/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/autoeolformat/files/v1.0/src/</sourceUrl>
-		<latestUpdate>Initial release</latestUpdate>
+		<latestUpdate>[2018-10-09] Initial release.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://sourceforge.net/projects/autoeolformat/files/v1.0/plugin/x86/AutoEolFormat_v1.0_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
@@ -440,13 +440,14 @@
 		<x64Version>4.2.1</x64Version>
 		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
 		<author>Don Ho</author>
+		<homepage>https://github.com/npp-plugins/converter</homepage>
 		<sourceUrl>https://github.com/npp-plugins/converter</sourceUrl>
-		<latestUpdate>Make it compatible with old os (XP)</latestUpdate>
+		<latestUpdate>[2017-05-13] Make it compatible with old os (XP)</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/converter/releases/download/v4.2.1/nppConvert.v4.2.1.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="NppConverter\NppConverter.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppConverter\*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
+				<copy from="NppConverter.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="*.txt" to="$PLUGINDIR$\doc\NppConverter"/>
 			</x64>
 		</install>
 	</plugin>
@@ -516,7 +517,7 @@
 		<author>Andreas Heim</author>
 		<homepage>https://sourceforge.net/projects/customlinenumbers/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/customlinenumbers/files/v1.1.5/src/</sourceUrl>
-		<latestUpdate>Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
+		<latestUpdate>[2018-10-04]  Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://sourceforge.net/projects/customlinenumbers/files/v1.1.5/plugin/x86/CustomLineNumbers_v1.1.5_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
@@ -1284,11 +1285,11 @@
 		<author>Don Ho</author>
 		<homepage>https://github.com/npp-plugins/mimetools</homepage>
 		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
-		<latestUpdate>6 Sep 2016 Remove the dependance of other dll</latestUpdate>
+		<latestUpdate>[2016-09-06] Remove the dependence of other dll</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="mimeTools\mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1950,14 +1951,15 @@
 		<x64Version>2.1</x64Version>
 		<description>Transforms selected text to through a transformer (a console program which takes inputs then generates output).  Up to 20 transformers can be defined</description>
 		<author>Don Ho</author>
+		<homepage>https://github.com/npp-plugins/pork2sausage</homepage>
 		<sourceUrl>https://github.com/npp-plugins/pork2sausage</sourceUrl>
-		<latestUpdate>16 Sep 2016 Remove the dependecy issue</latestUpdate>
+		<latestUpdate>[2016-09-16] Remove the dependency issue</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/pork2sausage/releases/download/v2.1/pork2sausage.2.1.bin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="pork2sausage\Config/pork2Sausage.ini" to="$CONFIGDIR$\"/>
-				<copy from="pork2sausage\readmetxt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
-				<copy from="pork2sausage\pork2sausage.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="Config/pork2Sausage.ini" to="$CONFIGDIR$\"/>
+				<copy from="readmetxt" to="$PLUGINDIR$\doc\Pork2Sausage"/>
+				<copy from="pork2sausage.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -2247,13 +2249,14 @@
 		<x64Version>2.1</x64Version>
 		<description>This plugin gets your selected text, saves it as file with the extension you customize in the system temporary directory, then call system to open it with the extension associated program.</description>
 		<author>Don Ho</author>
+		<homepage>https://github.com/npp-plugins/selectnlaunch</homepage>
 		<sourceUrl>https://github.com/npp-plugins/selectnlaunch</sourceUrl>
-		<latestUpdate>16 Sep 2016 Remove dependency of other dll</latestUpdate>
+		<latestUpdate>[2016-09-16] Remove dependency of other dll</latestUpdate>
 		<install>
 			<x64>
 				<download>https://github.com/npp-plugins/selectnlaunch/releases/download/v2.1/selectNLaunch.v2.1.bin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="SelectNLaunch\SelectNLaunch.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="SelectNLaunch\*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
+				<copy from="SelectNLaunch.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="*.txt" to="$PLUGINDIR$\doc\SelectNLaunch"/>
 			</x64>
 		</install>
 	</plugin>
