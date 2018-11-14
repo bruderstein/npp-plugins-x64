@@ -322,16 +322,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.7</x64Version>
+		<x64Version>1.4.8</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-10-30\n* Remove hotkeys enabled by default because they collide with useful actions in some localizations (#150). Please configure them yourself through Settings-&gt;Shortcut Mapper if you need them.\n* Fix exception triggered by horizontal scrolling when some lines are collapsed (#151)\n* Separate Aspell Options to different dialog. Add option to configure personal (additional) dictionaries directory. (#152)\n* Add third option to split words: by non-alpha/numeric characters from ANSI (current non-unicode locale in windows system) + all non ANSI characters with possible exclusions. (#149)\n* Add option to remove all misspelled words to Additional Actions. (#147)\n* Correct name for HIL_PH language abbreviation. (#145)</latestUpdate>
+		<latestUpdate>2018-11-14\n* Fix crash when spell-checking multiple languages with Aspell.\n</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.7/DSpellCheck_x64.zip</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.8/DSpellCheck_x64.zip</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
