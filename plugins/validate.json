@@ -24,11 +24,11 @@
         "87072452e2ce8c13b5ebd551630705a6": "AutoSave.dll"
     },
     "NppGTags": {
-        "039cfa29a082c5726edd1db24dd3d472": "NppGTags.dll",
+        "6a657f9d427c0a266c2284b794260f3a": "NppGTags.dll",
         "7c54e1e0bfe67c84d2915687e38975b1": "ctags.exe",
-        "e223f7c5e173f8961dd04b08bff71c2a": "global.exe",
+        "16d825049278c9792ea7d21b593254e0": "global.exe",
         "5a511fe07c02daf1dff6bcdcb6d95c62": "gtags.conf",
-        "9c5ad8243c6a37fb4ba4ff9249cff620": "gtags.exe",
+        "8deff1fc60bd8d2ba698ea6254afac0f": "gtags.exe",
         "8a3bccf0468a339bc17d9d4ba8b532e2": "pygments-parser.dll",
         "c837f0a3a00b855134b123fdfef98be0": "pygments_parser.py",
         "c70c9ffd2ab27f45465061f99c126ce0": "universal-ctags.dll"
@@ -97,7 +97,7 @@
         "96f59c0cd99093f45d76a0c828fedc14": "JSMinNPP.dll"
     },
     "3P - Progress Programmers Pal": {
-        "12f57033bdf27784ae1c52fc1bfc1ff3": "3P.dll",
+        "667fd4b3f3ceb05d6ebbaca7cc06539f": "3P.dll",
         "e3005948ecaa36e7bca8488117516e74": "NetFrameworkChecker.exe"
     },
     "SQLinForm SQL Formatter": {

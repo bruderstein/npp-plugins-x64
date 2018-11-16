@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
 	<plugin name="3P - Progress Programmers Pal">
-		<x64Version>1.8.2</x64Version>
+		<x64Version>1.8.3</x64Version>
 		<aliases>
 			<alias name="3P"/>
 		</aliases>
@@ -9,11 +9,11 @@
 		<author>Julien Caillon</author>
 		<homepage>https://jcaillon.github.io/3P/</homepage>
 		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
-		<latestUpdate>[2018-07-01]More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.8.2\n\nImprovements :\n- Syntax highlighting!\n- New menu option to read the current as a progress (will apply syntax highlighting and trigger progress autocompletion)\n\nFixed issues :\n- #178 : Creation of NppBackup folder near the file saved\n- Now try to show the version log to the user until it has actually been seen\n- #144 : Syntax definition error on Function Foward sentences</latestUpdate>
+		<latestUpdate>[2018-11-11]More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.8.3\n\nQuick release to fix small issues reported recently.\nImprovements:\n\n    #238: added the possibility to use &lt; and &gt; in regexes without them being interpreted as variables by doubling them in the deployment rules configuration. This allows to have string exclusion in regexes like: :^.*(?&lt;&lt;!srv)\.(p|cls)$\n\nFixed issues:\n\n    #237: typo on disclaimer\n    #235: the username/password configured for the http proxy were not sent correctly to the proxy\n    #236: you can now use an external directory for your datadigger installation (options &gt; Misc. &gt; External tools)</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/jcaillon/3P/releases/download/v1.8.2/3P_x64.zip</download>
+				<download>https://github.com/jcaillon/3P/releases/download/v1.8.3/3P_x64.zip</download>
 				<copy from="3P.dll" to="$PLUGINDIR$\" validate="true"/>
 				<run file="NetFrameworkChecker.exe" arguments="-ShowOnlyIfNotInstalled" outsideNpp="0"/>
 			</x64>
@@ -288,7 +288,7 @@
 		<author>Andreas Heim</author>
 		<homepage>https://sourceforge.net/projects/customlinenumbers/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/customlinenumbers/files/v1.1.5/src/</sourceUrl>
-		<latestUpdate>[2018-10-04] Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
+		<latestUpdate>[2018-10-04]  Fixed: Still problems with missing line numbers when changing height of Notepad++ window.</latestUpdate>
 		<install>
 			<x64>
 				<download>https://sourceforge.net/projects/customlinenumbers/files/v1.1.5/plugin/x64/CustomLineNumbers_v1.1.5_x64.zip</download>
@@ -327,7 +327,7 @@
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-11-14\n* Fix crash when spell-checking multiple languages with Aspell.\n</latestUpdate>
+		<latestUpdate>2018-11-14\n* Fix crash when spell-checking multiple languages with Aspell.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -795,15 +795,15 @@
 		</install>
 	</plugin>
 	<plugin name="NppGTags">
-		<x64Version>4.4.0</x64Version>
+		<x64Version>4.4.1</x64Version>
 		<description>NppGTags plugin is a front-end to GTags (GNU Global source code tagging system). It allows easy code navigation by indexing the project sources. Supports finding symbol definitions and references, finding project paths, string literals, regular expressions (GREP functionality) and adds symbol auto-completion. Supports unlimited simultaneous searches. GTags built-in code parser supports C, C++, Yacc, Java, PHP4 and Assembly. Other languages are supported through Pygments + CTags parser.</description>
 		<author>Pavel Nedev</author>
 		<homepage>https://github.com/pnedev/nppgtags</homepage>
 		<sourceUrl>https://github.com/pnedev/nppgtags</sourceUrl>
-		<latestUpdate>2017-06-29 Add results search functionality. Add per-database ignore sub-folders setting.</latestUpdate>
+		<latestUpdate>[2018-10-29]\n- Made find-in-results window horizontally scrollable.\n- Automatically add selected text in results window to the find-in-results text field.\n- Changed plugin's installation path according to the latest Notepad++'s requirements.\n- GTags binaries updated to v6.6.2.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/pnedev/nppgtags/releases/download/v4.4.0/NppGTags_v4.4.0_X64.zip</download>
+				<download>https://github.com/pnedev/nppgtags/releases/download/v4.4.1/NppGTags_v4.4.1_X64.zip</download>
 				<copy from="NppGTags.dll" toFile="$PLUGINDIR$\" validate="true"/>
 				<copy from="NppGTags\*.*" to="$PLUGINDIR$\NppGTags\" validate="true" recursive="true"/>
 			</x64>
