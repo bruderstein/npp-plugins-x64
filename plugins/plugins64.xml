@@ -1022,6 +1022,19 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="SecurePad">
+		<x64Version>2.2</x64Version>
+		<description>With this you can encrypt/decrypt whole documents or selected text with your own key.  It is useful for storing sensitive information like logins and you don't want them lying around in a plaintext file.</description>
+		<author>Dominic Tobias</author>
+		<sourceUrl>https://github.com/DominicTobias/SecurePad</sourceUrl>
+		<latestUpdate>[2018-11-20] v2.2: Recompiled with latest plugin files for compatibility with latest Notepad++ (6.5.1). Note that the compatibility break may have occurred before this, I have only tested that it works with this version though it is likely to work with lower versions of 6.5 too.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/DominicTobias/SecurePad/releases/download/v2.2/SecurePad_v2.2_x64.zip</download>
+				<copy from="SecurePad.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="Select 'N' Launch">
 		<x64Version>2.1</x64Version>
 		<description>This plugin gets your selected text, saves it as file with the extension you customize in the system temporary directory, then call system to open it with the extension associated program.</description>
