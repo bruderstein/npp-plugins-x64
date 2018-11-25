@@ -4,7 +4,7 @@
         "8500ddd5a33d9450a5fe907352064b8b": "gpup.exe"
     },
     "NppFTP": {
-        "75bbe9f9867493d7b042539028111aef": "NppFTP.dll"
+        "21faae5b7f2f9e53b51812ddc5404779": "NppFTP.dll"
     },
     "MIME Tools": {
         "586a5399489a033118737809c7de9e0d": "mimeTools.dll"
@@ -178,36 +178,36 @@
         "6febce3201c5b050981568312dd8c86f": "ViSimulator.dll"
     },
     "CS-Script (C# intellisense)": {
-        "3746a955a8fbd5fc9104bcb3b1b3ae6f": "CSScriptNpp.dll",
-        "33521ad8ccff901b4531ff4b0e16acd7": "CSScriptNpp\\CSScriptIntellisense.dll",
+        "c7e3b7e6776454a7b51a37ac6d4eea1b": "CSScriptNpp.dll",
+        "8ec03d81213f6428f1e78557c53b6450": "CSScriptNpp\\CSScriptIntellisense.dll",
         "664891fb263ea08f8a30b0a27d823745": "CSScriptNpp\\CSScriptLibrary.dll",
-        "6bec24745b737d02632f61c3924ccf89": "CSScriptNpp\\CSScriptNpp.asm.dll",
+        "8563e28b903ee2ef0a51a7df60449138": "CSScriptNpp\\CSScriptNpp.asm.dll",
         "ecd4cc0071bdaa8106522bcf6909ad3d": "CSScriptNpp\\CSSRoslynProvider.dll",
         "0b622119f63d54f8534c76375ce82e5c": "CSScriptNpp\\ICSharpCode.NRefactory.CSharp.dll",
         "b871070066553653c4f1fb1d1589d2df": "CSScriptNpp\\ICSharpCode.NRefactory.dll",
-        "0d19f2d15b0937f7f061fa56db377b6d": "CSScriptNpp\\Intellisense.Common.dll",
+        "10d38b6bcc852ef2cc514f8905d2a973": "CSScriptNpp\\Intellisense.Common.dll",
         "5eb1b7ec4c35a5ca97c0d39771a52fa4": "CSScriptNpp\\Mono.Cecil.dll",
-        "5f59897efaeebdedb86249c45b149d02": "CSScriptNpp\\css_dbg.pdb",
-        "2963baa72ec42042a6b004a89478980f": "CSScriptNpp\\CompatibilityTest.exe",
+        "cb03681c121273ca7324e3e5ce5430c6": "CSScriptNpp\\css_dbg.pdb",
+        "cfa0f50b516d2f6c0ec52f6880a3ac8c": "CSScriptNpp\\CompatibilityTest.exe",
         "615dc1c5914356de6598ce110e3138ae": "CSScriptNpp\\cscs.exe",
         "b146e3806b025ff9e65c9db5033a8f50": "CSScriptNpp\\cscs.v3.5.exe",
-        "c345b409219417a0d234936efc5ad84e": "CSScriptNpp\\css_dbg.exe",
+        "16ce253399f410ef6fcfd2b87dc95a3f": "CSScriptNpp\\css_dbg.exe",
         "919f187547c17d216983e874cdefee80": "CSScriptNpp\\csws.exe",
-        "b469e70a581869620670d94b1650a186": "CSScriptNpp\\launcher.exe",
-        "bd22d10ce00288aa568216f221830b16": "CSScriptNpp\\npp_jit.exe",
+        "291575b229c5d5eae9867f86f6d84b3e": "CSScriptNpp\\launcher.exe",
+        "0e87dd19621971a1607187ff840872b1": "CSScriptNpp\\npp_jit.exe",
         "85a76a54530257307ec522a30de14f02": "CSScriptNpp\\nuget.exe",
-        "c86b384ba3b1df8e589bc59ed35bc26e": "CSScriptNpp\\syntaxer.exe",
-        "8e1d15d977223c7a15c94c8f741ad0df": "CSScriptNpp\\Updater.exe",
+        "3f113e415c4b93818d39849eedf02488": "CSScriptNpp\\syntaxer.exe",
+        "254d9f56f4c9cabedad10161b156c82e": "CSScriptNpp\\Updater.exe",
         "955ec459f2ad455f5f1acb873235926f": "CSScriptNpp\\Mdbg\\mdbg.exe",
-        "a4b89c3700456e9e1fb7ae69992b2ad3": "CSScriptNpp\\Mdbg\\mdbghost_32.exe",
-        "8d89a7cd2250a0c88e3ecc0525d9572a": "CSScriptNpp\\Mdbg\\mdbghost_64.exe",
+        "9f8574cffed92f06b13e3d3f1e949da8": "CSScriptNpp\\Mdbg\\mdbghost_32.exe",
+        "47a6c1099dd518f305ecfd15ee85dc67": "CSScriptNpp\\Mdbg\\mdbghost_64.exe",
         "362ad2047d136615d0f8919502b943aa": "CSScriptNpp\\Mdbg\\corapi.dll",
-        "c9ad0d4ef0af5a7ad26dc2d6d8c4d6ef": "CSScriptNpp\\Mdbg\\DbgAgent.dll",
+        "4a81a658630fc6713ed856f08a691d9d": "CSScriptNpp\\Mdbg\\DbgAgent.dll",
         "817a3b1797a3e9b8e092b9dbd126b878": "CSScriptNpp\\Mdbg\\enc.dll",
         "93c8a5a2005023fbcb1195cf88ee83c8": "CSScriptNpp\\Mdbg\\mdbgeng.dll",
         "83c1aadad28a897134a569ffa7786990": "CSScriptNpp\\Mdbg\\mdbgext.dll",
         "d813504ced85215b86b3e2693b099e13": "CSScriptNpp\\Mdbg\\NativeDebugWrappers.dll",
-        "9f794f2b5d8f9e1897ac2daad07a7938": "CSScriptNpp\\Mdbg\\npp.dll",
+        "57a89fb968619d43b43a5b3584a8f0e1": "CSScriptNpp\\Mdbg\\npp.dll",
         "c81bb8bcb0c4f53ff7b178cadf9e22e2": "CSScriptNpp\\Mdbg\\raw.dll"
     },
     "Code alignment": {
