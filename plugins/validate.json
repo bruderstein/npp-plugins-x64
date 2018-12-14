@@ -7,7 +7,7 @@
         "21faae5b7f2f9e53b51812ddc5404779": "NppFTP.dll"
     },
     "MIME Tools": {
-        "586a5399489a033118737809c7de9e0d": "mimeTools.dll"
+        "75b51dee0d90ed99bb2a4614b25c92fd": "mimeTools.dll"
     },
     "Converter": {
         "fe9450c8a07231c0616f3d90a599f411": "NppConverter.dll"
@@ -155,7 +155,7 @@
         "6625e59da72bfdfd9aace87c302d3cb2": "PoorMansTSqlFormatterNppPlugin/fr/PoorMansTSqlFormatterPluginShared.resources.dll"
     },
     "jN Notepad++ Plugin": {
-        "e2e2a6103ab1f6af19002c23f3a8cf3b": "jN.dll"
+        "4f0da2d222986529b1827ffb39a86629": "jN.dll"
     },
     "Notepad#": {
         "9c17bf4fa327f798d2ea58052567ae83": "NotepadSharp.dll"
@@ -270,5 +270,8 @@
     },
     "SecurePad": {
         "5e4625ba35a5ad1a65b0f62d617e9dc9": "SecurePad.dll"
+    },
+    "Session Manager": {
+        "207340668bb2554e971d1e1b0bc8c7fb": "SessionMgr.dll"
     }
 }

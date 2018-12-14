@@ -608,16 +608,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.8</x64Version>
+		<x64Version>1.4.9</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2018-11-14\n* Fix crash when spell-checking multiple languages with Aspell.</latestUpdate>
+		<latestUpdate>2018-12-01\n* Fix hang when spell-checking file containing invalid utf-8 characters.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.8/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.9/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1016,18 +1016,18 @@
 		</install>
 	</plugin>
 	<plugin name="jN Notepad++ Plugin">
-		<x64Version>2.2.185.4</x64Version>
+		<x64Version>2.2.185.5</x64Version>
 		<description>jN (JavaScript for Notepad++) allows you to extend Notepad++ by using JavaScript.\n- You can create new menu elements which execute JavaScript\n- You can use a lot of ActiveX components available on your PC\n- You can add shortcuts executing JavaScript\n- You can create Html based dialogs and docking windows\n- You can write JavaScript wrappers around Win32 API\n - Since version 2.0.116 you can debug your automating scripts\n - Selection highlighting and navigation bar\n - Integrated Zen Coding v0.7\n - You can catch context menu request and create your own</description>
 		<author>Eugen Kremer</author>
 		<homepage>https://github.com/sieukrem/jn-npp-plugin/wiki</homepage>
 		<sourceUrl>https://github.com/sieukrem/jn-npp-plugin</sourceUrl>
-		<latestUpdate>[2018-06-24] \nUpdate dll file properties.\nFix #68 About dialog displays no longer available domain\nFix #32 x64</latestUpdate>
+		<latestUpdate>[2018-11-27]\n- Adapted zip file content accordingly to requirements of plugin admin.\n- Fixed #71\n \n[2018-06-24] \nUpdate dll file properties.\nFix #68 About dialog displays no longer available domain\nFix #32 x64</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/sieukrem/jn-npp-plugin/releases/download/2.2.185.4/jN_2.2.185.4_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="[Notepad++ Directory]\plugins\jN.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="[Notepad++ Directory]\plugins\jN\*.*" to="$PLUGINDIR$\jN" recursive="true"/>
+				<download>https://github.com/sieukrem/jn-npp-plugin/releases/download/2.2.185.5/jN_2.2.185.5_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="jN\jN.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="jN\*.*" to="$PLUGINDIR$\jN" recursive="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\jN"/>
 			</x64>
 		</install>
@@ -1282,15 +1282,15 @@
 		</install>
 	</plugin>
 	<plugin name="MIME Tools">
-		<x64Version>2.1</x64Version>
+		<x64Version>2.2</x64Version>
 		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
 		<author>Don Ho</author>
 		<homepage>https://github.com/npp-plugins/mimetools</homepage>
 		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
-		<latestUpdate>[2016-09-06] Remove the dependence of other dll</latestUpdate>
+		<latestUpdate>[2018-11-28] Enhance base64: decode/encode without padding</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.1/mimetools.v2.1.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.2/mimetools.v2.2.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -2131,7 +2131,7 @@
 		<author>Birunthan Mohanathas</author>
 		<homepage>https://poiru.github.com/rainlexer</homepage>
 		<sourceUrl>https://github.com/poiru/rainlexer</sourceUrl>
-		<latestUpdate>2018-07-15  V2.0.10</latestUpdate>
+		<latestUpdate>2018-12-01  V2.1.1</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>99.9</minVersion>
 		<install>
@@ -2289,16 +2289,16 @@
 		</remove>
 	</plugin>
 	<plugin name="Session Manager">
-		<x64Version>1.4.2</x64Version>
+		<x64Version>1.4.3</x64Version>
 		<description>IMPORTANT: If you are upgrading from a version older than 1.2 then, immediately after the upgrade, open the Settings dialog and reconfigure your settings.</description>
 		<author>Mike Foster</author>
 		<homepage>https://mfoster.com/npp/SessionMgr.html</homepage>
 		<sourceUrl>https://mfoster.com/npp/download.html</sourceUrl>
-		<latestUpdate>Support forum:\nhttps://sourceforge.net/p/notepad-plus/discussion/482781/thread/dea823d0/\n\nChange notes for v1.4.2, 15Feb2015:\n- Bug-fix: The context menu feature assumed "contextMenu.xml" to be in Notepad++'s installation folder, but now it determines if it is there or in %AppData%.\n- Improvement: The P2P API is now much more comprehensive.\n- Made improvements to the help page.\n\nFor complete revision history visit http://mfoster.com/npp/</latestUpdate>
+		<latestUpdate>Support forum:\nhttps://sourceforge.net/p/notepad-plus/discussion/482781/thread/dea823d0/\n\n[2018-12-13] Change notes for v1.4.3:\n- see https://github.com/chcg/npp-session-manager/releases/tag/v1.4.3\n, as mike is not actively working on it any more. This release is therefore not visible from the official website of the project.\n\nChange notes for v1.4.2, 15Feb2015:\n- Bug-fix: The context menu feature assumed "contextMenu.xml" to be in Notepad++'s installation folder, but now it determines if it is there or in %AppData%.\n- Improvement: The P2P API is now much more comprehensive.\n- Made improvements to the help page.\n\nFor complete revision history visit http://mfoster.com/npp/</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://mfoster.com/npp/SessionMgr-1.4.2-plugin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/chcg/npp-session-manager/releases/download/v1.4.3/SessionMgr_v1.4.3_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="SessionMgr.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\SessionMgr.css" to="$PLUGINDIR$\doc"/>
 				<copy from="doc\SessionMgr.html" to="$PLUGINDIR$\doc"/>
@@ -2326,6 +2326,26 @@
 				<copy from="SherloXplorer\*.bat" to="$PLUGINDIR$\SherloXplorer"/>
 			</x64>
 		</install>
+	</plugin>
+	<plugin name="Shtirlitz">
+		<x64Version>1.0</x64Version>
+		<description>The Shtirlitz plug-in menu lists decoding styles. Choose a style - and this style decodes the selected text (Turbo-5 style should fit in most cases). The styles themselves and all the settings can be made by Stirlitz.exe, which is in the Shtirlitz folder. It is there without advertising pictures and due to this only 428 KB.</description>
+		<author>Vsevolod Lukyanin</author>
+		<homepage>https://vk.com/wall203102356_293</homepage>
+		<sourceUrl>https://github.com/shtirlitz-dev/notepadpp-plugin/tree/master/unzipped</sourceUrl>
+		<latestUpdate>[2014-01-03]</latestUpdate>
+		<install>
+			<x64>
+				<download>https://raw.githubusercontent.com/shtirlitz-dev/notepadpp-plugin/master/shtirlitz_plugin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="ShtirlitzNppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="Shtirlitz\*.*" to="$PLUGINDIR$\Shtirlitz" validate="true"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\Shtirlitz"/>
+			</x64>
+		</remove>
 	</plugin>
 	<plugin name="Simple Script">
 		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes.</description>
@@ -2539,25 +2559,6 @@
 		<sourceUrl>https://sourceforge.net/projects/squiggly/develop</sourceUrl>
 		<stability>Crash reported</stability>
 		<install/>
-	</plugin>
-	<plugin name="Stirlitz">
-		<x64Version>1.0</x64Version>
-		<description>The Shtirlitz plug-in menu lists decoding styles. Choose a style - and this style decodes the selected text (Turbo-5 style should fit in most cases). The styles themselves and all the settings can be made by Stirlitz.exe, which is in the Shtirlitz folder. He is there without advertising pictures and due to this only 428 KB.</description>
-		<author>Vsevolod Lukyanin</author>
-		<homepage>https://vk.com/wall203102356_293</homepage>
-		<latestUpdate>[2014-01-03]</latestUpdate>
-		<install>
-			<x64>
-				<download>https://downloader.disk.yandex.ru/disk/e691222ed300dbc2add596e3319c83be4097215edf70a6285b647314c41221d5/5bf944f2/WLty9M9M5it9ro2gTQmO-XjOrsPk2UaC5XsYsMIVVw55o-ZDAWsak5eLfZ4oR5egDBHdy7evXp_JSCChDWLqPQ%3D%3D?uid=0&amp;filename=shtirlitz_plugin.zip&amp;disposition=attachment&amp;hash=Q5sj6S9p5uKqNYbv9V%2BTScC2GO9Q49A0fLjOFybeXlw%3D&amp;limit=0&amp;content_type=application%2Fx-zip-compressed&amp;fsize=343203&amp;hid=a1f60621a9dadef9e2770edfd39078c3&amp;media_type=compressed&amp;tknv=v2!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="ShtirlitzNppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="Shtirlitz\*.*" to="$PLUGINDIR$\Shtirlitz" validate="true"/>
-			</x64>
-		</install>
-		<remove>
-			<x64>
-				<delete file="$PLUGINDIR$\Shtirlitz"/>
-			</x64>
-		</remove>
 	</plugin>
 	<plugin name="Subversion">
 		<x64Version>1.0</x64Version>
