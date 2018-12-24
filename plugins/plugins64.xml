@@ -264,21 +264,21 @@
 		</install>
 	</plugin>
 	<plugin name="Customize Toolbar">
-		<x64Version>4.1</x64Version>
+		<x64Version>4.2</x64Version>
 		<description>This plugin allows the Notepad++ toolbar to be fully customised by the user, and includes twenty-nine additional buttons for frequently used menu commands.\n\nAll buttons on the toolbar can be customized, whether Notepad++ built-in buttons, the additional buttons, or buttons belonging to other plugins.\n                                   \nCustom buttons for Notepad++ or plugin menu commands can be defined using a configuration file.  It is possible to replace the icons of existing Notepad++ buttons.</description>
 		<author>dw-dev@gmx.com</author>
 		<homepage>https://sourceforge.net/projects/npp-customize</homepage>
-		<latestUpdate>Version 4.1. First 64-bit version of Customize Toolbar. Functionality is the same as the 32-bit version.</latestUpdate>
+		<latestUpdate>Version 4.2. Minor bug fixes.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-customize/files/Customize%20Toolbar%20v4.1/CustomizeToolbar_4_1_x64.zip/download</download>
-				<copy from="CustomizeToolbar.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://sourceforge.net/projects/npp-customize/files/Customize%20Toolbar%20v4.2/CustomizeToolbar_4_2_x64.zip/download</download>
+				<copy from="_CustomizeToolbar.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\CustomizeToolbar.dll"/>
+				<delete file="$PLUGINDIR$\_CustomizeToolbar.dll"/>
 			</x64>
 		</remove>
 	</plugin>
