@@ -59,9 +59,9 @@
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.11-R37.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="AnalysePlugin\AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
+				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.11-R37-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
 			</x64>
 		</install>
 		<remove>
@@ -318,15 +318,15 @@
 		</install>
 	</plugin>
 	<plugin name="Code alignment">
-		<x64Version>14.0</x64Version>
+		<x64Version>14.1</x64Version>
 		<description>Code alignment helps you present your code beautifully, enhancing clarity and readability.\n\nAlign your code by any character. Fast logical shortcuts to perform common alignments such as equals and period.\n\nRequires .NET Framework 4.0</description>
 		<author>Chris McGrath</author>
 		<homepage>http://codealignment.com</homepage>
 		<sourceUrl>https://github.com/cpmcgrath/codealignment</sourceUrl>
-		<latestUpdate>Version 14: 2018-01-13 #64 Add Support for Notepad++ x64\n#65 Setup AppVeyor Continuous Integration Server\nVersion 13: 6 Nov 2016 Upgrade all Projects from .NET 3.5 to .NET 4 enhancement Notepad++ Visual Studio\nVersion 12: Align by string screen lets align from caret position if SHIFT is down when clicking OK\nVersion 11: Add ability to specify where to add spaces (ability to right align). \nVersion 10: Alignment Chaining - When using the Code alignment shortcut, simply keep pressing control and you can immediately perform another alignment starting from where the last alignment occurred.\nVersion 9: Fixed Grabber offset\nVersion 8: Ability to Export/Import settings\nVersion 7: Fixed bug: Add space before only works if first instance at max column needs space.</latestUpdate>
+		<latestUpdate>Version 14.1: 2018-12-16 \n#66 Stop working for VS2012 after V14\n#80 Add Support for Visual Studio 2019\nVersion 14: 2018-01-13 \n#64 Add Support for Notepad++ x64\n#65 Setup AppVeyor Continuous Integration Server\nVersion 13: 6 Nov 2016 Upgrade all Projects from .NET 3.5 to .NET 4 enhancement Notepad++ Visual Studio\nVersion 12: Align by string screen lets align from caret position if SHIFT is down when clicking OK\nVersion 11: Add ability to specify where to add spaces (ability to right align).</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/cpmcgrath/codealignment/releases/download/v14/CodeAlignmentNpp_v14_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/cpmcgrath/codealignment/releases/download/v14.1/CodeAlignmentNpp_v14.1_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="CodeAlignmentNpp.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="CodeAlignment\CodeAlignment.Common.dll" to="$PLUGINDIR$\CodeAlignment" validate="true"/>
 				<copy from="CodeAlignment\CodeAlignment.Common.WinForms.dll" to="$PLUGINDIR$\CodeAlignment" validate="true"/>
@@ -499,15 +499,15 @@
 		</install>
 	</plugin>
 	<plugin name="Customize Toolbar">
-		<x64Version>4.1</x64Version>
+		<x64Version>4.2</x64Version>
 		<description>This plugin allows the Notepad++ toolbar to be fully customised by the user, and includes twenty-nine additional buttons for frequently used menu commands.\n\nAll buttons on the toolbar can be customized, whether Notepad++ built-in buttons, the additional buttons, or buttons belonging to other plugins.\n                                   \nCustom buttons for Notepad++ or plugin menu commands can be defined using a configuration file.  It is possible to replace the icons of existing Notepad++ buttons.</description>
 		<author>dave-user</author>
 		<homepage>https://sourceforge.net/projects/npp-customize</homepage>
-		<latestUpdate>RELEASE NOTES\n\nNew features, changes and fixes in Version 4.1:\n\n  - Chg: Command code for Hide Line Number Margin menu item and toolbar button changed from 44012 to 44212.\n  - Chg: Command code for Hide Bookmark Margin menu item and toolbar button changed from 44013 to 44213.\n  - Chg: Command code for Hide Folder Margin menu item and toolbar button changed from 44014 to 44214.\n\n  - Fix: Changing Folder Margin Style in Notepad++ Settings &gt; Preferences &gt; Editing dialog did not change folder margin style. Fixed.</latestUpdate>
+		<latestUpdate>RELEASE NOTES\n\nNew features, changes and fixes in Version 4.2:\n\n  - Chg: Changed name of .dll file from CustomizeToolbar.dll to _CustomizeToolbar.dll.\n\n  - Fix: Initialization started before other plugins had added their menu items. Fixed.\n  - Fix: Compiler errors due to implicit conversions from LRESULT to DWORD. Fixed.\n  - Fix: Compiler error due to implicit conversion from size_t to DWORD. Fixed.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://downloads.sourceforge.net/project/npp-customize/Customize%20Toolbar%20v4.1/CustomizeToolbar_4_1_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="CustomizeToolbar.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://sourceforge.net/projects/npp-customize/files/Customize%20Toolbar%20v4.2/CustomizeToolbar_4_2_Win32_UNI.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="_CustomizeToolbar.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1026,7 +1026,7 @@
 		<install>
 			<x64>
 				<download>https://github.com/sieukrem/jn-npp-plugin/releases/download/2.2.185.5/jN_2.2.185.5_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="jN\jN.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="jN.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="jN\*.*" to="$PLUGINDIR$\jN" recursive="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\jN"/>
 			</x64>
@@ -2131,7 +2131,7 @@
 		<author>Birunthan Mohanathas</author>
 		<homepage>https://poiru.github.com/rainlexer</homepage>
 		<sourceUrl>https://github.com/poiru/rainlexer</sourceUrl>
-		<latestUpdate>2018-12-01  V2.1.1</latestUpdate>
+		<latestUpdate>2018-12-15  V2.2.0\nThis reflects the change in the location of plugin .dll's in Notepad++ in 7.6.1\nVersion 7.6.1 or later of Notepad++ is required.</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>99.9</minVersion>
 		<install>
@@ -3030,23 +3030,22 @@
 		</install>
 	</plugin>
 	<plugin name="XML Tools">
-		<x64Version>2.4.9.2</x64Version>
+		<x64Version>2.4.11</x64Version>
 		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based. The plugin features are:\n- XML syntax Check\n- XML Schema (XSD) + DTD Validation\n- XML tag autoclose\n- Pretty print\n- Linarize XML\n- Current XML Path\n- Conversion XML &amp;lt;-&amp;gt; Text\n- Comment / Uncomment\n- XPath expression evaluation</description>
 		<author>Nicolas Crittin</author>
 		<homepage>https://github.com/morbac/xmltools</homepage>
 		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/XML%20Tools/Xml%20Tools%202.4.4%20Unicode/Source%20XML%20Tools%202.4.4%20Unicode.zip/download</sourceUrl>
-		<latestUpdate>Release 2.4.9.2 \n- Fix pretty print function infinite loop when data ends unexpected\n\nRelease 2.4.9.1\n- Patch pretty print function error which occurred when text contains "='" sequence \n\nRelease 2.4.9\n- Compilation of 64bit version of the plugin \n- Fix pretty print with attributes and/or text containing &gt; char\n\nRelease 2.4.8\n- Add "Pretty print (attributes)" function\n- Fix pretty print of comments and CDATA blocs containing &lt; or &gt; char\n\nRelease 2.4.7\n- Add proxy support\n- Fix the "Set XML type automatically" function to avoid having caret placed at position 0 while changing the active tab\n\nRelease 2.4.6\n- Fix PrettyPrint on handling of quote delimiters used in xml attribute value\n- Re-compilation of libcurl.dll for Windows XP compatibility\n\nRelease 2.4.5\n- Modification of XPath evaluation to better manage XML with default namespace\n- Rollback of XML file detection behaviour modification of preceding release (was not working well)\n- Add a basic online check for plugin updates (checks on startup every 14 days)\n\nRelease 2.4.4\n- Optimization of pretty print function\n- Fix XML file detection issue when opening several files at once\n\nRelease 2.4.3 (r1058)\n- Fix auto-close with end markers ("&amp;lt;/a&amp;gt;" and "--&amp;gt;")\n- Fix PrettyPrint on handling of '&gt;' char present in text content\n\nRelease 2.4.2 (r1057)\n- Fix XPath evaluation for text() [bug #232]\n- Modification of PrettyPrint behaviour to avoid changing "&amp;lt;foo&amp;gt; &amp;lt;foo&amp;gt;" to "&amp;lt;foo/&amp;gt;" [bug #220]\n- Fix PrettyPrint EOL char support [bug #219]\n- Fix XPath evaluation issue with string result [bug #209]\n- Add information on unprefixed namespace handling during XPath evaluation [bug #195]\n- Fix a wrong reference to %appdata%\Notepad++\n\nRelease 2.4.1 (r1054)\n- Allow external DLLs to be loaded from %appdata%\Notepad++ folder\n- Change dialogs behaviour: dialogs are not destroyed on close and are restored on re-opening\n- Fix some memory leaks\n\nRelease 2.4 (r1048)\n- Fix pretty print error while playing with attributes containing quotes and double-quotes\n- Fix encoding support for following functions:\n  * Check XML syntax now\n  * Validate now\n  * Tag auto-close\n  * Current XML Path\n  * Evaluate XPath Expression\n  * XSL Transformation\n- Add "Prevent XXE" mode\n- Fix wrong selection length after conversions "&amp;amp;lt;&amp;amp;gt;" to "&amp;lt;&amp;gt;" and reverse\n- Upgrade libXML version (libXML 2.9.2, libXSLT 1.1.28, xmlsec 1.2.20, zlib 1.2.6, iconv 1.14, openssl 1.0.1j)\n- Add libXML/libXSLT versions infos in about box</latestUpdate>
+		<latestUpdate>[2018-11-20] Release 2.4.11\n- Add option for huge files support\n- Fix DTD validation\n- Improve "Current XML Path" function (the xpath contains attribute name if cursor is in attribute value)\n- Adapt plugin for Plugin Admin (NPP v7.6)\n- Minimal required NPP version is therefore 7.6\n\nRelease 2.4.9.2 \n- Fix pretty print function infinite loop when data ends unexpected\n\nRelease 2.4.9.1\n- Patch pretty print function error which occurred when text contains "='" sequence \n\nRelease 2.4.9\n- Compilation of 64bit version of the plugin \n- Fix pretty print with attributes and/or text containing &gt; char\n\nRelease 2.4.8\n- Add "Pretty print (attributes)" function\n- Fix pretty print of comments and CDATA blocs containing &lt; or &gt; char\n\nRelease 2.4.7\n- Add proxy support\n- Fix the "Set XML type automatically" function to avoid having caret placed at position 0 while changing the active tab\n\nRelease 2.4.6\n- Fix PrettyPrint on handling of quote delimiters used in xml attribute value\n- Re-compilation of libcurl.dll for Windows XP compatibility\n\nRelease 2.4.5\n- Modification of XPath evaluation to better manage XML with default namespace\n- Rollback of XML file detection behaviour modification of preceding release (was not working well)\n- Add a basic online check for plugin updates (checks on startup every 14 days)\n\nRelease 2.4.4\n- Optimization of pretty print function\n- Fix XML file detection issue when opening several files at once\n\nRelease 2.4.3 (r1058)\n- Fix auto-close with end markers ("&amp;lt;/a&amp;gt;" and "--&amp;gt;")\n- Fix PrettyPrint on handling of '&gt;' char present in text content\n\nRelease 2.4.2 (r1057)\n- Fix XPath evaluation for text() [bug #232]\n- Modification of PrettyPrint behaviour to avoid changing "&amp;lt;foo&amp;gt; &amp;lt;foo&amp;gt;" to "&amp;lt;foo/&amp;gt;" [bug #220]\n- Fix PrettyPrint EOL char support [bug #219]\n- Fix XPath evaluation issue with string result [bug #209]\n- Add information on unprefixed namespace handling during XPath evaluation [bug #195]\n- Fix a wrong reference to %appdata%\Notepad++\n\nRelease 2.4.1 (r1054)\n- Allow external DLLs to be loaded from %appdata%\Notepad++ folder\n- Change dialogs behaviour: dialogs are not destroyed on close and are restored on re-opening\n- Fix some memory leaks\n\nRelease 2.4 (r1048)\n- Fix pretty print error while playing with attributes containing quotes and double-quotes\n- Fix encoding support for following functions:\n  * Check XML syntax now\n  * Validate now\n  * Tag auto-close\n  * Current XML Path\n  * Evaluate XPath Expression\n  * XSL Transformation\n- Add "Prevent XXE" mode\n- Fix wrong selection length after conversions "&amp;amp;lt;&amp;amp;gt;" to "&amp;lt;&amp;gt;" and reverse\n- Upgrade libXML version (libXML 2.9.2, libXSLT 1.1.28, xmlsec 1.2.20, zlib 1.2.6, iconv 1.14, openssl 1.0.1j)\n- Add libXML/libXSLT versions infos in about box</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/XML%20Tools/Xml%20Tools%202.4.9%20Unicode/Xml%20Tools%202.4.9.2%20x86%20Unicode.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="dependencies\libiconv-2.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="dependencies\libwinpthread-1.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="dependencies\libxml2-2.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="dependencies\libxslt-1.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="dependencies\zlib1.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="install.txt" to="$PLUGINDIR$\doc\XmlTools"/>
+				<download>https://github.com/morbac/xmltools/releases/download/2.4.11.0/Xml.Tools.2.4.11.0.x86.Unicode.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="libs\libiconv-2.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="libs\libwinpthread-1.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="libs\libxml2-2.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="libs\libxslt-1.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="libs\zlib1.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="change.log" to="$PLUGINDIR$\doc\XmlTools"/>
 				<copy from="XMLTools.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="dependencies\libcurl.dll" to="$NPPDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>

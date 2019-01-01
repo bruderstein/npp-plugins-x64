@@ -211,9 +211,9 @@
         "c81bb8bcb0c4f53ff7b178cadf9e22e2": "CSScriptNpp\\Mdbg\\raw.dll"
     },
     "Code alignment": {
-        "24823facdf971ca0c06ffc9f2c3ced0a": "CodeAlignmentNpp.dll",
-        "23cfb36c023a0c19d9a53041b6b47319": "CodeAlignment.Common.dll",
-        "d9eea261bc03190f0f4fb85af60f40d4": "CodeAlignment.Common.WinForms.dll"
+        "92024504a76fb913c5ff5bc69ec24d8d": "CodeAlignmentNpp.dll",
+        "ba4de0b1ed2ddb315e19e71756384ca8": "CodeAlignment.Common.dll",
+        "68be8c7934aa273ef0d36ae47c7d0175": "CodeAlignment.Common.WinForms.dll"
     },
     "NppNetNote": {
         "f3c4abd61baaae5168514d99bf7b5587": "NppDocShare.dll"
