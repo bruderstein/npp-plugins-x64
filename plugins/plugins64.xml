@@ -779,7 +779,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.27.6</x64Version>
+		<x64Version>0.28.0</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -787,10 +787,10 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2018-11-21\n- update to openssl-1.0.2q, with security related fixes</latestUpdate>
+		<latestUpdate>2019-01-01\n- first version with change from libssh 0.7.x -&gt; 0.8.x\n- update to libssh 0.8.6 from https://www.libssh.org/files/0.8/libssh-0.8.6.tar.xz (changelog see https://www.libssh.org/2018/12/24/libssh-0-8-6-xmas-edition/ and for previous versions https://git.libssh.org/projects/libssh.git/tree/ChangeLog?h=stable-0.8)\n- small adaptations to corresponding api changes</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.27.6/NppFTP-x64.zip</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.28.0/NppFTP-x64.zip</download>
 				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>
@@ -1108,6 +1108,20 @@
 				<delete file="$PLUGINDIR$\doc\SessionMgr.html"/>
 			</x64>
 		</remove>
+	</plugin>
+	<plugin name="Shtirlitz">
+		<x64Version>1.1.2</x64Version>
+		<description>The Shtirlitz plug-in menu lists decoding styles. Choose a style - and this style decodes the selected text (Turbo-5 style should fit in most cases). The styles themselves and all the settings can be made by Stirlitz.exe, which is in the Shtirlitz folder. It is there without advertising pictures and due to this only 428 KB.</description>
+		<author>Vsevolod Lukyanin</author>
+		<homepage>https://vk.com/wall203102356_293</homepage>
+		<sourceUrl>https://github.com/shtirlitz-dev/notepadpp-plugin/tree/master/unzipped</sourceUrl>
+		<latestUpdate>[2018-12-26]\nv. 1.1.2\n- Version addded in resources\n- 64-bit version added\n- Additional files are not required, only ShtirlitzNppPlugin.dll\n- Decoding styles were redefined\n- When required, a .dat file can be prepared in Shtirlitz (encodings, transliterations, styles) and moved as ShtirlitzNppPlugin.dat in the folder with ShtirlitzNppPlugin.dll.\n- If there is no selection in the text window, Shtirlitz plugin selects all the texts, decodes and replaces it.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/shtirlitz-dev/notepadpp-plugin/raw/master/64bit/ShtirlitzNppPlugin.zip</download>
+				<copy from="ShtirlitzNppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
 	</plugin>
 	<plugin name="Snippets">
 		<x64Version>1.4.0</x64Version>

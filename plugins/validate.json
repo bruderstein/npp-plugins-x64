@@ -273,5 +273,8 @@
     },
     "Session Manager": {
         "207340668bb2554e971d1e1b0bc8c7fb": "SessionMgr.dll"
+    },
+    "Shtirlitz": {
+        "2fe2379380549137ee63fc0720826366": "ShtirlitzNppPlugin.dll"
     }
 }
