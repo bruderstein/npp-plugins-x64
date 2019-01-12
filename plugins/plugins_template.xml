@@ -62,11 +62,13 @@
 				<download>https://sourceforge.net/projects/analyseplugin/files/binaries/v01.11-R37-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="AnalysePlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="*.txt" to="$PLUGINDIR$\doc\AnalysePlugin"/>
+				<copy from="AnalysePlugin.dll" to="$PLUGINDIR$\AnalysePlugin"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
 				<delete file="$PLUGINDIR$\doc\AnalysePlugin"/>
+				<delete file="$PLUGINDIR$\AnalysePlugin\AnalysePlugin.dll"/>
 			</x64>
 		</remove>
 	</plugin>
@@ -1282,15 +1284,15 @@
 		</install>
 	</plugin>
 	<plugin name="MIME Tools">
-		<x64Version>2.2</x64Version>
+		<x64Version>2.3</x64Version>
 		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
 		<author>Don Ho</author>
 		<homepage>https://github.com/npp-plugins/mimetools</homepage>
 		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
-		<latestUpdate>[2018-11-28] Enhance base64: decode/encode without padding</latestUpdate>
+		<latestUpdate>[2019-01-07] Enhance base64: decode/encode without padding</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.2/mimetools.v2.2.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.3/mimetools.v2.3.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -2338,14 +2340,8 @@
 			<x64>
 				<download>https://github.com/shtirlitz-dev/notepadpp-plugin/raw/master/32bit/ShtirlitzNppPlugin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="ShtirlitzNppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="Shtirlitz\*.*" to="$PLUGINDIR$\Shtirlitz" validate="true"/>
 			</x64>
 		</install>
-		<remove>
-			<x64>
-				<delete file="$PLUGINDIR$\Shtirlitz"/>
-			</x64>
-		</remove>
 	</plugin>
 	<plugin name="Simple Script">
 		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes.</description>
@@ -2527,16 +2523,16 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm">
-		<x64Version>5.3.19</x64Version>
+		<x64Version>5.3.24</x64Version>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>https://www.sqlinform.com</homepage>
-		<latestUpdate>2018-10-19\nImproved Screen Resolutions\nHighlight added White Spaces\nAdded new formatting Options\nRedesigned GUI\nAdded Translation for Spanish\nAdded Translation for German</latestUpdate>
+		<latestUpdate>[2019-01-10]\nImproved Screen Resolutions\nHighlight added White Spaces\nAdded new formatting Options\nRedesigned GUI\nAdded Translation for Spanish\nAdded Translation for German</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>https://www.sqlinform.com/npp/SQLinFormNpp_5.3.19.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://www.sqlinform.com/npp/SQLinFormNpp_5.3.24.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="SQLinFormNpp.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
