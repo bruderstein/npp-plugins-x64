@@ -932,7 +932,7 @@
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>http://www.architectshack.com/GetFile.aspx?File=SqlFormatterNppPlugin.x64.1.6.10.zip&amp;Page=PoorMansTSqlFormatter</download>
+				<download>https://github.com/TaoK/PoorMansTSqlFormatter/releases/download/1.6.10/SqlFormatterNppPlugin.x64.1.6.10.b.zip</download>
 				<copy from="PoorMansTSqlFormatterNppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="PoorMansTSqlFormatterNppPlugin\LinqBridge.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\" validate="true"/>
 				<copy from="PoorMansTSqlFormatterNppPlugin\fr\PoorMansTSqlFormatterPluginShared.resources.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\fr\" validate="true"/>

@@ -1930,7 +1930,7 @@
 		<latestUpdate>A few bugfixes to option management</latestUpdate>
 		<install>
 			<x64>
-				<download>http://www.architectshack.com/GetFile.aspx?File=SqlFormatterNppPlugin.1.6.10.zip&amp;Page=PoorMansTSqlFormatter!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/TaoK/PoorMansTSqlFormatter/releases/download/1.6.10/SqlFormatterNppPlugin.1.6.10.b.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="PoorMansTSqlFormatterNppPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="PoorMansTSqlFormatterNppPlugin\LinqBridge.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\" validate="true"/>
 				<copy from="PoorMansTSqlFormatterNppPlugin\fr\PoorMansTSqlFormatterPluginShared.resources.dll" to="$PLUGINDIR$\PoorMansTSqlFormatterNppPlugin\fr\" validate="true"/>
