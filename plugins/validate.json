@@ -94,7 +94,7 @@
         "b8b05082d32ff3eb121db529bb5e00b3": "NppToolBucket.dll"
     },
     "JSTool": {
-        "96f59c0cd99093f45d76a0c828fedc14": "JSMinNPP.dll"
+        "ab215c9f5d04773dee5bee761c2310ce": "JSMinNPP.dll"
     },
     "3P - Progress Programmers Pal": {
         "667fd4b3f3ceb05d6ebbaca7cc06539f": "3P.dll",
@@ -276,5 +276,8 @@
     },
     "Shtirlitz": {
         "2fe2379380549137ee63fc0720826366": "ShtirlitzNppPlugin.dll"
+    },
+    "Linter": {
+        "b2636b00b071c99bef0eeada916828f3": "linter.dll"
     }
 }

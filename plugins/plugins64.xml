@@ -5,7 +5,7 @@
 		<aliases>
 			<alias name="3P"/>
 		</aliases>
-		<description>[Requires .net framework 4.6.1]\n\n3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- the ability to run/compile and even PROLINT your source file with an in-line visualization of errors\n- more than 50 options to better suit your needs\n- and so much more!\n\nVisit http://jcaillon.github.io/3P/ for more details on the plugin</description>
+		<description>[Requires .net framework 4.6.1]\n\n3P is a notepad++ plug-in designed to help writing OpenEdge ABL (formerly known as Progress 4GL) code. It provides :\n\n- a powerful auto-completion\n- tool-tips on every words\n- a code explorer to quickly navigate through your code\n- a file explorer to easily access all your sources\n- the ability to run/compile and even PROLINT your source file with an in-line visualization of errors\n- more than 50 options to better suit your needs\n- and so much more!\n\nVisit https://jcaillon.github.io/3P/ for more details on the plugin</description>
 		<author>Julien Caillon</author>
 		<homepage>https://jcaillon.github.io/3P/</homepage>
 		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
@@ -445,7 +445,7 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.18.10.3</x64Version>
+		<x64Version>1.19.01.2</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -453,11 +453,11 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>[2018-10-30]\n[Common] Fix "export default" format.\n[Common] Fix '/' in [] within regular expression format.\n[Common] Not to format Unix Shebang at begining of a script.\n[Common] Change version naming to MAJOR.YEAR-MONTH.BUILD.\n[NPP] Fix json parser remove escaped ' or " at the end of string.</latestUpdate>
+		<latestUpdate>[2019-01-23]\n[NPP] UI tweak.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.1810.3.uni.64.zip/download</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.1901.2.uni.64.zip/download</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -476,6 +476,18 @@
 			<x64>
 				<download>https://sites.google.com/site/fstellari/nppplugins/LanguageHelp_dll_1v72.zip</download>
 				<copy from="64bit\LanguageHelp.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="Linter">
+		<x64Version>0.1.0.0</x64Version>
+		<description>A Notepad++ plugin that allows realtime code check against any checkstyle-compatible linter: jshint, eslint, jscs, phpcs, csslint and many others.</description>
+		<author>Vladimir Soshkin</author>
+		<homepage>https://github.com/deadem/notepad-pp-linter</homepage>
+		<install>
+			<x64>
+				<download>https://github.com/deadem/notepad-pp-linter/raw/v0.1.0.0/bin/x64/linter.zip</download>
+				<copy from="linter.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
