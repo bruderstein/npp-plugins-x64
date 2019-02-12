@@ -7,7 +7,7 @@
         "a9c2cc25a5676bdd1668fa88f20c058f": "NppFTP.dll"
     },
     "MIME Tools": {
-        "b1e7607286ea97a9dd9c0d756830e7a9": "mimeTools.dll"
+        "0fc985f9512435fed47da44acd7a2e9a": "mimeTools.dll"
     },
     "Converter": {
         "fe9450c8a07231c0616f3d90a599f411": "NppConverter.dll"
@@ -222,7 +222,7 @@
         "2648f5a8c043cb2f76a8aab908a09538": "BetterMultiSelection_64.dll"
     },
     "SurroundSelection": {
-        "59339140626ff1a0c36f7e3ac5e84ad3": "SurroundSelection_64.dll"
+        "b1ad982d3179bf313deb5d5b3960d166": "SurroundSelection.dll"
     },
     "ImgTag": {
         "2c5ce5931ffb81d666734b216e6d0268": "ImgTag.dll"
@@ -279,5 +279,8 @@
     },
     "Linter": {
         "b2636b00b071c99bef0eeada916828f3": "linter.dll"
+    },
+    "HEX-Editor": {
+        "ab0f06b125b6134b48535aad4a84e224": "HexEditor.dll"
     }
 }

@@ -329,7 +329,7 @@
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2019-01-29\n* Fix string literals in some languages not being checked properly. (#166)\n* Add the action to replace word with the first suggestion. (#165)\n* Improve decoding of dictionary names for Windows Vista+. (#164)\n* Fix problem with display of "special button". (#162)\n* Add action to possibly call context menu with suggestions by hotkey. (#160)\n* Add action to replace the same words in whole document with a selected suggestion. (#155)\n* Fix occasional error messages appearing when Notepad++ was launched from git bash.\n* Make dictionaries loading asynchronous. (#134)\n* Fix CamelCase splitting for words with all-capitals.\n</latestUpdate>
+		<latestUpdate>2019-01-29\n* Fix string literals in some languages not being checked properly. (#166)\n* Add the action to replace word with the first suggestion. (#165)\n* Improve decoding of dictionary names for Windows Vista+. (#164)\n* Fix problem with display of "special button". (#162)\n* Add action to possibly call context menu with suggestions by hotkey. (#160)\n* Add action to replace the same words in whole document with a selected suggestion. (#155)\n* Fix occasional error messages appearing when Notepad++ was launched from git bash.\n* Make dictionaries loading asynchronous. (#134)\n* Fix CamelCase splitting for words with all-capitals.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -356,6 +356,20 @@
 				<delete file="$PLUGINDIR$\ElasticTabstops_64.dll"/>
 			</x64>
 		</remove>
+	</plugin>
+	<plugin name="HEX-Editor">
+		<x64Version>0.9.5.0</x64Version>
+		<description>Some reported issues, however many bugs fixed in latest release</description>
+		<author>Jens Lorenz</author>
+		<sourceUrl>https://github.com/chcg/NPP_HexEdit</sourceUrl>
+		<latestUpdate>[2018-02-11] Unofficial port for x64 version\nFix: Menu of Npp++ isn't displayed properly after using hex [NPP-P-B-2799622] \nFix: HEX v0.9.3 forgets scroll position when switching tabs [NPP-P-B-2721661] \nFix: "Repleace" misspell in HEX-Editor plugins Help dialog [NPP-P-B-2351008] \nFix: Opening a file from outside with enabled Hex-Mode cause graphic issues. \nFix: "Go to another view" causes a crash if no document is opened. \nFix: Compare has no limitations anymore. \nFix: Bookmark color wasn't stored. \nFix: Restriction of Simple Compare removed. \nFix: Paste of data into combo box of Find dialog doesn't work in ANSI/HEX mode \nNew: Changed Bookmark style. \nNew: Shortcuts for Undo, Redo, Copy, Cut, Paste and Select All are now in sync with the Notepad++ shortcuts.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/chcg/NPP_HexEdit/releases/download/0.9.5.19/HexEditor_0.9.5.19_x64.zip</download>
+				<copy from="HexEditor.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
 	</plugin>
 	<plugin name="HTML Tag">
 		<x64Version>1.1.0.0</x64Version>
@@ -557,15 +571,15 @@
 		</install>
 	</plugin>
 	<plugin name="MIME Tools">
-		<x64Version>2.3</x64Version>
+		<x64Version>2.4</x64Version>
 		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed.</description>
 		<author>Don Ho</author>
 		<homepage>https://github.com/npp-plugins/mimetools</homepage>
 		<sourceUrl>https://github.com/npp-plugins/mimetools</sourceUrl>
-		<latestUpdate>[2019-01-07] Enhance base64: decode/encode without padding</latestUpdate>
+		<latestUpdate>[2019-01-27] Fix a decoding regression #7</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.3/mimetools.v2.3.x64.zip</download>
+				<download>https://github.com/npp-plugins/mimetools/releases/download/v2.4/mimetools.v2.4.x64.zip</download>
 				<copy from="mimeTools.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="*.txt" to="$PLUGINDIR$\doc\mimeTools"/>
 			</x64>
@@ -1013,7 +1027,7 @@
 		<author>Birunthan Mohanathas</author>
 		<homepage>https://poiru.github.com/rainlexer</homepage>
 		<sourceUrl>https://github.com/poiru/rainlexer</sourceUrl>
-		<latestUpdate>2018-12-15  V2.2.0\nThis reflects the change in the location of plugin .dll's in Notepad++ in 7.6.1\nVersion 7.6.1 or later of Notepad++ is required.</latestUpdate>
+		<latestUpdate>2018-12-15  V2.3.0\nRequires at least version version 7.6.3 of Notepad++</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>99.9</minVersion>
 		<install>
@@ -1177,21 +1191,21 @@
 		</remove>
 	</plugin>
 	<plugin name="SurroundSelection">
-		<x64Version>1.1</x64Version>
+		<x64Version>1.2</x64Version>
 		<description>Surrounds the selection in quotes/brackets/parenthesis\nNOTE: This may not work with non-US keyboard layouts.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/SurroundSelection</sourceUrl>
-		<latestUpdate>2017-04-13 Add menu option to enable/disable plugin\nAllow typing of closing symbols (e.g. ), ], or })</latestUpdate>
+		<latestUpdate>[2019-02-07]\nHandle non-US keyboard layouts\nSupport surrounding text with &lt;&gt; and `</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/SurroundSelection/releases/download/v1.1/SurroundSelection_64.zip</download>
-				<copy from="SurroundSelection_64.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/dail8859/SurroundSelection/releases/download/v1.2/SurroundSelection_v1.2_x64.zip</download>
+				<copy from="SurroundSelection.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\SurroundSelection_64.dll"/>
+				<delete file="$PLUGINDIR$\SurroundSelection.dll"/>
 			</x64>
 		</remove>
 	</plugin>
