@@ -282,5 +282,8 @@
     },
     "HEX-Editor": {
         "ab0f06b125b6134b48535aad4a84e224": "HexEditor.dll"
+    },
+    "EditorConfig": {
+        "39c885b942599f25bbb47381a7c180b7": "NppEditorConfig.dll"
     }
 }
