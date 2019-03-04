@@ -4,10 +4,10 @@
         "8500ddd5a33d9450a5fe907352064b8b": "gpup.exe"
     },
     "NppFTP": {
-        "a9c2cc25a5676bdd1668fa88f20c058f": "NppFTP.dll"
+        "3594bd935c4b5bf5b79463c95060a839": "NppFTP.dll"
     },
     "MIME Tools": {
-        "0fc985f9512435fed47da44acd7a2e9a": "mimeTools.dll"
+        "e0f20dee74473b8b95aee00f03dd1076": "mimeTools.dll"
     },
     "Converter": {
         "fe9450c8a07231c0616f3d90a599f411": "NppConverter.dll"
@@ -285,5 +285,8 @@
     },
     "EditorConfig": {
         "39c885b942599f25bbb47381a7c180b7": "NppEditorConfig.dll"
+    },
+    "Python Indent": {
+        "6efd373c219736b5cf133539c59786c3": "Python Indent.dll"
     }
 }
