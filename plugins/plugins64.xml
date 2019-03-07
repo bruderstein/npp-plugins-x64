@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
 	<plugin name="3P - Progress Programmers Pal">
-		<x64Version>1.8.3</x64Version>
+		<x64Version>1.8.4</x64Version>
 		<aliases>
 			<alias name="3P"/>
 		</aliases>
@@ -9,11 +9,11 @@
 		<author>Julien Caillon</author>
 		<homepage>https://jcaillon.github.io/3P/</homepage>
 		<sourceUrl>https://github.com/jcaillon/3P</sourceUrl>
-		<latestUpdate>[2018-11-11]More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.8.3\n\nQuick release to fix small issues reported recently.\nImprovements:\n\n    #238: added the possibility to use &lt; and &gt; in regexes without them being interpreted as variables by doubling them in the deployment rules configuration. This allows to have string exclusion in regexes like: :^.*(?&lt;&lt;!srv)\.(p|cls)$\n\nFixed issues:\n\n    #237: typo on disclaimer\n    #235: the username/password configured for the http proxy were not sent correctly to the proxy\n    #236: you can now use an external directory for your datadigger installation (options &gt; Misc. &gt; External tools)</latestUpdate>
+		<latestUpdate>[2019-02-23]More infos here :\nhttps://github.com/jcaillon/3P/releases/tag/v1.8.4\n\nFixed issues:\n    #246: Wrong behavior for the auto-completion in multi-carets mode\n    #251: Silent error parsing UserDefineLang.xml\n    #250: Crash during shutdown due to modified collection\n    #249: Admin rights required to update 3P for notepad++ version 7.6.1 to 7.6.2\n    #252: From notepad++ v7.6.2, autocompletion .xml files were moved to $installdir/autoCompletion\n    #227: Infinite loop on includes calling the same include (huge thanks to simi aka @slegian for his precious help)\n    #206: 3P can now evaluate pre-processed expression in &amp;IF statements and ignore definitions made in false blocks\n    &amp;GLOBAL-DEFINE variables defined in includes now correctly appear in the autocompletion\n    #233: Parser error on unbalanced DO / END blocks\n    #254: Parser error for &amp;ANALYZE-RESUME followed by a block name\n    #242: Download datadigger in the custom folder specified in the options (if not aleady installed)</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/jcaillon/3P/releases/download/v1.8.3/3P_x64.zip</download>
+				<download>https://github.com/jcaillon/3P/releases/download/v1.8.4/3P_x64.zip</download>
 				<copy from="3P.dll" to="$PLUGINDIR$\" validate="true"/>
 				<run file="NetFrameworkChecker.exe" arguments="-ShowOnlyIfNotInstalled" outsideNpp="0"/>
 			</x64>
@@ -821,7 +821,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.28.2</x64Version>
+		<x64Version>0.28.3</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -829,11 +829,11 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2019-03-04\n- update openssl to 1.0.2r (changelog see https://www.openssl.org/news/cl102.txt)</latestUpdate>
+		<latestUpdate>2019-03-05\n- adapt structure to be usable also by pluginAdmin</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.28.2/NppFTP-x64.zip</download>
-				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.28.3/NppFTP-x64.zip</download>
+				<copy from="NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>
 		</install>
