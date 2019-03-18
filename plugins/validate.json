@@ -101,7 +101,7 @@
         "e3005948ecaa36e7bca8488117516e74": "NetFrameworkChecker.exe"
     },
     "SQLinForm SQL Formatter": {
-        "c3a572a29400e4033b43caf7a22e40f8": "SQLinFormNpp64.dll"
+        "1f702e84a0038163dd787d308bf3c6d9": "SQLinFormNpp64.dll"
     },
     "DSpellCheck": {
         "196e4298d5e1856a6024d0e1834d6738": "DSpellCheck.dll"
@@ -288,5 +288,11 @@
     },
     "Python Indent": {
         "6efd373c219736b5cf133539c59786c3": "Python Indent.dll"
+    },
+    "Explorer": {
+        "bde44074d7ac3b849f7dc7e5fad65788": "Explorer.dll"
+    },
+    "Preview HTML": {
+        "d7f73e724df1b3f0d621a59ab6322c41": "PreviewHTML.dll"
     }
 }

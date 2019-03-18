@@ -371,6 +371,20 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="Explorer">
+		<x64Version>1.8.5.0</x64Version>
+		<description>Explorer plugin is a file browser. You can open whatever you want from it in Notepad++, just double click!</description>
+		<author>Jens Lorenz</author>
+		<homepage>https://github.com/oviradoi/npp-explorer-plugin</homepage>
+		<sourceUrl>https://github.com/oviradoi/npp-explorer-plugin</sourceUrl>
+		<latestUpdate>[2019-02-27]\n- Created Visual Studio 2015 solution and updated the project\n- Fix error when opening overflow menu on toolbar\n- Create 64-bit version of the plugin\n\nOlder downloads from original author:\nhttp://sourceforge.net/projects/npp-plugins/files/</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/oviradoi/npp-explorer-plugin/releases/download/v1.8.5/Explorer_x64.zip</download>
+				<copy from="Explorer.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
 	<plugin name="HEX-Editor">
 		<x64Version>0.9.5.0</x64Version>
 		<description>Some reported issues, however many bugs fixed in latest release</description>
@@ -1012,6 +1026,28 @@
 			</x64>
 		</install>
 	</plugin>
+	<plugin name="Preview HTML">
+		<x64Version>1.3.2.0</x64Version>
+		<description>Preview HTML files inside Notepad++ (or in a floating window) without having to save them first.</description>
+		<author>Martijn Coppoolse</author>
+		<homepage>https://fossil.2of4.net/npp_preview/</homepage>
+		<sourceUrl>https://fossil.2of4.net/npp_preview/dir?ci=release-src&amp;name=src</sourceUrl>
+		<latestUpdate>- The preview now refreshes automatically after switching tabs, or whenever the document is changed.\n- The preview keeps its place when refreshing; it no longer jumps back to the top of the page after each refresh.\n- v1.2.0.0 had a bug which could cause an exception when closing a(ny) document.\n\nKnown limitations:\n- The plugin still uses the IE rendering component (ShDocVw).\n- It only renders HTML when the HTML highlighter is used, or the XML highlighter, with valid XML containing an &lt;?xml-stylesheet type="text/xsl" href="..."?&gt; preprocessing instruction, which in turn references a valid XSL template.</latestUpdate>
+		<minVersion>5.0</minVersion>
+		<install>
+			<x64>
+				<download>https://fossil.2of4.net/npp_preview/zip/PreviewHTML.zip?uuid=v1.3.2.0-64</download>
+				<copy from="PreviewHTML/PreviewHTML.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="PreviewHTML/filters.sample.ini" to="$CONFIGDIR$\PreviewHTML"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\PreviewHTML.dll"/>
+				<delete file="$CONFIGDIR$\PreviewHTML\filters.sample.ini"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="Python Indent">
 		<x64Version>1.0.0.1</x64Version>
 		<description>Indents Python code as you type according to Python syntax.</description>
@@ -1195,19 +1231,19 @@
 		</install>
 	</plugin>
 	<plugin name="SQLinForm">
-		<x64Version>5.3.19</x64Version>
+		<x64Version>5.3.25</x64Version>
 		<aliases>
 			<alias name="SQLinForm64"/>
 		</aliases>
 		<description>SQLinForm formats plain SQL, SQL embedded in Program Code, SQL snippets and SQL Statements with syntax errors.\n SQLinForm's Plugin for Notepad++ has a powerful code folding feature and formats your SQL as you Type. It supports all major DB like Oracle, DB2, SQL Server, Teradata, Netezza, MySQL, Sybase, MS Access, etc. SQLinForm incorporates its own multi-DB parser engine. No additional software is required.</description>
 		<author>Guido Thelen</author>
 		<homepage>https://www.sqlinform.com</homepage>
-		<latestUpdate>2018-10-19\nImproved Screen Resolutions\nHighlight added White Spaces\nAdded new formatting Options\nRedesigned GUI\nAdded Translation for Spanish\nAdded Translation for German</latestUpdate>
+		<latestUpdate>[2019-03-17]</latestUpdate>
 		<stability>Good</stability>
 		<minVersion>7.0</minVersion>
 		<install>
 			<x64>
-				<download>https://www.sqlinform.com/npp/SQLinFormNpp64_5.3.19.zip</download>
+				<download>https://www.sqlinform.com/npp/SQLinFormNpp64_5.3.25.zip</download>
 				<copy from="SQLinFormNpp64.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
