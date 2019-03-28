@@ -34,7 +34,7 @@
         "c70c9ffd2ab27f45465061f99c126ce0": "universal-ctags.dll"
     },
     "AutoCodepage": {
-        "6c50ebd47a89a2e56ce350b408e46a8d": "AutoCodepage.dll"
+        "45ba279b620f4cce45ac2b7138d9cc1f": "AutoCodepage.dll"
     },
     "Customize Toolbar": {
         "66e4957725c92cbf15cbb6ccfbcb1881": "_CustomizeToolbar.dll"
@@ -57,8 +57,7 @@
         "f2afb03bcd04dce6ae370ba20a6042c6": "libxml2-2.dll",
         "f9ff500438dcfe4847a8d250eec5ff82": "libxslt-1.dll",
         "c2de1ee33c0162f61d9a495fe1af427f": "zlib1.dll",
-        "2f8826a6cea2480fe2b4440d5c4273ef": "XMLTools.dll",
-        "da191d9a7f26daaaa1ca1899566adb4c": "libcurl.dll"
+        "0930c926cf10785c4bed15920264401e": "XMLTools.dll"
     },
     "LanguageHelp": {
         "37b8754108f4aa529b35ce3c9dd8415a": "LanguageHelp.dll"
@@ -94,7 +93,7 @@
         "b8b05082d32ff3eb121db529bb5e00b3": "NppToolBucket.dll"
     },
     "JSTool": {
-        "ab215c9f5d04773dee5bee761c2310ce": "JSMinNPP.dll"
+        "a8f5922411f75a6e882ff1cfd0359e68": "JSMinNPP.dll"
     },
     "3P - Progress Programmers Pal": {
         "6e50aa346dbc17aebafd86eb7f6b8360": "3P.dll",
@@ -260,7 +259,7 @@
         "8d646247876ddd466c050e7c95ce72c1": "NppTaskList.dll"
     },
     "AutoEolFormat": {
-        "a6d827e6b07f88928188e8d728ad425e": "AutoEolFormat.dll"
+        "f2ed342dcf06849b55fd6cd3045c2197": "AutoEolFormat.dll"
     },
     "CustomLineNumbers": {
         "3483aee6ef7c85d710e4ab8e39929634": "CustomLineNumbers.dll"
@@ -294,5 +293,8 @@
     },
     "Preview HTML": {
         "d7f73e724df1b3f0d621a59ab6322c41": "PreviewHTML.dll"
+    },
+    "Preview HTML": {
+        "247fe1a0849e241dcfadb6474abd02db": "NppMarkdownPanel.dll"
     }
 }

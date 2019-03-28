@@ -52,17 +52,17 @@
 		</remove>
 	</plugin>
 	<plugin name="AutoCodepage">
-		<x64Version>1.2.2</x64Version>
+		<x64Version>1.2.3</x64Version>
 		<description>AutoCodepage: A plugin to automatically set a document's code page to your needs on loading or renaming a document, changing its language or activating its tab. Usefull especially when coding batch scripts.</description>
 		<author>Andreas Heim</author>
 		<homepage>https://sourceforge.net/projects/autocodepage/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/autocodepage/files/v1.2.2/src/</sourceUrl>
-		<latestUpdate>Fixed: Entry of JavaScript in language combobox uses deprecated language id. This fix is mandatory after upgrading to Notepad++ v7.5.7 or higher.</latestUpdate>
+		<latestUpdate>v1.2.3 - November 2018 \n- changed: Adopted new plugin hosting model of Notepad++ version v7.5.9 and higher.</latestUpdate>
 		<minVersion>7.5.7</minVersion>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/autocodepage/files/v1.2.2/plugin/x64/AutoCodepage_v1.2.2_x64.zip</download>
-				<copy from="Win64\AutoCodepage.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://sourceforge.net/projects/autocodepage/files/v1.2.3/plugin/x64/AutoCodepage_v1.2.3_x64_PA.zip</download>
+				<copy from="AutoCodepage.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="AutoCodepage.txt" to="$PLUGINDIR$\doc" validate="false"/>
 			</x64>
 		</install>
@@ -73,16 +73,16 @@
 		</remove>
 	</plugin>
 	<plugin name="AutoEolFormat">
-		<x64Version>1.0</x64Version>
+		<x64Version>1.0.1</x64Version>
 		<description>A plugin to automatically set a document's EOL (End of Line) format to your needs on loading, saving or renaming a document or activating its tab.</description>
 		<author>Andreas Heim</author>
 		<homepage>https://sourceforge.net/projects/autoeolformat/</homepage>
-		<sourceUrl>https://sourceforge.net/projects/autoeolformat/files/v1.0/src/</sourceUrl>
-		<latestUpdate>[2018-10-09] Initial release.</latestUpdate>
+		<sourceUrl>https://sourceforge.net/projects/autoeolformat/files/v1.0.1/src/</sourceUrl>
+		<latestUpdate>v1.0.1 - November 2018 \n- changed: Adopted new plugin hosting model of Notepad++ version v7.5.9 and higher.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/autoeolformat/files/v1.0/plugin/x64/AutoEolFormat_v1.0_x64.zip</download>
-				<copy from="Win64\AutoEolFormat.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://sourceforge.net/projects/autoeolformat/files/v1.0.1/plugin/x64/AutoEolFormat_v1.0.1_x64_PA.zip</download>
+				<copy from="AutoEolFormat.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="AutoEolFormat.txt" to="$PLUGINDIR$\doc"/>
 			</x64>
 		</install>
@@ -487,7 +487,7 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.19.01.2</x64Version>
+		<x64Version>1.19.03.0</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -495,11 +495,11 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>[2019-01-23]\n[NPP] UI tweak.</latestUpdate>
+		<latestUpdate>[2019-03-22]\n1.1903.0\n[Common] Fix template output in some senario.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.1901.2.uni.64.zip/download</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.1903.0.uni.64.zip</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -882,6 +882,19 @@
 				<download>https://github.com/chcg/JumpList/releases/download/1.2.2.7/NppJumpList_1.2.2.7_x64.zip</download>
 				<copy from="NppJumpList.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\NppJumpList"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="NppMarkdownPanel">
+		<x64Version>0.4.0</x64Version>
+		<description>Lightweight Notepad++ plugin to preview Markdown files with a good default style.</description>
+		<author>Mohzy83</author>
+		<homepage>https://github.com/mohzy83/NppMarkdownPanel</homepage>
+		<latestUpdate>[2019-03-27]\nThis release is using Markdig as Markdown parser and renderer, which supports far more Markdown extentions than CommonMark.Net.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/mohzy83/NppMarkdownPanel/releases/download/0.4.0/NppMarkdownPanel-0.4.0.0-x64.zip</download>
+				<copy from="NppMarkdownPanel.dll" to="$PLUGINDIR$\"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1410,24 +1423,23 @@
 		</install>
 	</plugin>
 	<plugin name="XML Tools">
-		<x64Version>2.4.9.2</x64Version>
+		<x64Version>2.4.11</x64Version>
 		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based. The plugin features are:\n- XML syntax Check\n- XML Schema (XSD) + DTD Validation\n- XML tag autoclose\n- Pretty print\n- Linarize XML\n- Current XML Path\n- Conversion XML &amp;lt;-&amp;gt; Text\n- Comment / Uncomment\n- XPath expression evaluation</description>
 		<author>Nicolas Crittin</author>
 		<homepage>https://github.com/morbac/xmltools</homepage>
 		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/XML%20Tools/Xml%20Tools%202.4.4%20Unicode/Source%20XML%20Tools%202.4.4%20Unicode.zip/download</sourceUrl>
-		<latestUpdate>Release 2.4.9.2 \n- Fix pretty print function infinite loop when data ends unexpected\n\nRelease 2.4.9.1\n- Patch pretty print function error which occurred when text contains "='" sequence \n\nRelease 2.4.9\n- Compilation of 64bit version of the plugin \n- Fix pretty print with attributes and/or text containing &gt; char\n\nRelease 2.4.8\n- Add "Pretty print (attributes)" function\n- Fix pretty print of comments and CDATA blocs containing &lt; or &gt; char\n\nRelease 2.4.7\n- Add proxy support\n- Fix the "Set XML type automatically" function to avoid having caret placed at position 0 while changing the active tab\n\nRelease 2.4.6\n- Fix PrettyPrint on handling of quote delimiters used in xml attribute value\n- Re-compilation of libcurl.dll for Windows XP compatibility\n\nRelease 2.4.5\n- Modification of XPath evaluation to better manage XML with default namespace\n- Rollback of XML file detection behaviour modification of preceding release (was not working well)\n- Add a basic online check for plugin updates (checks on startup every 14 days)\n\nRelease 2.4.4\n- Optimization of pretty print function\n- Fix XML file detection issue when opening several files at once\n\nRelease 2.4.3 (r1058)\n- Fix auto-close with end markers ("&amp;lt;/a&amp;gt;" and "--&amp;gt;")\n- Fix PrettyPrint on handling of '&gt;' char present in text content\n\nRelease 2.4.2 (r1057)\n- Fix XPath evaluation for text() [bug #232]\n- Modification of PrettyPrint behaviour to avoid changing "&amp;lt;foo&amp;gt; &amp;lt;foo&amp;gt;" to "&amp;lt;foo/&amp;gt;" [bug #220]\n- Fix PrettyPrint EOL char support [bug #219]\n- Fix XPath evaluation issue with string result [bug #209]\n- Add information on unprefixed namespace handling during XPath evaluation [bug #195]\n- Fix a wrong reference to %appdata%\Notepad++\n\nRelease 2.4.1 (r1054)\n- Allow external DLLs to be loaded from %appdata%\Notepad++ folder\n- Change dialogs behaviour: dialogs are not destroyed on close and are restored on re-opening\n- Fix some memory leaks\n\nRelease 2.4 (r1048)\n- Fix pretty print error while playing with attributes containing quotes and double-quotes\n- Fix encoding support for following functions:\n  * Check XML syntax now\n  * Validate now\n  * Tag auto-close\n  * Current XML Path\n  * Evaluate XPath Expression\n  * XSL Transformation\n- Add "Prevent XXE" mode\n- Fix wrong selection length after conversions "&amp;amp;lt;&amp;amp;gt;" to "&amp;lt;&amp;gt;" and reverse\n- Upgrade libXML version (libXML 2.9.2, libXSLT 1.1.28, xmlsec 1.2.20, zlib 1.2.6, iconv 1.14, openssl 1.0.1j)\n- Add libXML/libXSLT versions infos in about box</latestUpdate>
+		<latestUpdate>[2018-11-20] Release 2.4.11\n- Add option for huge files support\n- Fix DTD validation\n- Improve "Current XML Path" function (the xpath contains attribute name if cursor is in attribute value)\n- Adapt plugin for Plugin Admin (NPP v7.6)\n- Minimal required NPP version is therefore 7.6\n\nRelease 2.4.9.2 \n- Fix pretty print function infinite loop when data ends unexpected\n\nRelease 2.4.9.1\n- Patch pretty print function error which occurred when text contains "='" sequence \n\nRelease 2.4.9\n- Compilation of 64bit version of the plugin \n- Fix pretty print with attributes and/or text containing &gt; char\n\nRelease 2.4.8\n- Add "Pretty print (attributes)" function\n- Fix pretty print of comments and CDATA blocs containing &lt; or &gt; char\n\nRelease 2.4.7\n- Add proxy support\n- Fix the "Set XML type automatically" function to avoid having caret placed at position 0 while changing the active tab\n\nRelease 2.4.6\n- Fix PrettyPrint on handling of quote delimiters used in xml attribute value\n- Re-compilation of libcurl.dll for Windows XP compatibility\n\nRelease 2.4.5\n- Modification of XPath evaluation to better manage XML with default namespace\n- Rollback of XML file detection behaviour modification of preceding release (was not working well)\n- Add a basic online check for plugin updates (checks on startup every 14 days)\n\nRelease 2.4.4\n- Optimization of pretty print function\n- Fix XML file detection issue when opening several files at once\n\nRelease 2.4.3 (r1058)\n- Fix auto-close with end markers ("&amp;lt;/a&amp;gt;" and "--&amp;gt;")\n- Fix PrettyPrint on handling of '&gt;' char present in text content\n\nRelease 2.4.2 (r1057)\n- Fix XPath evaluation for text() [bug #232]\n- Modification of PrettyPrint behaviour to avoid changing "&amp;lt;foo&amp;gt; &amp;lt;foo&amp;gt;" to "&amp;lt;foo/&amp;gt;" [bug #220]\n- Fix PrettyPrint EOL char support [bug #219]\n- Fix XPath evaluation issue with string result [bug #209]\n- Add information on unprefixed namespace handling during XPath evaluation [bug #195]\n- Fix a wrong reference to %appdata%\Notepad++\n\nRelease 2.4.1 (r1054)\n- Allow external DLLs to be loaded from %appdata%\Notepad++ folder\n- Change dialogs behaviour: dialogs are not destroyed on close and are restored on re-opening\n- Fix some memory leaks\n\nRelease 2.4 (r1048)\n- Fix pretty print error while playing with attributes containing quotes and double-quotes\n- Fix encoding support for following functions:\n  * Check XML syntax now\n  * Validate now\n  * Tag auto-close\n  * Current XML Path\n  * Evaluate XPath Expression\n  * XSL Transformation\n- Add "Prevent XXE" mode\n- Fix wrong selection length after conversions "&amp;amp;lt;&amp;amp;gt;" to "&amp;lt;&amp;gt;" and reverse\n- Upgrade libXML version (libXML 2.9.2, libXSLT 1.1.28, xmlsec 1.2.20, zlib 1.2.6, iconv 1.14, openssl 1.0.1j)\n- Add libXML/libXSLT versions infos in about box</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/XML%20Tools/Xml%20Tools%202.4.9%20Unicode/Xml%20Tools%202.4.9.2%20x64%20Unicode.zip/download</download>
-				<copy from="dependencies\libiconv-2.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="dependencies\libwinpthread-1.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="dependencies\libxml2-2.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="dependencies\libxslt-1.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="dependencies\zlib1.dll" to="$NPPDIR$\" validate="true"/>
-				<copy from="install.txt" to="$PLUGINDIR$\doc\XmlTools"/>
+				<download>https://github.com/morbac/xmltools/releases/download/2.4.11.0/Xml.Tools.2.4.11.0.x86.Unicode.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="libs\libiconv-2.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="libs\libwinpthread-1.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="libs\libxml2-2.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="libs\libxslt-1.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="libs\zlib1.dll" to="$NPPDIR$\" validate="true"/>
+				<copy from="change.log" to="$PLUGINDIR$\doc\XmlTools"/>
 				<copy from="XMLTools.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="dependencies\libcurl.dll" to="$NPPDIR$\" validate="true"/>
 			</x64>
 		</install>
 		<remove>

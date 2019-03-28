@@ -89,17 +89,17 @@
 		</install>
 	</plugin>
 	<plugin name="AutoCodepage">
-		<x64Version>1.2.2</x64Version>
+		<x64Version>1.2.3</x64Version>
 		<description>AutoCodepage: A plugin to automatically set a document's code page to your needs on loading or renaming a document, changing its language or activating its tab. Usefull especially when coding batch scripts.</description>
 		<author>Andreas Heim</author>
 		<homepage>https://sourceforge.net/projects/autocodepage/</homepage>
 		<sourceUrl>https://sourceforge.net/projects/autocodepage/files/v1.2.2/src/</sourceUrl>
-		<latestUpdate>Fixed: Entry of JavaScript in language combobox uses deprecated language id. This fix is mandatory after upgrading to Notepad++ v7.5.7 or higher.</latestUpdate>
+		<latestUpdate>v1.2.3 - November 2018 \n- changed: Adopted new plugin hosting model of Notepad++ version v7.5.9 and higher.</latestUpdate>
 		<minVersion>7.5.7</minVersion>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/autocodepage/files/v1.2.2/plugin/x86/AutoCodepage_v1.2.2_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="Win32\AutoCodepage.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://sourceforge.net/projects/autocodepage/files/v1.2.3/plugin/x86/AutoCodepage_v1.2.3_UNI_PA.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="AutoCodepage.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="AutoCodepage.txt" to="$PLUGINDIR$\doc"/>
 			</x64>
 		</install>
@@ -110,16 +110,16 @@
 		</remove>
 	</plugin>
 	<plugin name="AutoEolFormat">
-		<x64Version>1.0</x64Version>
+		<x64Version>1.0.1</x64Version>
 		<description>A plugin to automatically set a document's EOL (End of Line) format to your needs on loading, saving or renaming a document or activating its tab.</description>
 		<author>Andreas Heim</author>
 		<homepage>https://sourceforge.net/projects/autoeolformat/</homepage>
-		<sourceUrl>https://sourceforge.net/projects/autoeolformat/files/v1.0/src/</sourceUrl>
-		<latestUpdate>[2018-10-09] Initial release.</latestUpdate>
+		<sourceUrl>https://sourceforge.net/projects/autoeolformat/files/v1.0.1/src/</sourceUrl>
+		<latestUpdate>v1.0.1 - November 2018 \n- changed: Adopted new plugin hosting model of Notepad++ version v7.5.9 and higher.</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/autoeolformat/files/v1.0/plugin/x86/AutoEolFormat_v1.0_UNI.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="Win32\AutoEolFormat.dll" to="$PLUGINDIR$\" validate="true"/>
+				<download>https://sourceforge.net/projects/autoeolformat/files/v1.0.1/plugin/x86/AutoEolFormat_v1.0.1_UNI_PA.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="AutoEolFormat.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="AutoEolFormat.txt" to="$PLUGINDIR$\doc"/>
 			</x64>
 		</install>
@@ -610,16 +610,16 @@
 		</remove>
 	</plugin>
 	<plugin name="DSpellCheck">
-		<x64Version>1.4.10</x64Version>
+		<x64Version>1.4.11</x64Version>
 		<description>Spell-checking plugin, with following main features:\n-Underlining spelling mistakes\n-Iterating through all mistakes in document\n-Finding mistakes only in comments and strings (For files with standard programming language syntax e.g. C++)\n-Possible usage of multiple languages (dictionaries) simultaneously to do spell-checking.\n-Getting suggestions for words by either using default Notepad++ menu or separate context menu called by special button appearing under word.\n-Able to add words to user dictionary or ignore them for current session of Notepad++\n-Using either Hunspell library (included in plugin), either Aspell library (needs to be installed), .\n-A lot of customizing available from Plugin settings (Ignoring/Allowing only specific files, Choosing delimiters for words, Maximum number of suggestions etc)\n-Support for downloading and removing Hunspell dictionaries through user friendly GUI interface\n-Ability to quickly change current language through the nice menu.</description>
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2019-01-29\n* Fix string literals in some languages not being checked properly. (#166)\n* Add the action to replace word with the first suggestion. (#165)\n* Improve decoding of dictionary names for Windows Vista+. (#164)\n* Fix problem with display of "special button". (#162)\n* Add action to possibly call context menu with suggestions by hotkey. (#160)\n* Add action to replace the same words in whole document with a selected suggestion. (#155)\n* Fix occasional error messages appearing when Notepad++ was launched from git bash.\n* Make dictionaries loading asynchronous. (#134)\n* Fix CamelCase splitting for words with all-capitals.</latestUpdate>
+		<latestUpdate>* Plugin should no longer utilize cpu when Notepad++ is not active.\n* Do not load dictionary if spell-checking is turned off.\n* Correctly spell-check single quoted string literals in javascript.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.10/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/Predelnik/DSpellCheck/releases/download/v1.4.11/DSpellCheck_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="DSpellCheck.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1073,7 +1073,7 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.19.01.2</x64Version>
+		<x64Version>1.19.03.0</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -1081,11 +1081,11 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>[2019-01-23]\n[NPP] UI tweak.</latestUpdate>
+		<latestUpdate>[2019-03-22]\n1.1903.0\n[Common] Fix template output in some senario.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.1901.2.uni.32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.1903.0.uni.32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1698,6 +1698,19 @@
 				<download>https://downloads.sourceforge.net/project/nppjumplist/1.2.2/NppJumpList.1.2.2.bin.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppJumpList.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\NppJumpList"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="NppMarkdownPanel">
+		<x64Version>0.4.0</x64Version>
+		<description>Lightweight Notepad++ plugin to preview Markdown files with a good default style.</description>
+		<author>Mohzy83</author>
+		<homepage>https://github.com/mohzy83/NppMarkdownPanel</homepage>
+		<latestUpdate>[2019-03-27]\nThis release is using Markdig as Markdown parser and renderer, which supports far more Markdown extentions than CommonMark.Net.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/mohzy83/NppMarkdownPanel/releases/download/0.4.0/NppMarkdownPanel-0.4.0.0-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="NppMarkdownPanel.dll" to="$PLUGINDIR$\"/>
 			</x64>
 		</install>
 	</plugin>
@@ -3049,7 +3062,7 @@
 		<latestUpdate>[2018-11-20] Release 2.4.11\n- Add option for huge files support\n- Fix DTD validation\n- Improve "Current XML Path" function (the xpath contains attribute name if cursor is in attribute value)\n- Adapt plugin for Plugin Admin (NPP v7.6)\n- Minimal required NPP version is therefore 7.6\n\nRelease 2.4.9.2 \n- Fix pretty print function infinite loop when data ends unexpected\n\nRelease 2.4.9.1\n- Patch pretty print function error which occurred when text contains "='" sequence \n\nRelease 2.4.9\n- Compilation of 64bit version of the plugin \n- Fix pretty print with attributes and/or text containing &gt; char\n\nRelease 2.4.8\n- Add "Pretty print (attributes)" function\n- Fix pretty print of comments and CDATA blocs containing &lt; or &gt; char\n\nRelease 2.4.7\n- Add proxy support\n- Fix the "Set XML type automatically" function to avoid having caret placed at position 0 while changing the active tab\n\nRelease 2.4.6\n- Fix PrettyPrint on handling of quote delimiters used in xml attribute value\n- Re-compilation of libcurl.dll for Windows XP compatibility\n\nRelease 2.4.5\n- Modification of XPath evaluation to better manage XML with default namespace\n- Rollback of XML file detection behaviour modification of preceding release (was not working well)\n- Add a basic online check for plugin updates (checks on startup every 14 days)\n\nRelease 2.4.4\n- Optimization of pretty print function\n- Fix XML file detection issue when opening several files at once\n\nRelease 2.4.3 (r1058)\n- Fix auto-close with end markers ("&amp;lt;/a&amp;gt;" and "--&amp;gt;")\n- Fix PrettyPrint on handling of '&gt;' char present in text content\n\nRelease 2.4.2 (r1057)\n- Fix XPath evaluation for text() [bug #232]\n- Modification of PrettyPrint behaviour to avoid changing "&amp;lt;foo&amp;gt; &amp;lt;foo&amp;gt;" to "&amp;lt;foo/&amp;gt;" [bug #220]\n- Fix PrettyPrint EOL char support [bug #219]\n- Fix XPath evaluation issue with string result [bug #209]\n- Add information on unprefixed namespace handling during XPath evaluation [bug #195]\n- Fix a wrong reference to %appdata%\Notepad++\n\nRelease 2.4.1 (r1054)\n- Allow external DLLs to be loaded from %appdata%\Notepad++ folder\n- Change dialogs behaviour: dialogs are not destroyed on close and are restored on re-opening\n- Fix some memory leaks\n\nRelease 2.4 (r1048)\n- Fix pretty print error while playing with attributes containing quotes and double-quotes\n- Fix encoding support for following functions:\n  * Check XML syntax now\n  * Validate now\n  * Tag auto-close\n  * Current XML Path\n  * Evaluate XPath Expression\n  * XSL Transformation\n- Add "Prevent XXE" mode\n- Fix wrong selection length after conversions "&amp;amp;lt;&amp;amp;gt;" to "&amp;lt;&amp;gt;" and reverse\n- Upgrade libXML version (libXML 2.9.2, libXSLT 1.1.28, xmlsec 1.2.20, zlib 1.2.6, iconv 1.14, openssl 1.0.1j)\n- Add libXML/libXSLT versions infos in about box</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/morbac/xmltools/releases/download/2.4.11.0/Xml.Tools.2.4.11.0.x86.Unicode.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/morbac/xmltools/releases/download/2.4.11.0/Xml.Tools.2.4.11.0.x64.Unicode.zip</download>
 				<copy from="libs\libiconv-2.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="libs\libwinpthread-1.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="libs\libxml2-2.dll" to="$NPPDIR$\" validate="true"/>
