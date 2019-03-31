@@ -615,7 +615,7 @@
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>* Plugin should no longer utilize cpu when Notepad++ is not active.\n* Do not load dictionary if spell-checking is turned off.\n* Correctly spell-check single quoted string literals in javascript.</latestUpdate>
+		<latestUpdate>2019-03-21\n* Plugin should no longer utilize cpu when Notepad++ is not active.\n* Do not load dictionary if spell-checking is turned off.\n* Correctly spell-check single quoted string literals in javascript.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -1557,15 +1557,15 @@
 		</remove>
 	</plugin>
 	<plugin name="NppCrypt">
-		<x64Version>1.0.1.5</x64Version>
+		<x64Version>1.0.1.6</x64Version>
 		<description>encryption/decryption with various block ciphers, hash-algorithms, random-characters, encoding with base-16/32/64</description>
 		<author>Jean Paul Richter</author>
 		<homepage>https://github.com/jeanpaulrichter/nppcrypt</homepage>
 		<sourceUrl>https://github.com/jeanpaulrichter/nppcrypt</sourceUrl>
-		<latestUpdate>20 Nov 2017 changlog v1.0.1.5:\nnew cipher (ChaCha), hash (BLAKE2), minor interface improvements, bugfixes</latestUpdate>
+		<latestUpdate>[2019-03-31]\n- more ciphers &amp; hashes (thanks to cryptopp 8.0)\n- easy mode (with default encryption), see faq\n- interface improvements (more information etc)\n- user may provide base16/32/64 encoded input\n- user may specify custom IV\n- base32/64 encoding alphabets can be modified, see faq\n- lots of internal improvements &amp; fixes</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/jeanpaulrichter/nppcrypt/releases/download/1.0.1.5/nppcrypt_1.0.1.5_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/jeanpaulrichter/nppcrypt/releases/download/1.0.1.6/nppcrypt_1.0.1.6_x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="nppcrypt.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -3062,7 +3062,7 @@
 		<latestUpdate>[2018-11-20] Release 2.4.11\n- Add option for huge files support\n- Fix DTD validation\n- Improve "Current XML Path" function (the xpath contains attribute name if cursor is in attribute value)\n- Adapt plugin for Plugin Admin (NPP v7.6)\n- Minimal required NPP version is therefore 7.6\n\nRelease 2.4.9.2 \n- Fix pretty print function infinite loop when data ends unexpected\n\nRelease 2.4.9.1\n- Patch pretty print function error which occurred when text contains "='" sequence \n\nRelease 2.4.9\n- Compilation of 64bit version of the plugin \n- Fix pretty print with attributes and/or text containing &gt; char\n\nRelease 2.4.8\n- Add "Pretty print (attributes)" function\n- Fix pretty print of comments and CDATA blocs containing &lt; or &gt; char\n\nRelease 2.4.7\n- Add proxy support\n- Fix the "Set XML type automatically" function to avoid having caret placed at position 0 while changing the active tab\n\nRelease 2.4.6\n- Fix PrettyPrint on handling of quote delimiters used in xml attribute value\n- Re-compilation of libcurl.dll for Windows XP compatibility\n\nRelease 2.4.5\n- Modification of XPath evaluation to better manage XML with default namespace\n- Rollback of XML file detection behaviour modification of preceding release (was not working well)\n- Add a basic online check for plugin updates (checks on startup every 14 days)\n\nRelease 2.4.4\n- Optimization of pretty print function\n- Fix XML file detection issue when opening several files at once\n\nRelease 2.4.3 (r1058)\n- Fix auto-close with end markers ("&amp;lt;/a&amp;gt;" and "--&amp;gt;")\n- Fix PrettyPrint on handling of '&gt;' char present in text content\n\nRelease 2.4.2 (r1057)\n- Fix XPath evaluation for text() [bug #232]\n- Modification of PrettyPrint behaviour to avoid changing "&amp;lt;foo&amp;gt; &amp;lt;foo&amp;gt;" to "&amp;lt;foo/&amp;gt;" [bug #220]\n- Fix PrettyPrint EOL char support [bug #219]\n- Fix XPath evaluation issue with string result [bug #209]\n- Add information on unprefixed namespace handling during XPath evaluation [bug #195]\n- Fix a wrong reference to %appdata%\Notepad++\n\nRelease 2.4.1 (r1054)\n- Allow external DLLs to be loaded from %appdata%\Notepad++ folder\n- Change dialogs behaviour: dialogs are not destroyed on close and are restored on re-opening\n- Fix some memory leaks\n\nRelease 2.4 (r1048)\n- Fix pretty print error while playing with attributes containing quotes and double-quotes\n- Fix encoding support for following functions:\n  * Check XML syntax now\n  * Validate now\n  * Tag auto-close\n  * Current XML Path\n  * Evaluate XPath Expression\n  * XSL Transformation\n- Add "Prevent XXE" mode\n- Fix wrong selection length after conversions "&amp;amp;lt;&amp;amp;gt;" to "&amp;lt;&amp;gt;" and reverse\n- Upgrade libXML version (libXML 2.9.2, libXSLT 1.1.28, xmlsec 1.2.20, zlib 1.2.6, iconv 1.14, openssl 1.0.1j)\n- Add libXML/libXSLT versions infos in about box</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/morbac/xmltools/releases/download/2.4.11.0/Xml.Tools.2.4.11.0.x64.Unicode.zip</download>
+				<download>https://github.com/morbac/xmltools/releases/download/2.4.11.0/Xml.Tools.2.4.11.0.x86.Unicode.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="libs\libiconv-2.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="libs\libwinpthread-1.dll" to="$NPPDIR$\" validate="true"/>
 				<copy from="libs\libxml2-2.dll" to="$NPPDIR$\" validate="true"/>
