@@ -120,7 +120,7 @@
         "729ee5b15087b93185231a62ff83bdfc": "NppEventExec.dll"
     },
     "NppExec": {
-        "f9f54560b72c0fa1846442caf9715909": "NppExec.dll"
+        "11d6b79e84c6ac21825ad20caaa06ef4": "NppExec.dll"
     },
     "JSON Viewer": {
         "e6ea30a2e52173a41d69fd0942a1a089": "NPPJSONViewer.dll"
@@ -297,5 +297,8 @@
     },
     "Preview HTML": {
         "247fe1a0849e241dcfadb6474abd02db": "NppMarkdownPanel.dll"
+    },
+    "WakaTime": {
+        "7c120f832746ce011bfa1172b8ebcdf5": "WakaTime.dll"
     }
 }

@@ -329,7 +329,7 @@
 		<author>Sergey Semushin</author>
 		<homepage>https://github.com/Predelnik/DSpellCheck/releases</homepage>
 		<sourceUrl>https://github.com/Predelnik/DSpellCheck</sourceUrl>
-		<latestUpdate>2019-04-12\n* Restore Windows XP support, broken in previous 2 versions. (#170)\n* Restore showing of Hunspell dictionary list if spell-checking is turned off. (#172)\n* Several fixes for download/remove dictionary dialogs.\n</latestUpdate>
+		<latestUpdate>2019-04-12\n* Restore Windows XP support, broken in previous 2 versions. (#170)\n* Restore showing of Hunspell dictionary list if spell-checking is turned off. (#172)\n* Several fixes for download/remove dictionary dialogs.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -799,10 +799,10 @@
 		<author>Vitaliy Dovgan</author>
 		<homepage>https://github.com/d0vgan/nppexec</homepage>
 		<sourceUrl>https://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
-		<latestUpdate>2018-06-20 v0.6 RC 2\n ----------------------\n* new environment variables: $(CLIPBOARD_TEXT), $(NPP_HWND), $(SCI_HWND)\n* new commands: clip_settext, messagebox, exit, npe_sendmsgbuflen\n* set &lt;var&gt; ~ strlensci &lt;string&gt;\n* internal improvements\n* the NppExec Manual has been updated</latestUpdate>
+		<latestUpdate>2019-04-07 v0.6 RC 3\n ----------------------\n- new advanced option “ChildProcess_RunPolicy” (see “NppExec_TechInfo.txt”)\n- better compatibility with Notepad++ 7.6.x (and higher)\n- internal improvements\n- the NppExec Manual has been updated</latestUpdate>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20RC2/NppExec_06RC2_dll_x64.zip/download</download>
+				<download>https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.6%20RC3/NppExec_06RC3_dll_x64.zip</download>
 				<copy from="doc\NppExec\*.*" to="$PLUGINDIR$\doc\NppExec"/>
 				<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
 				<copy from="NppExec.dll" to="$PLUGINDIR$\" validate="true"/>
@@ -1406,6 +1406,21 @@
 			<x64>
 				<download>https://github.com/bycn82/visimulator/raw/master/x64/ViSimulator-x64-20180308.zip</download>
 				<copy from="ViSimulator.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="WakaTime">
+		<x64Version>4.1.0</x64Version>
+		<description>Metrics, insights, and time tracking automatically generated from your programming activity.</description>
+		<author>WakaTime</author>
+		<homepage>https://wakatime.com/</homepage>
+		<sourceUrl>https://github.com/wakatime/notepadpp-wakatime</sourceUrl>
+		<latestUpdate>History\n-------\n\n4.1.0 (2019-04-10)\n++++++++++++++++++\n- Fix for x86/x64 platform.\n- Update NPP plugin platform to v0.94.00.\n- Only one config file instance needed for whole extension.\n\n4.0.2 (2016-08-16)\n++++++++++++++++++\n\n- Correctly detect when user is typing in a file.\n\n\n4.0.1 (2016-08-16)\n++++++++++++++++++\n\n- Fix bug causing notification handler to be called more often than needed.\n\n\n4.0.0 (2016-08-15)\n++++++++++++++++++\n\n- Fix bug preventing editor events from being handled.\n- Reload settings from config file every time settings menu is displayed.\n- Write all exceptions to C:\Users\%USER%\AppData\Roaming\WakaTime\WakaTime.log file.\n\n\n3.0.2 (2016-08-15)\n++++++++++++++++++\n\n- Fix runtime compatibility issues.\n\n\n3.0.1 (2016-06-13)\n++++++++++++++++++\n\n- Refactor plugin using code from wakatime/visualstudio-wakatime.\n- Prevent deleting wakatime-core when IDE started while offline.\n- Queue heartbeats before sending to wakatime-cli to prevent from forking too many python processes.\n- Improved dependency management and moved dependencies to AppDataWakaTime folder.\n- Millisecond precision for heartbeat timestamps.\n\n\n3.0.0 (2015-12-17)\n++++++++++++++++++\n\n- use embedded python instead of installing\n- remove prompt before installing Python because using embeddable Python now\n- prevent locking inside background thread\n- better looking obfuscated api key\n\n\n2.0.3 (2015-08-27)\n++++++++++++++++++\n\n- fix slow startup issue\n\n\n2.0.2 (2015-08-25)\n++++++++++++++++++\n\n- upgrade wakatime cli to v4.1.1\n- send hostname in X-Machine-Name header\n- catch exceptions from pygments.modeline.get_filetype_from_buffer\n- upgrade requests package to v2.7.0\n- handle non-ASCII characters in import path on Windows, won't fix for Python2\n- upgrade argparse to v1.3.0\n- move language translations to api server\n- move extension rules to api server\n- detect correct header file language based on presence of .cpp or .c files named the same as the .h file\n\n\n2.0.1 (2015-08-04)\n++++++++++++++++++\n\n- upgrade wakatime cli to v4.1.0\n- correct priority for project detection\n- fix offline logging\n- limit language detection to known file extensions, unless file contents has a vim modeline\n- guess language using multiple methods, then use most accurate guess\n- use entity and type for new heartbeats api resource schema\n- correctly log message from py.warnings module\n\n\n2.0.0 (2015-05-30)\n++++++++++++++++++\n\n- clean up external process execution\n- always use latest version of wakatime cli dependency\n- cache python binary location for better performance\n- move log file to AppData folder\n\n\n1.1.0 (2015-05-26)\n++++++++++++++++++\n\n- add icon to menu\n- follow .Net coding conventions and code cleanup\n\n\n1.0.0 (2015-04-29)\n++++++++++++++++++\n\n- Birth</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://github.com/wakatime/notepadpp-wakatime/releases/download/4.1.0/WakaTime-4.1.0-x64 .zip</download>
+				<copy from="WakaTime.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
