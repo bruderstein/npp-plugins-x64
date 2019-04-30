@@ -303,7 +303,9 @@
 	<plugin name="CharM">
 		<description>CharM (CHARacter Map) plugin for Notepad++. Highlight a character, select Plugins-&gt;CharM-&gt;Character Map, and it will give you variations of that character. Version 0.9 is functional, although it could use some work on the interface.</description>
 		<author>Todd Hadley (Fidvo)</author>
-		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files</sourceUrl>
+		<homepage>https://sourceforge.net/projects/npp-plugins/files</homepage>
+		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/CharM/CharM%200.9/CharM_0_9_src.zip/download</sourceUrl>
+		<latestUpdate>[2008-02-21] v0.9</latestUpdate>
 		<install>
 		</install>
 	</plugin>
@@ -380,9 +382,16 @@
 		</install>
 	</plugin>
 	<plugin name="Color Picker">
+		<x64Version>2.3</x64Version>
 		<description>A color picker which translates your selected colour in hexadecimal.</description>
 		<author>Matthew Edwards</author>
+		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/ColorPicker/Color%20Picker%20v.2.3/colorpicker_230_src.zip</sourceUrl>
+		<latestUpdate>[2013-03-31]\nNew in version 2.3 \nThis is the most stable version to date. \nAdded a form displaying named colors in Delphi. \nThe form is for reference and is not interactive.</latestUpdate>
 		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-plugins/files/ColorPicker/Color%20Picker%20v.2.3/ColorPicker_230_dll.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="ColorPicker.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
 		</install>
 	</plugin>
 	<plugin name="Column sorting">
@@ -534,11 +543,17 @@
 		</remove>
 	</plugin>
 	<plugin name="DBGp">
+		<x64Version>0.0.13.27</x64Version>
 		<description>This is a php debugger (XDebug) which talks DBGP protocol. Use this plugin to transform your Notepad++ to a php IDE.</description>
 		<author>Damjan Zobo Cvetko</author>
-		<sourceUrl>http://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DBGpPlugin_0_11b_src.zip&amp;a=17984321</sourceUrl>
+		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/DBGP%20Plugin/DBGP%20Plugin%20v0.13%20beta/DBGpPlugin_0_13b_src.zip</sourceUrl>
+		<latestUpdate>2012-08-25 v0.13 beta\n\nOn demand fetching of lower levels of property tree. If you set max_depth to 1\neach new level will be fetched from the debugging engine.\nUsing AutoScroll=false on forms so that ClientWidth/ClientHeight is used and\nforms look better on Windows 7.\nUpgraded to JVCL 3.45.\nAnd added fix for http://issuetracker.delphi-jedi.org/view.php?id=5023\nChecking to see if dbgp source temp file changed and not rewriting it.</latestUpdate>
 		<stability>Reported issues with port conflicts</stability>
 		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/npp-plugins/files/DBGP%20Plugin/DBGP%20Plugin%20v0.13%20beta/DBGpPlugin_0_13b_dll.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="dbgpPlugin.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
 		</install>
 	</plugin>
 	<plugin name="DocIt">
@@ -796,15 +811,17 @@
 		</install>
 	</plugin>
 	<plugin name="Function List">
-		<x64Version>2.0.0.0</x64Version>
-		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
+		<x64Version>2.1.0.0</x64Version>
+		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/Function%20List/FunctionList%20Plugin%20v2.1/FunctionList_2_1_src.zip</sourceUrl>
+		<latestUpdate>[2010-02-18] v2.1</latestUpdate>
 		<stability>Occasional issues</stability>
 		<install>
 			<x64>
-				<download>https://downloads.sourceforge.net/sourceforge/npp-plugins/FunctionList_2_0_UNI_dll.zip!!!ADAPT_LINK_FOR_X64!!!</download>
-				<copy from="C++.flb" to="$CONFIGDIR$\"/>
-				<copy from="FunctionListRules.xml" to="$CONFIGDIR$\"/>
-				<copy from="FunctionList.dll" to="$PLUGINDIR$\"/>
+				<download>https://sourceforge.net/projects/npp-plugins/files/Function%20List/FunctionList%20Plugin%20v2.1/FunctionList_2_1_UNI_dll.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<copy from="Config/C++.flb" to="$CONFIGDIR$\"/>
+				<copy from="Config/FunctionListRules.xml" to="$CONFIGDIR$\"/>
+				<copy from="FunctionList.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="Config/Gmod Lua.bmp" to="$CONFIGDIR$\"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1051,7 +1068,7 @@
 		</install>
 	</plugin>
 	<plugin name="JSON Viewer">
-		<x64Version>1.32</x64Version>
+		<x64Version>1.34</x64Version>
 		<aliases>
 			<alias name="JSONViewer"/>
 		</aliases>
@@ -1059,10 +1076,10 @@
 		<author>Kapil Ratnani</author>
 		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
 		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
-		<latestUpdate>[2018-10-14] Fixes #39 Format JSON changes numeric values</latestUpdate>
+		<latestUpdate>[2019-04-25]\n- Fix bug which resulted in "Access Violation" when the root element is an Array</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.32/NPPJSONViewerWin32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.34/NPPJSONViewer_Win32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NPPJSONViewer.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1176,6 +1193,8 @@
 	<plugin name="Log Plugin">
 		<description>Log plugin allows Notepad++ has one of MS Notepad basic features : Append the date/time at the end of file after a file is opened in Notepad++, if file begins with ".LOG".</description>
 		<author>Nicholas Heckman</author>
+		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/Log%20Plugin/Log%20Plugin%20v1.0/NPPLogPlugin.v1.0.src.zip</sourceUrl>
+		<latestUpdate>[2008-05-08] v1.0</latestUpdate>
 		<install>
 		</install>
 	</plugin>
@@ -1574,6 +1593,7 @@
 		<description>Allows the same document to be edited in real time on two different computers.  Only needs a network connection between the two.  Now known as NppNetNote.</description>
 		<author>Harrybharry</author>
 		<sourceUrl>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_src.zip</sourceUrl>
+		<latestUpdate>[2008-10-22] v0.1</latestUpdate>
 		<install/>
 	</plugin>
 	<plugin name="NppEventExec">
@@ -2267,6 +2287,7 @@
 	<plugin name="Search in Files">
 		<description>A nicely done Find in files plugin which shows the information in a neat tree view.</description>
 		<author>Jose Javier Sanjose</author>
+		<latestUpdate>[2008-10-09] v1.12</latestUpdate>
 		<install>
 		</install>
 	</plugin>
@@ -2372,8 +2393,9 @@
 		</install>
 	</plugin>
 	<plugin name="Simple Script">
-		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes.</description>
+		<description>Simple script plug-in allows you to make up your script from built-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes.</description>
 		<author>Todd Hadley (Fidvo)</author>
+		<latestUpdate>[2008-02-21] v1.13</latestUpdate>
 		<install>
 		</install>
 	</plugin>

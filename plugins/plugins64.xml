@@ -465,7 +465,7 @@
 		</install>
 	</plugin>
 	<plugin name="JSON Viewer">
-		<x64Version>1.32</x64Version>
+		<x64Version>1.34</x64Version>
 		<aliases>
 			<alias name="JSONViewer"/>
 		</aliases>
@@ -473,10 +473,10 @@
 		<author>Kapil Ratnani</author>
 		<homepage>https://github.com/kapilratnani/JSON-Viewer</homepage>
 		<sourceUrl>https://github.com/kapilratnani/JSON-Viewer</sourceUrl>
-		<latestUpdate>[2018-10-14] Fixes #39 Format JSON changes numeric values</latestUpdate>
+		<latestUpdate>[2019-04-25]\n- Fix bug which resulted in "Access Violation" when the root element is an Array</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.32/NPPJSONViewerX64.zip</download>
+				<download>https://github.com/kapilratnani/JSON-Viewer/releases/download/1.34/NPPJSONViewer_X64.zip</download>
 				<copy from="NPPJSONViewer.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
