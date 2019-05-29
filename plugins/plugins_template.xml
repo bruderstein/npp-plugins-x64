@@ -1090,7 +1090,7 @@
 		</remove>
 	</plugin>
 	<plugin name="JSTool">
-		<x64Version>1.19.03.0</x64Version>
+		<x64Version>1.19.05.1</x64Version>
 		<aliases>
 			<alias name="JSMin"/>
 		</aliases>
@@ -1098,11 +1098,11 @@
 		<author>Sun Junwen</author>
 		<homepage>http://www.sunjw.us/jstoolnpp</homepage>
 		<sourceUrl>https://github.com/sunjw/jstoolnpp</sourceUrl>
-		<latestUpdate>[2019-03-22]\n1.1903.0\n[Common] Fix template output in some senario.</latestUpdate>
+		<latestUpdate>[2019-05-15]\n1.1905.1\nChange default settings.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.1903.0.uni.32.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://sourceforge.net/projects/jsminnpp/files/Uni/JSToolNPP.1.1905.1.uni.32.zip/download!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="JSMinNPP.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1656,7 +1656,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.28.3</x64Version>
+		<x64Version>0.28.4</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -1664,10 +1664,10 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2019-03-05\n- adapt structure to be usable also by pluginAdmin</latestUpdate>
+		<latestUpdate>2019-05-28\n-update openssl to 1.0.2s (changelog see https://www.openssl.org/news/cl102.txt)</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.28.3/NppFTP-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.28.4/NppFTP-x86.zip!!!ADAPT_LINK_FOR_X64!!!</download>
 				<copy from="NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>
