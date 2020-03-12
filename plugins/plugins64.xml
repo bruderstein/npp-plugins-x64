@@ -24,6 +24,32 @@
 			</x64>
 		</remove>
 	</plugin>
+	<plugin name="ActiveX Plugin">
+		<x64Version>1.1.8.5</x64Version>
+		<description>This plugin allows you to control Notepad++ via ActiveX.\nYou can use ActiveX with many scripting languages (VBScript, JScript, PHP, ...) and other languages (C++, C+, VB.NET, Delphi, ...).\nSo you are not bound to a single language.</description>
+		<author>Bananen-Joe</author>
+		<homepage>https://sourceforge.net/projects/nppactivexplugin/</homepage>
+		<sourceUrl>https://sourceforge.net/projects/nppactivexplugin/</sourceUrl>
+		<versions>
+			<version number="1.1.8.5" md5="5c22d81a2f510778d3e9b80542ee7da1"/>
+		</versions>
+		<latestUpdate>Bugfixes and x64 version.</latestUpdate>
+		<stability>Good</stability>
+		<install>
+			<x64>
+				<download>https://sourceforge.net/projects/nppactivexplugin/files/bin/ActiveX_x64_1_1_8_5.zip/download</download>
+				<copy from="ActiveX.dll" to="$PLUGINDIR$\" validate="true"/>
+				<copy from="ActiveX\*.*" to="$PLUGINDIR$\ActiveX"/>
+			</x64>
+		</install>
+		<remove>
+			<x64>
+				<delete file="$PLUGINDIR$\ActiveX.dll"/>
+				<delete file="$PLUGINDIR$\ActiveX\RegisterActiveX.exe"/>
+				<delete file="$PLUGINDIR$\ActiveX\ActiveX.chm"/>
+			</x64>
+		</remove>
+	</plugin>
 	<plugin name="AnalysePlugin">
 		<x64Version>1.11.37</x64Version>
 		<description>AnalysePlugin will help you to search for more than one search pattern at a time.  Great for analysing log files.</description>
