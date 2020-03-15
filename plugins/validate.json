@@ -300,5 +300,9 @@
     },
     "WakaTime": {
         "7c120f832746ce011bfa1172b8ebcdf5": "WakaTime.dll"
+    },
+    "ActiveX Plugin": {
+        "5c22d81a2f510778d3e9b80542ee7da1": "ActiveX.dll",
+        "8ade07654659df7ecfbe0666581bf79f": "RegisterActiveX.exe"
     }
 }
