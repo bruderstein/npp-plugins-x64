@@ -33,7 +33,7 @@
 		<versions>
 			<version number="1.1.8.5" md5="5c22d81a2f510778d3e9b80542ee7da1"/>
 		</versions>
-		<latestUpdate>Bugfixes and x64 version.</latestUpdate>
+		<latestUpdate>[2020-03-12] Bugfixes and x64 version.</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
@@ -398,15 +398,15 @@
 		</remove>
 	</plugin>
 	<plugin name="Explorer">
-		<x64Version>1.8.5.0</x64Version>
+		<x64Version>1.8.8.0</x64Version>
 		<description>Explorer plugin is a file browser. You can open whatever you want from it in Notepad++, just double click!</description>
 		<author>Jens Lorenz</author>
 		<homepage>https://github.com/oviradoi/npp-explorer-plugin</homepage>
 		<sourceUrl>https://github.com/oviradoi/npp-explorer-plugin</sourceUrl>
-		<latestUpdate>[2019-02-27]\n- Created Visual Studio 2015 solution and updated the project\n- Fix error when opening overflow menu on toolbar\n- Create 64-bit version of the plugin\n\nOlder downloads from original author:\nhttp://sourceforge.net/projects/npp-plugins/files/</latestUpdate>
+		<latestUpdate>[2020-01-18]\n- Added Favorites button to Explorer dialog dockable menu. Thanks vinsworldcom for the PR.\n\nOlder downloads from original author:\nhttp://sourceforge.net/projects/npp-plugins/files/</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/oviradoi/npp-explorer-plugin/releases/download/v1.8.5/Explorer_x64.zip</download>
+				<download>https://github.com/oviradoi/npp-explorer-plugin/releases/download/v1.8.8/Explorer_x64.zip</download>
 				<copy from="Explorer.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -861,7 +861,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<x64Version>0.28.4</x64Version>
+		<x64Version>0.29.5</x64Version>
 		<aliases>
 			<alias name="nppftp"/>
 		</aliases>
@@ -869,10 +869,10 @@
 		<author>ashish_kulz</author>
 		<homepage>https://ashkulz.github.io/NppFTP/</homepage>
 		<sourceUrl>https://github.com/ashkulz/NppFTP/</sourceUrl>
-		<latestUpdate>2019-05-28\n-update openssl to 1.0.2s (changelog see https://www.openssl.org/news/cl102.txt)</latestUpdate>
+		<latestUpdate>2020-03-11\n- Raise SFTP buffer size to 128 KiB to speed up I/O (see #90) (#275)</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.28.4/NppFTP-x64.zip</download>
+				<download>https://github.com/ashkulz/NppFTP/releases/download/v0.29.5/NppFTP-x64.zip</download>
 				<copy from="NppFTP.dll" to="$PLUGINDIR$\" validate="true"/>
 				<copy from="doc\license_*.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			</x64>
@@ -912,15 +912,15 @@
 		</install>
 	</plugin>
 	<plugin name="NppMarkdownPanel">
-		<x64Version>0.4.0</x64Version>
+		<x64Version>0.5.0</x64Version>
 		<description>Lightweight Notepad++ plugin to preview Markdown files with a good default style.</description>
 		<author>Mohzy83</author>
 		<homepage>https://github.com/mohzy83/NppMarkdownPanel</homepage>
-		<latestUpdate>[2019-03-27]\nThis release is using Markdig as Markdown parser and renderer, which supports far more Markdown extentions than CommonMark.Net.</latestUpdate>
+		<latestUpdate>[2019-06-13]\n-change zoomlevel for the preview in settings dialog\n-change css file for the markdown style\n-the new settings are persistent\n-open settings dialog: Plugins-&gt; NppMarkdownPanel -&gt; Edit Settings</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/mohzy83/NppMarkdownPanel/releases/download/0.4.0/NppMarkdownPanel-0.4.0.0-x64.zip</download>
-				<copy from="NppMarkdownPanel.dll" to="$PLUGINDIR$\"/>
+				<download>https://github.com/mohzy83/NppMarkdownPanel/releases/download/0.5.0/NppMarkdownPanel-0.5.0.0-x64.zip</download>
+				<copy from="NppMarkdownPanel.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
 	</plugin>
@@ -980,6 +980,34 @@
 				<delete file="$PLUGINDIR$\RegExTractor"/>
 			</x64>
 		</remove>
+	</plugin>
+	<plugin name="NppTextViz">
+		<x64Version>0.4.1</x64Version>
+		<description>This plugin is meant to hide or show lines to help you analysing larger files - logs for example. You can hide all lines that contain text pattern. Or simply select several lines and hide them.\nPlugin is based on TextFX plugin v0.25 by Chris Severance.</description>
+		<author>Jakub Dvorak</author>
+		<homepage>https://github.com/KubaDee/NppTextViz</homepage>
+		<sourceUrl>https://github.com/KubaDee/NppTextViz</sourceUrl>
+		<latestUpdate>[2019-06-12]\nSpeed optimization in delete lines function - much faster in large files</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/KubaDee/NppTextViz/releases/download/v0.4.1/NppTextViz_x64_v0.4.1.zip</download>
+				<copy from="NppTextViz.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
+	</plugin>
+	<plugin name="NppUISpy">
+		<x64Version>1.0.3</x64Version>
+		<description>With this plugin you can explore the main menu structure and the toolbar of Notepad++ to figure out which menu command ids are assigned to menu items and toolbar buttons.\n\nYou can left-click on menu item and toolbar button entries to execute the related command. With a right-click to the items a context menu pops up where you can select to copy the item's icon, its text or its menu command id to the clipboard.\n\nBoth the menu item tree and the toolbar button list provide full-text search. Start typing while one of them is focused to make the first matching item getting highlighted.</description>
+		<author>Andreas Heim</author>
+		<homepage>https://github.com/dinkumoil/NppUISpy</homepage>
+		<sourceUrl>https://github.com/dinkumoil/NppUISpy</sourceUrl>
+		<latestUpdate>[2018-12-12]\nEnhanced: The context menu of a selected element provides the ability to copy the element's icon.</latestUpdate>
+		<install>
+			<x64>
+				<download>https://github.com/dinkumoil/NppUISpy/releases/download/v1.0.3/NppUISpy_v1.0.3_x64.zip</download>
+				<copy from="NppUISpy.dll" to="$PLUGINDIR$\" validate="true"/>
+			</x64>
+		</install>
 	</plugin>
 	<plugin name="Open Selection">
 		<x64Version>1.1.2</x64Version>
@@ -1254,18 +1282,18 @@
 		</install>
 	</plugin>
 	<plugin name="Snippets">
-		<x64Version>1.4.0</x64Version>
+		<x64Version>1.5.0</x64Version>
 		<description>Adds the possibility to add code snippets to the current document by selecting it from a simple list.</description>
 		<author>Frank Fesevur</author>
 		<homepage>https://www.fesevur.com/nppsnippets</homepage>
 		<sourceUrl>https://github.com/ffes/nppsnippets/</sourceUrl>
-		<latestUpdate>v1.4.0  ffes released this on 24 May 2017\n\n    Provide a 64-bit version of the plug-in.\n    Added the possibility to export a library for easier sharing.\n    The color of the plug-in match the current Notepad++ theme.\n    Converted the documentation from DocBook to reStructuredText. The documentation is now hosted at Read The Docs.\n    Fixed bug 6 at Google Code and its GitHub duplicate issue #8. When a snippet had an empty first line it could not be saved.\n    Removed all references to Google Code because that service has retired. All things that were still on Google Code have been moved to GitHub.\n    Internally use my SqliteDB-class to communicate with the database.\n    Added option ToolbarIcon to hide the icon from the toolbar.\n    Update icon on toolbar. It is now a puzzle piece.\n    Fixed issue that sometimes new libraries and/or new snippets could not be added.\n    Upgrade to SQLite version 3.19.0</latestUpdate>
+		<latestUpdate>v1.5.0  ffes released this on 15 May 2019\n- Adapt to Notepad++ 7.6.x (issue #20)\n- Fixed "Creating Snippet from Selection crashes Notepad++" (issue #14)\n- Add entry to the plugin menu to open the online manual\n- Upgrade to SQLite version 3.27.1</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/ffes/nppsnippets/releases/download/v1.4.0/NppSnippets-140-x64.zip</download>
+				<download>https://github.com/ffes/nppsnippets/releases/download/v1.5.0/NppSnippets-150-x64.zip</download>
 				<copy from="NppSnippets.dll" to="$PLUGINDIR$\" validate="true"/>
-				<copy from="NppSnippets\*.sql" to="$PLUGINDIR$\NppSnippets"/>
-				<copy from="NppSnippets\*.sqlite" to="$PLUGINDIR$\NppSnippets"/>
+				<copy from="*.sql" to="$PLUGINDIR$\NppSnippets"/>
+				<copy from="*.sqlite" to="$PLUGINDIR$\NppSnippets"/>
 			</x64>
 		</install>
 	</plugin>
@@ -1293,15 +1321,15 @@
 		</remove>
 	</plugin>
 	<plugin name="SurroundSelection">
-		<x64Version>1.2</x64Version>
+		<x64Version>1.3.1</x64Version>
 		<description>Surrounds the selection in quotes/brackets/parenthesis\nNOTE: This may not work with non-US keyboard layouts.</description>
 		<author>Justin Dailey</author>
 		<sourceUrl>https://github.com/dail8859/SurroundSelection</sourceUrl>
-		<latestUpdate>[2019-02-07]\nHandle non-US keyboard layouts\nSupport surrounding text with &lt;&gt; and `</latestUpdate>
+		<latestUpdate>[2019-06-30]\nUpdated release package. Should have no functionality changes from v1.3</latestUpdate>
 		<stability>Good</stability>
 		<install>
 			<x64>
-				<download>https://github.com/dail8859/SurroundSelection/releases/download/v1.2/SurroundSelection_v1.2_x64.zip</download>
+				<download>https://github.com/dail8859/SurroundSelection/releases/download/v1.3.1/SurroundSelection_v1.3.1_x64.zip</download>
 				<copy from="SurroundSelection.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
 		</install>
@@ -1395,25 +1423,26 @@
 		</install>
 	</plugin>
 	<plugin name="UDL AutoCad">
-		<x64Version>2.0</x64Version>
+		<x64Version>19.1</x64Version>
 		<description>- Highlight Syntax for AutoCAD\n- Auto-Completion Functions\nATTENTION: UDLs are not imported automatically. This needs to be done by the user under Language-&gt;Define your language ... -&gt; Import... from N++\plugins\UDL dir</description>
 		<author>Rusi Dimitrov</author>
-		<homepage>https://github.com/rddim/notepad-plus-plus-autocad</homepage>
-		<latestUpdate>[2017-03-15]\nLinetype fixes\n- fixed highlight for brackets [ and ] when they are used in the name or in description of the linetype;\n- fixed highlight for main description, if it is the last line;\n- fixed highlight for wrong described lines (missing * or A at the beginning);</latestUpdate>
+		<homepage>https://github.com/rddim/npp-udl/tree/master/AutoCAD</homepage>
+		<sourceUrl>https://github.com/rddim/npp-udl</sourceUrl>
+		<latestUpdate>[2019-08-21]\n- initial release</latestUpdate>
 		<install>
 			<x64>
-				<download>https://github.com/rddim/notepad-plus-plus-autocad/releases/download/v2.0/NPP_AutoCAD_v2.0.zip</download>
-				<copy from="plugins\APIs\*.xml" to="$PLUGINDIR$\APIs" validate="true"/>
-				<copy from="userDefineLang\*.xml" to="$PLUGINDIR$\UDL" validate="true"/>
+				<download>https://github.com/rddim/npp-udl/releases/download/v19.1/AutoCAD_v19.1.zip</download>
+				<copy from="autoCompletion\*.xml" to="$PLUGINDIR$\APIs" validate="true"/>
+				<copy from="userDefineLangs\*.xml" to="$PLUGINDIR$\UDL" validate="true"/>
 			</x64>
 		</install>
 		<remove>
 			<x64>
-				<delete file="$PLUGINDIR$\UDL\ACAD-Linetype.xml"/>
-				<delete file="$PLUGINDIR$\UDL\ACAD-Script.xml"/>
-				<delete file="$PLUGINDIR$\UDL\ACAD-Shape-Hatch.xml"/>
-				<delete file="$PLUGINDIR$\APIs\acad-linetype.xml"/>
-				<delete file="$PLUGINDIR$\APIs\acad-script.xml"/>
+				<delete file="$PLUGINDIR$\UDL\sAutoCAD-Linetype.npp.udl.xml"/>
+				<delete file="$PLUGINDIR$\UDL\AutoCAD-Script.npp.udl.xml"/>
+				<delete file="$PLUGINDIR$\UDL\AutoCAD-Shape_Hatch.npp.udl.xml"/>
+				<delete file="$PLUGINDIR$\APIs\AutoCAD-Linetype.xml"/>
+				<delete file="$PLUGINDIR$\APIs\AutoCAD-Script.xml"/>
 			</x64>
 		</remove>
 	</plugin>

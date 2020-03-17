@@ -4,7 +4,7 @@
         "8500ddd5a33d9450a5fe907352064b8b": "gpup.exe"
     },
     "NppFTP": {
-        "e045f631ec9ec5243811cd7aeb02ccb3": "NppFTP.dll"
+        "77eee7e1606a719a2d5996585331f323": "NppFTP.dll"
     },
     "MIME Tools": {
         "e0f20dee74473b8b95aee00f03dd1076": "mimeTools.dll"
@@ -138,7 +138,7 @@
         "6127dc70df25624d09786943b6c0523e": "nppcrypt.dll"
     },
     "Snippets": {
-        "276497210d668a170ef70886c0c812dc": "NppSnippets.dll"
+        "8c52a2fde716b012abeefcc8c6ea1331": "NppSnippets.dll"
     },
     "NppExport": {
         "ebacf8ad6d3f38ec36cc27337afa51fb": "NppExport.dll"
@@ -222,7 +222,7 @@
         "2648f5a8c043cb2f76a8aab908a09538": "BetterMultiSelection_64.dll"
     },
     "SurroundSelection": {
-        "b1ad982d3179bf313deb5d5b3960d166": "SurroundSelection.dll"
+        "e222f27daeed3348d0252a6dd3ba22b1": "SurroundSelection.dll"
     },
     "ImgTag": {
         "2c5ce5931ffb81d666734b216e6d0268": "ImgTag.dll"
@@ -290,13 +290,13 @@
         "6efd373c219736b5cf133539c59786c3": "Python Indent.dll"
     },
     "Explorer": {
-        "bde44074d7ac3b849f7dc7e5fad65788": "Explorer.dll"
+        "047ba382afd74393763a440a00db463c": "Explorer.dll"
     },
     "Preview HTML": {
         "d7f73e724df1b3f0d621a59ab6322c41": "PreviewHTML.dll"
     },
     "Preview HTML": {
-        "247fe1a0849e241dcfadb6474abd02db": "NppMarkdownPanel.dll"
+        "d7f73e724df1b3f0d621a59ab6322c41": "PreviewHTML.dll"
     },
     "WakaTime": {
         "7c120f832746ce011bfa1172b8ebcdf5": "WakaTime.dll"
@@ -304,5 +304,14 @@
     "ActiveX Plugin": {
         "5c22d81a2f510778d3e9b80542ee7da1": "ActiveX.dll",
         "8ade07654659df7ecfbe0666581bf79f": "RegisterActiveX.exe"
+    },
+    "NppUISpy": {
+        "d6482dc9d481260ded8f517804c86265": "NppUISpy.dll"
+    },
+    "NppTextViz": {
+        "c94930c36c19adc581677b260da76562": "NppTextViz.dll"
+    },
+    "NppMarkdownPanel": {
+        "f04a574827dbba66062ae0af50b951c6": "NppMarkdownPanel.dll"
     }
 }
