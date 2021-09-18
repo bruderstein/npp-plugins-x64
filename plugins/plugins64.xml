@@ -265,7 +265,7 @@
 		<minVersion>6.4.5</minVersion>
 		<install>
 			<x64>
-				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/v1.7.25/CSScriptNpp.1.7.25.0.x64.zip</download>
+				<download>https://github.com/oleg-shilo/cs-script.npp/releases/download/1.7.25.1/CSScriptNpp.1.7.25.1.x64.zip</download>
 				<copy from="CSScriptNpp\*.*" to="$PLUGINDIR$\CSScriptNpp" validate="true" recursive="true"/>
 				<copy from="CSScriptNpp.dll" to="$PLUGINDIR$\" validate="true"/>
 			</x64>
